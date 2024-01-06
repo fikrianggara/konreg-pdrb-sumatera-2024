@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/infografis/page.js"
+    "app/infografis/page.js",
+    "src/app/data-infografis/page.js"
   ],
   "exclude": ["node_modules"]
 }
