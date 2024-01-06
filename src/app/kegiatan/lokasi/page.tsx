@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function pages() {
-  return <div>kegiatan page</div>;
+  return <div>lokasi page</div>;
 }
