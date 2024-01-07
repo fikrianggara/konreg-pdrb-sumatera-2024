@@ -60,6 +60,7 @@ function navbar() {
           if (item.child) {
             return (
               <Dropdown
+                key={item.name}
                 trigger={
                   <li
                     key={item.name}
@@ -86,15 +87,17 @@ function navbar() {
                 </ul>
               </Dropdown>
             );
+          } else {
+            return (
+              <Link
+                key={item.name}
+                className="font-normal text-emerald-800 font-light hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500 flex space-x-4 items-center"
+                href={item.url ? item.url : "/"}
+              >
+                {item.name}
+              </Link>
+            );
           }
-          return (
-            <Link
-              className="font-normal text-emerald-800 font-light hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500 flex space-x-4 items-center"
-              href={item.url ? item.url : "/"}
-            >
-              {item.name}
-            </Link>
-          );
         })}
       </ul>
     </div>
