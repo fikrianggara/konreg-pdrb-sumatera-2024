@@ -38,7 +38,7 @@ const COLLABORATORS = [
 
 const footer = () => {
   return (
-    <div className="w-full bg-emerald-800 text-white">
+    <footer className="w-full bg-emerald-800 text-white z-100">
       <ul className="flex justify-between items-start p-8">
         {COLLABORATORS.map((col) => (
           <li key={col.instansi} className="space-y-4">
@@ -64,7 +64,7 @@ const footer = () => {
           <div>Dibangun oleh tim kangkoding bipies jumpbee</div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

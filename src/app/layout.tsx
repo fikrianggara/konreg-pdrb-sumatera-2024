@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const poppins = Poppins({
-  weight: ["100", "200", "400", "500", "600", "700", "800"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
   subsets: ["latin"],
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={poppins.className}>
-      <body className="bg-gray-50 min-h-screen">
+      <body className="bg-gray-50">
         <Navbar />
         {children}
         <Footer />
