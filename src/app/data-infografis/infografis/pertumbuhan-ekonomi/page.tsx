@@ -1,14 +1,4 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import {
-  Pagination,
-  PaginationContent,
-  PaginationEllipsis,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
 
 import {
   Carousel,
@@ -18,15 +8,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -37,59 +20,69 @@ export function pages({}: Props) {
   return (
     <div className="grid grid-cols-12 gap-1 container mx-auto p-8">
       <div className="col-span-9 grow">
-        <h1 className="font-bold text-4xl	text-emerald-700">Infografis</h1>
+        <h1 className="font-bold text-3xl	text-emerald-700">Infografis</h1>
         <p className="font-medium text-gray-400 py-4">
           Bentuk visualisasi data statistik BPS yang disajikan dengan
           menggunakan ilustrasi, grafik, dan teks (klik gambar untuk
           memperjelas)
         </p>
-        <h2 className="font-bold text-3xl	text-emerald-700 mb-4">Subjek</h2>
+        <h2 className="font-bold text-2xl	text-emerald-700 mb-4">Subjek</h2>
+        <Tabs defaultValue="account" className="w-[400px] collapse">
+          <TabsList>
+            <TabsTrigger value="account">Account</TabsTrigger>
+            <TabsTrigger value="password">Password</TabsTrigger>
+          </TabsList>
+          <TabsContent value="account">
+            Make changes to your account here.
+          </TabsContent>
+          <TabsContent value="password">Change your password here.</TabsContent>
+        </Tabs>
         <div className="grid grid-cols-12 gap-1">
           <div className="col-span-4 mr-2">
             <ul className="border-2 border-gray-300 border-solid rounded-2xl p-4">
               <Link
-                href={"/data-infografis/pertumbuhan-ekonomi"}
-                className="font-medium text-lg"
+                href={"/data-infografis/infografis/pertumbuhan-ekonomi"}
+                className="font-medium text-md"
               >
-                <li className="transition duration-300 p-3 hover:bg-emerald-700 hover:text-white rounded-2xl my-2">
+                <li className="transition duration-300 p-3 hover:bg-emerald-700 hover:text-white rounded-2xl my-2 bg-emerald-700 text-white">
                   Pertumbuhan Ekonomi
                 </li>
               </Link>
               <Link
-                href={"/data-infografis/kemiskinan"}
-                className="font-medium text-lg"
+                href={"/data-infografis/infografis/kemiskinan"}
+                className="font-medium text-md"
               >
                 <li className="transition duration-300 p-3 hover:bg-emerald-700 hover:text-white rounded-2xl my-2">
                   Kemiskinan
                 </li>
               </Link>
               <Link
-                href={"/data-infografis/ketenagakerjaan"}
-                className="font-medium text-lg"
+                href={"/data-infografis/infografis/ketenagakerjaan"}
+                className="font-medium text-md"
               >
                 <li className="transition duration-300 p-3 hover:bg-emerald-700 hover:text-white rounded-2xl my-2">
                   Ketenagakerjaan
                 </li>
               </Link>
               <Link
-                href={"/data-infografis/ipm"}
-                className="font-medium text-lg"
+                href={"/data-infografis/infografis/ipm"}
+                className="font-medium text-md"
               >
-                <li className="transition duration-300 p-3 hover:bg-emerald-700 hover:text-white rounded-2xl my-2 bg-emerald-700 text-white">
+                <li className="transition duration-300 p-3 hover:bg-emerald-700 hover:text-white rounded-2xl my-2">
                   Indeks Pembangunan Manusia
                 </li>
               </Link>
               <Link
-                href={"/data-infografis/gini-ratio"}
-                className="font-medium text-lg"
+                href={"/data-infografis/infografis/gini-ratio"}
+                className="font-medium text-md"
               >
                 <li className="transition duration-300 p-3 hover:bg-emerald-700 hover:text-white rounded-2xl my-2">
                   Gini Ratio
                 </li>
               </Link>
               <Link
-                href={"/data-infografis/pdrb"}
-                className="font-medium text-lg"
+                href={"/data-infografis/infografis/pdrb"}
+                className="font-medium text-md"
               >
                 <li className="transition duration-300 p-3 hover:bg-emerald-700 hover:text-white rounded-2xl my-2">
                   PDRB Per Kapita
@@ -98,13 +91,13 @@ export function pages({}: Props) {
             </ul>
           </div>
           <div className="col-span-8">
-            <div className="border-2 border-solid ml-2 rounded-2xl px-6 py-4 flex items-center justify-center">
+            <div className="border-2 border-solid ml-2 rounded-2xl px-14 py-4 flex items-center justify-center">
               <Carousel
                 opts={{
                   align: "start",
                   loop: true,
                 }}
-                className="w-full max-w-sm"
+                className="w-full"
               >
                 <CarouselContent>
                   <CarouselItem
@@ -382,37 +375,16 @@ export function pages({}: Props) {
                 <CarouselNext />
               </Carousel>
             </div>
-
-            {/* <div className="flex items-center justify-center mt-4">
-              <Pagination>
-                <PaginationContent>
-                  <PaginationItem>
-                    <PaginationLink href="#">1</PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink href="#" isActive>
-                      2
-                    </PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink href="#">3</PaginationLink>
-                  </PaginationItem>
-                  <PaginationItem>
-                    <PaginationLink href="#">4</PaginationLink>
-                  </PaginationItem>
-                </PaginationContent>
-              </Pagination>
-            </div> */}
           </div>
         </div>
       </div>
       <div className="col-span-3 py-8 px-4 text-cyan-700">
         <h3 className="text-lg font-semibold">Informasi</h3>
         <hr className="border-3 border-cyan-700" />
-        <Link href={"/data-infografis/"}>
+        <Link href={"/data-infografis/infografis/"}>
           <h4 className="text-md my-2 hover:underline">Data</h4>
         </Link>
-        <Link href={"/data-infografis/infografis"}>
+        <Link href={"/data-infografis/infografis/infografis"}>
           <h4 className="text-md my-2 underline">Infografis</h4>
         </Link>
       </div>
