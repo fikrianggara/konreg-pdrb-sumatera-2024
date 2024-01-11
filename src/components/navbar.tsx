@@ -19,6 +19,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Separator } from "./ui/separator";
+import { useWindowSize } from "@/hooks/useWindowSize";
 
 type NAVBAR_ITEM_TYPE = {
   name: string;
@@ -154,11 +155,13 @@ export function SheetSide() {
 }
 
 function Navbar() {
-  const { width } = useWindowDimensions();
+  const { width } = useWindowSize();
 
   return (
     <>
-      {width < MOBILE_TRESHOLD ? (
+      {!width ? (
+        <></>
+      ) : width < MOBILE_TRESHOLD ? (
         <div className="sticky top-0 bg-white p-4 md:p-8 py-4 shadow-md flex justify-between items-center z-10">
           <Link href="/" className="flex items-center space-x-2 ">
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
