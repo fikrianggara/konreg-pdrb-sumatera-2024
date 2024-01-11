@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
-export type Ipm = {
-  wilayah: string;
+export type Data = {
+  Wilayah: string;
   "2015": string;
   "2016": string;
   "2017": string;
@@ -19,9 +19,9 @@ export type Ipm = {
   "2023": string;
 };
 
-export const columns: ColumnDef<Ipm>[] = [
+export const columns: ColumnDef<Data>[] = [
   {
-    accessorKey: "wilayah",
+    accessorKey: "Wilayah",
     header: ({ column }) => {
       return (
         <Button
