@@ -153,7 +153,7 @@ export function SheetSide() {
   );
 }
 
-function navbar() {
+function Navbar() {
   const { width } = useWindowDimensions();
 
   return (
@@ -239,4 +239,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;
