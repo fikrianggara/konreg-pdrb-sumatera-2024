@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Poppins } from "next/font/google";
 
-import "@mantine/core/styles.css";
+// import "@mantine/core/styles.css";
 import "./globals.css";
 import { ColorSchemeScript } from "@mantine/core";
 import Providers from "@/components/providers";
