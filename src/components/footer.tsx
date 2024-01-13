@@ -38,8 +38,8 @@ const COLLABORATORS = [
 
 const footer = () => {
   return (
-    <div className="w-full bg-emerald-800 text-white">
-      <ul className="flex justify-between items-start p-8">
+    <footer className="w-full bg-emerald-800 text-white z-100">
+      <ul className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 p-8 gap-4 text-sm lg:text-base">
         {COLLABORATORS.map((col) => (
           <li key={col.instansi} className="space-y-4">
             <h2 key={col.instansi} className="font-bold">
@@ -64,7 +64,7 @@ const footer = () => {
           <div>Dibangun oleh tim kangkoding bipies jumpbee</div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

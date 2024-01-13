@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Poppins } from "next/font/google";
+
+// import "@mantine/core/styles.css";
+import "./globals.css";
+import { ColorSchemeScript } from "@mantine/core";
+import Providers from "@/components/providers";
 
 export const metadata: Metadata = {
   title: "Konreg PDRB Sumatera 2024",
@@ -10,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const poppins = Poppins({
-  weight: ["100", "200", "400", "500", "600", "700", "800"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   display: "swap",
   subsets: ["latin"],
 });
@@ -21,11 +25,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={poppins.className}>
-      <body className="bg-gray-50 min-h-screen">
-        <Navbar />
-        {children}
-        <Footer />
+    <html lang="en" className={poppins.className + " scroll-smooth"}>
+      <head>
+        <ColorSchemeScript />
+      </head>
+      <body className="bg-gray-50">
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
