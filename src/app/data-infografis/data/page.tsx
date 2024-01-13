@@ -1,15 +1,10 @@
 import React from "react";
 
 type Props = {};
-import Link from "next/link";
-import SelectForm from "./SelectForm";
+import ShowData from "./ShowData";
 
 export async function pages({}: Props) {
-  return (
-    <div>
-      <SelectForm />
-    </div>
-  );
+  return <ShowData />;
 }
 
 export default pages;

@@ -16,7 +16,6 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormMessage,
   FormLabel,
 } from "@/components/ui/form";
 import {
@@ -36,20 +35,15 @@ const FormSchema = z.object({
   }),
 });
 
-export function SelectForm({}: Props) {
+export function ShowData({}: Props) {
   const [category, setCategory] = useState("");
   const [indicators, setIndicators] = useState([]);
   const [data, setData] = useState([]);
   const [title, setTitle] = useState("");
-  const [placeholder, setPlaceholder] = useState("===== Pilih Indikator =====");
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
   });
-
-  function onSubmit(data: z.infer<typeof FormSchema>) {
-    console.log(data);
-  }
 
   return (
     <>
@@ -62,12 +56,8 @@ export function SelectForm({}: Props) {
             pilih indikator data yang ingin ditampilkan:
           </p>
           <Form {...form}>
-            <form
-              onSubmit={form.handleSubmit(onSubmit)}
-              className="w-2/3 space-y-6"
-            >
+            <form className="w-2/3 space-y-6">
               <FormField
-                control={form.control}
                 name="indikator"
                 render={({ field }) => (
                   <>
@@ -75,7 +65,6 @@ export function SelectForm({}: Props) {
                       <FormLabel>Kategori Data</FormLabel>
                       <Select
                         onValueChange={(field) => {
-                          setPlaceholder("===== Pilih Indikator =====");
                           if (category != field) {
                             setTitle("");
                           }
@@ -129,7 +118,7 @@ export function SelectForm({}: Props) {
                         >
                           <FormControl>
                             <SelectTrigger>
-                              <SelectValue placeholder={placeholder} />
+                              <SelectValue placeholder="===== Pilih Indikator =====" />
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
@@ -170,4 +159,4 @@ export function SelectForm({}: Props) {
   );
 }
 
-export default SelectForm;
+export default ShowData;
