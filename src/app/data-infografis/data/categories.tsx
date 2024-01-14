@@ -1,8 +1,15 @@
-const categories = [
+const categories: {
+  key?: string;
+  name?: string;
+  indicators?: {
+    name?: string;
+    tag?: string;
+  }[];
+}[] = [
   {
     key: "ketenagakerjaan",
     name: "Ketenagakerjaan",
-    indicator: [
+    indicators: [
       {
         name: "Jumlah Angkatan Kerja Menurut Provinsi Se-Sumatera",
         tag: "angkatan-kerja",
@@ -20,7 +27,7 @@ const categories = [
   {
     key: "kemiskinan",
     name: "Kemiskinan",
-    indicator: [
+    indicators: [
       {
         name: "Jumlah Penduduk Miskin Menurut Provinsi Se-Sumatera",
         tag: "penduduk-miskin",
@@ -39,7 +46,7 @@ const categories = [
   {
     key: "ipm",
     name: "Indeks Pembangunan Manusia",
-    indicator: [
+    indicators: [
       {
         name: "Indeks Pembangunan Manusia (IPM) Menurut Provinsi Se-Sumatera",
         tag: "ipm",

@@ -14,9 +14,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Link from "next/link";
 import Image from "next/image";
 
-type Props = {};
-
-export function pages({}: Props) {
+export default function pages() {
   return (
     <div className="grid grid-cols-12 gap-1 container mx-auto p-8">
       <div className="col-span-9 grow">
@@ -391,5 +389,3 @@ export function pages({}: Props) {
     </div>
   );
 }
-
-export default pages;

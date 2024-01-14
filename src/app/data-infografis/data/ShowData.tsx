@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useState } from "react";
 import Link from "next/link";
-import { columns } from "./columns";
+import { Data, columns } from "./columns";
 import { DataTable } from "./data-table";
 
 import {
@@ -28,6 +28,7 @@ import {
 
 import Papa from "papaparse";
 import categories from "./categories";
+import { error } from "console";
 
 const FormSchema = z.object({
   indikator: z.string({
@@ -35,11 +36,17 @@ const FormSchema = z.object({
   }),
 });
 
-export function ShowData({}: Props) {
-  const [category, setCategory] = useState("");
-  const [indicators, setIndicators] = useState([]);
-  const [data, setData] = useState([]);
-  const [title, setTitle] = useState("");
+export default function ShowData({}: Props) {
+  const [category, setCategory] = useState<string | undefined>("");
+  const [indicators, setIndicators] = useState<
+    | {
+        name?: string;
+        tag?: string;
+      }[]
+    | undefined
+  >([]);
+  const [data, setData] = useState<any>([]);
+  const [title, setTitle] = useState<string | undefined>("");
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
@@ -71,7 +78,7 @@ export function ShowData({}: Props) {
                           setCategory(field);
                           setIndicators(
                             categories.find((ctr) => ctr.key === field)
-                              ?.indicator
+                              ?.indicators
                           );
                         }}
                         defaultValue={field.value}
@@ -83,7 +90,10 @@ export function ShowData({}: Props) {
                         </FormControl>
                         <SelectContent>
                           {categories.map((category) => (
-                            <SelectItem key={category.key} value={category.key}>
+                            <SelectItem
+                              key={category.key as string}
+                              value={category.key as string}
+                            >
                               {category.name}
                             </SelectItem>
                           ))}
@@ -96,18 +106,23 @@ export function ShowData({}: Props) {
                         <Select
                           onValueChange={(field) => {
                             const file = "/data/" + field + ".csv";
+<<<<<<< HEAD
+=======
+                            console.log(category);
+
+>>>>>>> e7734ee5b7e2d93cddcc35d0363fbc767852170a
                             fetch(file)
                               .then((response) => response.text())
                               .then((responseText) => {
                                 // -- parse csv
-                                var data = Papa.parse(responseText, {
+                                const data = Papa.parse(responseText, {
                                   header: true,
                                 });
                                 if (data.errors.length > 0) {
                                   throw new Error("data tidak ditemukan");
                                 }
                                 setTitle(
-                                  indicators.find((ind) => ind.tag === field)
+                                  indicators?.find((ind) => ind.tag === field)
                                     ?.name
                                 );
                                 setData(data.data);
@@ -124,10 +139,10 @@ export function ShowData({}: Props) {
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            {indicators.map((indicator) => (
+                            {indicators?.map((indicator) => (
                               <SelectItem
-                                key={indicator.tag}
-                                value={indicator.tag}
+                                key={indicator.tag as string}
+                                value={indicator.tag as string}
                               >
                                 {indicator.name}
                               </SelectItem>
@@ -160,5 +175,3 @@ export function ShowData({}: Props) {
     </>
   );
 }
-
-export default ShowData;

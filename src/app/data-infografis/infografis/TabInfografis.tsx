@@ -13,9 +13,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import Image from "next/image";
 
-type Props = {};
-
-export function TabInfografis({}: Props) {
+export function TabInfografis() {
   return (
     <Tabs defaultValue="ipm" className="w-full lg:hidden">
       <TabsList>
