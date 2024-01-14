@@ -16,7 +16,7 @@ import TabInfografis from "../TabInfografis";
 
 type Props = {};
 
-export function pages({}: Props) {
+export default function pages({}: Props) {
   return (
     <div className="grid grid-cols-12 gap-1 container mx-auto p-8">
       <div className="col-span-9 grow">
@@ -382,5 +382,3 @@ export function pages({}: Props) {
     </div>
   );
 }
-
-export default pages;
