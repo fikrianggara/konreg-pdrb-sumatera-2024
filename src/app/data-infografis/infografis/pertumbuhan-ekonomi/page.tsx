@@ -9,8 +9,7 @@ import {
 } from "@/components/ui/carousel";
 
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
+import TabInfografis from "../TabInfografis";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -25,16 +24,7 @@ export default function pages() {
           memperjelas)
         </p>
         <h2 className="font-bold text-2xl	text-emerald-700 mb-4">Subjek</h2>
-        <Tabs defaultValue="account" className="w-[400px] collapse">
-          <TabsList>
-            <TabsTrigger value="account">Account</TabsTrigger>
-            <TabsTrigger value="password">Password</TabsTrigger>
-          </TabsList>
-          <TabsContent value="account">
-            Make changes to your account here.
-          </TabsContent>
-          <TabsContent value="password">Change your password here.</TabsContent>
-        </Tabs>
+        <TabInfografis />
         <div className="grid grid-cols-12 gap-1">
           <div className="col-span-4 mr-2">
             <ul className="border-2 border-gray-300 border-solid rounded-2xl p-4">
@@ -379,11 +369,11 @@ export default function pages() {
       <div className="col-span-3 py-8 px-4 text-cyan-700">
         <h3 className="text-lg font-semibold">Informasi</h3>
         <hr className="border-3 border-cyan-700" />
-        <Link href={"/data-infografis/infografis/"}>
-          <h4 className="text-md my-2 hover:underline">Data</h4>
+        <Link href={"/data-infografis/data"}>
+          <h4 className="text-md my-2 underline">Data</h4>
         </Link>
-        <Link href={"/data-infografis/infografis/infografis"}>
-          <h4 className="text-md my-2 underline">Infografis</h4>
+        <Link href={"/data-infografis/infografis/pertumbuhan-ekonomi"}>
+          <h4 className="text-md my-2 hover:underline">Infografis</h4>
         </Link>
       </div>
     </div>
