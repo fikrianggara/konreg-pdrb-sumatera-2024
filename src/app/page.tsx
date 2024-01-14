@@ -79,10 +79,8 @@ export default function Home() {
               Kegiatan
             </h3>
             <p className="text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-              tempora modi! Repellendus impedit iste saepe totam nesciunt. Nam,
-              quasi rerum odit perferendis quis id ipsum, maiores aspernatur
-              magnam consequuntur sequi.
+              Informasi jadwal dan lokasi kegiatan serta materi dan notula
+              Konsultasi Regional PDRB Wilayah Sumatera Tahun 2024..
             </p>
             <Link
               href={"kegiatan/lokasi"}
@@ -96,10 +94,8 @@ export default function Home() {
               Galeri
             </h3>
             <p className="text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-              tempora modi! Repellendus impedit iste saepe totam nesciunt. Nam,
-              quasi rerum odit perferendis quis id ipsum, maiores aspernatur
-              magnam consequuntur sequi.
+              Kumpulan dokumentasi selama kegiatan Konsultasi Regional PDRB
+              Wilayah Sumatera Tahun 2024 berlangsung..
             </p>
             <Link
               href={"galeri"}
@@ -113,10 +109,8 @@ export default function Home() {
               Data dan Infografis
             </h3>
             <p className="text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-              tempora modi! Repellendus impedit iste saepe totam nesciunt. Nam,
-              quasi rerum odit perferendis quis id ipsum, maiores aspernatur
-              magnam consequuntur sequi.
+              Data dan Infografis terkait subjek-subjek yang berkaitan dengan
+              Konsultasi Regional PDRB Wilayah Sumatera Tahun 2024.
             </p>
             <Link
               href={"data-infografis/data"}
@@ -237,12 +231,11 @@ export default function Home() {
           <h2 className="text-lg lg:text-3xl font-bold">
             Instansi yang Terlibat
           </h2>
-          <p className="text-sm lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            nulla facere natus sed a doloremque debitis adipisci eius. Vero
-            quia, unde sapiente debitis, dolorum nulla modi ipsam quas
-            temporibus odit magnam! Mollitia repellat modi sint. Assumenda
-            ratione sapiente harum ipsam?
+          <p className="text-sm lg:text-lg text-center lg:text-start">
+            Konsultasi Regional Produk Domestik Bruto (PDRB) Wilayah Sumatera
+            merupakan forum diskusi dan tukar pikiran mengenai pelbagai masalah
+            yang terkait dengan pembangunan ekonomi antarwilayah untuk
+            memperoleh kesepakatan bersama dalam penentuan indikator pembangunan
           </p>
         </div>
       </div>
@@ -321,6 +314,13 @@ export default function Home() {
         <h2 className="text-lg text-center lg:text-start lg:text-2xl font-bold text-emerald-800">
           Kolaborasi
         </h2>
+        <p className="text-sm lg:text-lg text-center lg:text-start">
+          Konsultasi regional ini merupakan salah satu bentuk kolaborasi dan
+          sinergi Badan Pusat Statistik (BPS), Badan Perencanaan Pembangunan,
+          Riset dan Inovasi Daerah (Bapperida), Dinas Komunikasi dan Informatika
+          (Diskominfo), Bank Indonesia (BI), serta Kantor Wilayah Direktorat
+          Jendral Perbendaharaan (DJPb)
+        </p>
         <ul className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
           <li className="bg-white rounded-xl w-full h-24 border lg:border-2 p-4 text-center self-center">
             BPS
