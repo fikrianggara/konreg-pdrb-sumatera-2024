@@ -22,6 +22,18 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/infografis/page.js",
+    "src/app/data-infografis/page.js",
+    "src/components/ui/carousel.tsxx",
+    "src/app/data-infografis/infografis/ipm/page.tsxx",
+    "src/app/data-infografis/infografis/TabInfografis.tsx",
+    "src/app/data-infografis/infografis/pertumbuhan-ekonomi/page.tsx",
+    "src/app/data-infografis/infografis/ipm/page.tsxxx"
+  ],
   "exclude": ["node_modules"]
 }
