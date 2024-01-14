@@ -95,10 +95,7 @@ export function ShowData({}: Props) {
                         <FormLabel>Indikator</FormLabel>
                         <Select
                           onValueChange={(field) => {
-                            const file =
-                              "http://localhost:3000/data/" + field + ".csv";
-                            console.log(category);
-
+                            const file = "/data/" + field + ".csv";
                             fetch(file)
                               .then((response) => response.text())
                               .then((responseText) => {
@@ -106,12 +103,17 @@ export function ShowData({}: Props) {
                                 var data = Papa.parse(responseText, {
                                   header: true,
                                 });
-                                console.log("data:", data.data);
+                                if (data.errors.length > 0) {
+                                  throw new Error("data tidak ditemukan");
+                                }
                                 setTitle(
                                   indicators.find((ind) => ind.tag === field)
                                     ?.name
                                 );
                                 setData(data.data);
+                              })
+                              .catch((e) => {
+                                setData([]);
                               });
                           }}
                           defaultValue={field.value}
