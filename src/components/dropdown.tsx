@@ -15,9 +15,7 @@ export function AccordionDropdown(props: {
 }) {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger key={props.trigger} asChild>
-        {props.trigger}
-      </DropdownMenuTrigger>
+      <DropdownMenuTrigger asChild>{props.trigger}</DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         {props.children}
       </DropdownMenuContent>
