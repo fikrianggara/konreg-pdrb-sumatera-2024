@@ -105,6 +105,7 @@ export default function ShowData({}: Props) {
                         <Select
                           onValueChange={(field) => {
                             const file = "/data/" + field + ".csv";
+                            console.log(file);
                             fetch(file)
                               .then((response) => response.text())
                               .then((responseText) => {
@@ -113,7 +114,8 @@ export default function ShowData({}: Props) {
                                   header: true,
                                 });
                                 if (data.errors.length > 0) {
-                                  throw new Error("data tidak ditemukan");
+                                  // throw new Error("data tidak ditemukan");
+                                  console.log(data.errors);
                                 }
                                 setTitle(
                                   indicators?.find((ind) => ind.tag === field)
