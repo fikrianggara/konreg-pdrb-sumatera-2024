@@ -106,11 +106,6 @@ export default function ShowData({}: Props) {
                         <Select
                           onValueChange={(field) => {
                             const file = "/data/" + field + ".csv";
-<<<<<<< HEAD
-=======
-                            console.log(category);
-
->>>>>>> e7734ee5b7e2d93cddcc35d0363fbc767852170a
                             fetch(file)
                               .then((response) => response.text())
                               .then((responseText) => {
