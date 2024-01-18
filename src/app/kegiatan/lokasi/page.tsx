@@ -1,5 +1,7 @@
-import React from "react";
+"use client";
 
-export default function pages() {
-  return <div>lokasi page</div>;
+function Demo() {
+  return <div className="">lokasi</div>;
 }
+
+export default Demo;

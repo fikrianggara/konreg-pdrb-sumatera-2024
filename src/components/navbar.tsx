@@ -36,7 +36,7 @@ const NAVBAR_ITEMS: NAVBAR_ITEM_TYPE[] = [
       { name: "Materi", url: "/kegiatan/materi" },
       { name: "Notula", url: "/kegiatan/notula" },
     ],
-    url: "kegiatan",
+    url: "/kegiatan",
   },
   {
     name: "Data dan Inforgrafis",
@@ -57,13 +57,6 @@ const NAVBAR_ITEMS: NAVBAR_ITEM_TYPE[] = [
 ];
 
 const MOBILE_TRESHOLD = 900;
-// function getWindowDimensions() {
-//   const { innerWidth: width, innerHeight: height } = window;
-//   return {
-//     width,
-//     height,
-//   };
-// }
 
 function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState({
