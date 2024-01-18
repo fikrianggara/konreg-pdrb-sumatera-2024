@@ -3,7 +3,8 @@ import Breadcrumb from "@/components/breadcrumb";
 // import { Metadata } from "next";
 import { Tabs } from "@mantine/core";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 const INFORMASI = [
   { name: "lokasi", href: "/kegiatan/lokasi" },
@@ -22,22 +23,31 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
+  const router = useRouter();
   const active = pathname.split("/").at(-1);
+
+  useEffect(() => {}, [active]);
   return (
-    <div className="lg:px-36 py-8 space-y-6">
+    <div className="p-4 lg:px-36 py-8 space-y-4 lg:space-y-6">
       <Breadcrumb />
       <div>
-        <h1 className="font-bold text-3xl	text-emerald-800">Informasi </h1>
-        <p className="font-medium text-gray-500 py-4">
+        <h1 className="font-bold text-xl lg:text-3xl text-emerald-800">
+          Informasi{" "}
+        </h1>
+        <p className="font-medium text-sm lg:text-base text-gray-500 py-4">
           Informasi terkait penyelenggaraan Konreg PDRB regional sumatera 2024
         </p>
       </div>
-      <Tabs defaultValue={active} color="teal">
+      <Tabs
+        defaultValue={active}
+        color="teal"
+        onChange={(value) => router.push(`/kegiatan/${value}`)}
+      >
         <Tabs.List>
           {INFORMASI.map((i) => (
-            <Link href={"/kegiatan/" + i.name} key={i.name}>
-              <Tabs.Tab value={i.name}>{i.name}</Tabs.Tab>
-            </Link>
+            // <Link href={"/kegiatan/" + i.name} key={i.name}>
+            <Tabs.Tab value={i.name}>{i.name}</Tabs.Tab>
+            // </Link>
           ))}
         </Tabs.List>
       </Tabs>
