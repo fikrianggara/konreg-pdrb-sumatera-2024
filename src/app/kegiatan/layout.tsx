@@ -46,7 +46,9 @@ export default function DashboardLayout({
         <Tabs.List>
           {INFORMASI.map((i) => (
             // <Link href={"/kegiatan/" + i.name} key={i.name}>
-            <Tabs.Tab value={i.name}>{i.name}</Tabs.Tab>
+            <Tabs.Tab key={i.name} value={i.name}>
+              {i.name}
+            </Tabs.Tab>
             // </Link>
           ))}
         </Tabs.List>
