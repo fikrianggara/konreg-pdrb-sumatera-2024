@@ -26,7 +26,6 @@ function generateBreadCrumb(pathArray: string[]) {
 
 const Breadcrumb = () => {
   const pathname = usePathname();
-  console.log(pathname);
   const pathWithoutQueryParam = pathname.split("?")[0];
   const pathArray = pathWithoutQueryParam
     .split("/")

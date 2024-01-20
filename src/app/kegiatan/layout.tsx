@@ -1,8 +1,6 @@
 "use client";
 import Breadcrumb from "@/components/breadcrumb";
-// import { Metadata } from "next";
 import { Tabs } from "@mantine/core";
-import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
 
@@ -12,10 +10,6 @@ const INFORMASI = [
   { name: "materi", href: "/kegiatan/materi" },
   { name: "notula", href: "/kegiatan/notula" },
 ];
-
-// export const metadata: Metadata = {
-//   title: "Informasi",
-// };
 
 export default function DashboardLayout({
   children, // will be a page or nested layout
@@ -39,20 +33,21 @@ export default function DashboardLayout({
         </p>
       </div>
       <Tabs
-        defaultValue={active}
         color="teal"
+        radius="md"
+        variant="pills"
+        defaultValue={active}
         onChange={(value) => router.push(`/kegiatan/${value}`)}
       >
         <Tabs.List>
           {INFORMASI.map((i) => (
-            // <Link href={"/kegiatan/" + i.name} key={i.name}>
-            <Tabs.Tab key={i.name} value={i.name}>
+            <Tabs.Tab key={i.name} value={i.name} className="border rounded-lg">
               {i.name}
             </Tabs.Tab>
-            // </Link>
           ))}
         </Tabs.List>
       </Tabs>
+      {/* main content */}
       {children}
     </div>
   );
