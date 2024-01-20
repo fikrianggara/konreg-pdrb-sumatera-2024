@@ -74,7 +74,11 @@ export default function Page({ params }: { params: { tag: string } }) {
                         <Dialog>
                           <DialogTrigger asChild>
                             <Image
-                              src={item.url}
+                              src={
+                                item.url
+                                  ? item.url
+                                  : "/assets/infografis/infografis-not-found.png"
+                              }
                               width={200}
                               height={300}
                               alt={item.alt}
@@ -83,7 +87,11 @@ export default function Page({ params }: { params: { tag: string } }) {
                           </DialogTrigger>
                           <DialogContent className="flex items-center justify-center">
                             <Image
-                              src={item.url}
+                              src={
+                                item.url
+                                  ? item.url
+                                  : "/assets/infografis/infografis-not-found.png"
+                              }
                               width={0}
                               height={0}
                               sizes="100vw"
