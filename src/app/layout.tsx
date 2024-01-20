@@ -3,10 +3,13 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Poppins } from "next/font/google";
 
-// import "@mantine/core/styles.css";
+import "@mantine/core/styles.css";
+import "@mantine/carousel/styles.css";
 import "./globals.css";
-import { ColorSchemeScript } from "@mantine/core";
 import Providers from "@/components/providers";
+import { ColorSchemeScript } from "@mantine/core";
+import Breadcrumb from "@/components/breadcrumb";
+// import { Provider } from "@radix-ui/react-toast";
 
 export const metadata: Metadata = {
   title: "Konreg PDRB Sumatera 2024",
@@ -18,6 +21,10 @@ const poppins = Poppins({
   display: "swap",
   subsets: ["latin"],
 });
+
+const theme = {
+  fontFamily: "Roboto",
+};
 
 export default function RootLayout({
   children,
@@ -31,9 +38,11 @@ export default function RootLayout({
       </head>
       <body className="bg-gray-50">
         <Providers>
-          <Navbar />
-          {children}
-          <Footer />
+          <div className={poppins.className}>
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>
