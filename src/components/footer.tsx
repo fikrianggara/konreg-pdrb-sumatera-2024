@@ -6,11 +6,12 @@ const PROVINSI = [
   "Prov. Sumatera Utara",
   "Prov. Sumatera Barat",
   "Prov. Riau",
-  "Prov. Kepulauan Riau",
   "Prov. Jambi",
   "Prov. Sumatera Selatan",
+  "Prov. Bengkulu",
+  "Prov. Lampung",
   "Prov. Bangka Belitung",
-  "prov. Lampung",
+  "Prov. Kepulauan Riau",
 ];
 
 const COLLABORATORS = [

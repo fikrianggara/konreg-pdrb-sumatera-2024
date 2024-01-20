@@ -28,7 +28,6 @@ import {
 
 import Papa from "papaparse";
 import categories from "./categories";
-import { error } from "console";
 
 const FormSchema = z.object({
   indikator: z.string({
@@ -114,7 +113,8 @@ export default function ShowData({}: Props) {
                                   header: true,
                                 });
                                 if (data.errors.length > 0) {
-                                  throw new Error("data tidak ditemukan");
+                                  // throw new Error("data tidak ditemukan");
+                                  console.log(data.errors);
                                 }
                                 setTitle(
                                   indicators?.find((ind) => ind.tag === field)
