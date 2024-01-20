@@ -8,8 +8,10 @@ import MapboxMap, {
   ScaleControl,
 } from "react-map-gl";
 
+const TOKEN =
+  "pk.eyJ1IjoiZmlrcmlhbmdnYXJhIiwiYSI6ImNscmsyYnZveTA5NmUya29qZ2djYmU5YnkifQ.vVYOAwSJaUdd5gFA0TnxZA";
+
 function Map() {
-  const TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
   const [viewPort, setViewPort] = useState({
     longitude: 103.6021418,
     latitude: -1.6015007,
