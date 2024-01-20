@@ -17,7 +17,9 @@ import { dataInfografis } from "../dataInfografis";
 
 export default function Page({ params }: { params: { tag: string } }) {
   const data = dataInfografis.filter((obj) => obj.tag == params.tag);
-  if (data != false) {
+  if (data === null || data.length === 0 || data === undefined) {
+    return <h1>Gak ada coy</h1>;
+  } else {
     return (
       <div className="grid grid-cols-12 gap-1 container mx-auto p-8">
         <div className="col-span-12 md:col-span-9 grow">
@@ -103,7 +105,7 @@ export default function Page({ params }: { params: { tag: string } }) {
         <div className="hidden lg:col-span-3 py-8 px-4 text-cyan-700 lg:block">
           <h3 className="text-lg font-semibold">Informasi</h3>
           <hr className="border-3 border-cyan-700" />
-          <Link href={"/data-infografis/infografis/"}>
+          <Link href={"/data-infografis/data/"}>
             <h4 className="text-md my-2 hover:underline">Data</h4>
           </Link>
           <Link href={"/data-infografis/infografis/infografis"}>
@@ -112,7 +114,5 @@ export default function Page({ params }: { params: { tag: string } }) {
         </div>
       </div>
     );
-  } else {
-    return <>Gak ada coy</>;
   }
 }
