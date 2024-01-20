@@ -54,7 +54,7 @@ export default function ShowData({}: Props) {
   return (
     <>
       <div className="grid grid-cols-12 gap-1 container mx-auto p-8">
-        <div className="col-span-9 grow">
+        <div className="col-span-12 md:col-span-9 grow">
           <h1 className="font-bold text-3xl	text-emerald-700">
             Data Indikator Antarwilayah
           </h1>
@@ -152,7 +152,7 @@ export default function ShowData({}: Props) {
             </form>
           </Form>
         </div>
-        <div className="col-span-3 py-8 px-4 text-cyan-700">
+        <div className="hidden col-span-3 py-8 px-4 text-cyan-700 md:block">
           <h3 className="text-lg font-semibold">Informasi</h3>
           <hr className="border-3 border-cyan-700" />
           <Link href={"/data-infografis/data"}>
