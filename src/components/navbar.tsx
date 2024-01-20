@@ -40,6 +40,13 @@ const NAVBAR_ITEMS: NAVBAR_ITEM_TYPE[] = [
   },
   {
     name: "Data dan Inforgrafis",
+    child: [
+      { name: "Data", url: "/data-infografis/data" },
+      {
+        name: "Infografis",
+        url: "/data-infografis/infografis/pertumbuhan-ekonomi",
+      },
+    ],
     url: "/data-infografis/data",
   },
   {

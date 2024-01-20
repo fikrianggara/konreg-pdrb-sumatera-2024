@@ -16,10 +16,79 @@ import TabInfografis from "../TabInfografis";
 
 type Props = {};
 
+type ImageType = {
+  url: string;
+  alt: string;
+  prov: string;
+};
+
+export type DataInfografisType = {
+  tag: string;
+  title: string;
+  image: ImageType[];
+};
+
+const dataInfografis = {
+  tag: "ipm",
+  title: "Indeks Pembangunan Manusia (IPM)",
+  image: [
+    {
+      url: "/assets/infografis/ipm/aceh.jpg",
+      alt: "IPM Aceh",
+      prov: "Provinsi Aceh",
+    },
+    {
+      url: "/assets/infografis/ipm/sumut.jpg",
+      alt: "IPM Sumut",
+      prov: "Provinsi Sumatera Utara",
+    },
+    {
+      url: "/assets/infografis/ipm/sumbar.png",
+      alt: "IPM Sumbar",
+      prov: "Provinsi Sumatera Barat",
+    },
+    {
+      url: "/assets/infografis/ipm/riau.jpg",
+      alt: "IPM Riau",
+      prov: "Provinsi Riau",
+    },
+    {
+      url: "/assets/infografis/ipm/jambi.jpg",
+      alt: "IPM Jambi",
+      prov: "Provinsi Jambi",
+    },
+    {
+      url: "/assets/infografis/ipm/sumsel.jpg",
+      alt: "IPM Sumsel",
+      prov: "Provinsi Sumatera Selatan",
+    },
+    {
+      url: "/assets/infografis/ipm/bengkulu.png",
+      alt: "IPM Bengkulu",
+      prov: "Provinsi Bengkulu",
+    },
+    {
+      url: "/assets/infografis/ipm/lampung.jpg",
+      alt: "IPM Lampung",
+      prov: "Provinsi Lampung",
+    },
+    {
+      url: "/assets/infografis/ipm/babel.jpg",
+      alt: "IPM Babel",
+      prov: "Provinsi Bangka Belitung",
+    },
+    {
+      url: "/assets/infografis/ipm/kepri.png",
+      alt: "IPM Kepri",
+      prov: "Provinsi Kepulauan Riau",
+    },
+  ],
+};
+
 export default function pages({}: Props) {
   return (
     <div className="grid grid-cols-12 gap-1 container mx-auto p-8">
-      <div className="col-span-9 grow">
+      <div className="col-span-12 lg:col-span-9 grow">
         <h1 className="font-bold text-3xl	text-emerald-700">Infografis</h1>
         <p className="font-medium text-gray-400 py-4">
           Bentuk visualisasi data statistik BPS yang disajikan dengan
@@ -27,7 +96,7 @@ export default function pages({}: Props) {
           memperjelas)
         </p>
         <h2 className="font-bold text-2xl	text-emerald-700 mb-4">Subjek</h2>
-        <TabInfografis />
+        <TabInfografis dataInfografis={dataInfografis} />
         <div className="grid grid-cols-12 gap-1">
           <div className="col-span-4 mr-2 hidden lg:block">
             <ul className="border-2 border-gray-300 border-solid rounded-2xl p-4">
@@ -91,276 +160,35 @@ export default function pages({}: Props) {
                 className="w-full"
               >
                 <CarouselContent>
-                  <CarouselItem
-                    key={1}
-                    className="md:basis-1/2 lg:basis-1/3 flex items-center justify-start flex-col"
-                  >
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Image
-                          src={"/assets/infografis/ipm/aceh.jpg"}
-                          width={200}
-                          height={300}
-                          alt="IPM Aceh"
-                          className="transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="flex items-center justify-center">
-                        <Image
-                          src={"/assets/infografis/ipm/aceh.jpg"}
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          alt="IPM Aceh"
-                          className="w-2/3"
-                        />
-                      </DialogContent>
-                    </Dialog>
-                    <p className="text-center">Provinsi Aceh</p>
-                  </CarouselItem>
-                  <CarouselItem
-                    key={2}
-                    className="md:basis-1/2 lg:basis-1/3 flex items-center justify-start flex-col"
-                  >
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Image
-                          src={"/assets/infografis/ipm/sumut.jpg"}
-                          width={200}
-                          height={300}
-                          alt="IPM Sumut"
-                          className="transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="flex items-center justify-center">
-                        <Image
-                          src={"/assets/infografis/ipm/sumut.jpg"}
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          alt="IPM Sumut"
-                          className="w-2/3"
-                        />
-                      </DialogContent>
-                    </Dialog>
-                    <p className="text-center">Provinsi Sumatera Utara</p>
-                  </CarouselItem>
-                  <CarouselItem
-                    key={3}
-                    className="md:basis-1/2 lg:basis-1/3 flex items-center justify-start flex-col"
-                  >
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Image
-                          src={"/assets/infografis/ipm/sumbar.png"}
-                          width={200}
-                          height={300}
-                          alt="IPM Sumbar"
-                          className="transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="flex items-center justify-center">
-                        <Image
-                          src={"/assets/infografis/ipm/sumbar.png"}
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          alt="IPM Sumbar"
-                          className="w-2/3"
-                        />
-                      </DialogContent>
-                    </Dialog>
-                    <p className="text-center">Provinsi Sumatera Barat</p>
-                  </CarouselItem>
-                  <CarouselItem
-                    key={4}
-                    className="md:basis-1/2 lg:basis-1/3 flex items-center justify-start flex-col"
-                  >
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Image
-                          src={"/assets/infografis/ipm/riau.jpg"}
-                          width={200}
-                          height={300}
-                          alt="IPM Riau"
-                          className="transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="flex items-center justify-center">
-                        <Image
-                          src={"/assets/infografis/ipm/riau.jpg"}
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          alt="IPM Riau"
-                          className="w-2/3"
-                        />
-                      </DialogContent>
-                    </Dialog>
-                    <p className="text-center">Provinsi Riau</p>
-                  </CarouselItem>
-                  <CarouselItem
-                    key={5}
-                    className="md:basis-1/2 lg:basis-1/3 flex items-center justify-start flex-col"
-                  >
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Image
-                          src={"/assets/infografis/ipm/jambi.jpg"}
-                          width={200}
-                          height={300}
-                          alt="IPM Jambi"
-                          className="transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="flex items-center justify-center">
-                        <Image
-                          src={"/assets/infografis/ipm/jambi.jpg"}
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          alt="IPM Jambi"
-                          className="w-2/3"
-                        />
-                      </DialogContent>
-                    </Dialog>
-                    <p className="text-center">Provinsi Jambi</p>
-                  </CarouselItem>
-                  <CarouselItem
-                    key={6}
-                    className="md:basis-1/2 lg:basis-1/3 flex items-center justify-start flex-col"
-                  >
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Image
-                          src={"/assets/infografis/ipm/sumsel.jpg"}
-                          width={200}
-                          height={300}
-                          alt="IPM Sumsel"
-                          className="transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="flex items-center justify-center">
-                        <Image
-                          src={"/assets/infografis/ipm/sumsel.jpg"}
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          alt="IPM Sumsel"
-                          className="w-2/3"
-                        />
-                      </DialogContent>
-                    </Dialog>
-                    <p className="text-center">Provinsi Sumatera Selatan</p>
-                  </CarouselItem>
-                  <CarouselItem
-                    key={7}
-                    className="md:basis-1/2 lg:basis-1/3 flex items-center justify-start flex-col"
-                  >
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Image
-                          src={"/assets/infografis/ipm/bengkulu.png"}
-                          width={200}
-                          height={300}
-                          alt="IPM Bengkulu"
-                          className="transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="flex items-center justify-center">
-                        <Image
-                          src={"/assets/infografis/ipm/bengkulu.png"}
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          alt="IPM Bengkulu"
-                          className="w-2/3"
-                        />
-                      </DialogContent>
-                    </Dialog>
-                    <p className="text-center">Provinsi Bengkulu</p>
-                  </CarouselItem>
-                  <CarouselItem
-                    key={8}
-                    className="md:basis-1/2 lg:basis-1/3 flex items-center justify-start flex-col"
-                  >
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Image
-                          src={"/assets/infografis/ipm/lampung.jpg"}
-                          width={200}
-                          height={300}
-                          alt="IPM Lampung"
-                          className="transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="flex items-center justify-center">
-                        <Image
-                          src={"/assets/infografis/ipm/lampung.jpg"}
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          alt="IPM Lampung"
-                          className="w-2/3"
-                        />
-                      </DialogContent>
-                    </Dialog>
-                    <p className="text-center">Provinsi Lampung</p>
-                  </CarouselItem>
-                  <CarouselItem
-                    key={9}
-                    className="md:basis-1/2 lg:basis-1/3 flex items-center justify-start flex-col"
-                  >
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Image
-                          src={"/assets/infografis/ipm/babel.jpg"}
-                          width={200}
-                          height={300}
-                          alt="IPM Babel"
-                          className="transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="flex items-center justify-center">
-                        <Image
-                          src={"/assets/infografis/ipm/babel.jpg"}
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          alt="IPM Babel"
-                          className="w-2/3"
-                        />
-                      </DialogContent>
-                    </Dialog>
-                    <p className="text-center">Provinsi Bangka Belitung</p>
-                  </CarouselItem>
-                  <CarouselItem
-                    key={10}
-                    className="md:basis-1/2 lg:basis-1/3 flex items-center justify-start flex-col"
-                  >
-                    <Dialog>
-                      <DialogTrigger asChild>
-                        <Image
-                          src={"/assets/infografis/ipm/kepri.png"}
-                          width={200}
-                          height={300}
-                          alt="IPM Kepri"
-                          className="transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
-                        />
-                      </DialogTrigger>
-                      <DialogContent className="flex items-center justify-center">
-                        <Image
-                          src={"/assets/infografis/ipm/kepri.png"}
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          alt="IPM Kepri"
-                          className="w-2/3"
-                        />
-                      </DialogContent>
-                    </Dialog>
-                    <p className="text-center">Provinsi Kepulauan Riau</p>
-                  </CarouselItem>
+                  {dataInfografis.image.map((data, i) => (
+                    <CarouselItem
+                      key={i}
+                      className="md:basis-1/2 lg:basis-1/3 flex items-center justify-start flex-col"
+                    >
+                      <Dialog>
+                        <DialogTrigger asChild>
+                          <Image
+                            src={data.url}
+                            width={200}
+                            height={300}
+                            alt={data.alt}
+                            className="transition duration-300 ease-in-out hover:scale-110 cursor-pointer"
+                          />
+                        </DialogTrigger>
+                        <DialogContent className="flex items-center justify-center">
+                          <Image
+                            src={data.url}
+                            width={0}
+                            height={0}
+                            sizes="100vw"
+                            alt={data.alt}
+                            className="w-2/3"
+                          />
+                        </DialogContent>
+                      </Dialog>
+                      <p className="text-center">{data.prov}</p>
+                    </CarouselItem>
+                  ))}
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
@@ -369,7 +197,7 @@ export default function pages({}: Props) {
           </div>
         </div>
       </div>
-      <div className="col-span-3 py-8 px-4 text-cyan-700">
+      <div className="hidden lg:col-span-3 py-8 px-4 text-cyan-700 lg:block">
         <h3 className="text-lg font-semibold">Informasi</h3>
         <hr className="border-3 border-cyan-700" />
         <Link href={"/data-infografis/infografis/"}>

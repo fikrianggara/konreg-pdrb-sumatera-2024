@@ -16,7 +16,7 @@ import Image from "next/image";
 export default function pages() {
   return (
     <div className="grid grid-cols-12 gap-1 container mx-auto p-8">
-      <div className="col-span-9 grow">
+      <div className="col-span-12 lg:col-span-9 grow">
         <h1 className="font-bold text-3xl	text-emerald-700">Infografis</h1>
         <p className="font-medium text-gray-400 py-4">
           Bentuk visualisasi data statistik BPS yang disajikan dengan
@@ -24,9 +24,9 @@ export default function pages() {
           memperjelas)
         </p>
         <h2 className="font-bold text-2xl	text-emerald-700 mb-4">Subjek</h2>
-        <TabInfografis />
+        {/* <TabInfografis /> */}
         <div className="grid grid-cols-12 gap-1">
-          <div className="col-span-4 mr-2">
+          <div className="col-span-4 mr-2 hidden lg:block">
             <ul className="border-2 border-gray-300 border-solid rounded-2xl p-4">
               <Link
                 href={"/data-infografis/infografis/pertumbuhan-ekonomi"}
@@ -78,7 +78,7 @@ export default function pages() {
               </Link>
             </ul>
           </div>
-          <div className="col-span-8">
+          <div className="col-span-8 hidden lg:block">
             <div className="border-2 border-solid ml-2 rounded-2xl px-14 py-4 flex items-center justify-center">
               <Carousel
                 opts={{
@@ -366,7 +366,7 @@ export default function pages() {
           </div>
         </div>
       </div>
-      <div className="col-span-3 py-8 px-4 text-cyan-700">
+      <div className="hidden lg:col-span-3 py-8 px-4 text-cyan-700 lg:block">
         <h3 className="text-lg font-semibold">Informasi</h3>
         <hr className="border-3 border-cyan-700" />
         <Link href={"/data-infografis/data"}>

@@ -12,8 +12,13 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import Image from "next/image";
+import { DataInfografisType } from "./ipm/page";
 
-export function TabInfografis() {
+type Props = {
+  dataInfografis: DataInfografisType;
+};
+
+export function TabInfografis({ dataInfografis }: Props) {
   return (
     <Tabs defaultValue="ipm" className="w-full lg:hidden">
       <TabsList>
@@ -28,7 +33,7 @@ export function TabInfografis() {
       </TabsList>
       <TabsContent value="pertumbuhan-ekonomi">1</TabsContent>
       <TabsContent value="kemiskinan">2</TabsContent>
-      <TabsContent value="ketenagakerjaan">3</TabsContent>
+      <TabsContent value="ketenagakerjaan">{dataInfografis.title}</TabsContent>
       <TabsContent value="ipm">
         <Carousel
           opts={{
