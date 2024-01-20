@@ -16,15 +16,15 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="h-96 w-full text-center flex flex-col m-auto justify-center space-y-16">
+    <div className="h-fit w-full text-center flex flex-col m-auto justify-center space-y-16 p-12">
       <h2 className="text-xl font-bold text-red-600 text-gray-600">
         Oops! Terjadi Error. maaf yah :(
       </h2>
       <Image
         src={"/assets/500.png"}
         alt="error illustration"
-        width={500}
-        height={500}
+        width={300}
+        height={300}
         className="self-center opacity-60"
       />
       <button
@@ -34,7 +34,7 @@ export default function Error({
           () => reset()
         }
       >
-        Try again
+        coba lagi
       </button>
     </div>
   );
