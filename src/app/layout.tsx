@@ -8,7 +8,7 @@ import "@mantine/carousel/styles.css";
 import "./globals.css";
 import Providers from "@/components/providers";
 import { ColorSchemeScript } from "@mantine/core";
-import Breadcrumb from "@/components/breadcrumb";
+import "mapbox-gl/dist/mapbox-gl.css";
 // import { Provider } from "@radix-ui/react-toast";
 
 export const metadata: Metadata = {
