@@ -14,11 +14,12 @@ import Link from "next/link";
 import Image from "next/image";
 import TabInfografis from "../TabInfografis";
 import { dataInfografis } from "../dataInfografis";
+import NotFound from "@/app/not-found";
 
 export default function Page({ params }: { params: { tag: string } }) {
   const data = dataInfografis.filter((obj) => obj.tag == params.tag);
   if (data === null || data.length === 0 || data === undefined) {
-    return <h1>Gak ada coy</h1>;
+    return <NotFound />;
   } else {
     return (
       <div className="grid grid-cols-12 gap-1 container mx-auto p-8">
