@@ -35,6 +35,7 @@ export default function DashboardLayout({
       <Tabs
         color="teal"
         radius="md"
+        variant="pills"
         defaultValue={active}
         onChange={(value) => router.push(`/kegiatan/${value}`)}
       >
