@@ -7,7 +7,6 @@ const PROVINSI = [
   "Prov. Sumatera Barat",
   "Prov. Riau",
   "Prov. Jambi",
-
   "Prov. Sumatera Selatan",
   "Prov. Bengkulu",
   "Prov. Lampung",

@@ -39,7 +39,7 @@ const NAVBAR_ITEMS: NAVBAR_ITEM_TYPE[] = [
     url: "/kegiatan",
   },
   {
-    name: "Data dan Inforgrafis",
+    name: "Data dan Infografis",
     child: [
       { name: "Data", url: "/data-infografis/data" },
       {
