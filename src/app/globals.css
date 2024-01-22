@@ -78,3 +78,71 @@ html {
     @apply bg-background text-foreground;
   }
 }
+
+@media screen and (min-width: 480px) {
+  .bg-dotted {
+    background-image: radial-gradient(#d1d5db 1px, transparent 1px),
+      radial-gradient(#d1d5db 1px, transparent 1px);
+    background-size: 56px 56px;
+    background-position: 0 0, 28px 28px;
+    background-color: #f9fafb;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bg-dotted {
+    background-image: radial-gradient(#d1d5db 1px, transparent 1px),
+      radial-gradient(#d1d5db 1px, transparent 1px);
+    background-size: 56px 56px;
+    background-position: 0 0, 28px 28px;
+    background-color: #f9fafb;
+  }
+}
+
+.bg-mesh {
+  background-image: radial-gradient(
+      at 94% 34%,
+      hsla(254, 60%, 63%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 45% 21%, hsla(158, 82%, 60%, 1) 0px, transparent 80%),
+    radial-gradient(at 19% 8%, hsla(217, 68%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 65% 63%, hsla(272, 88%, 68%, 1) 0px, transparent 80%),
+    radial-gradient(at 69% 11%, hsla(207, 92%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 5% 64%, hsla(210, 94%, 64%, 1) 0px, transparent 50%),
+    radial-gradient(at 62% 93%, hsla(299, 72%, 74%, 1) 0px, transparent 50%);
+  background-color: #c9ff99;
+}
+
+.mouse-cursor-gradient-tracking {
+  position: relative;
+  background: #7983ff;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+.mouse-cursor-gradient-tracking span {
+  position: relative;
+}
+
+.mouse-cursor-gradient-tracking::before {
+  --size: 0;
+  content: "";
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, pink, transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.mouse-cursor-gradient-tracking:hover::before {
+  --size: 200px;
+}

@@ -1,14 +1,74 @@
 "use client";
 
+import { Carousel } from "@mantine/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRef } from "react";
+
+const DATA = [1, 2, 3, 4, 5, 6];
+
+const PEMDA = [
+  {
+    provinsi: "aceh",
+    src: "/assets/logo aceh.png",
+    alt: "provinsi aceh",
+  },
+  {
+    provinsi: "bangka belitung",
+    src: "/assets/logo babel.png",
+    alt: "provinsi babel",
+  },
+  {
+    provinsi: "bengkulu",
+    src: "/assets/logo bengkulu.png",
+    alt: "provinsi bengkulu",
+  },
+  {
+    provinsi: "jambi",
+    src: "/assets/logo jambi.png",
+    alt: "provinsi jambi",
+  },
+  {
+    provinsi: "kepri",
+    src: "/assets/logo kepri.png",
+    alt: "provinsi kepri",
+  },
+  {
+    provinsi: "lampung",
+    src: "/assets/logo lampung.png",
+    alt: "provinsi lampung",
+  },
+  {
+    provinsi: "riau",
+    src: "/assets/logo riau.png",
+    alt: "provinsi riau",
+  },
+  {
+    provinsi: "sumbar",
+    src: "/assets/logo sumbar.png",
+    alt: "provinsi sumbar",
+  },
+  {
+    provinsi: "sumsel",
+    src: "/assets/logo sumsel.png",
+    alt: "provinsi sumsel",
+  },
+  {
+    provinsi: "sumut",
+    src: "/assets/logo sumut.png",
+    alt: "provinsi sumut",
+  },
+];
 export default function Home() {
+  const autoplay = useRef(Autoplay({ delay: 3000 }));
+
   return (
-    <div className="w-full space-y-12">
+    <div className="w-full bg-dotted">
       {/* hero section */}
       <div className="flex flex-col lg:flex-row w-screen justify-between">
-        <div className="basis-1/2 space-y-2 mt-8 lg:mt-0 lg:space-y-4 p-4 sm:px-24 lg:px-36 xl:px-48 flex flex-col justify-center h-[500px] items-center lg:items-start">
+        <div className="basis-1/2 space-y-2 mt-4 lg:mt-8 lg:mt-0 lg:space-y-4 p-4 sm:px-24 lg:px-36 xl:px-48 flex flex-col justify-center h-[500px] items-center lg:items-start">
           <h3 className="text-lg lg:text-2xl text-emerald-800 font-light">
             Selamat datang di Pusat Informasi
           </h3>
@@ -37,44 +97,62 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="basis-1/2 h-fit w-full p-4 lg:p-0 lg:py-8 flex flex-col lg:flex-row">
-          <div className="bg-[url('/assets/ACEH.jpg')] h-[300px] lg:h-[500px] bg-cover bg-center rounded-t-[20px] lg:rounded-l-[40px] lg:rounded-r-none shadow-2xl w-full h-full">
-            <div className="w-full h-[300px] lg:h-[500px] backdrop-blur-[2px] rounded-t-[20px] lg:rounded-l-[40px] lg:rounded-r-none flex flex-col items-center justify-end">
-              <div className="px-4 pr-8 lg:px-16 py-2 text-left bg-white rounded-t-[20px] w-fit lg:shadow-xl shadow-gray text-center">
-                <h2 className="lg:text-xl font-bold text-emerald-800">
-                  PROVINSI ACEH
-                </h2>
-                <p className="opacity-50 italic text-amber-600">
-                  {" "}
-                  sumber : twitter eheeh
-                </p>
-              </div>
-            </div>
-          </div>
-          <ul className="w-full lg:w-56 flex lg:flex-col lg:space-y-4 justify-between bg-white shadow-y-xl rounded-b-[20px] border border-t-0 lg:rounded-none p-8 border-b-none">
-            <li className="flex items-center justify-center h-full w-fit">
-              Statistik 1
-            </li>
-            <li className="flex items-center justify-center h-full w-fit">
-              Statistik 2
-            </li>
-            <li className="flex items-center justify-center h-full w-fit">
-              Statistik 3
-            </li>
-          </ul>
+        <div className="basis-1/2 h-fit py-8">
+          <Carousel
+            withIndicators
+            plugins={[autoplay.current]}
+            onMouseEnter={autoplay.current.stop}
+            onMouseLeave={autoplay.current.reset}
+            orientation="vertical"
+            height={400}
+            className="bg-gray-50 lg:pl-4"
+            withControls={false}
+          >
+            {/* ...other slides */}
+            {DATA.map((i) => (
+              <Carousel.Slide
+                key={i}
+                className="h-fit w-full p-4 lg:p-0 flex flex-col lg:flex-row"
+              >
+                <div className="bg-[url('/assets/ACEH.jpg')] h-[300px] lg:h-[400px] bg-cover bg-center rounded-t-[20px] lg:rounded-l-[40px] lg:rounded-r-none w-full h-full">
+                  <div className="w-full h-[300px] lg:h-[400px] backdrop-blur-[2px] rounded-t-[20px] lg:rounded-l-[40px] lg:rounded-r-none flex flex-col items-center justify-end">
+                    <div className="px-4 pr-8 lg:px-16 py-2 text-left bg-white rounded-t-[20px] w-fit lg:shadow-xl shadow-gray text-center">
+                      <h2 className="lg:text-xl font-bold text-emerald-800">
+                        PROVINSI ACEH
+                      </h2>
+                      <p className="opacity-50 italic text-amber-600">
+                        sumber : twitter eheeh
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <ul className="w-full lg:w-56 flex lg:flex-col lg:space-y-4 justify-between bg-white shadow-y-xl rounded-b-[20px] border border-t-0 lg:rounded-none p-8 border-b-none">
+                  <li className="flex items-center justify-center h-full w-fit">
+                    Statistik 1
+                  </li>
+                  <li className="flex items-center justify-center h-full w-fit">
+                    Statistik 2
+                  </li>
+                  <li className="flex items-center justify-center h-full w-fit">
+                    Statistik 3
+                  </li>
+                </ul>
+              </Carousel.Slide>
+            ))}
+          </Carousel>
         </div>
       </div>
       {/* hero section end */}
       {/* main content */}
       <div
         id="konten"
-        className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500"
+        className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500 mt-12"
       >
         <h2 className="text-lg text-center lg:text-start lg:text-2xl font-bold text-emerald-800">
           Konsultasi Regional PDRB Wilayah Sumatera
         </h2>
         <div className="grid grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-3 gap-4 lg:gap-8">
-          <div className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg ">
+          <div className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg bg-white">
             <h3 className="text-lg lg:text-2xl font-bold text-emerald-800">
               Kegiatan
             </h3>
@@ -84,7 +162,7 @@ export default function Home() {
             </p>
             <Link
               href={"kegiatan/lokasi"}
-              className="px-4 py-1 lg:py-2  text-white bg-emerald-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg"
+              className="px-4 py-1 lg:py-2  text-white bg-emerald-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg "
             >
               Selengkapnya
             </Link>
@@ -123,7 +201,7 @@ export default function Home() {
       </div>
       {/* main content end */}
       {/* collaborator start */}
-      <div className="w-sreen bg-cyan-800 flex flex-col lg:flex-row justify-between pt-8 lg:pt-0 lg:px-36 xl:px-48 lg:h-fit shadow-xl">
+      <div className="w-sreen bg-cyan-800 flex flex-col lg:flex-row justify-between pt-8 lg:pt-0 lg:px-36 xl:px-48 lg:h-fit shadow-xl mt-12 bg-mesh">
         <div className="lg:basis-1/2 ">
           <div
             x-data="{}"
@@ -139,42 +217,42 @@ export default function Home() {
               className="flex items-center lg:justify-center lg:grid lg:grid-cols-2 gap-4 [&_img]:max-h-none lg:[&_img]:max-h-none animate-infinite-scroll-x lg:animate-infinite-scroll-y mx-4 lg:mt-4 m-auto"
             >
               <li>
-                <div className="xl:ml-4 bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="xl:ml-4 bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="xl:ml-4 bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="xl:ml-4 bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="xl:ml-4 bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="xl:ml-4 bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="xl:ml-4 bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="xl:ml-4 bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
@@ -185,42 +263,42 @@ export default function Home() {
               aria-hidden="true"
             >
               <li>
-                <div className="xl:ml-4 bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="xl:ml-4 bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="xl:ml-4 bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="xl:ml-4 bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="xl:ml-4 bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="xl:ml-4 bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="xl:ml-4 bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="xl:ml-4 bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
               <li>
-                <div className="bg-white rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
+                <div className="bg-white/60 border border-white backgrdrop-blur-sm hover:bg-white duration-200 ease-in-out rounded-xl shadow-lg w-64 lg:w-full h-24 shadow-xl p-4 text-center self-center">
                   fdsaf
                 </div>
               </li>
@@ -241,76 +319,9 @@ export default function Home() {
       </div>
 
       {/* collaborator end */}
-      {/* <div
-        x-data="{}"
-        x-init="$nextTick(() => {
-        let ul = $refs.logos;
-        ul.insertAdjacentHTML('afterend', ul.outerHTML);
-        ul.nextSibling.setAttribute('aria-hidden', 'true');
-    })"
-        className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)"
-      >
-        <ul
-          x-ref="logos"
-          className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-x"
-        >
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-        </ul>
-        <ul
-          className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll-x"
-          aria-hidden="true"
-        >
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-          <li>
-            <div className="bg-white rounded-xl shadow-lg w-64 h-24">fdsaf</div>
-          </li>
-        </ul>
-      </div> */}
+
       {/* instansi collaboration start */}
-      <div className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500">
+      <div className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500 pt-12">
         <h2 className="text-lg text-center lg:text-start lg:text-2xl font-bold text-emerald-800">
           Kolaborasi
         </h2>
@@ -322,20 +333,53 @@ export default function Home() {
           Jendral Perbendaharaan (DJPb)
         </p>
         <ul className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
-          <li className="bg-white rounded-xl w-full h-24 border lg:border-2 p-4 text-center self-center">
-            BPS
+          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
+            <Image
+              src={"/assets/logo bps.png"}
+              height={200}
+              width={200}
+              alt="logo bps"
+              className="self-center"
+            ></Image>
           </li>
-          <li className="bg-white rounded-xl w-full h-24 border lg:border-2 p-4 text-center self-center">
-            Bank Indonesia
+          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
+            <Image
+              src={"/assets/logo bi.png"}
+              height={200}
+              width={200}
+              alt="logo bi"
+              className="self-center"
+            ></Image>
           </li>
-          <li className="bg-white rounded-xl w-full h-24 border lg:border-2 p-4 text-center self-center">
-            DIKSOMINFO
+          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
+            <Image
+              src={"/assets/logo kominfo.png"}
+              height={200}
+              width={200}
+              alt="logo kominfo"
+              className="self-center"
+            ></Image>
           </li>
-          <li className="bg-white rounded-xl w-full h-24 border lg:border-2 p-4 text-center self-center">
-            DJPB
+          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
+            <Image
+              src={"/assets/logo djpb.png"}
+              height={200}
+              width={200}
+              alt="logo djpb"
+              className="self-center"
+            ></Image>
           </li>
-          <li className="col-span-2 lg:col-span-4 bg-white rounded-xl w-full h-24 border lg:border-2 p-4 text-center self-center">
-            List Pemda
+          <li className="col-span-2 lg:col-span-4 bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full border p-4 text-center self-center backdrop-blur-sm grid grid-cols-5 lg:grid-cols-10 gap-4">
+            {PEMDA.map((p) => (
+              <Image
+                key={p.provinsi}
+                src={p.src}
+                height={36}
+                width={36}
+                alt={p.alt}
+                className="self-center"
+              ></Image>
+            ))}
           </li>
         </ul>
       </div>
