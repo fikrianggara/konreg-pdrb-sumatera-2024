@@ -62,13 +62,13 @@ const PEMDA = [
   },
 ];
 export default function Home() {
-  const autoplay = useRef(Autoplay({ delay: 2000 }));
+  const autoplay = useRef(Autoplay({ delay: 3000 }));
 
   return (
     <div className="w-full bg-dotted">
       {/* hero section */}
       <div className="flex flex-col lg:flex-row w-screen justify-between">
-        <div className="basis-1/2 space-y-2 mt-8 lg:mt-0 lg:space-y-4 p-4 sm:px-24 lg:px-36 xl:px-48 flex flex-col justify-center h-[500px] items-center lg:items-start">
+        <div className="basis-1/2 space-y-2 mt-4 lg:mt-8 lg:mt-0 lg:space-y-4 p-4 sm:px-24 lg:px-36 xl:px-48 flex flex-col justify-center h-[500px] items-center lg:items-start">
           <h3 className="text-lg lg:text-2xl text-emerald-800 font-light">
             Selamat datang di Pusat Informasi
           </h3>
@@ -106,6 +106,7 @@ export default function Home() {
             orientation="vertical"
             height={400}
             className="bg-gray-50 lg:pl-4"
+            withControls={false}
           >
             {/* ...other slides */}
             {DATA.map((i) => (
