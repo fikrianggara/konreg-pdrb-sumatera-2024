@@ -6,72 +6,9 @@ import { IconArrowNarrowRight } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import { Map3D } from "@/components/map";
 
 const DATA = [1, 2, 3, 4, 5, 6];
 
-const STATISTIK = [
-  {
-    nama: "ACEH",
-    image_src: "/assets/ACEH.jpg",
-    image_alt: "aceh",
-    sumber_data: "mwehehe",
-  },
-  {
-    nama: "BANGKA BELITUNG",
-    image_src: "/assets/BANGKA BELITUNG.jpg",
-    image_alt: "bangka belitung",
-    sumber_data: "mwehehe",
-  },
-  {
-    nama: "BENGKULU",
-    image_src: "/assets/BENGKULU.jpg",
-    image_alt: "BENGKULU",
-    sumber_data: "KEPRI",
-  },
-  {
-    nama: "JAMBI",
-    image_src: "/assets/JAMBI.jpg",
-    image_alt: "JAMBI",
-    sumber_data: "mwehehe",
-  },
-  {
-    nama: "KEPULAUAN RIAU",
-    image_src: "/assets/KEPRI.jpg",
-    image_alt: "KEPRI",
-    sumber_data: "mwehehe",
-  },
-  {
-    nama: "LAMPUNG",
-    image_src: "/assets/ACEH.jpg",
-    image_alt: "aceh",
-    sumber_data: "mwehehe",
-  },
-  {
-    nama: "ACEH",
-    image_src: "/assets/ACEH.jpg",
-    image_alt: "aceh",
-    sumber_data: "mwehehe",
-  },
-  {
-    nama: "ACEH",
-    image_src: "/assets/ACEH.jpg",
-    image_alt: "aceh",
-    sumber_data: "mwehehe",
-  },
-  {
-    nama: "ACEH",
-    image_src: "/assets/ACEH.jpg",
-    image_alt: "aceh",
-    sumber_data: "mwehehe",
-  },
-  {
-    nama: "ACEH",
-    image_src: "/assets/ACEH.jpg",
-    image_alt: "aceh",
-    sumber_data: "mwehehe",
-  },
-];
 const PEMDA = [
   {
     provinsi: "aceh",
@@ -130,8 +67,8 @@ export default function Home() {
   return (
     <div className="w-full bg-dotted">
       {/* hero section */}
-      <div className="flex flex-col lg:flex-row w-screen justify-between relative h-screen">
-        <div className="z-20 absolute w-full lg:basis-1/2 lg:w-fit bg-white/60 backdrop-blur-sm space-y-2 border-r-1 border-white shadow-r-lg lg:mt-0 lg:space-y-4 sm:p-0 sm:px-24 lg:px-36 flex flex-col justify-center h-screen items-center lg:items-start">
+      <div className="flex flex-col lg:flex-row w-screen justify-between">
+        <div className="basis-1/2 space-y-2 mt-4 lg:mt-8 lg:mt-0 lg:space-y-4 p-4 sm:px-24 lg:px-36 xl:px-48 flex flex-col justify-center h-[500px] items-center lg:items-start">
           <h3 className="text-lg lg:text-2xl text-emerald-800 font-light">
             Selamat datang di Pusat Informasi
           </h3>
@@ -160,11 +97,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="basis-1/2 w-full absolute">
-          <Map3D />
-        </div>
-
-        {/* <div className="basis-1/2 h-fit py-8">
+        <div className="basis-1/2 h-fit py-8">
           <Carousel
             withIndicators
             plugins={[autoplay.current]}
@@ -175,6 +108,7 @@ export default function Home() {
             className="bg-gray-50 lg:pl-4"
             withControls={false}
           >
+            {/* ...other slides */}
             {DATA.map((i) => (
               <Carousel.Slide
                 key={i}
@@ -206,7 +140,7 @@ export default function Home() {
               </Carousel.Slide>
             ))}
           </Carousel>
-        </div> */}
+        </div>
       </div>
       {/* hero section end */}
       {/* main content */}

@@ -89,16 +89,6 @@ html {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .bg-dotted {
-    background-image: radial-gradient(#d1d5db 1px, transparent 1px),
-      radial-gradient(#d1d5db 1px, transparent 1px);
-    background-size: 56px 56px;
-    background-position: 0 0, 28px 28px;
-    background-color: #f9fafb;
-  }
-}
-
 .bg-mesh {
   background-image: radial-gradient(
       at 94% 34%,

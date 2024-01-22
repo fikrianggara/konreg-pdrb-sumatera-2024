@@ -22,7 +22,7 @@ export default function DashboardLayout({
 
   useEffect(() => {}, [active]);
   return (
-    <div className="p-4 lg:px-36 py-8 space-y-4 lg:space-y-6">
+    <div className="p-4 lg:px-36 py-8 space-y-4 lg:space-y-6 bg-dotted">
       <Breadcrumb />
       <div>
         <h1 className="font-bold text-xl lg:text-3xl text-emerald-800">

@@ -1,3 +1,4 @@
+import { useWindowSize } from "@/hooks/useWindowSize";
 import { IconMapPinFilled } from "@tabler/icons-react";
 import { useState } from "react";
 import MapboxMap, {
@@ -10,6 +11,34 @@ import MapboxMap, {
 
 const TOKEN =
   "pk.eyJ1IjoiZmlrcmlhbmdnYXJhIiwiYSI6ImNscmsyYnZveTA5NmUya29qZ2djYmU5YnkifQ.vVYOAwSJaUdd5gFA0TnxZA";
+
+const STYLE_URL = "mapbox://styles/fikrianggara/clrp5me4p009b01qy68ss74ks";
+export function Map3D() {
+  const { width } = useWindowSize();
+  const [viewPort, setViewPort] = useState({
+    longitude: 93.602708,
+    latitude: -1.528,
+    zoom: 5.1,
+    bearing: 0,
+    pitch: 49.0,
+  });
+  return (
+    <div className="w-full h-fit rounded-xl flex items-center justify-center h-screen">
+      <MapboxMap
+        mapboxAccessToken={TOKEN}
+        initialViewState={viewPort}
+        mapStyle={STYLE_URL}
+        interactive={true}
+        onMove={(evt) => setViewPort(evt.viewState)}
+        style={{ width: "100%", height: "100%" }}
+      >
+        {/* <FullscreenControl position="top-left" />
+        <NavigationControl position="top-left" />
+        <ScaleControl /> */}
+      </MapboxMap>
+    </div>
+  );
+}
 
 function Map() {
   const [viewPort, setViewPort] = useState({
