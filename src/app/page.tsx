@@ -175,7 +175,7 @@ export default function Home() {
           Konsultasi Regional PDRB Wilayah Sumatera
         </h2>
         <div className="grid grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-3 gap-4 lg:gap-8">
-          <div className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg bg-white hover:border hover:border-teal-500 duration-300 ease-in-out">
+          <div className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg bg-white border border-white hover:border-teal-500 duration-300 ease-in-out">
             <h3 className="text-lg lg:text-2xl font-bold text-emerald-800">
               Kegiatan
             </h3>
@@ -190,7 +190,7 @@ export default function Home() {
               Selengkapnya
             </Link>
           </div>
-          <div className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg hover:border hover:border-amber-500 duration-300 ease-in-out">
+          <div className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg border border-white hover:border-amber-500 duration-300 ease-in-out">
             <h3 className="text-lg lg:text-2xl font-bold text-amber-500">
               Galeri
             </h3>
@@ -205,7 +205,7 @@ export default function Home() {
               Selengkapnya
             </Link>
           </div>
-          <div className="col-span-2 lg:col-span-1 lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg hover:border hover:border-cyan-700 duration-300 ease-in-out">
+          <div className="col-span-2 lg:col-span-1 lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg border border-white hover:border-cyan-700 duration-300 ease-in-out">
             <h3 className="text-lg lg:text-2xl font-bold text-cyan-800">
               Data dan Infografis
             </h3>
