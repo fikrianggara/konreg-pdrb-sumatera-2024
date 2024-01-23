@@ -6,7 +6,7 @@ import { IconArrowNarrowRight } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import { Map3D } from "@/components/map";
+import { Map3D, RecenteringMap } from "@/components/map";
 
 const DATA = [1, 2, 3, 4, 5, 6];
 
@@ -131,7 +131,7 @@ export default function Home() {
     <div className="w-full bg-dotted">
       {/* hero section */}
       <div className="flex flex-col lg:flex-row w-screen justify-between relative h-screen">
-        <div className="z-20 absolute w-full lg:basis-1/2 lg:w-fit bg-white/60 backdrop-blur-sm space-y-2 border-r-1 border-white shadow-r-lg lg:mt-0 lg:space-y-4 sm:p-0 sm:px-24 lg:px-36 flex flex-col justify-center h-screen items-center lg:items-start">
+        <div className="z-20 absolute w-full lg:basis-1/2 lg:w-fit bg-gradient-to-b lg:bg-gradient-to-r from-white to-transparent space-y-2 border-r-1 border-white shadow-r-lg backdrop-blur-xs lg:mt-0 lg:space-y-4 sm:p-0 sm:px-24 lg:px-36 xl:px-48 flex flex-col justify-center h-screen items-center lg:items-start">
           <h3 className="text-lg lg:text-2xl text-emerald-800 font-light">
             Selamat datang di Pusat Informasi
           </h3>
@@ -210,6 +210,7 @@ export default function Home() {
       </div>
       {/* hero section end */}
       {/* main content */}
+
       <div
         id="konten"
         className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500 mt-12"
