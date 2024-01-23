@@ -144,12 +144,12 @@ export default function Home() {
           <div className="mt-8 space-y-4 flex flex-col items-center lg:items-start">
             <Link
               href="#konten"
-              className="px-4 py-2 text-white font-light flex justify-between bg-emerald-800 rounded-full w-fit space-x-4 mt-8"
+              className="px-4 py-2 text-white font-light flex justify-between bg-emerald-800 rounded-full w-fit space-x-4 mt-8 shadow-xl transition-all duration-300 bg-gradient-to-tl from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100"
             >
               <span> lebih pahami konsultasi regional</span>
               {<IconArrowNarrowRight />}
             </Link>
-            <div className="px-4 py-2 text-white font-light flex justify-between bg-emerald-800 rounded-full w-fit space-x-4">
+            <div className="px-4 py-2 text-white font-light flex justify-between bg-emerald-800 rounded-full w-fit space-x-4 shadow-xl transition-all duration-300 bg-gradient-to-tl from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100">
               <span>Bergabung</span>
               <Image
                 src="/assets/whatsapp-logo.png"
