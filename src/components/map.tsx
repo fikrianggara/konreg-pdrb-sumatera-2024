@@ -16,11 +16,11 @@ const STYLE_URL = "mapbox://styles/fikrianggara/clrp5me4p009b01qy68ss74ks";
 export function Map3D() {
   const { width } = useWindowSize();
   const [viewPort, setViewPort] = useState({
-    longitude: 93.602708,
-    latitude: -1.528,
-    zoom: 5.1,
-    bearing: 0,
-    pitch: 49.0,
+    longitude: 95.802708,
+    latitude: -1.928,
+    zoom: 5.4,
+    bearing: -10,
+    pitch: 60.0,
   });
   return (
     <div className="w-full h-fit rounded-xl flex items-center justify-center h-screen">
@@ -31,11 +31,7 @@ export function Map3D() {
         interactive={true}
         onMove={(evt) => setViewPort(evt.viewState)}
         style={{ width: "100%", height: "100%" }}
-      >
-        {/* <FullscreenControl position="top-left" />
-        <NavigationControl position="top-left" />
-        <ScaleControl /> */}
-      </MapboxMap>
+      ></MapboxMap>
     </div>
   );
 }
