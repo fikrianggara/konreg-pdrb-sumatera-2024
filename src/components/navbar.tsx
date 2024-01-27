@@ -162,7 +162,7 @@ function Navbar() {
       {!width ? (
         <></>
       ) : width < MOBILE_TRESHOLD ? (
-        <div className="sticky top-0 bg-white p-4 md:p-8 py-4 shadow-md flex justify-between items-center z-10">
+        <div className="sticky top-0 bg-white p-4 md:p-8 py-4 shadow-md flex justify-between items-center z-30">
           <Link href="/" className="flex items-center space-x-2 ">
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
             <div>
@@ -177,7 +177,7 @@ function Navbar() {
           <SheetSide />
         </div>
       ) : (
-        <div className="sticky top-0 bg-white p-8 py-4 shadow-md flex justify-between items-center z-10">
+        <div className="sticky top-0 bg-white p-8 py-4 shadow-md flex justify-between items-center z-30">
           <Link href="/" className="flex items-center space-x-2 basis-1/3">
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
             <div>
