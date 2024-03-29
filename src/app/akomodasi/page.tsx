@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Carousel } from "@mantine/carousel";
-import classes from "./akomodasi.module.css";
 import { useMediaQuery } from "@mantine/hooks";
 import {
   Paper,
@@ -18,7 +17,7 @@ import {
   IconMessageCircle,
   IconSettings,
 } from "@tabler/icons-react";
-import CardContent from "./CardContent";
+import Hotel from "../../components/akomodasi/hotel";
 
 export default function Page() {
   const theme = useMantineTheme();
@@ -58,20 +57,20 @@ export default function Page() {
         </Tabs.List>
 
         <Tabs.Panel value="hotel">
-          <CardContent />
+          <Hotel />
         </Tabs.Panel>
 
         <Tabs.Panel value="rumah-makan">
-          <CardContent />
+          <Hotel />
         </Tabs.Panel>
 
         <Tabs.Panel value="perbelanjaan">Settings tab content</Tabs.Panel>
 
         <Tabs.Panel value="transportasi">
-          <CardContent />
+          <Hotel />
         </Tabs.Panel>
         <Tabs.Panel value="rumah-ibadah">
-          <CardContent />
+          <Hotel />
         </Tabs.Panel>
       </Tabs>
     </div>

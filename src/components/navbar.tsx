@@ -39,6 +39,27 @@ const NAVBAR_ITEMS: NAVBAR_ITEM_TYPE[] = [
     url: "/kegiatan",
   },
   {
+    name: "Akomodasi",
+    child: [
+      { name: "Hotel", url: "/akomodasi/hotel" },
+      { name: "Rumah Makan", url: "/akomodasi/rumah-makan" },
+      { name: "Perbelanjaan", url: "/akomodasi/perbelanjaan" },
+      { name: "Transportasi", url: "/akomodasi/transportasi" },
+      { name: "Rumah Ibadah", url: "/akomodasi/rumah-ibadah" },
+    ],
+    url: "/akomodasi",
+  },
+  {
+    name: "Wisata",
+    child: [
+      { name: "Kuliner", url: "/wisata/kuliner" },
+      { name: "Oleh-Oleh", url: "/wisata/oleh-oleh" },
+      { name: "Sejarah & Landmark", url: "/wisata/sejarah" },
+      { name: "Taman Bermain", url: "/wisata/taman" },
+    ],
+    url: "/wisata",
+  },
+  {
     name: "Data dan Infografis",
     child: [
       { name: "Data", url: "/data-infografis/data" },
