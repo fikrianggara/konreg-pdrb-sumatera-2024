@@ -25,7 +25,7 @@ export default function Page() {
 
   return (
     <div className="container mt-4">
-      <Tabs color="gray" radius="md" defaultValue="gallery">
+      <Tabs color="gray" radius="md" defaultValue="hotel">
         <Tabs.List>
           <Tabs.Tab value="hotel" leftSection={<IconPhoto style={iconStyle} />}>
             Hotel

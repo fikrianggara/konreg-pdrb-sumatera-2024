@@ -75,10 +75,6 @@ const NAVBAR_ITEMS: NAVBAR_ITEM_TYPE[] = [
     url: "/galeri",
   },
   {
-    name: "Kontak",
-    url: "/kontak",
-  },
-  {
     name: "Tentang",
     url: "/tentang",
   },
@@ -183,7 +179,7 @@ function Navbar() {
       {!width ? (
         <></>
       ) : width < MOBILE_TRESHOLD ? (
-        <div className="sticky top-0 bg-white p-4 md:p-8 py-4 shadow-md flex justify-between items-center z-30">
+        <div className="sticky top-0 bg-white px-4 py-2 md:p-8 shadow-md flex justify-between items-center z-30">
           <Link href="/" className="flex items-center space-x-2 ">
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
             <div>
@@ -198,14 +194,14 @@ function Navbar() {
           <SheetSide />
         </div>
       ) : (
-        <div className="sticky top-0 bg-white p-8 py-4 shadow-md flex justify-between items-center z-30">
+        <div className="sticky top-0 bg-white px-4 py-2 shadow-md flex justify-between items-center z-30">
           <Link href="/" className="flex items-center space-x-2 basis-1/3">
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
             <div>
-              <h1 className="text-emerald-800 lg:text-xl xl:text-2xl font-bold">
+              <h1 className="text-emerald-800 lg:text-md xl:text-xl font-bold">
                 Konsultasi Regional PDRB
               </h1>
-              <h2 className="text-amber-500 text-regular lg:text-md font-base">
+              <h2 className="text-amber-500 text-regular lg:text-sm font-base">
                 Wilayah Sumatera
               </h2>
             </div>
@@ -221,7 +217,7 @@ function Navbar() {
                     trigger={
                       <li
                         key={item.name}
-                        className="text-base lg:text-lg font-normal text-emerald-800 font-light hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500 flex space-x-4 items-center"
+                        className="text-base lg:text-md font-normal text-emerald-800  hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500 flex space-x-4 items-center"
                       >
                         {item.name}
                         {item.child && <IconChevronDown size={16} />}
@@ -233,7 +229,7 @@ function Navbar() {
                         return (
                           <Link
                             key={i.name}
-                            className="text-base lg:text-lg font-normal p-2 rounded-lg hover:bg-amber-50 text-gray-400 hover:text-emerald-800 duration-300 ease-in-out font-light hover:cursor-pointer flex space-x-4 items-center justify-between"
+                            className="text-base lg:text-md font-normal p-2 rounded-lg hover:bg-amber-50 text-gray-400 hover:text-emerald-800 duration-300 ease-in-out hover:cursor-pointer flex space-x-4 items-center justify-between"
                             href={i.url ? i.url : "/"}
                           >
                             {i.name}
@@ -248,7 +244,7 @@ function Navbar() {
                 return (
                   <Link
                     key={item.name}
-                    className="text-base lg:text-lg font-normal text-emerald-800 font-light hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500 flex space-x-4 items-center"
+                    className="text-base lg:text-md font-normal text-emerald-800  hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500 flex space-x-4 items-center"
                     href={item.url ? item.url : "/"}
                   >
                     {item.name}
