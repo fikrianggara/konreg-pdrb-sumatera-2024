@@ -61,7 +61,7 @@ export default function RootLayout({
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="/icon512_rounded.png"
+        href="/assets/icon512_rounded.png"
       />
 
       <body className="bg-gray-50">
