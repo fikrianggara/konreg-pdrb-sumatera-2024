@@ -6,10 +6,9 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 const INFORMASI = [
-  { name: "lokasi", href: "/kegiatan/lokasi" },
-  { name: "jadwal", href: "/kegiatan/jadwal" },
-  { name: "materi", href: "/kegiatan/materi" },
-  { name: "notula", href: "/kegiatan/notula" },
+  { name: "wisata", href: "/hiburan/wisata" },
+  { name: "oleh-oleh", href: "/hiburan/oleh-oleh" },
+  { name: "umkm", href: "/hiburan/umkm" },
 ];
 
 export default function DashboardLayout({
@@ -27,17 +26,17 @@ export default function DashboardLayout({
       <Breadcrumb />
       <div>
         <h1 className="font-bold text-xl lg:text-3xl text-emerald-800">
-          <Link href="/kegiatan/lokasi">Kegiatan</Link>
+          <Link href="/hiburan">Hiburan</Link>
         </h1>
         <p className="font-medium text-sm lg:text-base text-gray-500 py-4">
-          Informasi terkait penyelenggaraan Konreg PDRB regional sumatera 2024
+          Wisata, produk UMKM dan oleh-oleh khas Provinsi Jambi
         </p>
       </div>
       <Tabs
         color="teal"
         // variant="pills"
         defaultValue={active}
-        onChange={(value) => router.push(`/kegiatan/${value}`)}
+        onChange={(value) => router.push(`/hiburan/${value}`)}
       >
         <Tabs.List>
           {INFORMASI.map((i) => (

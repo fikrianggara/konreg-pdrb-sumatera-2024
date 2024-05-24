@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 import { Map3D, RecenteringMap } from "@/components/map";
+import { TabsDemo } from "@/components/tabs";
 
 const DATA = [1, 2, 3, 4, 5, 6];
 
@@ -146,7 +147,7 @@ export default function Home() {
               href="#konten"
               className="px-4 py-2 text-white font-light flex justify-between bg-emerald-800 rounded-full w-fit space-x-4 mt-8 shadow-xl transition-all duration-300 bg-gradient-to-tl from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100"
             >
-              <span> lebih pahami konsultasi regional</span>
+              <span>Informasi kegiatan</span>
               {<IconArrowNarrowRight />}
             </Link>
             <div className="px-4 py-2 text-white font-light flex justify-between bg-emerald-800 rounded-full w-fit space-x-4 shadow-xl transition-all duration-300 bg-gradient-to-tl from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100">
@@ -171,6 +172,8 @@ export default function Home() {
         id="konten"
         className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500 mt-12"
       >
+        {/* <TabsDemo /> */}
+        {/* <BentoGridDemo /> */}
         <h2 className="text-lg text-center lg:text-start lg:text-2xl font-bold text-emerald-800">
           Konsultasi Regional PDRB Wilayah Sumatera
         </h2>
@@ -192,6 +195,20 @@ export default function Home() {
           </div>
           <div className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg border border-white hover:border-amber-500 duration-300 ease-in-out">
             <h3 className="text-lg lg:text-2xl font-bold text-amber-500">
+              Hiburan
+            </h3>
+            <p className="text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
+              Wisata, produk UMKM, dan oleh-oleh khas provinsi jambi
+            </p>
+            <Link
+              href={"hiburan"}
+              className="px-4 py-1 lg:py-2  text-white bg-amber-500 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-500 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-400 bg-size-200 bg-pos-0 hover:bg-pos-100"
+            >
+              Selengkapnya
+            </Link>
+          </div>
+          <div className="col-span-2 lg:col-span-1 lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg border border-white hover:border-cyan-700 duration-300 ease-in-out">
+            <h3 className="text-lg lg:text-2xl font-bold text-cyan-800">
               Galeri
             </h3>
             <p className="text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
@@ -200,21 +217,6 @@ export default function Home() {
             </p>
             <Link
               href={"galeri"}
-              className="px-4 py-1 lg:py-2  text-white bg-amber-500 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-500 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-400 bg-size-200 bg-pos-0 hover:bg-pos-100"
-            >
-              Selengkapnya
-            </Link>
-          </div>
-          <div className="col-span-2 lg:col-span-1 lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg border border-white hover:border-cyan-700 duration-300 ease-in-out">
-            <h3 className="text-lg lg:text-2xl font-bold text-cyan-800">
-              Data dan Infografis
-            </h3>
-            <p className="text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
-              Data dan Infografis terkait subjek-subjek yang berkaitan dengan
-              Konsultasi Regional PDRB Wilayah Sumatera Tahun 2024.
-            </p>
-            <Link
-              href={"data-infografis/data"}
               className="px-4 py-1 lg:py-2  text-white bg-cyan-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-br from-purple-500 via-indigo-500 to-pink-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
             >
               Selengkapnya
@@ -224,7 +226,7 @@ export default function Home() {
       </div>
       {/* main content end */}
       {/* collaborator start */}
-      <div className="w-sreen bg-cyan-800 flex flex-col lg:flex-row justify-between pt-8 lg:pt-0 lg:px-36 xl:px-48 lg:h-fit shadow-xl mt-12 bg-mesh">
+      {/* <div className="w-sreen bg-cyan-800 flex flex-col lg:flex-row justify-between pt-8 lg:pt-0 lg:px-36 xl:px-48 lg:h-fit shadow-xl mt-12 bg-mesh">
         <div className="lg:basis-1/2 ">
           <div
             x-data="{}"
@@ -339,7 +341,7 @@ export default function Home() {
             memperoleh kesepakatan bersama dalam penentuan indikator pembangunan
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* collaborator end */}
 

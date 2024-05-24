@@ -39,16 +39,31 @@ const NAVBAR_ITEMS: NAVBAR_ITEM_TYPE[] = [
     url: "/kegiatan",
   },
   {
-    name: "Data dan Infografis",
+    name: "Hiburan",
     child: [
-      { name: "Data", url: "/data-infografis/data" },
+      { name: "Wisata", url: "/hiburan/wisata" },
       {
-        name: "Infografis",
-        url: "/data-infografis/infografis/pertumbuhan-ekonomi",
+        name: "Oleh-oleh",
+        url: "/hiburan/oleh-oleh/",
+      },
+      {
+        name: "Produk UMKM",
+        url: "/hiburan/umkm/",
       },
     ],
-    url: "/data-infografis/data",
+    url: "/hiburan",
   },
+  // {
+  //   name: "Hiburan",
+  //   child: [
+  //     { name: "Data", url: "/data-infografis/data" },
+  //     {
+  //       name: "Infografis",
+  //       url: "/data-infografis/infografis/pertumbuhan-ekonomi",
+  //     },
+  //   ],
+  //   url: "/data-infografis/data",
+  // },
   {
     name: "Galeri",
     url: "/galeri",
@@ -124,7 +139,7 @@ export function SheetSide() {
                                 href={i.url ? i.url : "/"}
                               >
                                 {i.name}
-                                <IconChevronRight size={16} />
+                                {/* <IconChevronRight size={16} /> */}
                               </Link>
                             );
                           })}
@@ -216,7 +231,7 @@ function Navbar() {
                             href={i.url ? i.url : "/"}
                           >
                             {i.name}
-                            <IconChevronRight size={16} />
+                            {/* <IconChevronRight size={16} /> */}
                           </Link>
                         );
                       })}
