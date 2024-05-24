@@ -104,6 +104,7 @@ function useWindowDimensions() {
 }
 
 export function SheetSide() {
+  console.log("sheet side rendered");
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -181,7 +182,7 @@ function Navbar() {
           <Link href="/" className="flex items-center space-x-2 ">
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
             <div>
-              <h1 className="text-emerald-800 text-lg font-bold">
+              <h1 className="text-emerald-800 text-base font-bold">
                 Konsultasi Regional PDRB
               </h1>
               <h2 className="text-amber-500 font-base text-sm">
