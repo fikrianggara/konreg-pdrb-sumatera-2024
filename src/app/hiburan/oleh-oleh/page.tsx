@@ -12,7 +12,9 @@ function Page() {
     <div className="p-4 m-auto grid grid-cols-4 gap-2 w-full">
       {olehOleh.map((o) => {
         return (
-          <div className="h-full bg-gray-100 rounded-lg p-8">{o.nama}</div>
+          <div className="h-full bg-gray-100 rounded-lg p-8" key={o.id}>
+            {o.nama}
+          </div>
         );
       })}
     </div>
