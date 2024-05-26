@@ -43,12 +43,12 @@ const NAVBAR_ITEMS: NAVBAR_ITEM_TYPE[] = [
     child: [
       { name: "Wisata", url: "/hiburan/wisata" },
       {
-        name: "Oleh-oleh",
+        name: "Produk UMKM",
         url: "/hiburan/oleh-oleh/",
       },
       {
-        name: "Produk UMKM",
-        url: "/hiburan/umkm/",
+        name: "Kuliner",
+        url: "/hiburan/kuliner/",
       },
     ],
     url: "/hiburan",
@@ -104,7 +104,6 @@ function useWindowDimensions() {
 }
 
 export function SheetSide() {
-  console.log("sheet side rendered");
   return (
     <Sheet>
       <SheetTrigger asChild>

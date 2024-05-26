@@ -8,7 +8,7 @@ import { useEffect } from "react";
 const INFORMASI = [
   { name: "wisata", href: "/hiburan/wisata" },
   { name: "oleh-oleh", href: "/hiburan/oleh-oleh" },
-  { name: "umkm", href: "/hiburan/umkm" },
+  { name: "kuliner", href: "/hiburan/kuliner" },
 ];
 
 export default function DashboardLayout({
@@ -19,7 +19,6 @@ export default function DashboardLayout({
   const pathname = usePathname();
   const router = useRouter();
   const active = pathname.split("/").at(-1);
-
   useEffect(() => {}, [active]);
   return (
     <div className="p-4 lg:px-36 py-8 space-y-4 lg:space-y-6 bg-dotted">
