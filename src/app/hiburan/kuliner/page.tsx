@@ -3,13 +3,13 @@ import Map from "@/components/map";
 import hiburan from "@/data/umkm.json";
 import { useState } from "react";
 import Image from "next/image";
-import useWindowDimensions from "@/hooks/useWindowSize";
+import useWindowDimensions, { useWindowSize } from "@/hooks/useWindowSize";
 
 function Page() {
   const [kuliner, setKuliner] = useState(
     hiburan.filter((h) => h.jenis == "Kuliner")
   );
-  const { width } = useWindowDimensions();
+  const { width } = useWindowSize();
 
   return (
     <div className="space-y-6 lg:space-y-8 p-4 flex flex-col m-auto justify-center">
@@ -20,7 +20,7 @@ function Page() {
         {/* <h1 className="text-xl lg:text-2xl text-emerald-800 font-medium">
           Kuliner Khas Jambi
         </h1> */}
-        {width < 800 ? (
+        {width && width < 800 ? (
           <img
             src="/assets/banner_kuliner.png"
             alt="Wisata jambi"

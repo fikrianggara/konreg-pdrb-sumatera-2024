@@ -1,7 +1,7 @@
 "use client";
 // import { Span } from "next/dist/trace";
 import hiburan from "@/data/umkm.json";
-import useWindowDimensions from "@/hooks/useWindowSize";
+import useWindowDimensions, { useWindowSize } from "@/hooks/useWindowSize";
 import { useState } from "react";
 
 function Page() {
@@ -9,7 +9,7 @@ function Page() {
   const [olehOleh, setOlehOleh] = useState(
     hiburan.filter((h) => h.jenis == "Rekomendasi Oleh-Oleh")
   );
-  const { width } = useWindowDimensions();
+  const { width } = useWindowSize();
 
   return (
     <div className="space-y-6 lg:space-y-8 p-4 flex flex-col m-auto justify-center">
@@ -20,7 +20,7 @@ function Page() {
         {/* <h1 className="text-xl lg:text-2xl text-emerald-800 font-medium">
         Kuliner Khas Jambi
       </h1> */}
-        {width < 800 ? (
+        {width && width < 800 ? (
           <img
             src="/assets/banner_oleh-oleh.png"
             alt="Wisata jambi"
