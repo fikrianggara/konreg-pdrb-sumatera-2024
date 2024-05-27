@@ -1,6 +1,7 @@
 "use client";
 // import { Span } from "next/dist/trace";
 import hiburan from "@/data/umkm.json";
+import useWindowDimensions from "@/hooks/useWindowSize";
 import { useState } from "react";
 
 function Page() {
@@ -8,6 +9,8 @@ function Page() {
   const [wisata, setWisata] = useState(
     hiburan.filter((h) => h.jenis == "Daftar Wisata")
   );
+  const { width } = useWindowDimensions();
+
   return (
     <div className="space-y-6 lg:space-y-8 p-4 flex flex-col m-auto justify-center">
       <div
@@ -17,11 +20,20 @@ function Page() {
         {/* <h1 className="text-xl lg:text-2xl text-emerald-800 font-medium">
       Kuliner Khas Jambi
     </h1> */}
-        <img
-          src="/assets/1x3_banner_wisata_nocheck.png"
-          alt="Wisata jambi"
-          className={`rounded-lg lg:w-2/3`}
-        />
+        {width < 800 ? (
+          <img
+            src="/assets/banner_wisata.png"
+            alt="Wisata jambi"
+            className={`rounded-lg lg:w-2/3`}
+          />
+        ) : (
+          <img
+            src="/assets/1x3_banner_wisata_nocheck.png"
+            alt="Wisata jambi"
+            className={`rounded-lg lg:w-2/3`}
+          />
+        )}
+
         {/* <p className="text-gray-500 text-sm lg:text-lg text-start lg:w-2/3">
       Kuliner khas Jambi merupakan salah satu kekayaan kuliner Indonesia
       yang menawarkan cita rasa unik dan kaya rempah. Kuliner Jambi tidak
