@@ -1,42 +1,42 @@
-import { BentoGrid, Skeleton } from "@/components/bentoGrid";
-import {
-  IconArrowWaveRightUp,
-  IconBoxAlignRightFilled,
-  IconBoxAlignTopLeft,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
-  IconMountain,
-  IconGift,
-  IconBuildingStore,
-} from "@tabler/icons-react";
+import Link from "next/link";
 
 const page = () => {
   const items = [
     {
       title: "Wisata",
       description: "Tempat wisata di Provinsi Jambi",
-      header: <Skeleton />,
-      icon: <IconMountain className="h-4 w-4 text-neutral-500" />,
+      imageUrl: "/assets/banner_wisata.png",
+      imageClassName: "lg:col-span-2",
       href: "/hiburan/wisata",
     },
     {
       title: "Oleh-oleh",
       description: "Rekomendasi oleh-oleh khas Jambi",
-      header: <Skeleton />,
-      icon: <IconGift className="h-4 w-4 text-neutral-500" />,
+      imageUrl: "/assets/banner_oleh-oleh.png",
+      imageClassName: "object-cover object-left h-full",
       href: "/hiburan/oleh-oleh",
     },
     {
-      title: "Produk UMKM",
-      description: "produk berkualitas dari UMKM Jambi",
-      header: <Skeleton />,
-      icon: <IconBuildingStore className="h-4 w-4 text-neutral-500" />,
-      href: "/hiburan/umkm",
+      title: "Kuliner",
+      description: "Kuliner khas jambi",
+      imageUrl: "/assets/banner_kuliner.png",
+      imageClassName: "lg:col-span-3",
+      href: "/hiburan/kuliner",
     },
   ];
-  return <BentoGrid items={items} />;
+  return (
+    <div className="lg:w-10/12 grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 items-start justify-start m-auto">
+      {items.map((i) => (
+        <Link key={i.title} href={i.href} className={i.imageClassName}>
+          <img
+            src={i.imageUrl}
+            alt={i.description}
+            className={`rounded-lg h-full hover:shadow-xl duration-300 ease-in-out hover:cursor-pointer ${i.imageClassName}`}
+          />
+        </Link>
+      ))}
+    </div>
+  );
 };
 
 export default page;
