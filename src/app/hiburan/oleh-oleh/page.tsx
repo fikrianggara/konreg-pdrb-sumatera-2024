@@ -18,7 +18,7 @@ function Page() {
         Kuliner Khas Jambi
       </h1> */}
         <img
-          src="/assets/banner_oleh-oleh.png"
+          src="/assets/1x3_banner_oleh-oleh_nocheck.png"
           alt="oleh-oleh jambi"
           className={`rounded-lg lg:w-2/3`}
         />

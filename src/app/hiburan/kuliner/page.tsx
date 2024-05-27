@@ -18,7 +18,7 @@ function Page() {
           Kuliner Khas Jambi
         </h1> */}
         <img
-          src="/assets/banner_kuliner.png"
+          src="/assets/1x3_banner_kuliner_nocheck.png"
           alt="kuliner jambi"
           className={`rounded-lg lg:w-2/3`}
         />
