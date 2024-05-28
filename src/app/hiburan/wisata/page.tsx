@@ -76,7 +76,6 @@ function Page() {
 
         <div className="flex md:grid md:grid-cols-1 lg:grid-cols-2 gap-2 overflow-x-scroll w-full">
           {wisata.map((w, i) => {
-            console.log(w.id, selectedWisata.id);
             return (
               <div
                 className={
