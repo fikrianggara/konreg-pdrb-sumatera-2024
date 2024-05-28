@@ -102,7 +102,7 @@ function Page() {
         </div>
       </div>
 
-      <div className=" rounded-lg border bg-white lg:w-1/3 h-fit sticky top-24">
+      <div className=" rounded-lg bg-white lg:w-1/3 h-fit sticky top-24">
         <img
           src={selectedWisata.link_foto}
           alt={selectedWisata.nama}
