@@ -87,7 +87,7 @@ function Page() {
                 <img
                   src={w.link_foto}
                   alt={w.nama}
-                  className={`h-36 md:h-36 w-64 md:w-full object-cover rounded-lg opacity-50 hover:opacity-90 duration-300 ease-in-out ${
+                  className={`h-36 md:h-36 w-64 md:w-full object-cover rounded-lg opacity-50 duration-300 hover:opacity-90 ease-in-out ${
                     selectedWisata.id == w.id ? " opacity-90" : ""
                   }
                   `}
@@ -150,7 +150,7 @@ function Page() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IconMapPin />
+              <IconMapPin className="animate-bounce" />
               {selectedWisata.kab_kota}
             </a>
           </ul>
