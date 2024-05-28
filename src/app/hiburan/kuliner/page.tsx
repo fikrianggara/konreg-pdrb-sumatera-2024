@@ -46,17 +46,17 @@ function Page() {
           tradisional yang diwariskan turun-temurun.
         </p> */}
       </div>
-      <div className="xl:w-2/3">
+      <div className="xl:w-2/3 space-y-4">
         {kuliner.map((w) => {
           return (
             <div
-              className="h-full rounded-lg duration-300 ease-in-out space-y-4 md:space-y-0 md:flex items-start space-x-6 p-4 hover:text-gray-600"
+              className="h-full bg-white rounded-lg duration-300 ease-in-out space-y-4 md:space-y-0 md:flex items-start space-x-6 p-4 hover:text-gray-600"
               key={w.id}
             >
               <img
                 src={w.link_foto}
                 alt={w.nama}
-                className="rounded-lg aspect-auto h-fit w-full md:w-64"
+                className="rounded-lg aspect-auto h-fit w-full md:w-64 shadow-lg"
               ></img>
               <div className="text-sm md:text-base space-y-2">
                 <h2 className="font-bold text-emerald-800 text-lg md:text-xl">
