@@ -71,7 +71,7 @@ function Page() {
             return (
               <div
                 className={
-                  "flex-none bg-gray-100 rounded-lg hover:cursor-pointer relative bg-black"
+                  "flex-none duration-300 ease-in-out rounded-lg hover:cursor-pointer relative bg-black"
                 }
                 key={w.id}
                 onClick={(e) => handleWisataClick(i)}
