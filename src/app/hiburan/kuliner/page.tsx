@@ -27,7 +27,7 @@ function Page() {
             <img
               src="/assets/banner_kuliner.png"
               alt="Wisata jambi"
-              className={`rounded-lg lg:w-2/3`}
+              className={`rounded-lg xl:w-2/3`}
             />
           </Suspense>
         ) : (
@@ -35,7 +35,7 @@ function Page() {
             <img
               src="/assets/1x3_banner_kuliner_nocheck.png"
               alt="Wisata jambi"
-              className={`rounded-lg lg:w-2/3`}
+              className={`rounded-lg xl:w-2/3`}
             />
           </Suspense>
         )}
@@ -46,7 +46,7 @@ function Page() {
           tradisional yang diwariskan turun-temurun.
         </p> */}
       </div>
-      <div className="lg:w-2/3 ">
+      <div className="xl:w-2/3">
         {kuliner.map((w) => {
           return (
             <div
@@ -56,11 +56,13 @@ function Page() {
               <img
                 src={w.link_foto}
                 alt={w.nama}
-                className="rounded-lg aspect-auto h-fit w-full lg:w-64"
+                className="rounded-lg aspect-auto h-fit w-full md:w-64"
               ></img>
               <div className="text-sm md:text-base space-y-2">
-                <h2 className="font-bold text-emerald-800 text-xl">{w.nama}</h2>
-                <p className="text-gray-500 text-pretty lg:w-full ">
+                <h2 className="font-bold text-emerald-800 text-lg md:text-xl">
+                  {w.nama}
+                </h2>
+                <p className="text-gray-500 text-pretty lg:w-full text-xs md:text-sm">
                   {" "}
                   {w.deskripsi}
                 </p>
