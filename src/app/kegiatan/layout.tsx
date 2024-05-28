@@ -22,6 +22,7 @@ export default function DashboardLayout({
   const active = pathname.split("/").at(-1);
 
   useEffect(() => {}, [active]);
+
   return (
     <div className="p-4 lg:px-36 py-8 space-y-4 lg:space-y-6 bg-dotted">
       <Breadcrumb />
