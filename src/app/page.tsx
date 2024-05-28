@@ -184,7 +184,7 @@ export default function Home() {
             </h3>
             <p className="text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
               Informasi jadwal dan lokasi kegiatan serta materi dan notula
-              Konsultasi Regional PDRB Wilayah Sumatera Tahun 2024..
+              Konsultasi Regional PDRB Wilayah Sumatera Tahun 2024.
             </p>
             <Link
               href={"kegiatan/lokasi"}
