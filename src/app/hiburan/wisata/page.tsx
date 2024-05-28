@@ -39,12 +39,20 @@ function Page() {
 
   useEffect(() => {
     if (searchParams.get("id") !== null) {
-      const id = searchParams.get("id") ? searchParams.get("id") : 0;
-      setSelectedWisata(hiburan.wisata[Number(id)]);
+      const id = searchParams.get("id");
+      if (hiburan.wisata[Number(id)]) {
+        setSelectedWisata(hiburan.wisata[Number(id)]);
+      } else {
+        setSelectedWisata(hiburan.wisata[0]);
+        router.push(pathname + "?" + createQueryString("id", "0"), {
+          scroll: false,
+        });
+      }
+    } else {
+      router.push(pathname + "?" + createQueryString("id", "0"), {
+        scroll: false,
+      });
     }
-    router.push(pathname + "?" + createQueryString("id", "0"), {
-      scroll: false,
-    });
   }, []);
 
   return (
@@ -68,6 +76,7 @@ function Page() {
 
         <div className="flex md:grid md:grid-cols-1 lg:grid-cols-2 gap-2 overflow-x-scroll w-full">
           {wisata.map((w, i) => {
+            console.log(w.id, selectedWisata.id);
             return (
               <div
                 className={
@@ -79,8 +88,8 @@ function Page() {
                 <img
                   src={w.link_foto}
                   alt={w.nama}
-                  className={`h-36 md:h-36 w-64 md:w-full object-cover rounded-lg opacity-50 hover:opacity-100 duration-300 ease-in-out ${
-                    selectedWisata.id == w.id ? " opacity-100" : ""
+                  className={`h-36 md:h-36 w-64 md:w-full object-cover rounded-lg opacity-50 hover:opacity-90 duration-300 ease-in-out ${
+                    selectedWisata.id == w.id ? " opacity-90" : ""
                   }
                   `}
                   width={200}
