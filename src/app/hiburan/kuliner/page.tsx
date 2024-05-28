@@ -4,11 +4,13 @@ import hiburan from "@/data/umkm.json";
 import { useState } from "react";
 import Image from "next/image";
 import useWindowDimensions, { useWindowSize } from "@/hooks/useWindowSize";
+import { ImageIcon } from "lucide-react";
+import { IconPhoto } from "@tabler/icons-react";
+import { Suspense } from "react";
+import { LoadingImage } from "@/components/ui/loading";
 
 function Page() {
-  const [kuliner, setKuliner] = useState(
-    hiburan.filter((h) => h.jenis == "Kuliner")
-  );
+  const [kuliner, setKuliner] = useState(hiburan.kuliner);
   const { width } = useWindowSize();
 
   return (
@@ -21,17 +23,21 @@ function Page() {
           Kuliner Khas Jambi
         </h1> */}
         {width && width < 800 ? (
-          <img
-            src="/assets/banner_kuliner.png"
-            alt="Wisata jambi"
-            className={`rounded-lg lg:w-2/3`}
-          />
+          <Suspense fallback={<p>loading..</p>}>
+            <img
+              src="/assets/banner_kuliner.png"
+              alt="Wisata jambi"
+              className={`rounded-lg lg:w-2/3`}
+            />
+          </Suspense>
         ) : (
-          <img
-            src="/assets/1x3_banner_kuliner_nocheck.png"
-            alt="Wisata jambi"
-            className={`rounded-lg lg:w-2/3`}
-          />
+          <Suspense fallback={<p>loading..</p>}>
+            <img
+              src="/assets/1x3_banner_kuliner_nocheck.png"
+              alt="Wisata jambi"
+              className={`rounded-lg lg:w-2/3`}
+            />
+          </Suspense>
         )}
         {/* <p className="text-gray-500 text-sm lg:text-lg text-start lg:w-2/3">
           Kuliner khas Jambi merupakan salah satu kekayaan kuliner Indonesia
@@ -40,7 +46,6 @@ function Page() {
           tradisional yang diwariskan turun-temurun.
         </p> */}
       </div>
-
       <div className="lg:w-2/3 ">
         {kuliner.map((w) => {
           return (

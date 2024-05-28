@@ -21,13 +21,13 @@ export default function DashboardLayout({
   const active = pathname.split("/").at(-1);
   useEffect(() => {}, [active]);
   return (
-    <div className="p-4 lg:px-36 py-8 space-y-4 lg:space-y-6 bg-dotted">
+    <div className="p-4 lg:px-24 xl:px-36 py-8 space-y-4 lg:space-y-6 bg-dotted">
       <Breadcrumb />
       <div className="space-y-4">
         <h1 className="font-bold text-xl lg:text-3xl text-emerald-800">
           <Link href="/hiburan">Hiburan</Link>
         </h1>
-        <p className="font-medium text-sm lg:text-base text-gray-500">
+        <p className=" text-sm lg:text-base text-gray-500">
           Wisata, produk UMKM dan oleh-oleh khas Provinsi Jambi
         </p>
       </div>

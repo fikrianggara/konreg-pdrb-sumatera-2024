@@ -1,275 +1,345 @@
-[
-  {
-    "id": 1,
-    "jenis": "Daftar Wisata",
-    "nama": "Candi Tinggi",
-    "link": "https://maps.app.goo.gl/g9KnKCWvvaMiKKHT9",
-    "link_foto": "https://indonesiaimpressiontour.com/wp-content/uploads/2022/11/IMG_20191101_004648.webp",
-    "deskripsi": "Candi Tinggi berdiri di atas lahan seluas 2,92 hektar. Kompleks candi ini terdiri dari satu bangunan utama, enam bangunan tambahan, dan dinding sekeliling. Saat ini, hanya fondasi dan sebagian kecil dari dasar Candi Tinggi yang tersisa. Gerbang menuju kompleks Candi Tinggi terletak di sisi timur dan barat. Candi Tinggi ditemukan pada tahun 1820 dan menjalani proses renovasi dari tahun 1978 hingga 1987.",
-    "kab_kota": "Kab. Muaro Jambi"
-  },
-  {
-    "id": 2,
-    "jenis": "Daftar Wisata",
-    "nama": "Bukit Khayangan",
-    "link": "https://maps.app.goo.gl/ZWYG2DjNNFYFVz8y9",
-    "link_foto": "https://cdn-2.tstatic.net/jambi/foto/bank/images/16102018_bukit-khayangan_20181016_215046.jpg",
-    "deskripsi": "Bukit Khayangan terletak pada ketinggian sekitar 2.000 meter di atas permukaan laut (mdpl). Saat mengunjungi tempat ini di pagi hari, Anda akan merasa seperti berada di atas awan karena area sekitar Bukit Khayangan akan tertutup kabut tebal, sehingga pemandangan kota dan Danau Kerinci tidak akan terlihat karena tertutup kabut. Hal yang sama terjadi pada malam hari. Objek wisata Bukit Khayangan terletak di Desa Renah Kayu Embum, Kecamatan Kumun Debai, Kota Sungai Penuh, Provinsi Jambi. Harga tiket masuk ke Bukit Khayangan adalah IDR 4.000 untuk dewasa dan IDR 3.000 untuk anak-anak.",
-    "kab_kota": "Kota Sungai Penuh"
-  },
-  {
-    "id": 3,
-    "jenis": "Daftar Wisata",
-    "nama": "Rafting Geopark Air Batu",
-    "link": "https://maps.app.goo.gl/T6GPKduDXTNkLpfZ7",
-    "link_foto": "https://awsimages.detik.net.id/community/media/visual/2022/06/07/rafting-di-geopark-merangin_169.jpeg?w=1200",
-    "deskripsi": "Arung jeram di Geopark Merangin menawarkan pengalaman unik di mana pengunjung dapat mengarungi Sungai Merangin yang indah. Sungai ini menyediakan jeram-jeram menantang dengan berbagai tingkat kesulitan, sehingga cocok untuk pemula maupun rafter berpengalaman. Petualangan arung jeram di Geopark Merangin biasanya dimulai dari bagian atas sungai. Perjalanan ini meliputi sekitar 10 kilometer dan memakan waktu sekitar 2-3 jam untuk diselesaikan. Sepanjang perjalanan, pengunjung dapat mengagumi pemandangan menakjubkan geopark, yang mencakup hutan lebat, pegunungan terjal, dan formasi geologi unik. Sungai ini juga mengalir melalui beberapa formasi batuan paling spektakuler di taman, yang menambah keindahan pemandangan.",
-    "kab_kota": "Kab. Merangin"
-  },
-  {
-    "id": 4,
-    "jenis": "Daftar Wisata",
-    "nama": "Pantai Cemara",
-    "link": "https://maps.app.goo.gl/dseu23AiX9ScEXi79",
-    "link_foto": "https://i0.wp.com/www.pesisir.net/wp-content/uploads/2021/04/Pantai-Cemara-Sadu.jpg",
-    "deskripsi": "Pantai Cemara Sadu terkenal dengan migrasi berbagai spesies burung dari seluruh dunia. Fenomena ini menjadi bonus bagi wisatawan yang ingin menikmati keindahan pantai ini. Pantai Cemara Sadu berada dekat dengan salah satu taman nasional terbesar di Asia Tenggara, menambah daya tariknya sebagai destinasi wisata yang wajib dikunjungi. Tidak heran banyak orang datang ke sini hanya untuk berburu foto karena panorama yang ditawarkan begitu memukau.",
-    "kab_kota": "Kab. Tanjung Jabung Timur"
-  },
-  {
-    "id": 5,
-    "jenis": "Daftar Wisata",
-    "nama": "Gunung Kerinci",
-    "link": "https://maps.app.goo.gl/jSHgHJHAkpRfaJqW9",
-    "link_foto": "https://bams.jambiprov.go.id/wp-content/uploads/2023/03/Gunung-Kerinci-3.png",
-    "deskripsi": "Wisata Gunung Kerinci menawarkan petualangan mendaki gunung berapi tertinggi di Sumatra, yang mencapai ketinggian 3.805 meter di atas permukaan laut. Pemandangan alam yang menakjubkan, mulai dari hutan tropis lebat hingga padang rumput alpine, menemani setiap langkah pendakian. Para pendaki dapat menikmati pemandangan spektakuler matahari terbit dari puncak, serta panorama Danau Gunung Tujuh yang memukau. Pengalaman mendaki Gunung Kerinci tidak hanya memuaskan hasrat petualangan tetapi juga menawarkan kesempatan untuk menjelajahi keindahan alam yang luar biasa.",
-    "kab_kota": "Kab. Kerinci"
-  },
-  {
-    "id": 6,
-    "jenis": "Daftar Wisata",
-    "nama": "Masjid Agung Al Falah",
-    "link": "https://maps.app.goo.gl/cj193H6Cf3JiqVdY8",
-    "link_foto": "https://lh3.googleusercontent.com/p/AF1QipNBtsiUY5nOl14c2hk2dUaPGrKyNA0AvytZRBAp=s1360-w1360-h1020",
-    "deskripsi": "Masjid Agung Al-Falah merupakan masjid terbesar di Jambi, Indonesia. Masjid ini juga dikenal sebagai Masjid 1000 Tiang, meskipun jumlah tiangnya hanya 256. Masjid ini dibangun pada tahun 1971 dan selesai pada tahun 1980, bangunannya memang hanya seperti sebuah pendopo terbuka dengan banyak tiang penyangga dan satu kubah besar di atasnya. Masjid kebanggaan warga Jambi ini berdiri di atas lahan seluas lebih dari 26.890 M2 atau lebih dari 2,7 Hektar, sedangkan luas bangunan masjid adalah 6.400 M2 dengan ukuran 80m x 80m, dan mampu menampung 10 ribu jamaah sekaligus. Sedari awal bangunan Masjid Agung hingga sekarang tetap dipertahankan sesuai bentuk awalnya. ",
-    "kab_kota": "Kota Jambi"
-  },
-  {
-    "id": 7,
-    "jenis": "Daftar Wisata",
-    "nama": "Jambi Paradise",
-    "link": "https://maps.app.goo.gl/wgD5V7FHGM1eHVK99",
-    "link_foto": "https://images.genpi.co/uploads/data/images/2020/01/Jambi%20Paradise%20foto%20jalanbareng_com.jpg",
-    "deskripsi": "Taman Wisata Jambi Paradise adalah destinasi wisata kekinian di Provinsi Jambi. Area wisata ini berdiri di atas lahan seluas 4 hektare dan memiliki aneka wahana dan fasilitas seru. Daya tarik wisata ini termasuk lorong besi raksasa sepanjang 30 meter. Harga tiket masuk ke taman wisata ini sebesar Rp 30.000. Jam buka Jambi Paradise mulai pukul 09.00 - 18.00 WIB. Rute ke Jambi Paradise dapat ditempuh kurang lebih 20 menit dari pusat Kota Jambi.",
-    "kab_kota": "Kota Jambi"
-  },
-  {
-    "id": 8,
-    "jenis": "Daftar Wisata",
-    "nama": "World of Water Waterpark",
-    "link": "https://maps.app.goo.gl/gFCt7c8Zd9tuccEv8",
-    "link_foto": "https://lh3.googleusercontent.com/p/AF1QipNBZJrnVU4y6Pj-zectHQkvrIFTIDLwLGwQexEb=s1360-w1360-h1020",
-    "deskripsi": "World of Water Waterpark di Muaro Jambi, Jambi menarik perhatian pengunjung dari segala usia. Terletak di kawasan Citra Raya City, taman air ini menawarkan pengalaman yang mewah dan tidak terlupakan. Dikelilingi oleh suasana alam yang indah dan pemandangan menakjubkan, World of Water memberikan kesempatan untuk melarikan diri sejenak dari kesibukan sehari-hari.\nPengunjung dapat menikmati perosotan setinggi 15 meter yang memberikan sensasi adrenalin luar biasa. Selain itu, wahana bubble balon juga menawarkan keseruan dan keunikan yang menghibur. World of Water Waterpark juga menawarkan pengalaman glamping dengan konsep riverside. Tersedia tenda-tenda yang nyaman dan memesona di tepi sungai untuk pengunjung yang ingin menginap selama kunjungan. ",
-    "kab_kota": "Kab. Muaro Jambi"
-  },
-  {
-    "id": 9,
-    "jenis": "Daftar Wisata",
-    "nama": "Air Terjun Sigerincing",
-    "link": "https://maps.app.goo.gl/Jyzu831P9nW2Z4rn9",
-    "link_foto": "https://assets-a1.kompasiana.com/items/album/2022/03/06/photo-output-1-622487f6e2d60e18a55530c3.jpg",
-    "deskripsi": "Air Terjun Sigerincing adalah air terjun setinggi 40-60 meter yang terletak di desa Dusun Tuo, kecamatan Lembah Masurai, kabupaten Merangin, Jambi. okasi Air Terjun ini berjarak sekitar tujuh puluh lima kilometer dari Kota Bangko. Perjalan menuju air terjun ini dapat ditempuh selam kurang lebih 2 jam dari Kota Bangko. Air terjun ini merupakan bagian dari aliran sungai Batang Tembesi yang berhulu di Gunung Masurai. Air Terjun Segerincing terletak pada sebuah desa di Jambi, yaitu Desa Tuo. Air Terjun Segerincing adalah wisata alam yang menawarkan keindahan alam yang menakjubkan.",
-    "kab_kota": "Kab. Merangin"
-  },
-  {
-    "id": 10,
-    "jenis": "Daftar Wisata",
-    "nama": "Wisata Air Danau Sipin",
-    "link": "https://maps.app.goo.gl/w4L7j6BiRepR9szu7",
-    "link_foto": "https://bams.jambiprov.go.id/wp-content/uploads/2023/03/Sejarah-danau-Sipin-Jambi.png",
-    "deskripsi": "Salah satu danau yang terkenal dengan keindahan alam di daerah Jambi yaitu Danau Sipin. Danau dengan luas sekitar 40 Ha ini memiliki sumber air yang berasal dari air Danau Teluk Kenali dan banjiran Sungai Batanghari. Di kawasan wisata Danau Sipin Jambi, kamu tentu bisa melakukan berbagai aktivitas. Mulai dari memancing, berkeliling danau dengan perahu, berwisata kuliner, menikmati berbagai pesta festival, hingga melihat aktivitas masyarakat nelayan yang unik. Danau Sipin berlokasi di Jalan Ade Irma Suryani, Telanaipura, Legok, Kecamatan Telanaipura, Kota Jambi, Provinsi Jambi. Kamu bisa datang melalui beberapa titik, seperti daerah Buluran, Kantor Gubernur Jambi, daerah Sungai Putri, dan daerah pulau Pandan. Jam buka Danau Sipin adalah 24 jam dengan tiket masuk tidak dipungut biaya. Kamu cukup membayar Rp 3.000 untuk parkir motor, dan Rp 5.000 untuk parkir mobil. Jika ingin menaiki wahana perahu atau bebek air, sediakan uang tambahan setidaknya Rp 5.000 - Rp 25.000.",
-    "kab_kota": "Kota Jambi"
-  },
-  {
-    "id": 11,
-    "jenis": "Kuliner",
-    "nama": "Tempoyak",
-    "link_foto": "https://jurnalutara.com/wp-content/uploads/2024/02/Gulai-tempoyak-Ikan-Patin.jpg",
-    "deskripsi": "Tempoyak adalah jenis makanan khas etnis Melayu di pulau Sumatra dan Kalimantan. Makanan ini terbuat dari durian yang sudah melalui proses fermentasi. Makanan ini biasanya dikonsumsi sebagai lauk yang dicampur dengan sambal saat menyantap nasi. Cita rasa tempoyak adalah asam karena terjadinya proses fermentasi daging buah durian. Selain itu, tempoyak dijadikan bumbu masakan.Tempoyak dikenal di Indonesia, terutama di pulau Sumatra dan Kalimantan. Jambi, terkenal dengan tempoyak campuran ikan patin dan ikan baung dibuat gulai tempoyak, sambal tempoyak dan brengkes tempoyak. "
-  },
-  {
-    "id": 12,
-    "jenis": "Kuliner",
-    "nama": "Pempek Sambal",
-    "link_foto": "https://img.kurio.network/YSHSdGaTZXsQfPDCSPFuj4whUAE=/1200x900/filters:quality(80)/https://kurio-img.kurioapps.com/22/04/27/45abc527-9a03-4ddd-850b-fcc12e1c1503.jpe",
-    "deskripsi": "Pempek sambal merupakan makanan khas Jambi yang berbahan dasar tepung kanji atau tepung sagu. Dibuat gepeng seperti adonan pempek, lalu ditumis dengan cabai. Jika pempek pada umumnya disajikan dengan kuah cuka tetapi pempek sambal tidak demikian, karena pempeknya sudah dilumuri dengan sambal yang telah ditumis. Aroma yang khas pada pempek sambal ini adalah daun kunyit karena menggunakan irisan daun kunyit. Untuk bahan pempeknya sendiri tidak menggunakan ikan tapi hanya menggunakan tepung sagu dan terigu yang disiram dengan air panas dan di bentuk bulat pipih sehingga menghasilkan tekstur yang kenyal. Pempek sambal ini lebih nikmat disantap selagi hangat karena jika terlalu lama maka tekstur pempek akan sedikit keras."
-  },
-  {
-    "id": 13,
-    "jenis": "Kuliner",
-    "nama": "Kue Srikaya",
-    "link_foto": "https://salsawisata.com/wp-content/uploads/2022/08/Kue-Srikaya.jpg",
-    "deskripsi": "Kue srikaya merupakan salah satu kuliner khas Kota Jambi yang mempunyai cita rasa manis dan legit. Kue tersebut hanya diolah dengan menggunakan bahan dasar buah srikaya. Namun, seiring dengan perkembangan zaman, kue tersebut ditambah dengan bahan campuran lain seperti ketan. Kue srikaya mempunyai warna hijau yang menggambarkan kemakmuran, sedangkan nama Sri dan Kaya mempunyai arti sebagai dewi padi. Untuk proses pembuatan kue srikaya ini, terbilang cukup mudah. Hanya perlu mencampurkan santan dengan adonan tape lalu ditambah sedikit pengharum daun pandan, pewarna, gula dan rempah lainnya."
-  },
-  {
-    "id": 14,
-    "jenis": "Kuliner",
-    "nama": "Gulai Tepek Ikan",
-    "link_foto": "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/13/2023/11/25/Gulai-tepek-ikan-219493387.jpg"
-  },
-  {
-    "id": 15,
-    "jenis": "Kuliner",
-    "nama": "Gelamai Perentak",
-    "link_foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Gelamai_Prntk.jpg/1200px-Gelamai_Prntk.jpg"
-  },
-  {
-    "id": 16,
-    "jenis": "Kuliner",
-    "nama": "Dodol Nanas",
-    "link_foto": "https://www.senangrekreasi.com/wp-content/uploads/2023/01/Makanan-khas-jambi-5-640x384.jpg"
-  },
-  {
-    "id": 17,
-    "jenis": "Kuliner",
-    "nama": "Dodol Kentang",
-    "link_foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ddl_Kntg.jpg/1200px-Ddl_Kntg.jpg"
-  },
-  {
-    "id": 18,
-    "jenis": "Kuliner",
-    "nama": "Malbi Daging",
-    "link_foto": "https://i.ytimg.com/vi/lUiXhZxsDlg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCu5Pl_piLlQJW3NRwKZ_1WmtSvhA"
-  },
-  {
-    "id": 19,
-    "jenis": "Kuliner",
-    "nama": "Gulai Terjun",
-    "link_foto": "https://tandaseru.id/wp-content/uploads/2022/02/jamb1.png"
-  },
-  {
-    "id": 20,
-    "jenis": "Kuliner",
-    "nama": "Kerutup Ikan",
-    "link_foto": "https://img-global.cpcdn.com/recipes/31bdca706f09c209/680x482cq70/kerutup-ikan-khas-jambi-foto-resep-utama.jpg"
-  },
-  {
-    "id": 21,
-    "jenis": "Kuliner",
-    "nama": "Kue Muso",
-    "link_foto": "https://img-global.cpcdn.com/recipes/556008e11d09fbf7/680x482cq70/kue-muso-khas-jambi-foto-resep-utama.jpg"
-  },
-  {
-    "id": 22,
-    "jenis": "Kuliner",
-    "nama": "Kue Padamaran",
-    "link_foto": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/04/06/FotoJet-2023-04-06T193451957-3334814616.jpg"
-  },
-  {
-    "id": 23,
-    "jenis": "Kuliner",
-    "nama": "Bolu Kojo",
-    "link_foto": "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/13/2023/12/19/FotoJet-11-2613101931.png"
-  },
-  {
-    "id": 24,
-    "jenis": "Kuliner",
-    "nama": "Kue Gandus",
-    "link_foto": "https://palpres.disway.id/upload/a003169dfeb7ebe03e64583d0ed0c9e5.jpeg"
-  },
-  {
-    "id": 25,
-    "jenis": "Rekomendasi Oleh-Oleh",
-    "nama": "Songket Jambi",
-    "link_foto": "https://partojambe.com/asset/foto_produk/fb958460-e4c5-42fc-8e83-ec490d152b3a.jpg"
-  },
-  {
-    "id": 26,
-    "jenis": "Rekomendasi Oleh-Oleh",
-    "nama": "Teh Kayu Aro",
-    "link_foto": "https://serikatnews.com/wp-content/uploads/2023/01/teh-kajoe-aro-fb.jpg"
-  },
-  {
-    "id": 27,
-    "jenis": "Rekomendasi Oleh-Oleh",
-    "nama": "Gelamai Perentak",
-    "link_foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Gelamai_Prntk.jpg/1200px-Gelamai_Prntk.jpg"
-  },
-  {
-    "id": 28,
-    "jenis": "Rekomendasi Oleh-Oleh",
-    "nama": "Dodol Nanas",
-    "link_foto": "https://www.senangrekreasi.com/wp-content/uploads/2023/01/Makanan-khas-jambi-5-640x384.jpg"
-  },
-  {
-    "id": 29,
-    "jenis": "Rekomendasi Oleh-Oleh",
-    "nama": "Dodol Kentang",
-    "link_foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ddl_Kntg.jpg/1200px-Ddl_Kntg.jpg"
-  },
-  {
-    "id": 30,
-    "jenis": "Rekomendasi Oleh-Oleh",
-    "nama": "Batik Jambi",
-    "link_foto": "https://partojambe.com/asset/foto_produk/kain-jambi.jpg"
-  },
-  {
-    "id": 31,
-    "jenis": "Rekomendasi Oleh-Oleh",
-    "nama": "Kopi AAA",
-    "link_foto": "https://img.mbizmarket.co.id/products/thumbs/800x800/2022/11/21/9e781dc5c3447b3e17721f03a8bf0cff.jpg"
-  },
-  {
-    "id": 32,
-    "jenis": "Rekomendasi Oleh-Oleh",
-    "nama": "Pempek Sambal",
-    "link_foto": "https://img.kurio.network/YSHSdGaTZXsQfPDCSPFuj4whUAE=/1200x900/filters:quality(80)/https://kurio-img.kurioapps.com/22/04/27/45abc527-9a03-4ddd-850b-fcc12e1c1503.jpe"
-  },
-  {
-    "id": 33,
-    "jenis": "Rekomendasi Oleh-Oleh",
-    "nama": "Duku Kumpeh",
-    "link_foto": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUuiBl6q8WFUan_zhcD0NhPG-UzAabk4Fw2dwz17b2ohw1X1yHYozexWB-hMdKvz1KPf5QW0qJUuzfvf1eGNfKBEQCEvOA2KyEN1zK7ixw37YKQ9IfBxvsS7cLYWqA39KquD1xmTXUxsZ-/s1600/Dukukumpeh2.jpg"
-  },
-  {
-    "id": 34,
-    "jenis": "Rekomendasi Oleh-Oleh",
-    "nama": "Kerupuk Ikan",
-    "link_foto": "https://down-id.img.susercontent.com/file/a6b29a925e515e7a7a918273bec0b056"
-  },
-  {
-    "id": 35,
-    "jenis": "Toko Oleh-Oleh",
-    "nama": "Cik Mia Songket",
-    "link": "https://maps.app.goo.gl/MuEbUfoeKoui29kZ9",
-    "link_foto": "https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/infosumsel/2021/12/20211218123042_original.jpg",
-    "kab_kota": "Kota Jambi"
-  },
-  {
-    "id": 36,
-    "jenis": "Toko Oleh-Oleh",
-    "nama": "Temphoyac",
-    "link": "https://maps.app.goo.gl/XVKtHqetBBBxrPmn7",
-    "link_foto": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcqg-kTJbkoKZQXzGR3VqtCQOf8GYCaEfEYaF1cu_-vw2Gw3t_hF_TZp8FHDJEvOx72aqY1tqDvzYYUwMMHhmdVSPMd0HHuRVJGYsJwT-MW8qf_wMasL5WfwA7dAYufk2EZV77BjivURQK/s1600/Temphoyac.JPG"
-  },
-  {
-    "id": 37,
-    "jenis": "Toko Oleh-Oleh",
-    "nama": "Toko Oleh-Oleh Khas Jambi | Gerai Adila Snack & Food",
-    "link": "https://maps.app.goo.gl/ojsLzAaDHpRejHTv5",
-    "link_foto": "https://asset-2.tstatic.net/jambi/foto/bank/images/gerai-adila-snack-and-food-juga-sediakan-meeting-room.jpg"
-  },
-  {
-    "id": 38,
-    "jenis": "Toko Oleh-Oleh",
-    "nama": "Jakoz Pabrik Oleh-Oleh Jambi",
-    "link": "https://maps.app.goo.gl/68Fc4do3c3BcE3Eg9",
-    "link_foto": "https://food-cms.grab.com/Merchants/6-C4BVTPEBC2XZVJ/pictures/f81fad91-00c6-4674-a003-92f56ee61ba4__listing_photo__2024__02__06__10__07__14.jpeg"
-  },
-  {
-    "id": 39,
-    "jenis": "Toko Oleh-Oleh",
-    "nama": "The Art of Batik Berkah",
-    "link": "https://maps.app.goo.gl/Xh4KoduQXthyWwkK9",
-    "link_foto": "https://jamberita.com/foto_berita/2020/08/06/52bu-ratu-10.jpg"
-  }
-]
+{
+  "wisata": [
+    {
+      "id": 1,
+      "jenis": "Daftar Wisata",
+      "nama": "Candi Tinggi",
+      "maps": "https://maps.app.goo.gl/g9KnKCWvvaMiKKHT9",
+      "link_foto": "https://indonesiaimpressiontour.com/wp-content/uploads/2022/11/IMG_20191101_004648.webp",
+      "deskripsi": "Candi Tinggi berdiri di atas lahan seluas 2,92 hektar. Kompleks candi ini terdiri dari satu bangunan utama, enam bangunan tambahan, dan dinding sekeliling. Saat ini, hanya fondasi dan sebagian kecil dari dasar Candi Tinggi yang tersisa. Gerbang menuju kompleks Candi Tinggi terletak di sisi timur dan barat. Candi Tinggi ditemukan pada tahun 1820 dan menjalani proses renovasi dari tahun 1978 hingga 1987.",
+      "kab_kota": "Kab. Muaro Jambi",
+      "tarif": 9000,
+      "jam_buka": "08.00 - 18.00",
+      "hari": "Setiap Hari"
+    },
+    {
+      "id": 2,
+      "jenis": "Daftar Wisata",
+      "nama": "Bukit Khayangan",
+      "maps": "https://maps.app.goo.gl/ZWYG2DjNNFYFVz8y9",
+      "link_foto": "https://cdn-2.tstatic.net/jambi/foto/bank/images/16102018_bukit-khayangan_20181016_215046.jpg",
+      "deskripsi": "Bukit Khayangan terletak pada ketinggian sekitar 2.000 meter di atas permukaan laut (mdpl). Saat mengunjungi tempat ini di pagi hari, Anda akan merasa seperti berada di atas awan karena area sekitar Bukit Khayangan akan tertutup kabut tebal, sehingga pemandangan kota dan Danau Kerinci tidak akan terlihat karena tertutup kabut. Hal yang sama terjadi pada malam hari. Objek wisata Bukit Khayangan terletak di Desa Renah Kayu Embum, Kecamatan Kumun Debai, Kota Sungai Penuh, Provinsi Jambi. Harga tiket masuk ke Bukit Khayangan adalah IDR 4.000 untuk dewasa dan IDR 3.000 untuk anak-anak.",
+      "kab_kota": "Kota Sungai Penuh",
+      "tarif": 5000,
+      "jam_buka": "05.00 - 18.00",
+      "hari": "Setiap Hari"
+    },
+    {
+      "id": 3,
+      "jenis": "Daftar Wisata",
+      "nama": "Rafting Geopark Air Batu",
+      "maps": "https://maps.app.goo.gl/T6GPKduDXTNkLpfZ7",
+      "link_foto": "https://awsimages.detik.net.id/community/media/visual/2022/06/07/rafting-di-geopark-merangin_169.jpeg?w=1200",
+      "deskripsi": "Arung jeram di Geopark Merangin menawarkan pengalaman unik di mana pengunjung dapat mengarungi Sungai Merangin yang indah. Sungai ini menyediakan jeram-jeram menantang dengan berbagai tingkat kesulitan, sehingga cocok untuk pemula maupun rafter berpengalaman. Petualangan arung jeram di Geopark Merangin biasanya dimulai dari bagian atas sungai. Perjalanan ini meliputi sekitar 10 kilometer dan memakan waktu sekitar 2-3 jam untuk diselesaikan. Sepanjang perjalanan, pengunjung dapat mengagumi pemandangan menakjubkan geopark, yang mencakup hutan lebat, pegunungan terjal, dan formasi geologi unik. Sungai ini juga mengalir melalui beberapa formasi batuan paling spektakuler di taman, yang menambah keindahan pemandangan.",
+      "kab_kota": "Kab. Merangin",
+      "tarif": "Rp500.000,00/perahu",
+      "jam_buka": "-",
+      "hari": "Setiap Hari"
+    },
+    {
+      "id": 4,
+      "jenis": "Daftar Wisata",
+      "nama": "Pantai Cemara",
+      "maps": "https://maps.app.goo.gl/dseu23AiX9ScEXi79",
+      "link_foto": "https://i0.wp.com/www.pesisir.net/wp-content/uploads/2021/04/Pantai-Cemara-Sadu.jpg",
+      "deskripsi": "Pantai Cemara Sadu terkenal dengan migrasi berbagai spesies burung dari seluruh dunia. Fenomena ini menjadi bonus bagi wisatawan yang ingin menikmati keindahan pantai ini. Pantai Cemara Sadu berada dekat dengan salah satu taman nasional terbesar di Asia Tenggara, menambah daya tariknya sebagai destinasi wisata yang wajib dikunjungi. Tidak heran banyak orang datang ke sini hanya untuk berburu foto karena panorama yang ditawarkan begitu memukau.",
+      "kab_kota": "Kab. Tanjung Jabung Timur",
+      "tarif": "Gratis",
+      "jam_buka": "24 Jam",
+      "hari": "Setiap Hari"
+    },
+    {
+      "id": 5,
+      "jenis": "Daftar Wisata",
+      "nama": "Gunung Kerinci",
+      "maps": "https://maps.app.goo.gl/jSHgHJHAkpRfaJqW9",
+      "link_foto": "https://bams.jambiprov.go.id/wp-content/uploads/2023/03/Gunung-Kerinci-3.png",
+      "deskripsi": "Wisata Gunung Kerinci menawarkan petualangan mendaki gunung berapi tertinggi di Sumatra, yang mencapai ketinggian 3.805 meter di atas permukaan laut. Pemandangan alam yang menakjubkan, mulai dari hutan tropis lebat hingga padang rumput alpine, menemani setiap langkah pendakian. Para pendaki dapat menikmati pemandangan spektakuler matahari terbit dari puncak, serta panorama Danau Gunung Tujuh yang memukau. Pengalaman mendaki Gunung Kerinci tidak hanya memuaskan hasrat petualangan tetapi juga menawarkan kesempatan untuk menjelajahi keindahan alam yang luar biasa.",
+      "kab_kota": "Kab. Kerinci",
+      "tarif": "Gratis",
+      "jam_buka": "24 Jam",
+      "hari": "Setiap Hari"
+    },
+    {
+      "id": 6,
+      "jenis": "Daftar Wisata",
+      "nama": "Masjid Agung Al Falah",
+      "maps": "https://maps.app.goo.gl/cj193H6Cf3JiqVdY8",
+      "link_foto": "https://lh3.googleusercontent.com/p/AF1QipNBtsiUY5nOl14c2hk2dUaPGrKyNA0AvytZRBAp=s1360-w1360-h1020",
+      "deskripsi": "Masjid Agung Al-Falah merupakan masjid terbesar di Jambi, Indonesia. Masjid ini juga dikenal sebagai Masjid 1000 Tiang, meskipun jumlah tiangnya hanya 256. Masjid ini dibangun pada tahun 1971 dan selesai pada tahun 1980, bangunannya memang hanya seperti sebuah pendopo terbuka dengan banyak tiang penyangga dan satu kubah besar di atasnya. Masjid kebanggaan warga Jambi ini berdiri di atas lahan seluas lebih dari 26.890 M2 atau lebih dari 2,7 Hektar, sedangkan luas bangunan masjid adalah 6.400 M2 dengan ukuran 80m x 80m, dan mampu menampung 10 ribu jamaah sekaligus. Sedari awal bangunan Masjid Agung hingga sekarang tetap dipertahankan sesuai bentuk awalnya. ",
+      "kab_kota": "Kota Jambi",
+      "tarif": "Gratis",
+      "jam_buka": "24 Jam",
+      "hari": "Setiap Hari"
+    },
+    {
+      "id": 7,
+      "jenis": "Daftar Wisata",
+      "nama": "Jambi Paradise",
+      "maps": "https://maps.app.goo.gl/wgD5V7FHGM1eHVK99",
+      "link_foto": "https://images.genpi.co/uploads/data/images/2020/01/Jambi%20Paradise%20foto%20jalanbareng_com.jpg",
+      "deskripsi": "Taman Wisata Jambi Paradise adalah destinasi wisata kekinian di Provinsi Jambi. Area wisata ini berdiri di atas lahan seluas 4 hektare dan memiliki aneka wahana dan fasilitas seru. Daya tarik wisata ini termasuk lorong besi raksasa sepanjang 30 meter. Harga tiket masuk ke taman wisata ini sebesar Rp 30.000. Jam buka Jambi Paradise mulai pukul 09.00 - 18.00 WIB. Rute ke Jambi Paradise dapat ditempuh kurang lebih 20 menit dari pusat Kota Jambi.",
+      "kab_kota": "Kota Jambi",
+      "tarif": 30000,
+      "jam_buka": "09.00 - 18.00",
+      "hari": "Setiap Hari"
+    },
+    {
+      "id": 8,
+      "jenis": "Daftar Wisata",
+      "nama": "World of Water Waterpark",
+      "maps": "https://maps.app.goo.gl/gFCt7c8Zd9tuccEv8",
+      "link_foto": "https://lh3.googleusercontent.com/p/AF1QipNBZJrnVU4y6Pj-zectHQkvrIFTIDLwLGwQexEb=s1360-w1360-h1020",
+      "deskripsi": "World of Water Waterpark di Muaro Jambi, Jambi menarik perhatian pengunjung dari segala usia. Terletak di kawasan Citra Raya City, taman air ini menawarkan pengalaman yang mewah dan tidak terlupakan. Dikelilingi oleh suasana alam yang indah dan pemandangan menakjubkan, World of Water memberikan kesempatan untuk melarikan diri sejenak dari kesibukan sehari-hari.\nPengunjung dapat menikmati perosotan setinggi 15 meter yang memberikan sensasi adrenalin luar biasa. Selain itu, wahana bubble balon juga menawarkan keseruan dan keunikan yang menghibur. World of Water Waterpark juga menawarkan pengalaman glamping dengan konsep riverside. Tersedia tenda-tenda yang nyaman dan memesona di tepi sungai untuk pengunjung yang ingin menginap selama kunjungan. ",
+      "kab_kota": "Kab. Muaro Jambi",
+      "tarif": "Rp35.000,00 - Rp55.000,00",
+      "jam_buka": "09.00 - 18.00",
+      "hari": "Setiap Hari"
+    },
+    {
+      "id": 9,
+      "jenis": "Daftar Wisata",
+      "nama": "Air Terjun Sigerincing",
+      "maps": "https://maps.app.goo.gl/Jyzu831P9nW2Z4rn9",
+      "link_foto": "https://assets-a1.kompasiana.com/items/album/2022/03/06/photo-output-1-622487f6e2d60e18a55530c3.jpg",
+      "deskripsi": "Air Terjun Sigerincing adalah air terjun setinggi 40-60 meter yang terletak di desa Dusun Tuo, kecamatan Lembah Masurai, kabupaten Merangin, Jambi. okasi Air Terjun ini berjarak sekitar tujuh puluh lima kilometer dari Kota Bangko. Perjalan menuju air terjun ini dapat ditempuh selam kurang lebih 2 jam dari Kota Bangko. Air terjun ini merupakan bagian dari aliran sungai Batang Tembesi yang berhulu di Gunung Masurai. Air Terjun Segerincing terletak pada sebuah desa di Jambi, yaitu Desa Tuo. Air Terjun Segerincing adalah wisata alam yang menawarkan keindahan alam yang menakjubkan.",
+      "kab_kota": "Kab. Merangin",
+      "tarif": 10000,
+      "jam_buka": "24 Jam",
+      "hari": "Setiap Hari"
+    },
+    {
+      "id": 10,
+      "jenis": "Daftar Wisata",
+      "nama": "Wisata Air Danau Sipin",
+      "maps": "https://maps.app.goo.gl/w4L7j6BiRepR9szu7",
+      "link_foto": "https://bams.jambiprov.go.id/wp-content/uploads/2023/03/Sejarah-danau-Sipin-Jambi.png",
+      "deskripsi": "Salah satu danau yang terkenal dengan keindahan alam di daerah Jambi yaitu Danau Sipin. Danau dengan luas sekitar 40 Ha ini memiliki sumber air yang berasal dari air Danau Teluk Kenali dan banjiran Sungai Batanghari. Di kawasan wisata Danau Sipin Jambi, kamu tentu bisa melakukan berbagai aktivitas. Mulai dari memancing, berkeliling danau dengan perahu, berwisata kuliner, menikmati berbagai pesta festival, hingga melihat aktivitas masyarakat nelayan yang unik. Danau Sipin berlokasi di Jalan Ade Irma Suryani, Telanaipura, Legok, Kecamatan Telanaipura, Kota Jambi, Provinsi Jambi. Kamu bisa datang melalui beberapa titik, seperti daerah Buluran, Kantor Gubernur Jambi, daerah Sungai Putri, dan daerah pulau Pandan. Jam buka Danau Sipin adalah 24 jam dengan tiket masuk tidak dipungut biaya. Kamu cukup membayar Rp 3.000 untuk parkir motor, dan Rp 5.000 untuk parkir mobil. Jika ingin menaiki wahana perahu atau bebek air, sediakan uang tambahan setidaknya Rp 5.000 - Rp 25.000.",
+      "kab_kota": "Kota Jambi",
+      "tarif": "Gratis",
+      "jam_buka": "24 Jam",
+      "hari": "Setiap Hari"
+    },
+    {
+      "id": 11,
+      "jenis": "Daftar Wisata",
+      "nama": "Danau Kaco",
+      "maps": "https://maps.app.goo.gl/PXVUwpkEHfKYK1jk9",
+      "link_foto": "https://atourin.obs.ap-southeast-3.myhuaweicloud.com/images/destination/kerinci/danau-kaco-profile1640675887.png?x-image-process=image/resize,p_100,limit_1/imageslim",
+      "deskripsi": "Danau Kaco merupakan danau yang terletak di kabupaten Kerinci, Jambi. Tepatnya di desa Lempur, kecamatan Gunung Raya. Danau ini berada di kawasan Taman Nasional Kerinci Seblat (TNKS) yang merupakan situs warisan UNESCO.[1] Danau kaco memiliki luas sekitar 90 meter persegi dan memiliki kedalaman yang belum diketahui. Secara geografis danau ini terletak di 101.540402 BT dan 2.330258 LS pada ketinggian 1229 mdpl. Danau Kaco memiliki keunikan yang khas yang jarang dimiliki oleh danau-danau lain yang ada di Indonesia.Keunikan tersebut seperti Danau Kaco dapat mengeluarkan cahaya yang terang, terutama pada saat bulan purnama.Warna air di danau ini adalah cyan atau hijau kebiruan yang sangat jernih dan berkilau di malam hari. Jika wisatawan datang ke Danau Kaco pada saat bulan purnama maka para wisatawan tidak membutuhkan alat bantu penerangan karena air danau dapat mengeluarkan cahaya yang cukup terang.Jika dilihat dari kejauhan cahaya yang dipancarkan oleh Danau Kaco akan terlihat seperti lampu yang diarahkan kelangit.Warna air yang unik dan kejernihan danau ini menjadikan kedalaman danau sulit ditebak dan diukur. Sampai saat ini titik terdalam yang berhasil diukur oleh pemandu lokal dari Lempur Mudik adalah 20 m. Suhu air di danau Kaco sendiri cenderung lebih rendah dibandingkan dengan suhu lingkungan di sekitarnya.",
+      "kab_kota": "Kab. Kerinci",
+      "tarif": "Gratis",
+      "jam_buka": "24 Jam",
+      "hari": "Setiap Hari"
+    }
+  ],
+  "kuliner": [
+    {
+      "id": 1,
+      "jenis": "Kuliner",
+      "nama": "Tempoyak",
+      "link_foto": "https://jurnalutara.com/wp-content/uploads/2024/02/Gulai-tempoyak-Ikan-Patin.jpg",
+      "deskripsi": "Tempoyak adalah jenis makanan khas etnis Melayu di pulau Sumatra dan Kalimantan. Makanan ini terbuat dari durian yang sudah melalui proses fermentasi. Makanan ini biasanya dikonsumsi sebagai lauk yang dicampur dengan sambal saat menyantap nasi. Cita rasa tempoyak adalah asam karena terjadinya proses fermentasi daging buah durian. Selain itu, tempoyak dijadikan bumbu masakan.Tempoyak dikenal di Indonesia, terutama di pulau Sumatra dan Kalimantan. Jambi, terkenal dengan tempoyak campuran ikan patin dan ikan baung dibuat gulai tempoyak, sambal tempoyak dan brengkes tempoyak. "
+    },
+    {
+      "id": 2,
+      "jenis": "Kuliner",
+      "nama": "Pempek Sambal",
+      "link_foto": "https://img.kurio.network/YSHSdGaTZXsQfPDCSPFuj4whUAE=/1200x900/filters:quality(80)/https://kurio-img.kurioapps.com/22/04/27/45abc527-9a03-4ddd-850b-fcc12e1c1503.jpe",
+      "deskripsi": "Pempek sambal merupakan makanan khas Jambi yang berbahan dasar tepung kanji atau tepung sagu. Dibuat gepeng seperti adonan pempek, lalu ditumis dengan cabai. Jika pempek pada umumnya disajikan dengan kuah cuka tetapi pempek sambal tidak demikian, karena pempeknya sudah dilumuri dengan sambal yang telah ditumis. Aroma yang khas pada pempek sambal ini adalah daun kunyit karena menggunakan irisan daun kunyit. Untuk bahan pempeknya sendiri tidak menggunakan ikan tapi hanya menggunakan tepung sagu dan terigu yang disiram dengan air panas dan di bentuk bulat pipih sehingga menghasilkan tekstur yang kenyal. Pempek sambal ini lebih nikmat disantap selagi hangat karena jika terlalu lama maka tekstur pempek akan sedikit keras."
+    },
+    {
+      "id": 3,
+      "jenis": "Kuliner",
+      "nama": "Kue Srikaya",
+      "link_foto": "https://salsawisata.com/wp-content/uploads/2022/08/Kue-Srikaya.jpg",
+      "deskripsi": "Kue srikaya merupakan salah satu kuliner khas Kota Jambi yang mempunyai cita rasa manis dan legit. Kue tersebut hanya diolah dengan menggunakan bahan dasar buah srikaya. Namun, seiring dengan perkembangan zaman, kue tersebut ditambah dengan bahan campuran lain seperti ketan. Kue srikaya mempunyai warna hijau yang menggambarkan kemakmuran, sedangkan nama Sri dan Kaya mempunyai arti sebagai dewi padi. Untuk proses pembuatan kue srikaya ini, terbilang cukup mudah. Hanya perlu mencampurkan santan dengan adonan tape lalu ditambah sedikit pengharum daun pandan, pewarna, gula dan rempah lainnya."
+    },
+    {
+      "id": 4,
+      "jenis": "Kuliner",
+      "nama": "Gulai Tepek Ikan",
+      "link_foto": "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/13/2023/11/25/Gulai-tepek-ikan-219493387.jpg",
+      "deskripsi": "Gulai Tepek Ikan merupakan salah satu makanan khas dari Jambi. Sesuai dengan namanya yaitu tepek, maka cara pembuatan makanan ini adalah di tepek-tepek ataupun dipipihkan. Makanan ini sering dijadikan sebagai salah satu suguhan waktu acara pernikahan, kenduri ataupun acara adat lainnya yang ada di Jambi. Sajian berkuah ini dapat dikatakan hampir sama dengan pempek, hanya saja disajikan dengan tambahan gulai"
+    },
+    {
+      "id": 5,
+      "jenis": "Kuliner",
+      "nama": "Gelamai Perentak",
+      "link_foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Gelamai_Prntk.jpg/1200px-Gelamai_Prntk.jpg",
+      "deskripsi": "Gelamai perentak merupakan salah satu jajanan khas Jambi yang bisa dibeli untuk oleh-oleh keluarga di rumah. Gelamai perentak mempunyai tekstur hampir mirip dengan dodol kentang, rasa yang dihasilkan pun tidak kalah lezat dari jajanan lainnya. Proses pembuatan gelamai perentak masih menggunakan metode tradisional, yaitu memakai kuali besi dengan bahan bakar kayu karet. Hal tersebutlah yang membuat aroma dari gelamai perenta menjadi harum dan enak."
+    },
+    {
+      "id": 6,
+      "jenis": "Kuliner",
+      "nama": "Dodol Nanas",
+      "link_foto": "https://www.senangrekreasi.com/wp-content/uploads/2023/01/Makanan-khas-jambi-5-640x384.jpg",
+      "deskripsi": "Menjadi komoditas utama, nanas menjadi bahan dasar yang paling sering diolah masyarakat Jambi untuk dijadikan oleh-oleh. Inisiatif mereka untuk mengubah nanas menjadi berbagai macam camilan tampaknya bukan hanya menguntungkan dari sisi pendapatan, namun juga dari segi pengenalan lebih terhadap kota Jambi sendiri. Salah satu oleh-oleh khas Jambi yang cukup terkenal adalah dodol nanas. Walaupun dibuat tanpa bahan pengawet, dodol nanas tetap dapat bertahan lama sehingga para wisatawan tidak merasa khawatir untuk memilih dodol nanas sebagai oleh-oleh khas Jambi. Rasa enak dan legit yang khas dari dodol nanas ini bisa banyak dijumpai di wilayah Muaro Jambi."
+    },
+    {
+      "id": 7,
+      "jenis": "Kuliner",
+      "nama": "Dodol Kentang",
+      "link_foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ddl_Kntg.jpg/1200px-Ddl_Kntg.jpg",
+      "deskripsi": "Dodol kentang adalah panganan manis khas Jambi yang berasal dari Desa Lubuk Nagodang, Kecamatan Siulak, Kabupaten Kerinci. Dodol kentang sama seperti dodol pada umumnya, yang membedakan adalah bahan utamanya, yakni kentang. Meskipun terbuat dari kentang, dodol tersebut masih dapaat dipadukan dengan banyak varian rasa seperti strawberry, gula merah, nanas dan masih banyak lagi. "
+    },
+    {
+      "id": 8,
+      "jenis": "Kuliner",
+      "nama": "Daging Masak Itam/Malbi Daging",
+      "link_foto": "https://i.ytimg.com/vi/lUiXhZxsDlg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCu5Pl_piLlQJW3NRwKZ_1WmtSvhA",
+      "deskripsi": "Makanan Indonesia terkenal akan cita rasa dan wanginya yang khas karena perpaduan rempah di setiap masakannya. Salah satunya adalah kuliner dari Jambi satu ini, daging masak itam.\nItam dalam bahasa Jambi artinya hitam. Hal itu merujuk pada kuah masakan ini berwarna hitam pekat karena perpaduan bumbu dan rempah di dalamnya. Daging masak itam memiliki cita rasa yang pedas, manis, dan gurih. Makanan ini secara umum mirip dengan semur. Daging Masak Itam ini biasanya disajikan pada acara pernikahan, khitanan, dan akikah atau di beberapa rumah makan yang menjual makanan khas Jambi dan Melayu."
+    },
+    {
+      "id": 9,
+      "jenis": "Kuliner",
+      "nama": "Gulai Terjun",
+      "link_foto": "https://tandaseru.id/wp-content/uploads/2022/02/jamb1.png",
+      "deskripsi": "Gulai terjun adalah makanan khas Jambi dengan bahan dasar daging. Daging yang digunakan biasanya daging sapi, kerbau, ataupun kambing. Daging yang diolah nantinya akan dihidangkan bersama kuah yang terbuat dari santan. Kuah gulai terjun tidak dibuat kental melainkan encer atau cair. Selain terdapat daging dan kuah santan, gulai terjun juga biasa disajikan dengan umbut kelapa. Makanan ini biasanya disajikan pada acara-acara hajatan seperti perkawinan, sunnatan, dan berbagai acara adat Jambi."
+    },
+    {
+      "id": 10,
+      "jenis": "Kuliner",
+      "nama": "Kerutup Ikan",
+      "link_foto": "https://img-global.cpcdn.com/recipes/31bdca706f09c209/680x482cq70/kerutup-ikan-khas-jambi-foto-resep-utama.jpg",
+      "deskripsi": "Kerutup ikan atau Ikan kerutup adalah makanan khas dari Jambi yang berbahan dasar ikan air tawar. Kerutup ikan biasanya menggunakan ikan nila, atau ikan mas. Kerutup ikan memiliki keunikan yang berbeda dari masakan yang lain karena dalam proses memasak ikannya dibungkus dengan daun pisang yang telah dilumuri oleh bumbu dan rempah-rempah, kemudian ikan tersebut digoreng hingga masak."
+    },
+    {
+      "id": 11,
+      "jenis": "Kuliner",
+      "nama": "Kue Muso",
+      "link_foto": "https://img-global.cpcdn.com/recipes/556008e11d09fbf7/680x482cq70/kue-muso-khas-jambi-foto-resep-utama.jpg",
+      "deskripsi": "Kue muso yang berasal dari Jambi ini mempunyai cita rasa legit dan kenyal karena bahan dasar pembuatan kue muso menggunakan tepung beras ketan dan santan. Kudapan nikmat ini menjadi primadona saat menjelang buka puasa. Rasa kenyal dari kue muso bisa Anda jadikan teman minum teh atau kopi saat sarapan ataupun dinikmati saat petang menjemput. "
+    },
+    {
+      "id": 12,
+      "jenis": "Kuliner",
+      "nama": "Kue Padamaran",
+      "link_foto": "https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/04/06/FotoJet-2023-04-06T193451957-3334814616.jpg",
+      "deskripsi": "Kue padamaran merupakan kue basah tradisional khas Jambi dengan bahan dasar tepung beras. Kue ini berwarna hijau dengan tekstur lembut, yang dikemas menyerupai perahu. Kue padamaran dikukus dengan daun pisang yang dibentuk menjadi wadah berbentuk persegi panjang yang disebut dengan takir. Kue tradisional Jambi ini lebih mudah ditemui pada bulan puasa sebagai menu takjil Bulan Ramadhan, karena teksturnya lembut mudah disantap, rasa manis gurihnya yang sedap, dan ukurannya yang sedang tidak terlalu mengenyangkan, sangat cocok sebagai makanan pembuka orang yang berpuasa. Rasa manis datang dari irisan gula merah sedangkan rasa gurih dihasilkan dari santan kelapa yang merupakan bahan penting dalam pembuatan Kue Padamaran ini"
+    },
+    {
+      "id": 13,
+      "jenis": "Kuliner",
+      "nama": "Bolu Kojo",
+      "link_foto": "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/13/2023/12/19/FotoJet-11-2613101931.png",
+      "deskripsi": "Selain di Kota Jambi, bolu kojo juga dapat ditemukan di Kota Palembang. Akan tetapi, bolu kojo yang terdapat di Kota Jambi dan Kota Palemang berbeda. Perbedaannya terletak pada cara penyajiannya. Jika bolu kojo Jambi disajikan dengan polosan tanpa tampilan, sedangkan bolu kojo khas Kota Palembang disajikan dalam bentuk lapisan. Tekstur dari bolu kojo Jambi ini lembut dan mempunyai rasa yang manis. Umumnya, bolu kojo dicetak di atas loyang kamboja yang akan menghasilkan bolu yang cantik dan sedap. "
+    },
+    {
+      "id": 14,
+      "jenis": "Kuliner",
+      "nama": "Kue Gandus",
+      "link_foto": "https://palpres.disway.id/upload/a003169dfeb7ebe03e64583d0ed0c9e5.jpeg",
+      "deskripsi": "Kue gandus cukup terkenal dikalangan masyarakat Jambi atau luar kota. Salah satu hal unik yaang dimiliki kue gandus adalah tidak mempunyai rasa manis saat digigit. Namun, kue gandus justru mempunyai rasa yang pedas gurih. Hal tersebut dikarenakan terbuat dari sagu, tepung beras, dan garam. Untuk tambahan bumbunya, adonan kue gandus ditambahkan bawang putih, bawang merah, serta cabai halus. Untuk penyajiannya, banyak penjual yang menambahkan topping seledri, ebi sangrai, bawang merah, serta cabai."
+    }
+  ],
+  "oleh_oleh": [
+    {
+      "id": 1,
+      "jenis": "Rekomendasi Oleh-Oleh",
+      "nama": "Songket Jambi",
+      "link_foto": "https://partojambe.com/asset/foto_produk/fb958460-e4c5-42fc-8e83-ec490d152b3a.jpg",
+      "deskripsi": "Kain songket Jambi memiliki sejarah panjang yang mencerminkan kekayaan budaya dan tradisi masyarakat Jambi. Proses pembuatannya yang rumit dan membutuhkan keahlian tinggi turun-temurun membuat kain songket Jambi dihargai tinggi sebagai simbol status dan keindahan. Motif-motif yang digunakan dalam kain songket Jambi sering kali terinspirasi dari alam dan mitos-mitos lokal, menggambarkan kedalaman makna budaya yang melekat padanya. "
+    },
+    {
+      "id": 2,
+      "jenis": "Rekomendasi Oleh-Oleh",
+      "nama": "Teh Kayu Aro",
+      "link_foto": "https://serikatnews.com/wp-content/uploads/2023/01/teh-kajoe-aro-fb.jpg",
+      "deskripsi": "Selain kopi, Kota Jambi juga mempunyai teh yang dapat dijadikan sebagai oleh-oleh, yakni teh kayu aro. Pasalnya Jambi memiliki kebun teh yang cukup luas. Teh yang dihasilkan pun juga mempunyai kualitas yang baik. Teh kayu aro, tumbuh di kawasan perbukitan lereng Gunung Kerinci. Teh kayu aro mempunyai aroma yang wangi dan akan keluar ketika diseduh. Maka tidak heran jika teh kayu aro banyak dijadikan sebagai oleh-oleh untuk keluarga di rumah."
+    },
+    {
+      "id": 3,
+      "jenis": "Rekomendasi Oleh-Oleh",
+      "nama": "Gelamai Perentak",
+      "link_foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Gelamai_Prntk.jpg/1200px-Gelamai_Prntk.jpg",
+      "deskripsi": "Gelamai perentak merupakan salah satu jajanan khas Jambi yang bisa dibeli untuk oleh-oleh keluarga di rumah. Gelamai perentak mempunyai tekstur hampir mirip dengan dodol kentang, rasa yang dihasilkan pun tidak kalah lezat dari jajanan lainnya. Proses pembuatan gelamai perentak masih menggunakan metode tradisional, yaitu memakai kuali besi dengan bahan bakar kayu karet. Hal tersebutlah yang membuat aroma dari gelamai perenta menjadi harum dan enak."
+    },
+    {
+      "id": 4,
+      "jenis": "Rekomendasi Oleh-Oleh",
+      "nama": "Dodol Nanas",
+      "link_foto": "https://www.senangrekreasi.com/wp-content/uploads/2023/01/Makanan-khas-jambi-5-640x384.jpg",
+      "deskripsi": "Menjadi komoditas utama, nanas menjadi bahan dasar yang paling sering diolah masyarakat Jambi untuk dijadikan oleh-oleh. Inisiatif mereka untuk mengubah nanas menjadi berbagai macam camilan tampaknya bukan hanya menguntungkan dari sisi pendapatan, namun juga dari segi pengenalan lebih terhadap kota Jambi sendiri. Salah satu oleh-oleh khas Jambi yang cukup terkenal adalah dodol nanas. Walaupun dibuat tanpa bahan pengawet, dodol nanas tetap dapat bertahan lama sehingga para wisatawan tidak merasa khawatir untuk memilih dodol nanas sebagai oleh-oleh khas Jambi. Rasa enak dan legit yang khas dari dodol nanas ini bisa banyak dijumpai di wilayah Muaro Jambi."
+    },
+    {
+      "id": 5,
+      "jenis": "Rekomendasi Oleh-Oleh",
+      "nama": "Dodol Kentang",
+      "link_foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ddl_Kntg.jpg/1200px-Ddl_Kntg.jpg",
+      "deskripsi": "Dodol kentang adalah panganan manis khas Jambi yang berasal dari Desa Lubuk Nagodang, Kecamatan Siulak, Kabupaten Kerinci. Dodol kentang sama seperti dodol pada umumnya, yang membedakan adalah bahan utamanya, yakni kentang. Meskipun terbuat dari kentang, dodol tersebut masih dapaat dipadukan dengan banyak varian rasa seperti strawberry, gula merah, nanas dan masih banyak lagi. "
+    },
+    {
+      "id": 6,
+      "jenis": "Rekomendasi Oleh-Oleh",
+      "nama": "Batik Jambi",
+      "link_foto": "https://partojambe.com/asset/foto_produk/kain-jambi.jpg",
+      "deskripsi": "Selain makanan, batik juga menjadi salah satu barang yang sangat cocok digunakan sebagai oleh-oleh untuk keluarga di rumah. Batik Jambi mempunyai motif yang keren dan menarik. Kebanyakan motif batik Jambi yang digunakan terinspirasi dari lingkungan sekitar, seperti binatang dan tanaman. Beberapa motif batik khas Kota Jambi yang terkenal adalah motif kapak lepas, motif cendawan, motif ayam, motif keco piring, motif anggur dan motif kupu-kupu. Untuk bahan pewarnanya, batik Jambi memakai pewarna alami yang berasal dari tumbuhan sekitar hutan Jambi. Pewarna alami ini akan memberikan warna khas yang jauh berbeda dengan pewarna kimia."
+    },
+    {
+      "id": 7,
+      "jenis": "Rekomendasi Oleh-Oleh",
+      "nama": "Kopi AAA",
+      "link_foto": "https://img.mbizmarket.co.id/products/thumbs/800x800/2022/11/21/9e781dc5c3447b3e17721f03a8bf0cff.jpg",
+      "deskripsi": "Bagi pecinta kopi yang sedang atau akan mengunjungi Jambi, Kopi AAA merupakan oleh-oleh yang wajib kamu bawa pulang karena Kopi AAA tidak akan mungkin kamu temui di tempat lain selain Jambi. Kopi berukuran bungkus rokok ini pada awalnya merupakan merek dagang sebuah perusahaan kopi, namun lambat laun Kopi AAA menjadi khas dijadikan buah tangan oleh para wisatawan yang berkunjung ke Jambi. Kopi AAA biasanya dijual bersamaan dengan pempek sehingga menjadi oleh-oleh yang cukup mudah dijumpai di Jambi."
+    },
+    {
+      "id": 8,
+      "jenis": "Rekomendasi Oleh-Oleh",
+      "nama": "Pempek Sambal",
+      "link_foto": "https://img.kurio.network/YSHSdGaTZXsQfPDCSPFuj4whUAE=/1200x900/filters:quality(80)/https://kurio-img.kurioapps.com/22/04/27/45abc527-9a03-4ddd-850b-fcc12e1c1503.jpe",
+      "deskripsi": "Pempek sambal merupakan makanan khas Jambi yang berbahan dasar tepung kanji atau tepung sagu. Dibuat gepeng seperti adonan pempek, lalu ditumis dengan cabai. Jika pempek pada umumnya disajikan dengan kuah cuka tetapi pempek sambal tidak demikian, karena pempeknya sudah dilumuri dengan sambal yang telah ditumis. Aroma yang khas pada pempek sambal ini adalah daun kunyit karena menggunakan irisan daun kunyit. Untuk bahan pempeknya sendiri tidak menggunakan ikan tapi hanya menggunakan tepung sagu dan terigu yang disiram dengan air panas dan di bentuk bulat pipih sehingga menghasilkan tekstur yang kenyal. Pempek sambal ini lebih nikmat disantap selagi hangat karena jika terlalu lama maka tekstur pempek akan sedikit keras."
+    },
+    {
+      "id": 9,
+      "jenis": "Rekomendasi Oleh-Oleh",
+      "nama": "Duku Kumpeh",
+      "link_foto": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUuiBl6q8WFUan_zhcD0NhPG-UzAabk4Fw2dwz17b2ohw1X1yHYozexWB-hMdKvz1KPf5QW0qJUuzfvf1eGNfKBEQCEvOA2KyEN1zK7ixw37YKQ9IfBxvsS7cLYWqA39KquD1xmTXUxsZ-/s1600/Dukukumpeh2.jpg",
+      "deskripsi": "Kota Jambi terkenal dengan buah dukunya yang manis. Salah satu jenis duku yang ada di Jambi dan banyak diserbu wisatawan adalah duku kumpeh. Duku kumpeh berbeda dengan buah duku pada umumnya, ukuran duku kumpeh terbilang lebih besar dan juga lebih manis juga sedikit asam yang menggiurkan. "
+    },
+    {
+      "id": 10,
+      "jenis": "Rekomendasi Oleh-Oleh",
+      "nama": "Kerupuk Ikan",
+      "link_foto": "https://down-id.img.susercontent.com/file/a6b29a925e515e7a7a918273bec0b056",
+      "deskripsi": "Kerupuk ikan khas hasil produk rumahan ibu rumah tangga di Kelurahan Mudung Laut, Kecamatan Pelayangan, Kota Jambi, menjadi salah satu andalan untuk mendukung kawasan wisata budaya di kawasan Kota Jambi Seberang itu. Selain bahan utama ikan, proses pembuatan kerupuk membutuhkan bantuan terik matahari dalam proses penjemuran. Intensitas panas matahari yang sangat kuat karena dapat mempercepat dalam pengeringan kerupuk ikan tersebut. Pemasarannya masih dilakukan secara tradisional, dijual langsung di warung-warung atau kepada pengunjung kawasan itu untuk camilan maupun oleh-oleh."
+    }
+  ],
+  "umkm": [
+    {
+      "id": 1,
+      "jenis": "Toko Oleh-Oleh",
+      "nama": "Cik Mia Songket",
+      "maps": "https://maps.app.goo.gl/MuEbUfoeKoui29kZ9",
+      "link_foto": "https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/infosumsel/2021/12/20211218123042_original.jpg"
+    },
+    {
+      "id": 2,
+      "jenis": "Toko Oleh-Oleh",
+      "nama": "Temphoyac",
+      "maps": "https://maps.app.goo.gl/XVKtHqetBBBxrPmn7",
+      "link_foto": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcqg-kTJbkoKZQXzGR3VqtCQOf8GYCaEfEYaF1cu_-vw2Gw3t_hF_TZp8FHDJEvOx72aqY1tqDvzYYUwMMHhmdVSPMd0HHuRVJGYsJwT-MW8qf_wMasL5WfwA7dAYufk2EZV77BjivURQK/s1600/Temphoyac.JPG"
+    },
+    {
+      "id": 3,
+      "jenis": "Toko Oleh-Oleh",
+      "nama": "Toko Oleh-Oleh Khas Jambi | Gerai Adila Snack & Food",
+      "maps": "https://maps.app.goo.gl/ojsLzAaDHpRejHTv5",
+      "link_foto": "https://asset-2.tstatic.net/jambi/foto/bank/images/gerai-adila-snack-and-food-juga-sediakan-meeting-room.jpg"
+    },
+    {
+      "id": 4,
+      "jenis": "Toko Oleh-Oleh",
+      "nama": "Jakoz Pabrik Oleh-Oleh Jambi",
+      "maps": "https://maps.app.goo.gl/68Fc4do3c3BcE3Eg9",
+      "link_foto": "https://food-cms.grab.com/Merchants/6-C4BVTPEBC2XZVJ/pictures/f81fad91-00c6-4674-a003-92f56ee61ba4__listing_photo__2024__02__06__10__07__14.jpeg"
+    },
+    {
+      "id": 5,
+      "jenis": "Toko Oleh-Oleh",
+      "nama": "The Art of Batik Berkah",
+      "maps": "https://maps.app.goo.gl/Xh4KoduQXthyWwkK9",
+      "link_foto": "https://jamberita.com/foto_berita/2020/08/06/52bu-ratu-10.jpg"
+    }
+  ]
+}

@@ -6,9 +6,7 @@ import { useState } from "react";
 
 function Page() {
   // Allow the user to freely go back and forth between visited steps.
-  const [olehOleh, setOlehOleh] = useState(
-    hiburan.filter((h) => h.jenis == "Rekomendasi Oleh-Oleh")
-  );
+  const [olehOleh, setOlehOleh] = useState(hiburan.oleh_oleh);
   const { width } = useWindowSize();
 
   return (
