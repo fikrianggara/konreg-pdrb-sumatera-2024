@@ -42,7 +42,7 @@ function Page() {
           filteredUmkm.map((w, i) => {
             return (
               <div
-                className="bg-white rounded-lg p-2 flex flex-col justify-between"
+                className="bg-white rounded-lg p-2 flex flex-col justify-between hover:shadow-lg duration-200 ease-in-out"
                 key={w.id}
               >
                 <div className="flex flex-col md:flex-row">
@@ -65,7 +65,7 @@ function Page() {
                   <div className="md:space-x-4 space-y-2 md:space-y-0 flex flex-col md:flex-row justify-between items-center">
                     <a
                       href={w.maps}
-                      className="flex items-center cursor-pointer hover:opacity-75 shadow-lg py-2 bg-red-500 text-white rounded-full w-full text-center text-ellipsis justify-center text-xs"
+                      className="flex items-center cursor-pointer hover:opacity-75 shadow-lg py-2 bg-amber-500 text-white rounded-full w-full text-center text-ellipsis justify-center text-xs"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
