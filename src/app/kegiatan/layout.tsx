@@ -31,7 +31,7 @@ export default function DashboardLayout({
           <Link href="/kegiatan/lokasi">Kegiatan</Link>
         </h1>
         <p className="font-medium text-sm lg:text-base text-gray-500 py-4">
-          Informasi terkait penyelenggaraan Konreg PDRB regional sumatera 2024
+          Informasi terkait penyelenggaraan Konreg PDRB Regional Sumatera 2024
         </p>
       </div>
       <Tabs

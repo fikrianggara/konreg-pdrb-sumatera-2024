@@ -9,7 +9,7 @@ const page = () => {
       ) : (
         <div className="h-full flex m-auto justify-center">
           <h1 className="text-xl text-gray-400 self-center">
-            Belum ada Dokumentasi
+            belum ada dokumentasi{" "}
           </h1>
         </div>
       )}
