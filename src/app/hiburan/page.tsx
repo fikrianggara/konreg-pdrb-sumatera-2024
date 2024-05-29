@@ -31,7 +31,7 @@ const page = () => {
           <img
             src={i.imageUrl}
             alt={i.description}
-            className={`rounded-lg h-full hover:shadow-xl duration-300 ease-in-out hover:cursor-pointer ${i.imageClassName}`}
+            className={`rounded-lg h-36 md:h-full hover:shadow-xl duration-300 ease-in-out hover:cursor-pointer ${i.imageClassName}`}
           />
         </Link>
       ))}
