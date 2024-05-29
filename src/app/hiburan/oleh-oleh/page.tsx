@@ -49,12 +49,12 @@ function Page() {
                   <img
                     src={w.link_foto}
                     alt={w.nama}
-                    className="h-36 md:aspect-square md:w-36 object-cover rounded-lg"
+                    className="h-36 md:aspect-square md:w-36 object-cover rounded-lg shadow-lg"
                   />
-                  <div className="p-2 space-y-4">
+                  <div className="p-4 space-y-2">
                     <h2 className="text-base font-medium"> {w.nama}</h2>
                     <p className="line-clamp-4 text-xs ">{w.deskripsi}</p>
-                    <h3 className="flex items-start text-xs">
+                    <h3 className="flex items-start text-xs text-gray-500">
                       <IconTag size={24} />{" "}
                       <span className="ml-2"> {w.produk}</span>
                     </h3>
