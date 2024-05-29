@@ -26,14 +26,15 @@ export default function DashboardLayout({
   return (
     <div className="p-4 lg:px-36 py-8 space-y-4 lg:space-y-6 bg-dotted">
       <Breadcrumb />
-      <div>
+      <div className="space-y-2">
         <h1 className="font-bold text-xl lg:text-3xl text-emerald-800">
           <Link href="/kegiatan/lokasi">Kegiatan</Link>
         </h1>
-        <p className="font-medium text-sm lg:text-base text-gray-500 py-4">
+        <p className=" text-sm w-96 md:w-1/2">
           Informasi terkait penyelenggaraan Konreg PDRB Regional Sumatera 2024
         </p>
       </div>
+
       <Tabs
         color="teal"
         // variant="pills"
