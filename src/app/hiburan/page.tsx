@@ -13,7 +13,7 @@ const page = () => {
       title: "Oleh-oleh",
       description: "Rekomendasi oleh-oleh khas Jambi",
       imageUrl: "/assets/1x3_banner_oleh-oleh.png",
-      imageClassName: "object-cover object-left h-full",
+      imageClassName: "object-cover object-left h-36 lg:h-full",
       href: "/hiburan/oleh-oleh",
     },
     {
