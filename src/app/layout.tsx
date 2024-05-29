@@ -9,7 +9,6 @@ import "./globals.css";
 import Providers from "@/components/providers";
 import { ColorSchemeScript } from "@mantine/core";
 import "mapbox-gl/dist/mapbox-gl.css";
-// import { Provider } from "@radix-ui/react-toast";
 
 export const metadata: Metadata = {
   title: "Konreg PDRB Sumatera 2024",
@@ -35,7 +34,35 @@ export default function RootLayout({
     <html lang="en" className={poppins.className + " scroll-smooth"}>
       <head>
         <ColorSchemeScript />
+        <link rel="manifest" href="/manifest.json"></link>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        />
+        <meta name="application-name" content="web konreg PDRB Sumatera 2024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta
+          name="apple-mobile-web-app-title"
+          content="web konreg PDRB Sumatera 2024"
+        />
+        <meta
+          name="description"
+          content="Pusat informasi akomodasi kegiatan Konsultasi Regional PDRB Sumatera 2024"
+        />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-TileColor" content="#f59e0c" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="theme-color" content="#f59e0c" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/assets/icon512_rounded.png"
+        />
       </head>
+
       <body className="bg-gray-50">
         <Providers>
           <div className={poppins.className}>

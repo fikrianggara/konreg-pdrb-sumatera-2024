@@ -50,26 +50,31 @@ const NAVBAR_ITEMS: NAVBAR_ITEM_TYPE[] = [
     url: "/akomodasi",
   },
   {
-    name: "Wisata",
+    name: "Hiburan",
     child: [
-      { name: "Kuliner", url: "/wisata/kuliner" },
-      { name: "Oleh-Oleh", url: "/wisata/oleh-oleh" },
-      { name: "Sejarah & Landmark", url: "/wisata/sejarah" },
-      { name: "Taman Bermain", url: "/wisata/taman" },
-    ],
-    url: "/wisata",
-  },
-  {
-    name: "Data dan Infografis",
-    child: [
-      { name: "Data", url: "/data-infografis/data" },
+      { name: "Wisata", url: "/hiburan/wisata" },
       {
-        name: "Infografis",
-        url: "/data-infografis/infografis/pertumbuhan-ekonomi",
+        name: "Produk UMKM",
+        url: "/hiburan/oleh-oleh/",
+      },
+      {
+        name: "Kuliner",
+        url: "/hiburan/kuliner/",
       },
     ],
-    url: "/data-infografis/data",
+    url: "/hiburan",
   },
+  // {
+  //   name: "Hiburan",
+  //   child: [
+  //     { name: "Data", url: "/data-infografis/data" },
+  //     {
+  //       name: "Infografis",
+  //       url: "/data-infografis/infografis/pertumbuhan-ekonomi",
+  //     },
+  //   ],
+  //   url: "/data-infografis/data",
+  // },
   {
     name: "Galeri",
     url: "/galeri",
@@ -141,7 +146,7 @@ export function SheetSide() {
                                 href={i.url ? i.url : "/"}
                               >
                                 {i.name}
-                                <IconChevronRight size={16} />
+                                {/* <IconChevronRight size={16} /> */}
                               </Link>
                             );
                           })}
@@ -183,7 +188,7 @@ function Navbar() {
           <Link href="/" className="flex items-center space-x-2 ">
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
             <div>
-              <h1 className="text-emerald-800 text-lg font-bold">
+              <h1 className="text-emerald-800 text-base font-bold">
                 Konsultasi Regional PDRB
               </h1>
               <h2 className="text-amber-500 font-base text-sm">
@@ -233,7 +238,7 @@ function Navbar() {
                             href={i.url ? i.url : "/"}
                           >
                             {i.name}
-                            <IconChevronRight size={16} />
+                            {/* <IconChevronRight size={16} /> */}
                           </Link>
                         );
                       })}
