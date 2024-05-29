@@ -135,6 +135,7 @@ function Page() {
         </div>
       </div>
       <div className="sticky top-24 lg:w-1/3 space-y-4 h-full">
+        <h2 className="font-medium text-gray-600">Filter Kategori Wisata</h2>
         <div className="grid grid-cols-2 gap-2 text-gray-400 ">
           {categories.map((c) => (
             <div
@@ -170,7 +171,7 @@ function Page() {
           <img
             src={selectedWisata.link_foto}
             alt={selectedWisata.nama}
-            className="h-48 md:h-64 w-full object-cover rounded-t-lg"
+            className="h-48 md:h-48 w-full object-cover rounded-t-lg"
           />
           <div className="p-4 space-y-2 md:space-y-6">
             <h2 className="md:text-xl font-medium flex items-center">
