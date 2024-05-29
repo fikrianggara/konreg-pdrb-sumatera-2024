@@ -6,11 +6,10 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 const INFORMASI = [
-  { name: "Hotel", href: "/akomodasi/hotel" },
-  { name: "Rumah Makan", href: "/akomodasi/rumah-makan" },
-  { name: "Perbelanjaan", href: "/akomodasi/perbelanjaan" },
-  { name: "Transportasi", href: "/akomodasi/transportasi" },
-  { name: "Rumah Ibadah", href: "/akomodasi/rumah-ibadah" },
+  { name: "Hotel", href: "/hotel" },
+  { name: "Rumah Makan", href: "/rumah_makan" },
+  { name: "Transportasi", href: "/transportasi" },
+  { name: "Rumah Ibadah", href: "/rumah_ibadah" },
 ];
 
 export default function DashboardLayout({
@@ -37,11 +36,11 @@ export default function DashboardLayout({
         color="teal"
         // variant="pills"
         defaultValue={active}
-        onChange={(value) => router.push(`/hiburan/${value}`)}
+        onChange={(value) => router.push(`/akomodasi/${value}`)}
       >
         <Tabs.List>
           {INFORMASI.map((i) => (
-            <Tabs.Tab key={i.name} value={i.name}>
+            <Tabs.Tab key={i.href} value={i.href}>
               {i.name}
             </Tabs.Tab>
           ))}

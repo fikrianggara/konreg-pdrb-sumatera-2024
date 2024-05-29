@@ -42,10 +42,9 @@ const NAVBAR_ITEMS: NAVBAR_ITEM_TYPE[] = [
     name: "Akomodasi",
     child: [
       { name: "Hotel", url: "/akomodasi/hotel" },
-      { name: "Rumah Makan", url: "/akomodasi/rumah-makan" },
-      { name: "Perbelanjaan", url: "/akomodasi/perbelanjaan" },
+      { name: "Rumah Makan", url: "/akomodasi/rumah_makan" },
       { name: "Transportasi", url: "/akomodasi/transportasi" },
-      { name: "Rumah Ibadah", url: "/akomodasi/rumah-ibadah" },
+      { name: "Rumah Ibadah", url: "/akomodasi/rumah_ibadah" },
     ],
     url: "/akomodasi",
   },

@@ -24,8 +24,8 @@ import {
 import { useCallback, useEffect, useState } from "react";
 
 function Page() {
-  const [hotel, _] = useState(akomodasi.hotel);
-  const [selectedHotel, setSelectedHotel] = useState(akomodasi.hotel[0]);
+  const [hotel, _] = useState(akomodasi.rumah_makan);
+  const [selectedHotel, setSelectedHotel] = useState(akomodasi.rumah_makan[0]);
   const [isRevealDesc, setIsRevealDesc] = useState(false);
   const { width } = useWindowSize();
   const router = useRouter();
@@ -43,17 +43,17 @@ function Page() {
   );
 
   const handleHotelClick = (i: any) => {
-    setSelectedHotel(akomodasi.hotel[i]);
+    setSelectedHotel(akomodasi.rumah_makan[i]);
     router.push(pathname + "?" + createQueryString("id", i), { scroll: false });
   };
 
   useEffect(() => {
     if (searchParams.get("id") !== null) {
       const id = searchParams.get("id");
-      if (akomodasi.hotel[Number(id)]) {
-        setSelectedHotel(akomodasi.hotel[Number(id)]);
+      if (akomodasi.rumah_makan[Number(id)]) {
+        setSelectedHotel(akomodasi.rumah_makan[Number(id)]);
       } else {
-        setSelectedHotel(akomodasi.hotel[0]);
+        setSelectedHotel(akomodasi.rumah_makan[0]);
         router.push(pathname + "?" + createQueryString("id", "0"), {
           scroll: false,
         });

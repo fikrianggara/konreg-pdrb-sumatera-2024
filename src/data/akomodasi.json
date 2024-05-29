@@ -36,5 +36,47 @@
       "jarak": "5,4",
       "rate": "4,8"
     }
+  ],
+  "rumah_makan": [
+    {
+      "id": 1,
+      "jenis": "Daftar Rumah Makan",
+      "nama": "ASTON Jambi Hotel & Conference Center",
+      "maps": "https://maps.app.goo.gl/8QjqXTNEU2ZvZPS3A",
+      "link_foto": "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10007179-1500x1000-FIT_AND_TRIM-13d69d49e336ae12cf01615191bf6fed.jpeg",
+      "deskripsi": "ASTON Jambi Hotel & Conference Center adalah pilihan tepat bagi Anda yang ingin menghabiskan waktu dengan berbagai fasilitas mewah. Nikmati kualitas layanan terbaik dan pengalaman mengesankan selama menginap di hotel ini. ASTON Jambi Hotel & Conference Center memiliki segala fasilitas penunjang bisnis untuk Anda dan kolega. Lokasi hotel sangat strategis karena hanya berjarak 5,98 km dengan Bandar Udara Sultan Thaha Syaifuddin (DJB).",
+      "kab_kota": "Kota Jambi",
+      "telepon": "(0741) 33777",
+      "jarak": "5,4",
+      "rate": "4,8"
+    }
+  ],
+  "transportasi": [
+    {
+      "id": 1,
+      "jenis": "Daftar Transportasi",
+      "nama": "ASTON Jambi Hotel & Conference Center",
+      "maps": "https://maps.app.goo.gl/8QjqXTNEU2ZvZPS3A",
+      "link_foto": "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10007179-1500x1000-FIT_AND_TRIM-13d69d49e336ae12cf01615191bf6fed.jpeg",
+      "deskripsi": "ASTON Jambi Hotel & Conference Center adalah pilihan tepat bagi Anda yang ingin menghabiskan waktu dengan berbagai fasilitas mewah. Nikmati kualitas layanan terbaik dan pengalaman mengesankan selama menginap di hotel ini. ASTON Jambi Hotel & Conference Center memiliki segala fasilitas penunjang bisnis untuk Anda dan kolega. Lokasi hotel sangat strategis karena hanya berjarak 5,98 km dengan Bandar Udara Sultan Thaha Syaifuddin (DJB).",
+      "kab_kota": "Kota Jambi",
+      "telepon": "(0741) 33777",
+      "jarak": "5,4",
+      "rate": "4,8"
+    }
+  ],
+  "rumah_ibadah": [
+    {
+      "id": 1,
+      "jenis": "Masjid",
+      "nama": "ASTON Jambi Hotel & Conference Center",
+      "maps": "https://maps.app.goo.gl/8QjqXTNEU2ZvZPS3A",
+      "link_foto": "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10007179-1500x1000-FIT_AND_TRIM-13d69d49e336ae12cf01615191bf6fed.jpeg",
+      "deskripsi": "ASTON Jambi Hotel & Conference Center adalah pilihan tepat bagi Anda yang ingin menghabiskan waktu dengan berbagai fasilitas mewah. Nikmati kualitas layanan terbaik dan pengalaman mengesankan selama menginap di hotel ini. ASTON Jambi Hotel & Conference Center memiliki segala fasilitas penunjang bisnis untuk Anda dan kolega. Lokasi hotel sangat strategis karena hanya berjarak 5,98 km dengan Bandar Udara Sultan Thaha Syaifuddin (DJB).",
+      "kab_kota": "Kota Jambi",
+      "telepon": "(0741) 33777",
+      "jarak": "5,4",
+      "rate": "4,8"
+    }
   ]
 }
