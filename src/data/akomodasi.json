@@ -1,0 +1,40 @@
+{
+  "hotel": [
+    {
+      "id": 1,
+      "jenis": "Daftar Hotel",
+      "nama": "BW Luxury Jambi",
+      "maps": "https://maps.app.goo.gl/brdSYUkeHzJXkesD8",
+      "link_foto": "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20011977-9a87f7e9441a004ac20d28f3a42f42ce.jpeg",
+      "deskripsi": "BW Luxury Hotel Jambi adalah pilihan tepat bagi Anda yang ingin menghabiskan waktu dengan berbagai fasilitas mewah. Nikmati kualitas layanan terbaik dan pengalaman mengesankan selama menginap di hotel ini. BW Luxury Hotel Jambi adalah hotel dekat bandara Bandar Udara Sultan Thaha Syaifuddin (DJB) dan merupakan pilihan tepat untuk bermalam sambil menunggu jadwal penerbangan berikutnya. Dapatkan tempat untuk istirahat yang nyaman di tengah persinggahan sementara Anda. BW Luxury Hotel Jambi memiliki segala fasilitas penunjang bisnis untuk Anda dan kolega. Kualitas pelayanan super, ditambah berbagai fasilitas unggulan akan membuat saat-saat menginap di sini menjadi sebuah pengalaman berkesan yang luar biasa.",
+      "kab_kota": "Kota Jambi",
+      "telepon": "(0741) 3072222",
+      "jarak": "0",
+      "rate": "4,7"
+    },
+    {
+      "id": 2,
+      "jenis": "Daftar Hotel",
+      "nama": "Swiss Bell Hotel Jambi",
+      "maps": "https://maps.app.goo.gl/ReWbDnidAquXsz9H9",
+      "link_foto": "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10011691-993a972bb826eb87db8247c9b155ac7f.jpeg?",
+      "deskripsi": "Swiss-Belhotel Jambi adalah hotel di lokasi yang baik, tepatnya berada di Kecamatan Danau Sipin. Lokasi hotel sangat strategis karena hanya berjarak 6,08 km dengan Bandar Udara Sultan Thaha Syaifuddin (DJB). Swiss-Belhotel Jambi adalah akomodasi dengan fasilitas baik dan kualitas pelayanan memuaskan menurut sebagian besar tamu. Pengalaman berkesan dan tak terlupakan akan Anda dapatkan selama menginap di Swiss-Belhotel Jambi.",
+      "kab_kota": "Kota Jambi",
+      "telepon": "(0741) 5913388",
+      "jarak": "5,6",
+      "rate": "4,8"
+    },
+    {
+      "id": 3,
+      "jenis": "Daftar Hotel",
+      "nama": "ASTON Jambi Hotel & Conference Center",
+      "maps": "https://maps.app.goo.gl/8QjqXTNEU2ZvZPS3A",
+      "link_foto": "https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10007179-1500x1000-FIT_AND_TRIM-13d69d49e336ae12cf01615191bf6fed.jpeg",
+      "deskripsi": "ASTON Jambi Hotel & Conference Center adalah pilihan tepat bagi Anda yang ingin menghabiskan waktu dengan berbagai fasilitas mewah. Nikmati kualitas layanan terbaik dan pengalaman mengesankan selama menginap di hotel ini. ASTON Jambi Hotel & Conference Center memiliki segala fasilitas penunjang bisnis untuk Anda dan kolega. Lokasi hotel sangat strategis karena hanya berjarak 5,98 km dengan Bandar Udara Sultan Thaha Syaifuddin (DJB).",
+      "kab_kota": "Kota Jambi",
+      "telepon": "(0741) 33777",
+      "jarak": "5,4",
+      "rate": "4,8"
+    }
+  ]
+}
