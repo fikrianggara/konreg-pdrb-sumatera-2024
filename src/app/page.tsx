@@ -145,12 +145,12 @@ export default function Home() {
           <div className="mt-8 space-y-4 flex flex-col items-center lg:items-start">
             <Link
               href="#konten"
-              className="px-4 py-2 text-white font-light flex justify-between bg-emerald-800 rounded-full w-fit space-x-4 mt-8 shadow-xl transition-all duration-300 bg-gradient-to-tl from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100"
+              className="px-4 py-1 md:py-2 text-white font-light flex justify-between bg-emerald-800 rounded-full w-fit space-x-4 mt-8 shadow-xl transition-all duration-300 bg-gradient-to-tl from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100"
             >
               <span>Informasi kegiatan</span>
               {<IconArrowNarrowRight />}
             </Link>
-            <div className="px-4 py-2 text-white font-light flex justify-between bg-emerald-800 rounded-full w-fit space-x-4 shadow-xl transition-all duration-300 bg-gradient-to-tl from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100">
+            <div className="px-4 py-1 md:py-2 text-white font-light flex justify-between bg-emerald-800 rounded-full w-fit space-x-4 shadow-xl transition-all duration-300 bg-gradient-to-tl from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100">
               <span>Bergabung</span>
               <Image
                 src="/assets/whatsapp-logo.png"
@@ -182,7 +182,7 @@ export default function Home() {
             <h3 className="text-lg lg:text-2xl font-bold text-emerald-800">
               Kegiatan
             </h3>
-            <p className="text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
+            <p className="text-xs md:text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
               Informasi jadwal dan lokasi kegiatan serta materi dan notula
               Konsultasi Regional PDRB Wilayah Sumatera Tahun 2024.
             </p>
@@ -197,7 +197,7 @@ export default function Home() {
             <h3 className="text-lg lg:text-2xl font-bold text-amber-500">
               Hiburan
             </h3>
-            <p className="text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
+            <p className="text-xs md:text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
               Wisata, produk UMKM, dan oleh-oleh khas provinsi jambi
             </p>
             <Link
@@ -211,7 +211,7 @@ export default function Home() {
             <h3 className="text-lg lg:text-2xl font-bold text-cyan-800">
               Galeri
             </h3>
-            <p className="text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
+            <p className="text-xs md:text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
               Kumpulan dokumentasi selama kegiatan Konsultasi Regional PDRB
               Wilayah Sumatera Tahun 2024 berlangsung.
             </p>

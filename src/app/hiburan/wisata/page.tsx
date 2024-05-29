@@ -133,7 +133,7 @@ function Page() {
             </div>
           )}
           <ul className="w-full space-y-4 flex flex-wrap text-xs md:text-sm">
-            <li className="flex space-between items-center space-x-4 flex-wrap space-y-2">
+            <li className="space-y-2">
               <div className="flex items-center">
                 <IconCalendarMonth />
                 {selectedWisata.hari}

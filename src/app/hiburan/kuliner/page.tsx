@@ -56,7 +56,7 @@ function Page() {
               <img
                 src={w.link_foto}
                 alt={w.nama}
-                className="rounded-lg aspect-auto h-fit w-full md:w-64 shadow-lg"
+                className="rounded-lg aspect-auto h-36 md:h-full w-full md:w-64 shadow-lg object-cover"
               ></img>
               <div className="text-sm md:text-base space-y-2">
                 <h2 className="font-bold text-emerald-800 text-lg md:text-xl">
