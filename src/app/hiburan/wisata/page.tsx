@@ -135,7 +135,9 @@ function Page() {
         </div>
       </div>
       <div className="sticky top-24 lg:w-1/3 space-y-4 h-full">
-        <h2 className="font-medium text-gray-600">Filter Kategori Wisata</h2>
+        <h2 className="font-medium text-gray-600 text-xs md:text-base">
+          Filter Kategori Wisata
+        </h2>
         <div className="grid grid-cols-2 gap-2 text-gray-400 ">
           {categories.map((c) => (
             <div
