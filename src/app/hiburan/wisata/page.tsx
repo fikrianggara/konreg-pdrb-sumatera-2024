@@ -145,7 +145,7 @@ function Page() {
                   : ""
               }`}
               onClick={() => {
-                let tempSelectedCategories = [];
+                let tempSelectedCategories = selectedCategories;
                 if (selectedCategories.includes(c)) {
                   tempSelectedCategories = selectedCategories.filter(
                     (sc) => sc !== c
