@@ -7,6 +7,7 @@ import {
   IconClock,
   IconMapPin,
   IconRoad,
+  IconRoute,
   IconTimeline,
 } from "@tabler/icons-react";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
@@ -113,8 +114,8 @@ function Page() {
           <ul className="w-full space-y-4 flex flex-wrap text-xs md:text-sm">
             <li className="space-y-2">
               <div className="flex items-center">
-                <IconRoad />
-                {selectedRumahIbadah.jarak} KM
+                <IconRoute />
+                {selectedRumahIbadah.jarak} KM dari pusat kota
               </div>
               <div className="flex items-center">
                 <IconTimeline />

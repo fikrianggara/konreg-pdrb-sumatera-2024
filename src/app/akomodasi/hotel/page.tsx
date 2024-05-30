@@ -149,8 +149,8 @@ function Page() {
                 {selectedHotel.rate}
               </div>
               <div className="flex items-center">
-                <IconRoad />
-                {selectedHotel.jarak} KM
+                <IconRoute />
+                {selectedHotel.jarak} KM dari pusat kota
               </div>
               <div className="flex items-center">
                 <IconPhoneFilled />

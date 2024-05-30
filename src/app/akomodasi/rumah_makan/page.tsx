@@ -8,6 +8,7 @@ import {
   IconClock,
   IconMapPin,
   IconRoad,
+  IconRoute,
   IconStarFilled,
   IconTimeline,
 } from "@tabler/icons-react";
@@ -123,8 +124,8 @@ function Page() {
                 {selecteRumahMakan.rating_google}
               </div>
               <div className="flex items-center">
-                <IconRoad />
-                {selecteRumahMakan.jarak} KM
+                <IconRoute />
+                {selecteRumahMakan.jarak} KM dari pusat kota
               </div>
               <div className="flex items-center">
                 <IconCashBanknote />
