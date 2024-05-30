@@ -3,30 +3,20 @@
 import akomodasi from "@/data/akomodasi.json";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import {
-  IconCalendarMonth,
+  IconCalendar,
   IconClock,
   IconMapPin,
-  IconMoneybag,
-  IconPhone,
-  IconPhoneFilled,
   IconRoad,
-  IconRoute,
-  IconStarFilled,
+  IconTimeline,
 } from "@tabler/icons-react";
-import Link from "next/link";
-import {
-  useParams,
-  usePathname,
-  useSearchParams,
-  useRouter,
-} from "next/navigation";
-// import { useRouter } from "next/router";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 
 function Page() {
   const [hotel, _] = useState(akomodasi.rumah_ibadah);
-  const [selectedHotel, setSelectedHotel] = useState(akomodasi.rumah_ibadah[0]);
-  const [isRevealDesc, setIsRevealDesc] = useState(false);
+  const [selectedRumahIbadah, setSelectedRumahIbadah] = useState(
+    akomodasi.rumah_ibadah[0]
+  );
   const { width } = useWindowSize();
   const router = useRouter();
   const pathname = usePathname();
@@ -43,7 +33,7 @@ function Page() {
   );
 
   const handleHotelClick = (i: any) => {
-    setSelectedHotel(akomodasi.rumah_ibadah[i]);
+    setSelectedRumahIbadah(akomodasi.rumah_ibadah[i]);
     router.push(pathname + "?" + createQueryString("id", i), { scroll: false });
   };
 
@@ -51,9 +41,9 @@ function Page() {
     if (searchParams.get("id") !== null) {
       const id = searchParams.get("id");
       if (akomodasi.rumah_ibadah[Number(id)]) {
-        setSelectedHotel(akomodasi.rumah_ibadah[Number(id)]);
+        setSelectedRumahIbadah(akomodasi.rumah_ibadah[Number(id)]);
       } else {
-        setSelectedHotel(akomodasi.rumah_ibadah[0]);
+        setSelectedRumahIbadah(akomodasi.rumah_ibadah[0]);
         router.push(pathname + "?" + createQueryString("id", "0"), {
           scroll: false,
         });
@@ -98,7 +88,7 @@ function Page() {
                   src={h.link_foto}
                   alt={h.nama}
                   className={`h-36 md:h-36 w-64 md:w-full object-cover rounded-lg opacity-50 duration-300 hover:opacity-90 ease-in-out ${
-                    selectedHotel.id == h.id ? " opacity-90" : ""
+                    selectedRumahIbadah.id == h.id ? " opacity-90" : ""
                   }
                   `}
                   width={200}
@@ -114,57 +104,39 @@ function Page() {
 
       <div className=" rounded-lg bg-white lg:w-1/3 h-fit sticky top-24">
         <img
-          src={selectedHotel.link_foto}
-          alt={selectedHotel.nama}
+          src={selectedRumahIbadah.link_foto}
+          alt={selectedRumahIbadah.nama}
           className="h-48 md:h-64 w-full object-cover rounded-t-lg"
         />
         <div className="p-4 space-y-2 md:space-y-6">
-          <h2 className="md:text-xl font-medium">{selectedHotel.nama}</h2>
-          {!isRevealDesc ? (
-            <div className="text-xs md:text-sm">
-              <p className=" line-clamp-4">{selectedHotel.deskripsi}</p>
-              <div
-                onClick={() => setIsRevealDesc(true)}
-                className=" underline text-cyan-500 cursor-pointer"
-              >
-                selengkapnya
-              </div>
-            </div>
-          ) : (
-            <div className="text-xs md:text-sm">
-              <p>{selectedHotel.deskripsi}</p>
-
-              <div
-                onClick={() => setIsRevealDesc(false)}
-                className=" underline text-cyan-500 cursor-pointer"
-              >
-                sembunyikan
-              </div>
-            </div>
-          )}
+          <h2 className="md:text-xl font-medium">{selectedRumahIbadah.nama}</h2>
           <ul className="w-full space-y-4 flex flex-wrap text-xs md:text-sm">
             <li className="space-y-2">
               <div className="flex items-center">
-                <IconStarFilled />
-                {selectedHotel.rate}
-              </div>
-              <div className="flex items-center">
                 <IconRoad />
-                {selectedHotel.jarak} KM
+                {selectedRumahIbadah.jarak} KM
               </div>
               <div className="flex items-center">
-                <IconPhoneFilled />
-                {selectedHotel.telepon}
+                <IconTimeline />
+                {selectedRumahIbadah.waktu_tempuh}
+              </div>
+              <div className="flex items-center">
+                <IconClock />
+                {selectedRumahIbadah.jam_buka}
+              </div>
+              <div className="flex items-center">
+                <IconCalendar />
+                {selectedRumahIbadah.operasional}
               </div>
             </li>
             <a
-              href={selectedHotel.maps}
+              href={selectedRumahIbadah.maps}
               className="flex items-center cursor-pointer hover:opacity-75 shadow-lg py-1 bg-red-500 text-white rounded-full w-full text-center text-ellipsis justify-center"
               target="_blank"
               rel="noopener noreferrer"
             >
               <IconMapPin className="animate-bounce" />
-              {selectedHotel.kab_kota}
+              {selectedRumahIbadah.lokasi}
             </a>
           </ul>
         </div>
