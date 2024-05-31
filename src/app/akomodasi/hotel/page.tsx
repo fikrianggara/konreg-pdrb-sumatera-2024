@@ -3,23 +3,12 @@
 import akomodasi from "@/data/akomodasi.json";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import {
-  IconCalendarMonth,
-  IconClock,
   IconMapPin,
-  IconMoneybag,
-  IconPhone,
   IconPhoneFilled,
-  IconRoad,
   IconRoute,
   IconStarFilled,
 } from "@tabler/icons-react";
-import Link from "next/link";
-import {
-  useParams,
-  usePathname,
-  useSearchParams,
-  useRouter,
-} from "next/navigation";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
 // import { useRouter } from "next/router";
 import { useCallback, useEffect, useState } from "react";
 
@@ -71,14 +60,14 @@ function Page() {
         <div className="space-y-2 justify-center w-full">
           {width && width < 800 ? (
             <img
-              src="/assets/banner_wisata.png"
-              alt="Wisata jambi"
+              src="/assets/banner_hotel.png"
+              alt="Hotel jambi"
               className={`rounded-lg`}
             />
           ) : (
             <img
-              src="/assets/1x3_banner_wisata_nocheck.png"
-              alt="Wisata jambi"
+              src="/assets/banner_hotel.png"
+              alt="Hotel jambi"
               className={`rounded-lg`}
             />
           )}

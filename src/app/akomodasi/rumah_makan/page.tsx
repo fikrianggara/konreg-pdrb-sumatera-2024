@@ -65,14 +65,14 @@ function Page() {
         <div className="space-y-2 justify-center w-full">
           {width && width < 800 ? (
             <img
-              src="/assets/banner_wisata.png"
-              alt="Wisata jambi"
+              src="/assets/banner_rumah_makan.png"
+              alt="Rumah Makan jambi"
               className={`rounded-lg`}
             />
           ) : (
             <img
-              src="/assets/1x3_banner_wisata_nocheck.png"
-              alt="Wisata jambi"
+              src="/assets/banner_rumah_makan.png"
+              alt="Rumah Makan jambi"
               className={`rounded-lg`}
             />
           )}

@@ -32,9 +32,6 @@ function Page() {
             />
             <div className="p-4 space-y-2 md:space-y-6">
               <h2 className="md:text-xl font-medium text-center">{t.nama}</h2>
-              <div className="text-xs md:text-sm">
-                <p>{t.deskripsi}</p>
-              </div>
               <ul className="w-full space-y-4 flex flex-wrap text-xs md:text-sm">
                 <a
                   href={t.link_android}
