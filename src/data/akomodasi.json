@@ -542,7 +542,8 @@
       "id": 1,
       "jenis": "online",
       "nama": "Grab",
-      "maps": "https://maps.app.goo.gl/8QjqXTNEU2ZvZPS3A",
+      "link_android": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&hl=id",
+      "link_apple": "https://apps.apple.com/id/app/grab-taxi-food-delivery/id647268330",
       "link_foto": "https://play-lh.googleusercontent.com/4ldfAPblIiYx_2Evd0GiXIdUHz0ODDXiM0nns0Bp8GoLmyLTxjmgrmJyaqDi3WjEJmUJ",
       "deskripsi": "Grab",
       "kab_kota": "Kota Jambi",
@@ -554,7 +555,8 @@
       "id": 2,
       "jenis": "online",
       "nama": "Gojek",
-      "maps": "https://maps.app.goo.gl/8QjqXTNEU2ZvZPS3A",
+      "link_android": "https://play.google.com/store/apps/details?id=com.gojek.app&hl=id&gl=US",
+      "link_apple": "https://apps.apple.com/id/app/gojek/id944875099",
       "link_foto": "https://play-lh.googleusercontent.com/7geaWzM1Oz6fPZ4LvgNptt7Ds2mwm7hbeItlPGYGrhdUQfIe06BK0O4jS9ZDgoTAvIU",
       "deskripsi": "Gojek",
       "kab_kota": "Kota Jambi",
@@ -566,7 +568,8 @@
       "id": 3,
       "jenis": "online",
       "nama": "Maxim",
-      "maps": "https://maps.app.goo.gl/8QjqXTNEU2ZvZPS3A",
+      "link_android": "https://play.google.com/store/apps/details?id=com.taxsee.taxsee&hl=id&gl=US",
+      "link_apple": "https://apps.apple.com/id/app/maxim-transportasi-delivery/id579985456?l=id",
       "link_foto": "https://play-lh.googleusercontent.com/bRDRVxur-TaSGjNFs_UNbtE4lsmmXFNTPFHwYCifSkit-TDcpMK24iMUixN3zJ_Phdbl",
       "deskripsi": "Maxim",
       "kab_kota": "Kota Jambi",
@@ -850,6 +853,71 @@
       "lokasi": "Sulanjana, Jambi Timur",
       "jam_buka": "-",
       "operasional": "-"
+    }
+  ],
+  "pic": [
+    {
+      "id": 1,
+      "nama": "PIC 1",
+      "lo": "Aceh",
+      "link_foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "tel": "082121302222"
+    },
+    {
+      "id": 2,
+      "nama": "PIC 2",
+      "lo": "Sumatera Utara",
+      "link_foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "tel": "082121302222"
+    },
+    {
+      "id": 3,
+      "nama": "PIC 3",
+      "lo": "Sumatera Barat",
+      "link_foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "tel": "082121302222"
+    },
+    {
+      "id": 4,
+      "nama": "PIC 4",
+      "lo": "Riau",
+      "link_foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "tel": "082121302222"
+    },
+    {
+      "id": 5,
+      "nama": "PIC 5",
+      "lo": "Sumatera Selatan",
+      "link_foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "tel": "082121302222"
+    },
+    {
+      "id": 6,
+      "nama": "PIC 6",
+      "lo": "Bengkulu",
+      "link_foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "tel": "082121302222"
+    },
+    {
+      "id": 7,
+      "nama": "PIC 7",
+      "lo": "Lampung",
+      "link_foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "tel": "082121302222"
+    },
+    {
+      "id": 8,
+      "nama": "PIC 8",
+      "lo": "Bangka Belitung",
+      "link_foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "tel": "082121302222"
+    },
+    {
+      "id": 9,
+      "nama": "PIC 9",
+      "lo": "Kepulauan Riau",
+      "link_foto": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "tel": "082121302222"
     }
   ]
 }
