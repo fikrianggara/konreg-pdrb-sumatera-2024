@@ -6,9 +6,9 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 const INFORMASI = [
-  { name: "wisata", href: "/hiburan/wisata" },
-  { name: "oleh-oleh", href: "/hiburan/oleh-oleh" },
-  { name: "kuliner", href: "/hiburan/kuliner" },
+  { name: "wisata", href: "/hiburan/wisata", label: "Wisata" },
+  { name: "oleh-oleh", href: "/hiburan/oleh-oleh", label: "Oleh Oleh" },
+  { name: "kuliner", href: "/hiburan/kuliner", label: "Kuliner" },
 ];
 
 export default function DashboardLayout({
@@ -40,7 +40,7 @@ export default function DashboardLayout({
         <Tabs.List>
           {INFORMASI.map((i) => (
             <Tabs.Tab key={i.name} value={i.name}>
-              {i.name}
+              {i.label}
             </Tabs.Tab>
           ))}
         </Tabs.List>

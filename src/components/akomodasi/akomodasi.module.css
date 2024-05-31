@@ -1,0 +1,20 @@
+.controls {
+  transition: opacity 150ms ease;
+  opacity: 0;
+}
+
+.control {
+  background-color: white;
+}
+
+.indicator {
+  background-color: white;
+}
+
+.root {
+  &:hover {
+    .controls {
+      opacity: 1;
+    }
+  }
+}
