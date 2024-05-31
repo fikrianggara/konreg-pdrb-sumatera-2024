@@ -14,9 +14,22 @@ const PROVINSI = [
   "Prov. Kepulauan Riau",
 ];
 
+const BPS = [
+  "https://aceh.bps.go.id/",
+  "https://sumut.bps.go.id/",
+  "https://sumbar.bps.go.id/",
+  "https://riau.bps.go.id/",
+  "https://jambi.bps.go.id/",
+  "https://sumsel.bps.go.id/",
+  "https://bengkulu.bps.go.id/",
+  "https://lampung.bps.go.id/",
+  "https://babel.bps.go.id/",
+  "https://kepri.bps.go.id/",
+];
+
 const COLLABORATORS = [
   {
-    instansi: "BAPPERIDA",
+    instansi: "BAPPEDA",
     instansiDaerah: PROVINSI,
   },
   {
@@ -47,11 +60,17 @@ const footer = () => {
               {col.instansi}
             </h2>
             <ul key={col.instansi + "inda"} className="flex flex-col space-y-2">
-              {col.instansiDaerah.map((inda) => (
-                <li key={inda} className="font-light">
-                  {inda}
-                </li>
-              ))}
+              {col.instansiDaerah.map((inda, i) =>
+                col.instansi === "BADAN PUSAT STATISTIK" ? (
+                  <li key={inda} className="font-light hover:underline">
+                    <a href={BPS[i]}>{inda}</a>
+                  </li>
+                ) : (
+                  <li key={inda} className="font-light">
+                    {inda}
+                  </li>
+                )
+              )}
             </ul>
           </li>
         ))}
