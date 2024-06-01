@@ -1,23 +1,49 @@
-# Use the official Node.js image as the base  
-FROM node:18-alpine
+FROM node:18-alpine AS base
 
-# Set the working directory inside the container  
-WORKDIR /app  
+# Install dependencies only when needed
+FROM base AS deps
 
-# Copy package.json and package-lock.json to the container  
-COPY package*.json ./  
+WORKDIR /app
 
-# Install dependencies  
-RUN npm ci  
+# Install dependencies based on the preferred package manager
+COPY package*.json ./
+RUN npm ci
 
-# Copy the app source code to the container  
-COPY . .  
+# Rebuild the source code only when needed
+FROM base AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
 
-# Build the Next.js app  
-RUN npm run build  
 
-# Expose the port the app will run on  
-EXPOSE 3000  
+RUN npm run build
 
-# Start the app  
-CMD ["npm", "start"]  
+# Production image, copy all the files and run next
+FROM base AS runner
+WORKDIR /app
+
+ENV NODE_ENV production
+
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+COPY --from=builder /app/public ./public
+
+# Set the correct permission for prerender cache
+RUN mkdir .next
+RUN chown nextjs:nodejs .next
+
+# Automatically leverage output traces to reduce image size
+# https://nextjs.org/docs/advanced-features/output-file-tracing
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+USER nextjs
+
+EXPOSE 3000
+
+ENV PORT 3000
+
+# server.js is created by next build from the standalone output
+# https://nextjs.org/docs/pages/api-reference/next-config-js/output
+CMD HOSTNAME="0.0.0.0" node server.js

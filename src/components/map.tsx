@@ -89,7 +89,7 @@ function Map() {
         mapStyle="mapbox://styles/mapbox/streets-v12"
         interactive={true}
         onMove={(evt) => setViewPort(evt.viewState)}
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "100%", height: "100%", borderRadius: 10 }}
       >
         <FullscreenControl position="top-left" />
         <NavigationControl position="top-left" />
