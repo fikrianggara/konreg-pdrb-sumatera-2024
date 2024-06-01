@@ -5,7 +5,6 @@ import {
   IconBrandApple,
   IconBrandGooglePlay,
   IconBrandWhatsapp,
-  IconMapPin,
 } from "@tabler/icons-react";
 import { Carousel } from "@mantine/carousel";
 

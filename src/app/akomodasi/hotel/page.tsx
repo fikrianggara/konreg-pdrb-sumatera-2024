@@ -13,7 +13,12 @@ import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 
 function Page() {
-  const [hotel, _] = useState(akomodasi.hotel);
+  const [hotel, _] = useState(
+    akomodasi.hotel.sort(function (a, b) {
+      if (a.jarak && b.jarak) return a.jarak - b.jarak;
+      return 0;
+    })
+  );
   const [selectedHotel, setSelectedHotel] = useState(akomodasi.hotel[0]);
   const [isRevealDesc, setIsRevealDesc] = useState(false);
   const { width } = useWindowSize();
@@ -92,9 +97,14 @@ function Page() {
                   `}
                   width={200}
                 />
-                <p className="absolute z-10 bottom-4 left-4 text-white font-medium">
-                  {h.nama}
-                </p>
+                <div className="absolute z-10 bottom-4 left-4 text-white">
+                  <h2 className=" font-medium flex items-center">
+                    <span className="mr-2">{h.nama}</span>
+                  </h2>
+                  <h3 className="text-xs text-gray-200">
+                    {h.jarak}KM dari pusat kota
+                  </h3>
+                </div>
               </div>
             );
           })}
