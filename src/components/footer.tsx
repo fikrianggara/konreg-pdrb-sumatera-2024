@@ -105,54 +105,59 @@ const COLLABORATORS = [
 const footer = () => {
   return (
     <footer className="w-full bg-emerald-800 text-white z-100">
-      <ul className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 p-8 gap-4 text-xs lg:text-base">
+      <ul className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-8 gap-4 text-xs lg:text-base">
         {COLLABORATORS.map((col) => (
-          <li key={col.instansi} className="space-y-4">
-            <h2 key={col.instansi} className="font-bold">
-              {col.instansi}
-            </h2>
-            <ul key={col.instansi + "inda"} className="flex flex-col space-y-2">
-              {col.instansiDaerah.map((inda, i) => {
-                switch (col.instansi) {
-                  case "BAPPEDA":
-                    return (
-                      <li key={inda} className="font-light hover:underline">
-                        <a href={BAPPEDA[i]}>{inda}</a>
-                      </li>
-                    );
-                    break;
-                  case "BADAN PUSAT STATISTIK":
-                    return (
-                      <li key={inda} className="font-light hover:underline">
-                        <a href={BPS[i]}>{inda}</a>
-                      </li>
-                    );
-                    break;
-                  case "DISKOMINFO":
-                    return (
-                      <li key={inda} className="font-light hover:underline">
-                        <a href={DISKOMINFO[i]}>{inda}</a>
-                      </li>
-                    );
-                    break;
-                  case "DIREKTORAT JENDRAL PERBENDAHARAAN":
-                    return (
-                      <li key={inda} className="font-light hover:underline">
-                        <a href={DJPB[i]}>{inda}</a>
-                      </li>
-                    );
-                    break;
-                  case "BANK INDONESIA":
-                    return (
-                      <li key={inda} className="font-light hover:underline">
-                        <a href={BI[i]}>{inda}</a>
-                      </li>
-                    );
-                    break;
-                }
-              })}
-            </ul>
-          </li>
+          <div className="flex m-auto">
+            <li key={col.instansi} className="space-y-4">
+              <h2 key={col.instansi} className="font-bold">
+                {col.instansi}
+              </h2>
+              <ul
+                key={col.instansi + "inda"}
+                className="flex flex-col space-y-2"
+              >
+                {col.instansiDaerah.map((inda, i) => {
+                  switch (col.instansi) {
+                    case "BAPPEDA":
+                      return (
+                        <li key={inda} className="font-light hover:underline">
+                          <a href={BAPPEDA[i]}>{inda}</a>
+                        </li>
+                      );
+                      break;
+                    case "BADAN PUSAT STATISTIK":
+                      return (
+                        <li key={inda} className="font-light hover:underline">
+                          <a href={BPS[i]}>{inda}</a>
+                        </li>
+                      );
+                      break;
+                    case "DISKOMINFO":
+                      return (
+                        <li key={inda} className="font-light hover:underline">
+                          <a href={DISKOMINFO[i]}>{inda}</a>
+                        </li>
+                      );
+                      break;
+                    case "DIREKTORAT JENDRAL PERBENDAHARAAN":
+                      return (
+                        <li key={inda} className="font-light hover:underline">
+                          <a href={DJPB[i]}>{inda}</a>
+                        </li>
+                      );
+                      break;
+                    case "BANK INDONESIA":
+                      return (
+                        <li key={inda} className="font-light hover:underline">
+                          <a href={BI[i]}>{inda}</a>
+                        </li>
+                      );
+                      break;
+                  }
+                })}
+              </ul>
+            </li>
+          </div>
         ))}
       </ul>
       <div className="bg-white p-8 text-gray-400 flex space-x-2 text-sm">
