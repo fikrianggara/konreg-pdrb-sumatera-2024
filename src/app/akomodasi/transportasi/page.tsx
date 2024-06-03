@@ -5,7 +5,6 @@ import {
   IconBrandApple,
   IconBrandGooglePlay,
   IconBrandWhatsapp,
-  IconMapPin,
 } from "@tabler/icons-react";
 import { Carousel } from "@mantine/carousel";
 
@@ -22,42 +21,42 @@ function Page() {
       <p className="my-4">
         Kami merekomendasikan Anda untuk menggunakan aplikasi berikut:
       </p>
-      <div className="p-4 w-full flex flex-col sm:flex-row justify-center	items-center">
-        {transportasi.map((t, i) => (
-          <div className="rounded-lg bg-white h-fit shadow-lg m-4" key={i}>
-            <img
-              src={t.link_foto}
-              alt={t.nama}
-              className="h-48 md:h-64 w-full object-cover rounded-t-lg"
-            />
-            <div className="p-4 space-y-2 md:space-y-6">
-              <h2 className="md:text-xl font-medium text-center">{t.nama}</h2>
-              <div className="text-xs md:text-sm">
-                <p>{t.deskripsi}</p>
+
+      <div className="p-4 w-full flex justify-center	items-center">
+        <div className="p-4 w-3/4 flex flex-col md:flex-row justify-center items-center">
+          {transportasi.map((t, i) => (
+            <div className="rounded-lg bg-white h-fit shadow-lg m-4" key={i}>
+              <img
+                src={t.link_foto}
+                alt={t.nama}
+                className="w-full object-cover rounded-t-lg"
+              />
+              <div className="p-4 space-y-2 md:space-y-6">
+                <h2 className="md:text-xl font-medium text-center">{t.nama}</h2>
+                <ul className="w-full space-y-4 flex flex-wrap text-xs md:text-sm">
+                  <a
+                    href={t.link_android}
+                    className="flex items-center cursor-pointer hover:opacity-75 shadow-lg py-1 bg-green-500 text-white rounded-full w-full text-center text-ellipsis justify-center"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <IconBrandGooglePlay className="animate-bounce" />
+                    Unduh
+                  </a>
+                  <a
+                    href={t.link_apple}
+                    className="flex items-center cursor-pointer hover:opacity-75 shadow-lg py-1 bg-gray-500 text-white rounded-full w-full text-center text-ellipsis justify-center"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <IconBrandApple className="animate-bounce" />
+                    Unduh
+                  </a>
+                </ul>
               </div>
-              <ul className="w-full space-y-4 flex flex-wrap text-xs md:text-sm">
-                <a
-                  href={t.link_android}
-                  className="flex items-center cursor-pointer hover:opacity-75 shadow-lg py-1 bg-green-500 text-white rounded-full w-full text-center text-ellipsis justify-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IconBrandGooglePlay className="animate-bounce" />
-                  Unduh
-                </a>
-                <a
-                  href={t.link_apple}
-                  className="flex items-center cursor-pointer hover:opacity-75 shadow-lg py-1 bg-gray-500 text-white rounded-full w-full text-center text-ellipsis justify-center"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <IconBrandApple className="animate-bounce" />
-                  Unduh
-                </a>
-              </ul>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <p>
         sebagai sarana transportasi di area Kota Jambi selama kegiatan

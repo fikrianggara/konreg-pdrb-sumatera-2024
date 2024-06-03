@@ -11,14 +11,7 @@ import {
   IconRoute,
   IconShoppingBag,
 } from "@tabler/icons-react";
-import Link from "next/link";
-import {
-  useParams,
-  usePathname,
-  useSearchParams,
-  useRouter,
-} from "next/navigation";
-// import { useRouter } from "next/router";
+import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 
 function Page() {

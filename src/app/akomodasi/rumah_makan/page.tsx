@@ -17,7 +17,12 @@ import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 
 function Page() {
-  const [rumah_makan, _] = useState(akomodasi.rumah_makan);
+  const [rumah_makan, _] = useState(
+    akomodasi.rumah_makan.sort(function (a, b) {
+      if (a.jarak && b.jarak) return a.jarak - b.jarak;
+      return 0;
+    })
+  );
   const [selecteRumahMakan, setSelecteRumahMakan] = useState(
     akomodasi.rumah_makan[0]
   );
@@ -65,14 +70,14 @@ function Page() {
         <div className="space-y-2 justify-center w-full">
           {width && width < 800 ? (
             <img
-              src="/assets/banner_wisata.png"
-              alt="Wisata jambi"
+              src="/assets/banner_rumah_makan.png"
+              alt="Rumah Makan jambi"
               className={`rounded-lg`}
             />
           ) : (
             <img
-              src="/assets/1x3_banner_wisata_nocheck.png"
-              alt="Wisata jambi"
+              src="/assets/banner_rumah_makan.png"
+              alt="Rumah Makan jambi"
               className={`rounded-lg`}
             />
           )}
@@ -97,9 +102,14 @@ function Page() {
                   `}
                   width={200}
                 />
-                <p className="absolute z-10 bottom-4 left-4 text-white font-medium">
-                  {h.nama}
-                </p>
+                <div className="absolute z-10 bottom-4 left-4 text-white">
+                  <h2 className=" font-medium flex items-center">
+                    <span className="mr-2">{h.nama}</span>
+                  </h2>
+                  <h3 className="text-xs text-gray-200">
+                    {h.jarak}KM dari pusat kota
+                  </h3>
+                </div>
               </div>
             );
           })}
