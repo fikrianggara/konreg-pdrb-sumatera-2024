@@ -107,8 +107,8 @@ const footer = () => {
     <footer className="w-full bg-emerald-800 text-white z-100">
       <ul className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-8 gap-4 text-xs lg:text-base">
         {COLLABORATORS.map((col) => (
-          <div className="flex m-auto">
-            <li key={col.instansi} className="space-y-4">
+          <div className="flex m-auto" key={col.instansi}>
+            <li className="space-y-4">
               <h2 key={col.instansi} className="font-bold">
                 {col.instansi}
               </h2>
