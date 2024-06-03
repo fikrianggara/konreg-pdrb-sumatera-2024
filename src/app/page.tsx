@@ -353,9 +353,9 @@ export default function Home() {
         <p className="text-sm lg:text-lg text-center lg:text-start">
           Konsultasi Regional PDRB Wilayah Sumatera merupakan salah satu bentuk
           kolaborasi dan sinergi Badan Pusat Statistik (BPS), Badan Perencanaan
-          Pembangunan, Riset dan Inovasi Daerah (Bapperida), Dinas Komunikasi
-          dan Informatika (Diskominfo), Bank Indonesia (BI), serta Kantor
-          Wilayah Direktorat Jendral Perbendaharaan (DJPb).
+          Pembangunan Pembangunan Daerah (Bappeda), Dinas Komunikasi dan
+          Informatika (Diskominfo), Bank Indonesia (BI), serta Kantor Wilayah
+          Direktorat Jendral Perbendaharaan (DJPb).
         </p>
         <ul className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
           <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
