@@ -357,8 +357,8 @@ export default function Home() {
           dan Informatika (Diskominfo), Bank Indonesia (BI), serta Kantor
           Wilayah Direktorat Jendral Perbendaharaan (DJPb).
         </p>
-        <ul className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
-          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
+        <ul className="flex flex-col lg:flex-none lg:grid lg:grid-cols-3 gap-2 lg:gap-8 w-full">
+          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
               src={"/assets/logo bps.png"}
               height={200}
@@ -367,7 +367,7 @@ export default function Home() {
               className="self-center"
             ></Image>
           </li>
-          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
+          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
               src={"/assets/logo bi.png"}
               height={200}
@@ -376,7 +376,7 @@ export default function Home() {
               className="self-center"
             ></Image>
           </li>
-          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
+          {/* <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
             <Image
               src={"/assets/logo kominfo.png"}
               height={200}
@@ -384,8 +384,8 @@ export default function Home() {
               alt="logo kominfo"
               className="self-center"
             ></Image>
-          </li>
-          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
+          </li> */}
+          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
               src={"/assets/logo djpb.png"}
               height={200}
@@ -394,16 +394,17 @@ export default function Home() {
               className="self-center"
             ></Image>
           </li>
-          <li className="col-span-2 lg:col-span-4 bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full border p-4 text-center self-center backdrop-blur-sm grid grid-cols-5 lg:grid-cols-10 gap-4">
+          <li className="col-span-2 lg:col-span-3 bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full border p-4 text-center self-center backdrop-blur-sm grid grid-cols-5 lg:grid-cols-10 gap-4">
             {PEMDA.map((p) => (
-              <Image
-                key={p.provinsi}
-                src={p.src}
-                height={36}
-                width={36}
-                alt={p.alt}
-                className="self-center"
-              ></Image>
+              <div className="flex items-center m-auto" key={p.provinsi}>
+                <Image
+                  src={p.src}
+                  height={36}
+                  width={36}
+                  alt={p.alt}
+                  className="self-center"
+                ></Image>
+              </div>
             ))}
           </li>
         </ul>

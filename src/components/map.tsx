@@ -75,9 +75,9 @@ function Map() {
   const [viewPort, setViewPort] = useState({
     longitude: 103.6021418,
     latitude: -1.6015007,
-    zoom: 13,
+    zoom: 15,
     bearing: 0,
-    pitch: 0,
+    pitch: 50,
   });
   const [popupInfo, setPopupInfo] = useState<any>(null);
 
@@ -114,7 +114,7 @@ function Map() {
             latitude={-1.6015007}
             onClose={() => setPopupInfo(null)}
           >
-            <div>lokasi</div>
+            <div className="p-4 bg-green-500">lokasi</div>
             {/* <img width="100%" src={popupInfo.image} /> */}
           </Popup>
         )}
