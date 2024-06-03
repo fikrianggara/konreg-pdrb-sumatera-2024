@@ -105,11 +105,7 @@ const COLLABORATORS = [
 const footer = () => {
   return (
     <footer className="w-full bg-emerald-800 text-white z-100">
-<<<<<<< HEAD
-      <ul className="grid grid-cols-2 xl:grid-cols-4 p-8 gap-4 text-sm lg:text-base">
-=======
       <ul className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 p-8 gap-4 text-xs lg:text-base">
->>>>>>> 762ffc4c1a473991f7e438739409d92f9d80e057
         {COLLABORATORS.map((col) => (
           <li key={col.instansi} className="space-y-4">
             <h2 key={col.instansi} className="font-bold">
