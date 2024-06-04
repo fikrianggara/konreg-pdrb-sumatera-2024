@@ -33,7 +33,6 @@ export default function DashboardLayout({
         </p>
       </div>
       <Tabs
-        color="teal"
         // variant="pills"
         defaultValue={active}
         onChange={(value) => router.push(`/akomodasi/${value}`)}
