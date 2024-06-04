@@ -8,6 +8,7 @@ import Link from "next/link";
 import { useRef } from "react";
 import { Map3D, RecenteringMap } from "@/components/map";
 import { TabsDemo } from "@/components/tabs";
+import { delay, motion } from "framer-motion";
 
 const DATA = [1, 2, 3, 4, 5, 6];
 
@@ -125,6 +126,17 @@ const PEMDA = [
     alt: "provinsi sumut",
   },
 ];
+const textVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 2,
+      ease: "easeInOut",
+    },
+  },
+};
 export default function Home() {
   const autoplay = useRef(Autoplay({ delay: 3000 }));
 
@@ -133,32 +145,63 @@ export default function Home() {
       {/* hero section */}
       <div className="flex flex-col lg:flex-row w-screen justify-between relative h-screen">
         <div className="z-20 absolute w-full lg:basis-1/2 lg:w-fit bg-gradient-to-b lg:bg-gradient-to-r from-white to-transparent space-y-2 border-r-1 border-white shadow-r-lg backdrop-blur-xs lg:mt-0 lg:space-y-4 sm:p-0 sm:px-24 lg:px-36 xl:px-48 flex flex-col justify-center h-screen items-center lg:items-start">
-          <h3 className="text-lg lg:text-2xl text-emerald-800 font-light">
+          <motion.h3
+            className="text-lg lg:text-2xl text-teal-800 font-light"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+          >
             Selamat datang di Pusat Informasi
-          </h3>
-          <h1 className="text-2xl lg:text-4xl text-emerald-800 font-bold">
+          </motion.h3>
+          <motion.h1
+            className="text-2xl lg:text-4xl text-sky-800 font-bold"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+            transition={{ type: "spring", stiffness: 100 }}
+
+            // transition={{ delay: 1.5, duration: 1 }}
+          >
             Konsultasi Regional PDRB
-          </h1>
-          <h2 className="text-lg text-amber-500 lg:text-2xl">
+          </motion.h1>
+          <motion.h2
+            className="text-lg text-amber-500 lg:text-2xl"
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+            // transition={{ delay: 2.5, duration: 1 }}
+          >
             Wilayah Sumatera
-          </h2>
+          </motion.h2>
           <div className="mt-8 space-y-4 flex flex-col items-center lg:items-start">
-            <Link
-              href="#konten"
-              className="px-4 py-1 md:py-2 text-white font-light flex justify-between bg-emerald-800 rounded-full w-fit space-x-4 mt-8 shadow-xl transition-all duration-300 bg-gradient-to-tl from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100"
+            <motion.div
+              variants={textVariants}
+              initial="hidden"
+              animate="visible"
             >
-              <span>Informasi kegiatan</span>
-              {<IconArrowNarrowRight />}
-            </Link>
-            <div className="px-4 py-1 md:py-2 text-white font-light flex justify-between bg-emerald-800 rounded-full w-fit space-x-4 shadow-xl transition-all duration-300 bg-gradient-to-tl from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100">
-              <span>Bergabung</span>
-              <Image
-                src="/assets/whatsapp-logo.png"
-                width={24}
-                height={24}
-                alt="logo whatsapp"
-              />
-            </div>
+              <Link
+                href="#konten"
+                className="px-4 py-1 md:py-2 text-white font-light flex justify-between rounded-full w-fit space-x-4 mt-8 shadow-xl transition-all duration-300 bg-gradient-to-br from-indigo-600 from-10% via-sky-600 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100"
+              >
+                <span>Informasi kegiatan</span>
+                {<IconArrowNarrowRight />}
+              </Link>
+            </motion.div>
+            <motion.div
+              variants={textVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              <div className="px-4 py-1 md:py-2 text-white font-light flex justify-between bg-indigo-500 rounded-full w-fit space-x-4 shadow-xl transition-all duration-300 bg-gradient-to-br from-indigo-600 from-10% via-sky-600 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100">
+                <span>Bergabung</span>
+                <Image
+                  src="/assets/whatsapp-logo.png"
+                  width={24}
+                  height={24}
+                  alt="logo whatsapp"
+                />
+              </div>
+            </motion.div>
           </div>
         </div>
         <div className="basis-1/2 w-full absolute">
@@ -174,12 +217,34 @@ export default function Home() {
       >
         {/* <TabsDemo /> */}
         {/* <BentoGridDemo /> */}
-        <h2 className="text-lg text-center lg:text-start lg:text-2xl font-bold text-emerald-800">
+        <h2 className="text-lg text-center lg:text-start lg:text-2xl font-bold text-sky-800">
           Konsultasi Regional PDRB Wilayah Sumatera
         </h2>
-        <div className="grid grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-3 gap-4 lg:gap-8">
-          <div className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg bg-white border border-white hover:border-teal-500 duration-300 ease-in-out">
-            <h3 className="text-lg lg:text-2xl font-bold text-emerald-800">
+        <motion.div
+          className="grid grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-3 gap-4 lg:gap-8"
+          variants={{
+            hidden: { opacity: 0 },
+            show: {
+              opacity: 1,
+              transition: {
+                duration: 2,
+                ease: "easeInOut",
+                staggerChildren: 0.5,
+              },
+            },
+          }}
+          initial="hidden"
+          // animate="show"
+          whileInView="show"
+        >
+          <motion.div
+            variants={{
+              hidden: { opacity: 0 },
+              show: { opacity: 1 },
+            }}
+            className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center bg-white border border-white hover:border-teal-500 duration-300 ease-in-out"
+          >
+            <h3 className="text-lg lg:text-2xl font-bold text-sky-800">
               Kegiatan
             </h3>
             <p className="text-xs md:text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
@@ -188,12 +253,18 @@ export default function Home() {
             </p>
             <Link
               href={"kegiatan/lokasi"}
-              className="px-4 py-1 lg:py-2  text-white bg-emerald-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100"
+              className="px-4 py-1 lg:py-2  text-white bg-sky-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-indigo-500 via-indigo-400 to-sky-500 to-teal-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
             >
               Selengkapnya
             </Link>
-          </div>
-          <div className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg border border-white hover:border-amber-500 duration-300 ease-in-out">
+          </motion.div>
+          <motion.div
+            variants={{
+              hidden: { opacity: 0 },
+              show: { opacity: 1 },
+            }}
+            className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center border border-white hover:border-amber-500 duration-300 ease-in-out"
+          >
             <h3 className="text-lg lg:text-2xl font-bold text-amber-500">
               Hiburan
             </h3>
@@ -206,9 +277,15 @@ export default function Home() {
             >
               Selengkapnya
             </Link>
-          </div>
-          <div className="col-span-2 lg:col-span-1 lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center shadow-lg border border-white hover:border-cyan-700 duration-300 ease-in-out">
-            <h3 className="text-lg lg:text-2xl font-bold text-cyan-800">
+          </motion.div>
+          <motion.div
+            variants={{
+              hidden: { opacity: 0 },
+              show: { opacity: 1 },
+            }}
+            className="col-span-2 lg:col-span-1 lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center border border-white hover:border-cyan-700 duration-300 ease-in-out"
+          >
+            <h3 className="text-lg lg:text-2xl font-bold text-emerald-800">
               Galeri
             </h3>
             <p className="text-xs md:text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
@@ -217,12 +294,12 @@ export default function Home() {
             </p>
             <Link
               href={"galeri"}
-              className="px-4 py-1 lg:py-2  text-white bg-cyan-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-br from-purple-500 via-indigo-500 to-pink-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
+              className="px-4 py-1 lg:py-2  text-white bg-cyan-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-indigo-600 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100"
             >
               Selengkapnya
             </Link>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
       {/* main content end */}
       {/* collaborator start */}
@@ -347,7 +424,7 @@ export default function Home() {
 
       {/* instansi collaboration start */}
       <div className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500 pt-12">
-        <h2 className="text-lg text-center lg:text-start lg:text-2xl font-bold text-emerald-800">
+        <h2 className="text-lg text-center lg:text-start lg:text-2xl font-bold text-sky-800">
           Kolaborasi
         </h2>
         <p className="text-sm lg:text-lg text-center lg:text-start">

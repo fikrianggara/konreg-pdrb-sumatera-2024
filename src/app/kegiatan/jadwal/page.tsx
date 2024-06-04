@@ -79,7 +79,6 @@ function Page() {
           active={active}
           onStepClick={setActive}
           orientation="vertical"
-          color="teal"
           allowNextStepsSelect={false}
         >
           {KEGIATAN.map((k, i) => (
@@ -89,7 +88,7 @@ function Page() {
               allowStepSelect={false}
               description={
                 <div
-                  className="space-y-2 hover:cursor-pointer hover:bg-gray-100 rounded-lg p-2 hover:text-emerald-600 duration-300 ease-in-out"
+                  className="space-y-2 hover:cursor-pointer hover:bg-gray-100 rounded-lg p-2 hover:text-sky-600 duration-300 ease-in-out"
                   onClick={() => setActiveDescription(i + 1)}
                 >
                   <div className="flex space-x-2 items-center ">
@@ -103,14 +102,12 @@ function Page() {
                 </div>
               }
             >
-              <div className="text-emerald-800">{k.deskripsi}</div>
+              <div className="text-sky-800">{k.deskripsi}</div>
             </Stepper.Step>
           ))}
 
           <Stepper.Completed>
-            <div className="text-emerald-800">
-              Seluruh kegiatan telah selesai
-            </div>
+            <div className="text-sky-800">Seluruh kegiatan telah selesai</div>
           </Stepper.Completed>
         </Stepper>
 
@@ -124,7 +121,7 @@ function Page() {
           </Button>
           <Button
             variant="light"
-            className="text-teal-800 bg-teal-100"
+            className="text-sky-800 bg-sky-100"
             onClick={() => handleStepChange(active + 1)}
             disabled={active >= KEGIATAN.length}
           >

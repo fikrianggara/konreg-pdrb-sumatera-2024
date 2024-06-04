@@ -74,7 +74,7 @@ function Page() {
                     </a>
                     <a
                       href={w.link_toko}
-                      className="flex items-center cursor-pointer hover:opacity-75 shadow-lg py-2 bg-emerald-600 text-white rounded-full w-full text-center text-ellipsis justify-center text-xs"
+                      className="flex items-center cursor-pointer hover:opacity-75 shadow-lg py-2 bg-sky-600 text-white rounded-full w-full text-center text-ellipsis justify-center text-xs"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

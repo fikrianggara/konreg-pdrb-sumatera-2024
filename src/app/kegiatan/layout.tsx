@@ -27,7 +27,7 @@ export default function DashboardLayout({
     <div className="p-4 lg:px-36 py-8 space-y-4 lg:space-y-6 bg-dotted">
       <Breadcrumb />
       <div className="space-y-2">
-        <h1 className="font-bold text-xl lg:text-3xl text-emerald-800">
+        <h1 className="font-bold text-xl lg:text-3xl text-sky-800">
           <Link href="/kegiatan/lokasi">Kegiatan</Link>
         </h1>
         <p className=" text-sm w-96 md:w-1/2">
@@ -36,7 +36,6 @@ export default function DashboardLayout({
       </div>
 
       <Tabs
-        color="teal"
         // variant="pills"
         defaultValue={active}
         onChange={(value) => router.push(`/kegiatan/${value}`)}

@@ -44,14 +44,14 @@ const Breadcrumb = () => {
               <div className="space-x-1  md:space-x-2">
                 <Link
                   href={crumb.path}
-                  className="hover:font-medium hover:underline hover text-emerald-700 hover:text-emerald-800"
+                  className="hover:font-medium hover:underline hover text-sky-700 hover:text-sky-800"
                 >
                   {crumb.pathName}
                 </Link>
                 <span className="text-gray-400">/</span>
               </div>
             ) : (
-              <div className="font-bold text-emerald-800">{crumb.pathName}</div>
+              <div className="font-bold text-sky-800">{crumb.pathName}</div>
             )}
           </li>
         );

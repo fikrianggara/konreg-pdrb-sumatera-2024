@@ -135,7 +135,7 @@ function Page() {
               key={c}
               className={`flex-none border px-2 md:px-4 py-1 md:py-2 rounded-full text-center items-center justify-center cursor-pointer flex text-xs md:text-sm ${
                 selectedCategories.includes(c)
-                  ? "border-emerald-600 bg-emerald-800 text-white"
+                  ? "border-sky-600 bg-sky-800 text-white"
                   : ""
               }`}
               onClick={() => {

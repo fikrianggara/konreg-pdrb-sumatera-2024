@@ -25,7 +25,7 @@ export default function DashboardLayout({
     <div className="p-4 lg:px-24 xl:px-36 py-8 space-y-4 lg:space-y-6 bg-dotted">
       <Breadcrumb />
       <div className="space-y-4">
-        <h1 className="font-bold text-xl lg:text-3xl text-emerald-800">
+        <h1 className="font-bold text-xl lg:text-3xl text-sky-800">
           <Link href="/akomodasi">Akomodasi</Link>
         </h1>
         <p className=" text-sm lg:text-base text-gray-500">

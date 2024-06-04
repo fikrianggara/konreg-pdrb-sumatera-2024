@@ -51,7 +51,7 @@ export function Map3D() {
           center: [MOBILE_VIEW_PORT.longitude, MOBILE_VIEW_PORT.latitude],
           duration: 5000,
         });
-      }, 1000);
+      }, 2000);
     } else {
       setTimeout(() => {
         mapRef.current?.flyTo({
@@ -59,7 +59,7 @@ export function Map3D() {
           center: [VIEW_PORT.longitude, VIEW_PORT.latitude],
           duration: 5000,
         });
-      }, 1000);
+      }, 2000);
     }
   }, [width]);
   return (

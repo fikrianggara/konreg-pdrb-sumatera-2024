@@ -19,7 +19,7 @@ function Page() {
         className="space-y-2 justify-center
       "
       >
-        {/* <h1 className="text-xl lg:text-2xl text-emerald-800 font-medium">
+        {/* <h1 className="text-xl lg:text-2xl text-sky-800 font-medium">
           Kuliner Khas Jambi
         </h1> */}
         {width && width < 800 ? (
@@ -59,7 +59,7 @@ function Page() {
                 className="rounded-lg aspect-auto h-36 md:h-full w-full md:w-64 shadow-lg object-cover"
               ></img>
               <div className="text-sm md:text-base space-y-2">
-                <h2 className="font-bold text-emerald-800 text-lg md:text-xl">
+                <h2 className="font-bold text-sky-800 text-lg md:text-xl">
                   {w.nama}
                 </h2>
                 <p className="text-gray-500 text-pretty lg:w-full text-xs md:text-sm">

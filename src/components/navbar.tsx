@@ -131,7 +131,7 @@ export function SheetSide() {
                     className="font-normal"
                   >
                     <AccordionItem key={item.name} value={item.name}>
-                      <AccordionTrigger className="font-medium text-emerald-800 font-light hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500">
+                      <AccordionTrigger className="font-medium text-sky-800 font-light hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500">
                         {" "}
                         {item.name}
                       </AccordionTrigger>
@@ -141,7 +141,7 @@ export function SheetSide() {
                             return (
                               <Link
                                 key={i.name}
-                                className="font-normal p-2 rounded-lg hover:bg-amber-50 text-gray-400 hover:text-emerald-800 duration-300 ease-in-out no-underline font-light hover:cursor-pointer flex space-x-4 items-center justify-between"
+                                className="font-normal p-2 rounded-lg hover:bg-amber-50 text-gray-400 hover:text-sky-800 duration-300 ease-in-out no-underline font-light hover:cursor-pointer flex space-x-4 items-center justify-between"
                                 href={i.url ? i.url : "/"}
                               >
                                 {i.name}
@@ -158,7 +158,7 @@ export function SheetSide() {
                 return (
                   <Link
                     key={item.name}
-                    className="font-normal text-emerald-800 font-light hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500 flex space-x-4 items-center"
+                    className="font-normal text-sky-800 font-light hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500 flex space-x-4 items-center"
                     href={item.url ? item.url : "/"}
                   >
                     {item.name}
@@ -187,7 +187,7 @@ function Navbar() {
           <Link href="/" className="flex items-center space-x-2 ">
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
             <div>
-              <h1 className="text-emerald-800 text-base font-bold">
+              <h1 className="text-sky-800 text-base font-bold">
                 Konsultasi Regional PDRB
               </h1>
               <h2 className="text-amber-500 font-base text-sm">
@@ -202,7 +202,7 @@ function Navbar() {
           <Link href="/" className="flex items-center space-x-2 basis-1/3">
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
             <div>
-              <h1 className="text-emerald-800 lg:text-md xl:text-xl font-bold">
+              <h1 className="text-sky-800 lg:text-md xl:text-xl font-bold">
                 Konsultasi Regional PDRB
               </h1>
               <h2 className="text-amber-500 text-regular lg:text-sm font-base">
@@ -221,7 +221,7 @@ function Navbar() {
                     trigger={
                       <li
                         key={item.name}
-                        className="text-base lg:text-md font-normal text-emerald-800  hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500 flex space-x-4 items-center"
+                        className="text-base lg:text-md font-normal text-sky-800  hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500 flex space-x-4 items-center"
                       >
                         {item.name}
                         {item.child && <IconChevronDown size={16} />}
@@ -233,7 +233,7 @@ function Navbar() {
                         return (
                           <Link
                             key={i.name}
-                            className="text-base lg:text-md font-normal p-2 rounded-lg hover:bg-amber-50 text-gray-400 hover:text-emerald-800 duration-300 ease-in-out hover:cursor-pointer flex space-x-4 items-center justify-between"
+                            className="text-base lg:text-md font-normal p-2 rounded-lg hover:bg-amber-50 text-gray-400 hover:text-sky-800 duration-300 ease-in-out hover:cursor-pointer flex space-x-4 items-center justify-between"
                             href={i.url ? i.url : "/"}
                           >
                             {i.name}
@@ -248,7 +248,7 @@ function Navbar() {
                 return (
                   <Link
                     key={item.name}
-                    className="text-base lg:text-md font-normal text-emerald-800  hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500 flex space-x-4 items-center"
+                    className="text-base lg:text-md font-normal text-sky-800  hover:cursor-pointer hover:underline underline-offset-4 decoration-amber-500 flex space-x-4 items-center"
                     href={item.url ? item.url : "/"}
                   >
                     {item.name}

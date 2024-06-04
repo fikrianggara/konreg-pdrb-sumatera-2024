@@ -104,7 +104,7 @@ const COLLABORATORS = [
 
 const footer = () => {
   return (
-    <footer className="w-full bg-emerald-800 text-white z-100">
+    <footer className="w-full bg-sky-800 text-white z-100">
       <ul className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-8 gap-4 text-xs lg:text-base">
         {COLLABORATORS.map((col) => (
           <div className="flex m-auto" key={col.instansi}>
