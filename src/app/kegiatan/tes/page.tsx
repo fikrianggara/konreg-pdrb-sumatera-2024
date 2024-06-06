@@ -7,7 +7,7 @@ const page = () => {
       <ul className="">
         {x.map((i) => {
           return (
-            <div className="">
+            <div className="" key={i}>
               <div className="flex space-x-2 items-center">
                 <div className="h-12 w-12 bg-amber-500 rounded-full text-center flex justify-center items-center">
                   {i}
