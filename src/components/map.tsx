@@ -175,7 +175,6 @@ export function MultiplePointMap({
               key={p.name}
               onClick={(e) => {
                 e.originalEvent.stopPropagation();
-                console.log(p);
                 setPopupInfo(p);
               }}
             >
