@@ -158,7 +158,6 @@ export default function Home() {
             initial="hidden"
             animate="visible"
             variants={textVariants}
-            transition={{ type: "spring", stiffness: 100 }}
 
             // transition={{ delay: 1.5, duration: 1 }}
           >
@@ -175,9 +174,16 @@ export default function Home() {
           </motion.h2>
           <div className="mt-8 space-y-4 flex flex-col items-center lg:items-start">
             <motion.div
-              variants={textVariants}
-              initial="hidden"
-              animate="visible"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 2, delay: 4.5, ease: "easeOut" }}
+              // variants={{
+              //   hidden: { opacity: 0, y: 50 },
+              //   visible: {
+              //     opacity: 1,
+              //     y: 0,
+              //   },
+              // }}
             >
               <Link
                 href="#konten"
@@ -188,9 +194,9 @@ export default function Home() {
               </Link>
             </motion.div>
             <motion.div
-              variants={textVariants}
-              initial="hidden"
-              animate="visible"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 2, delay: 5, ease: "easeOut" }}
             >
               <div className="px-4 py-1 md:py-2 text-white font-light flex justify-between bg-indigo-500 rounded-full w-fit space-x-4 shadow-xl transition-all duration-300 bg-gradient-to-br from-indigo-600 from-10% via-sky-600 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100">
                 <span>Bergabung</span>
@@ -223,18 +229,18 @@ export default function Home() {
         <motion.div
           className="grid grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-3 gap-4 lg:gap-8"
           variants={{
-            hidden: { opacity: 0 },
+            hidden: { opacity: 0, y: 50 },
             show: {
               opacity: 1,
+              y: 0,
               transition: {
-                duration: 2,
+                duration: 2.5,
                 ease: "easeInOut",
-                staggerChildren: 0.5,
+                staggerChildren: 1,
               },
             },
           }}
           initial="hidden"
-          // animate="show"
           whileInView="show"
         >
           <motion.div
@@ -242,6 +248,7 @@ export default function Home() {
               hidden: { opacity: 0 },
               show: { opacity: 1 },
             }}
+            transition={{ delay: 0.5, duration: 2 }}
             className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center bg-white border border-white hover:border-teal-500 duration-300 ease-in-out"
           >
             <h3 className="text-lg lg:text-2xl font-bold text-sky-800">
@@ -263,6 +270,7 @@ export default function Home() {
               hidden: { opacity: 0 },
               show: { opacity: 1 },
             }}
+            transition={{ delay: 1, duration: 2 }}
             className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center border border-white hover:border-amber-500 duration-300 ease-in-out"
           >
             <h3 className="text-lg lg:text-2xl font-bold text-amber-500">
@@ -283,6 +291,7 @@ export default function Home() {
               hidden: { opacity: 0 },
               show: { opacity: 1 },
             }}
+            transition={{ delay: 1.5, duration: 2 }}
             className="col-span-2 lg:col-span-1 lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center border border-white hover:border-cyan-700 duration-300 ease-in-out"
           >
             <h3 className="text-lg lg:text-2xl font-bold text-emerald-800">

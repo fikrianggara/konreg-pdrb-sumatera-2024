@@ -27,7 +27,7 @@ export default function DashboardLayout({
         <h1 className="font-bold text-xl lg:text-3xl text-sky-800">
           <Link href="/hiburan">Hiburan</Link>
         </h1>
-        <p className=" text-sm">
+        <p className=" text-xs md:text-sm">
           Wisata, produk UMKM dan oleh-oleh khas Provinsi Jambi
         </p>
       </div>
@@ -38,7 +38,11 @@ export default function DashboardLayout({
       >
         <Tabs.List>
           {INFORMASI.map((i) => (
-            <Tabs.Tab key={i.name} value={i.name}>
+            <Tabs.Tab
+              key={i.name}
+              value={i.name}
+              className="text-xs md:text-sm"
+            >
               {i.label}
             </Tabs.Tab>
           ))}

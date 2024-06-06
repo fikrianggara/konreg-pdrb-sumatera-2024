@@ -3,14 +3,13 @@ import { useState } from "react";
 import { Stepper, Button, Group } from "@mantine/core";
 import { IconCalendarEvent, IconMapPinFilled } from "@tabler/icons-react";
 // import { Span } from "next/dist/trace";
-
+import { formatDate } from "@/lib/utils";
 const KEGIATAN = [
   {
     label: "Check-in hotel",
     deskripsi: "deskripsi kegiatan 1",
-    deskripsi_panjang:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, eaque.",
-    jadwal: new Date().toLocaleString(),
+    deskripsi_panjang: <h1 className="text-green-500">fdsafdsaf</h1>,
+    jadwal: "6/5/2024",
     lokasi: "Hotel X",
   },
   {
@@ -21,7 +20,7 @@ const KEGIATAN = [
     provident veritatis odio soluta minima sunt quasi esse dolor earum
     officiis, asperiores cupiditate quos iure! Expedita corrupti officiis,
     iste laboriosam obcaecati error minus.`,
-    jadwal: new Date().toLocaleString(),
+    jadwal: "6/10/2024",
     lokasi: "Hotel X",
   },
   {
@@ -31,7 +30,7 @@ const KEGIATAN = [
     nostrum cupiditate, repudiandae aliquam debitis cumque, iure maxime
     sapiente at aliquid quidem dolor nam maiores, facere quisquam! Quia,
     inventore? Officia, aspernatur.`,
-    jadwal: new Date().toLocaleString(),
+    jadwal: "6/12/2024",
     lokasi: "Hotel X",
   },
   {
@@ -39,14 +38,14 @@ const KEGIATAN = [
     deskripsi: "deskripsi kegiatan 4",
     deskripsi_panjang: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
     officia omnis tenetur quasi fuga voluptatibus.`,
-    jadwal: new Date().toLocaleString(),
+    jadwal: "6/14/2024",
     lokasi: "Lokasi Outbound",
   },
   {
     label: "Check-out hotel",
     deskripsi: "deskripsi kegiatan 5",
     deskripsi_panjang: `Lorem ipsum dolor sit amet.`,
-    jadwal: new Date().toLocaleString(),
+    jadwal: "6/17/2024",
     lokasi: "Hotel X",
   },
 ];
@@ -73,45 +72,54 @@ function Page() {
     highestStepVisited >= step && active !== step;
 
   return (
-    <div className="w-full space-y-4 md:space-x-4 md:space-y-0 md:flex justify-between p-4">
-      <div className="md:basis-1/2 flex flex-col justify-start items-end">
+    <div className="w-full space-y-4 md:space-x-4 md:space-y-0 md:flex justify-between p-4 flex-col lg:flex-row">
+      <div className="md:basis-1/3 flex flex-col justify-start items-end h-96 lg:h-full overflow-y-scroll">
         <Stepper
           active={active}
           onStepClick={setActive}
           orientation="vertical"
           allowNextStepsSelect={false}
+          size="lg"
         >
           {KEGIATAN.map((k, i) => (
             <Stepper.Step
               key={i}
-              label={k.label}
+              label={<h1 className="text-xs md:text-base">{k.label}</h1>}
               allowStepSelect={false}
+              onClick={() => setActiveDescription(i + 1)}
+              icon={
+                // <div className="h-36 w-36">
+                activeDescription - 1 == i ? (
+                  <h1 className="text-xs text-white">{formatDate(k.jadwal)}</h1>
+                ) : (
+                  <h1 className="text-xs text-sky-600">
+                    {formatDate(k.jadwal)}
+                  </h1>
+                )
+
+                // </div>
+              }
               description={
                 <div
-                  className="space-y-2 hover:cursor-pointer hover:bg-gray-100 rounded-lg p-2 hover:text-sky-600 duration-300 ease-in-out"
+                  className="space-y-2 hover:cursor-pointer hover:bg-gray-100 rounded-lg p-2 hover:text-sky-600 duration-300 ease-in-out w-full"
                   onClick={() => setActiveDescription(i + 1)}
                 >
-                  <div className="flex space-x-2 items-center ">
-                    <IconCalendarEvent size={24} />
-                    <h3>{k.jadwal}</h3>
-                  </div>
-                  <div className="flex space-x-2 items-center ">
+                  <div className="flex space-x-2 items-center text-xs md:text-sm">
                     <IconMapPinFilled size={24} />
                     <h3>{k.lokasi}</h3>
                   </div>
                 </div>
               }
-            >
-              <div className="text-sky-800">{k.deskripsi}</div>
-            </Stepper.Step>
+            ></Stepper.Step>
           ))}
 
           <Stepper.Completed>
             <div className="text-sky-800">Seluruh kegiatan telah selesai</div>
           </Stepper.Completed>
         </Stepper>
-
-        <Group justify="center" mt="xl">
+      </div>
+      <div className="space-y-2 md:basis-2/3">
+        <div className="flex items-center space-x-2">
           <Button
             variant="default"
             onClick={() => handleStepChange(active - 1)}
@@ -127,14 +135,14 @@ function Page() {
           >
             Selanjutnya
           </Button>
-        </Group>
-      </div>
-      <div className="md:basis-1/2 bg-gray-100 rounded-lg p-4 h-96">
-        <span>
-          {KEGIATAN[activeDescription - 1].deskripsi_panjang
-            ? KEGIATAN[activeDescription - 1].deskripsi_panjang
-            : "tidak ada kegiatan"}
-        </span>
+        </div>
+        <div className="md:basis-1/2 bg-gray-100 rounded-lg p-4 h-96 text-xs md:text-base">
+          <div>
+            {KEGIATAN[activeDescription - 1].deskripsi_panjang
+              ? KEGIATAN[activeDescription - 1].deskripsi_panjang
+              : "tidak ada kegiatan"}
+          </div>
+        </div>
       </div>
     </div>
   );

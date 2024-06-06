@@ -24,11 +24,11 @@ export default function DashboardLayout({
   return (
     <div className="p-4 lg:px-24 xl:px-36 py-8 space-y-4 lg:space-y-6 bg-dotted">
       <Breadcrumb />
-      <div className="space-y-4">
+      <div className="space-y-2">
         <h1 className="font-bold text-xl lg:text-3xl text-sky-800">
           <Link href="/akomodasi">Akomodasi</Link>
         </h1>
-        <p className=" text-sm lg:text-base text-gray-500">
+        <p className=" text-xs md:text-sm lg:text-base">
           Nikmati fasilitas pendukung selama berpetualang di Provinsi Jambi
         </p>
       </div>
@@ -39,7 +39,11 @@ export default function DashboardLayout({
       >
         <Tabs.List>
           {INFORMASI.map((i) => (
-            <Tabs.Tab key={i.href} value={i.href}>
+            <Tabs.Tab
+              key={i.href}
+              value={i.href}
+              className="text-xs md:text-sm"
+            >
               {i.name}
             </Tabs.Tab>
           ))}

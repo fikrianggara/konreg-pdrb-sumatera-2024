@@ -110,54 +110,103 @@ export function RecenteringMap() {
   );
 }
 
-function Map() {
+type multiplePointMapPropsType = {
+  points: any[];
+  isAnimate: boolean;
+};
+type popupInfoType = {
+  title: string;
+  name: string;
+  location: { latitude: number; longitude: number };
+  image: string;
+  gmapsUrl: string;
+};
+export function MultiplePointMap({
+  points,
+  isAnimate,
+}: multiplePointMapPropsType) {
   const [viewPort, setViewPort] = useState({
     longitude: 103.6021418,
-    latitude: -1.6015007,
-    zoom: 15,
+    latitude: -1.6075007,
+    zoom: 10,
     bearing: 0,
     pitch: 50,
   });
-  const [popupInfo, setPopupInfo] = useState<any>(null);
-  const mapRef = useRef<MapRef>();
+  const [currPointInfoIndex, setCurrPointInfoIndex] = useState(0);
+  const [popupInfo, setPopupInfo] = useState<popupInfoType | null>(points[0]);
+  const mapRef = useRef<MapRef>(null);
 
+  useEffect(() => {
+    setTimeout(() => {
+      const tempPointInfoIndex = (currPointInfoIndex + 1) % points.length;
+      const tempPopupInfo = points[tempPointInfoIndex];
+      setCurrPointInfoIndex(tempPointInfoIndex);
+      setPopupInfo(tempPopupInfo);
+      mapRef.current?.flyTo({
+        center: [
+          tempPopupInfo.location.longitude,
+          tempPopupInfo.location.latitude,
+        ],
+        zoom: 14,
+        duration: 2000,
+      });
+    }, 5000);
+  }, [currPointInfoIndex]);
   return (
     <div className="w-full h-full rounded-lg pb-8">
       <MapboxMap
-        // ref={mapRef}
         mapboxAccessToken={TOKEN}
         initialViewState={viewPort}
-        // initialViewState={INITIAL_VIEW_STATE}
         mapStyle="mapbox://styles/mapbox/streets-v12"
         interactive={true}
+        ref={mapRef}
         onMove={(evt) => setViewPort(evt.viewState)}
         style={{ width: "100%", height: "100%", borderRadius: 10 }}
       >
         <FullscreenControl position="top-left" />
         <NavigationControl position="top-left" />
         <ScaleControl />
-        <Marker
-          latitude={-1.6015007}
-          longitude={103.6021418}
-          anchor="bottom"
-          onClick={(e) => {
-            // If we let the click event propagates to the map, it will immediately close the popup
-            // with `closeOnClick: true`
-            e.originalEvent.stopPropagation();
-            setPopupInfo("popup");
-          }}
-        >
-          <IconMapPinFilled className="text-red-700" size={48} />
-        </Marker>
+        {points &&
+          points.map((p) => (
+            <Marker
+              latitude={p.location.latitude}
+              longitude={p.location.longitude}
+              anchor="bottom"
+              key={p.name}
+              onClick={(e) => {
+                e.originalEvent.stopPropagation();
+                console.log(p);
+                setPopupInfo(p);
+              }}
+            >
+              <IconMapPinFilled className="text-red-700" size={48} />
+            </Marker>
+          ))}
+
         {popupInfo && (
           <Popup
-            anchor="top"
-            longitude={103.6021418}
-            latitude={-1.6015007}
+            anchor="right"
+            longitude={popupInfo.location.longitude}
+            latitude={popupInfo.location.latitude}
             onClose={() => setPopupInfo(null)}
           >
-            <div className="p-4 bg-green-500">lokasi</div>
-            {/* <img width="100%" src={popupInfo.image} /> */}
+            <div className="space-y-2">
+              <img
+                src={popupInfo.image}
+                alt="hotel aston"
+                className="h-24 w-full rounded"
+              />
+              <div>
+                <h1>{popupInfo.title}</h1>
+                <h2 className="font-medium">{popupInfo.name}</h2>
+                <a
+                  href={popupInfo.gmapsUrl}
+                  className="flex items-center text-xs underline text-sky-600"
+                >
+                  buka di google maps
+                </a>
+              </div>
+            </div>
           </Popup>
         )}
       </MapboxMap>
