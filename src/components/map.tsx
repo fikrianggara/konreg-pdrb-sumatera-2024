@@ -145,7 +145,7 @@ export function MultiplePointMap({
       mapRef.current?.flyTo({
         center: [
           tempPopupInfo.location.longitude,
-          tempPopupInfo.location.latitude,
+          tempPopupInfo.location.latitude - 0.006,
         ],
         zoom: 14,
         duration: 2000,
@@ -184,7 +184,7 @@ export function MultiplePointMap({
 
         {popupInfo && (
           <Popup
-            anchor="right"
+            anchor="top"
             longitude={popupInfo.location.longitude}
             latitude={popupInfo.location.latitude}
             onClose={() => setPopupInfo(null)}
