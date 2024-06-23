@@ -1,7 +1,11 @@
 "use client";
 import { useState } from "react";
 import { Stepper, Button, Group } from "@mantine/core";
-import { IconCalendarEvent, IconMapPinFilled } from "@tabler/icons-react";
+import {
+  IconCalendarEvent,
+  IconCheck,
+  IconMapPinFilled,
+} from "@tabler/icons-react";
 // import { Span } from "next/dist/trace";
 import { formatDate } from "@/lib/utils";
 const KEGIATAN = [
@@ -84,24 +88,42 @@ function Page() {
           {KEGIATAN.map((k, i) => (
             <Stepper.Step
               key={i}
-              label={<h1 className="text-xs md:text-base">{k.label}</h1>}
+              label={
+                activeDescription - 1 == i ? (
+                  <h1
+                    className="text-xs md:text-sm underline hover:cursor-pointer text-sky-600"
+                    onClick={() => setActiveDescription(i + 1)}
+                  >
+                    {k.label}
+                  </h1>
+                ) : (
+                  <h1
+                    className="text-xs md:text-sm hover:underline hover:cursor-pointer"
+                    onClick={() => setActiveDescription(i + 1)}
+                  >
+                    {k.label}
+                  </h1>
+                )
+              }
               allowStepSelect={false}
-              onClick={() => setActiveDescription(i + 1)}
+              // onClick={() => setActiveDescription(i + 1)}
               icon={
                 // <div className="h-36 w-36">
                 activeDescription - 1 == i ? (
-                  <h1 className="text-xs text-white">{formatDate(k.jadwal)}</h1>
-                ) : (
-                  <h1 className="text-xs text-sky-600">
+                  <h4 className="text-xs space-y-1 text-sky-600 text-center">
                     {formatDate(k.jadwal)}
-                  </h1>
+                  </h4>
+                ) : (
+                  <h4 className="text-xs space-y-1 text-center">
+                    {formatDate(k.jadwal)}
+                  </h4>
                 )
 
                 // </div>
               }
               description={
                 <div
-                  className="space-y-2 hover:cursor-pointer hover:bg-gray-100 rounded-lg p-2 hover:text-sky-600 duration-300 ease-in-out w-full"
+                  className="space-y-2 w-full"
                   onClick={() => setActiveDescription(i + 1)}
                 >
                   <div className="flex space-x-2 items-center text-xs md:text-sm">
@@ -114,7 +136,13 @@ function Page() {
           ))}
 
           <Stepper.Completed>
-            <div className="text-sky-800">Seluruh kegiatan telah selesai</div>
+            <div className="p-2 rounded-lg bg-green-50 text-green-500 mr-2 text-xs flex items-center space-x-2">
+              <IconCheck size={24} />
+              <span className="ml-2">
+                {" "}
+                Seluruh kegiatan telah selesai dilaksanakan
+              </span>
+            </div>
           </Stepper.Completed>
         </Stepper>
       </div>
