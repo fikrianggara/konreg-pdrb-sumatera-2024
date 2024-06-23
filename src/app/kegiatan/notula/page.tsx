@@ -23,8 +23,8 @@ const NOTULAS: any[] = [
   },
 ];
 
-export default function pages() {
-  const [markdownSource, setMarkdownSource] = useState("");
+export default function Page() {
+  // const [markdownSource, setMarkdownSource] = useState("");
 
   // return NOTULAS.length > 0 ? (
   //   <div>

@@ -6,7 +6,7 @@ export default function pages() {
   return MATERIS.length > 0 ? (
     <div>
       {MATERIS.map((m) => (
-        <div>{m.toString()}</div>
+        <div key={m.toString()}>{m.toString()}</div>
       ))}
     </div>
   ) : (
