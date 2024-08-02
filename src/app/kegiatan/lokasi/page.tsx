@@ -41,7 +41,8 @@ const LOKASIS = [
 function Page() {
   return (
     <div className="w-full h-96 rounded-xl flex items-center justify-center">
-      <MultiplePointMap isAnimate={true} points={LOKASIS} />
+      {/* <MultiplePointMap isAnimate={true} points={LOKASIS} /> */}
+      <div>Belum ada lokasi</div>
     </div>
   );
 }

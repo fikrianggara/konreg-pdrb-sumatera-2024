@@ -77,7 +77,7 @@ function Page() {
 
   return (
     <div className="w-full space-y-4 md:space-x-4 md:space-y-0 md:flex justify-between p-4 flex-col lg:flex-row">
-      <div className="md:basis-1/3 flex flex-col justify-start items-end h-96 lg:h-full overflow-y-scroll">
+      {/* <div className="md:basis-1/3 flex flex-col justify-start items-end h-96 lg:h-full overflow-y-scroll">
         <Stepper
           active={active}
           onStepClick={setActive}
@@ -145,8 +145,9 @@ function Page() {
             </div>
           </Stepper.Completed>
         </Stepper>
-      </div>
-      <div className="space-y-2 md:basis-2/3">
+      </div> */}
+      <div className="">Belum ada jadwal</div>
+      {/* <div className="space-y-2 md:basis-2/3">
         <div className="flex items-center space-x-2">
           <Button
             variant="default"
@@ -171,7 +172,7 @@ function Page() {
               : "tidak ada kegiatan"}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -38,8 +38,8 @@ export default function Page() {
 
   return (
     <div className="p-4 w-full flex">
-      <div></div>
-      <div>
+      <div>Belum ada notula</div>
+      {/* <div>
         <MDXRemote
           source={`# Welcome to my MDX page!
         This is some **bold** and _italics_ text.
@@ -51,7 +51,7 @@ export default function Page() {
         Checkout my React component:
         `}
         />
-      </div>
+      </div> */}
     </div>
   );
 }
