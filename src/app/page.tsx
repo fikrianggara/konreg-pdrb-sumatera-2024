@@ -248,7 +248,7 @@ export default function Home() {
               hidden: { opacity: 0 },
               show: { opacity: 1 },
             }}
-            transition={{ delay: 0.5, duration: 2 }}
+            transition={{ delay: 0.5, duration: 1.5 }}
             className="lg:h-72 xl:h-full bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col justify-between items-center bg-white border border-white hover:border-teal-500 duration-300 ease-in-out"
           >
             <div className="space-y-2 lg:space-y-4">
@@ -273,7 +273,6 @@ export default function Home() {
               hidden: { opacity: 0 },
               show: { opacity: 1 },
             }}
-            transition={{ delay: 1, duration: 2 }}
             className="g:h-72 xl:h-full bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col justify-between items-center border border-white hover:border-amber-500 duration-300 ease-in-out"
           >
             <div className="space-y-2 lg:space-y-4">
@@ -297,7 +296,7 @@ export default function Home() {
               hidden: { opacity: 0 },
               show: { opacity: 1 },
             }}
-            transition={{ delay: 1.5, duration: 2 }}
+            transition={{ delay: 1.5, duration: 1.5 }}
             className="g:h-72 xl:h-full bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col justify-between items-center border border-white hover:border-purple-700 duration-300 ease-in-out"
           >
             <div className="space-y-2 lg:space-y-4">
@@ -321,7 +320,7 @@ export default function Home() {
               hidden: { opacity: 0 },
               show: { opacity: 1 },
             }}
-            transition={{ delay: 1.5, duration: 2 }}
+            transition={{ delay: 2, duration: 1.5 }}
             className="lg:h-72 xl:h-full bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col justify-between items-center border border-white hover:border-cyan-700 duration-300 ease-in-out"
           >
             <div className="space-y-2 lg:space-y-4">
