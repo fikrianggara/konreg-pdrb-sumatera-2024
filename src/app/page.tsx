@@ -227,7 +227,7 @@ export default function Home() {
           Konsultasi Regional PDRB Wilayah Sumatera
         </h2>
         <motion.div
-          className="grid grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-3 gap-4 lg:gap-8"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8"
           variants={{
             hidden: { opacity: 0, y: 50 },
             show: {
@@ -249,15 +249,18 @@ export default function Home() {
               show: { opacity: 1 },
             }}
             transition={{ delay: 0.5, duration: 2 }}
-            className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center bg-white border border-white hover:border-teal-500 duration-300 ease-in-out"
+            className="lg:h-72 xl:h-full bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col justify-between items-center bg-white border border-white hover:border-teal-500 duration-300 ease-in-out"
           >
-            <h3 className="text-lg lg:text-2xl font-bold text-sky-800">
-              Kegiatan
-            </h3>
-            <p className="text-xs md:text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
-              Informasi jadwal dan lokasi kegiatan serta materi dan notula
-              Konsultasi Regional PDRB Wilayah Sumatera Tahun 2024.
-            </p>
+            <div className="space-y-2 lg:space-y-4">
+              <h3 className="text-lg lg:text-2xl font-bold text-sky-800 text-center">
+                Kegiatan
+              </h3>
+              <p className="text-xs md:text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
+                Informasi jadwal dan lokasi kegiatan serta materi dan notula
+                Konsultasi Regional PDRB Wilayah Sumatera Tahun 2024.
+              </p>
+            </div>
+
             <Link
               href={"kegiatan/lokasi"}
               className="px-4 py-1 lg:py-2  text-white bg-sky-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-indigo-500 via-indigo-400 to-sky-500 to-teal-500 bg-size-200 bg-pos-0 hover:bg-pos-100"
@@ -271,14 +274,17 @@ export default function Home() {
               show: { opacity: 1 },
             }}
             transition={{ delay: 1, duration: 2 }}
-            className="lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center border border-white hover:border-amber-500 duration-300 ease-in-out"
+            className="g:h-72 xl:h-full bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col justify-between items-center border border-white hover:border-amber-500 duration-300 ease-in-out"
           >
-            <h3 className="text-lg lg:text-2xl font-bold text-amber-500">
-              Hiburan
-            </h3>
-            <p className="text-xs md:text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
-              Wisata, produk UMKM, dan Kuliner khas Provinsi Jambi
-            </p>
+            <div className="space-y-2 lg:space-y-4">
+              <h3 className="text-lg lg:text-2xl font-bold text-amber-500 text-center">
+                Hiburan
+              </h3>
+              <p className="text-xs md:text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
+                Wisata, produk UMKM, dan Kuliner khas Provinsi Jambi
+              </p>
+            </div>
+
             <Link
               href={"hiburan"}
               className="px-4 py-1 lg:py-2  text-white bg-amber-500 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-500 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-400 bg-size-200 bg-pos-0 hover:bg-pos-100"
@@ -292,15 +298,42 @@ export default function Home() {
               show: { opacity: 1 },
             }}
             transition={{ delay: 1.5, duration: 2 }}
-            className="col-span-2 lg:col-span-1 lg:h-96 bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col items-center border border-white hover:border-cyan-700 duration-300 ease-in-out"
+            className="g:h-72 xl:h-full bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col justify-between items-center border border-white hover:border-purple-700 duration-300 ease-in-out"
           >
-            <h3 className="text-lg lg:text-2xl font-bold text-emerald-800">
-              Galeri
-            </h3>
-            <p className="text-xs md:text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
-              Kumpulan dokumentasi selama kegiatan Konsultasi Regional PDRB
-              Wilayah Sumatera Tahun 2024 berlangsung.
-            </p>
+            <div className="space-y-2 lg:space-y-4">
+              <h3 className="text-lg lg:text-2xl font-bold text-purple-800 text-center">
+                Akomodasi
+              </h3>
+              <p className="text-xs md:text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
+                Informasi Hotel, Transportasi, Rumah Makan dan Ibadah
+              </p>
+            </div>
+
+            <Link
+              href={"akomodasi/hotel?id=0"}
+              className="px-4 py-1 lg:py-2  text-white bg-cyan-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-purple-600  to-pink-600 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100"
+            >
+              Selengkapnya
+            </Link>
+          </motion.div>
+          <motion.div
+            variants={{
+              hidden: { opacity: 0 },
+              show: { opacity: 1 },
+            }}
+            transition={{ delay: 1.5, duration: 2 }}
+            className="lg:h-72 xl:h-full bg-white rounded-xl p-4 lg:p-8 space-y-6 flex flex-col justify-between items-center border border-white hover:border-cyan-700 duration-300 ease-in-out"
+          >
+            <div className="space-y-2 lg:space-y-4">
+              <h3 className="text-lg lg:text-2xl font-bold text-emerald-800 text-center">
+                Galeri
+              </h3>
+              <p className="text-xs md:text-sm lg:text-base text-center line-clamp-4 xl:line-clamp-none">
+                Kumpulan dokumentasi selama kegiatan Konsultasi Regional PDRB
+                Wilayah Sumatera Tahun 2024 berlangsung.
+              </p>
+            </div>
+
             <Link
               href={"galeri"}
               className="px-4 py-1 lg:py-2  text-white bg-cyan-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-indigo-600 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100"
