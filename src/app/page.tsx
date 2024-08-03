@@ -216,13 +216,218 @@ export default function Home() {
       </div>
       {/* hero section end */}
       {/* main content */}
-
       <div
+        id="konten"
+        className="flex flex-col flex-col-reverse lg:flex-row justify-between duration-300 ease-in-out"
+      >
+        <div className="w-full lg:w-1/2 flex-col justify-between">
+          <div className="p-8 text-center md:text-start sm:px-24 lg:px-36 xl:px-48 lg:py-12 space-y-4 lg:space-y-8">
+            <h3 className="text-lg lg:text-3xl font-bold text-cyan-700">
+              KEGIATAN
+            </h3>
+            <div>
+              <p className="text-base lg:text-xl text-gray-600 leading-6 lg:leading-8">
+                Informasi jadwal dan lokasi kegiatan serta materi dan notula
+                Konsultasi Regional PDRB Wilayah Sumatera Tahun 2024.
+              </p>
+            </div>
+            <div className="w-full text-center items-center justify-center lg:items-start lg:justify-start flex">
+              <Link
+                href={"kegiatan/lokasi"}
+                className="px-4 py-1 lg:py-2 flex justify-evenly items-center text-center text-white bg-sky-800 rounded-full mt-6 lg:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-indigo-500 via-indigo-400 to-sky-500 to-teal-500 bg-size-200 bg-pos-0 hover:bg-pos-100 shadow-lg shadow-cyan-300 hover:shadow-purple-500"
+              >
+                <span>Selengkapnya</span>
+
+                <IconArrowNarrowRight size={24} className="text-white" />
+              </Link>
+            </div>
+          </div>
+        </div>
+        <Link
+          className="lg:w-1/2 relative bg-black m-4 lg:m-0 rounded-lg lg:rounded-none lg:rounded-br-[50px] lg:rounded-tl-[50px]"
+          href="/kegiatan/lokasi"
+        >
+          <img
+            src="/assets/konreg-2023.webp"
+            alt="konreg 2023"
+            className={`w-full h-56 lg:h-96 object-cover opatity-80  shadow-lg rounded-lg lg:rounded-none lg:rounded-br-[50px] lg:rounded-tl-[50px] opacity-80 hover:opacity-50 duration-300 ease-in-out`}
+          />
+          <div className="absolute z-10 inset-x-0 flex items-center justify-center bottom-4">
+            <div className="rounded-full bg-white border border-white text-cyan-700 px-4 shadow-lg">
+              <h2 className="font-medium text-xs lg:text-base">
+                Konreg PDRB Sumatera 2023
+              </h2>
+            </div>
+          </div>
+        </Link>
+
+        {/* <img
+          src="https://bams.jambiprov.go.id/wp-content/uploads/2023/03/Sejarah-Jembatan-Gentala-Arasy.png"
+          alt="Wisata jambi"
+          className={`w-2/3 object-cover`}
+        /> */}
+      </div>
+      <div className="flex flex-col lg:flex-row justify-between duration-300 ease-in-out ">
+        {/* <img
+          
+          alt="Hiburan"
+          className={`lg:w-1/2 h-56 m-4 lg:m-0 lg:h-96 object-cover opatity-80 rounded-lg  shadow-xl lg:rounded-none lg:rounded-tr-[50px] lg:rounded-bl-[50px]`}
+        /> */}
+        <Link
+          className="lg:w-1/2 relative bg-black m-4 lg:m-0 rounded-lg lg:rounded-none lg:rounded-tr-[50px] lg:rounded-bl-[50px]"
+          href="/hiburan/wisata?id=13"
+        >
+          <img
+            src="https://indonesiaimpressiontour.com/wp-content/uploads/2022/11/IMG_20191101_004648.webp"
+            alt="hiburan"
+            className={`w-full h-56 lg:h-96 object-cover opatity-80  shadow-lg rounded-lg lg:rounded-none lg:rounded-tr-[50px] lg:rounded-bl-[50px] opacity-80 hover:opacity-50 duration-300 ease-in-out`}
+          />
+          <div className="absolute z-10 inset-x-0 flex items-center justify-center bottom-4">
+            <div className="rounded-full bg-white border border-white text-cyan-700 px-4 shadow-lg">
+              <h2 className="font-medium text-xs lg:text-base">
+                Wisata Candi Tinggi
+              </h2>
+            </div>
+          </div>
+        </Link>
+        <div className="w-full lg:w-1/2 flex justify-between flex-row items-center">
+          <div className="p-8 text-center md:text-start sm:px-24 lg:px-36 xl:px-48 lg:py-12 space-y-4 lg:space-y-8">
+            <h3 className="text-lg lg:text-3xl font-bold text-amber-600">
+              HIBURAN
+            </h3>
+            <div>
+              <p className="text-base lg:text-xl  text-gray-600 leading-6 lg:leading-8">
+                Wisata, produk UMKM, dan Kuliner khas Provinsi Jambi
+              </p>
+            </div>
+            <div className="w-full text-center items-center justify-center lg:items-start lg:justify-start flex">
+              <Link
+                href={"hiburan/wisata"}
+                className="px-4 py-1 lg:py-2 flex justify-evenly items-center text-center text-white bg-sky-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-400 bg-size-200 bg-pos-0 hover:bg-pos-100 shadow-lg shadow-amber-300 hover:shadow-pink-500"
+              >
+                <span>Selengkapnya</span>
+
+                <IconArrowNarrowRight size={24} className="text-white" />
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* <img
+          src="https://bams.jambiprov.go.id/wp-content/uploads/2023/03/Sejarah-Jembatan-Gentala-Arasy.png"
+          alt="Wisata jambi"
+          className={`w-2/3 object-cover`}
+        /> */}
+      </div>
+      <div className="flex flex-col flex-col-reverse lg:flex-row justify-between duration-300 ease-in-out">
+        <div className="w-full lg:w-1/2 flex justify-between flex-row items-center">
+          <div className="p-8 text-center md:text-start sm:px-24 lg:px-36 xl:px-48 lg:py-12 space-y-4 lg:space-y-8">
+            <h3 className="text-lg lg:text-3xl font-bold text-pink-700">
+              AKOMODASI
+            </h3>
+
+            <div>
+              <p className="text-base lg:text-xl text-gray-600 leading-6 lg:leading-8">
+                Informasi Hotel, Transportasi, Rumah Makan dan Ibadah
+              </p>
+            </div>
+            <div className="w-full text-center items-center justify-center lg:items-start lg:justify-start flex">
+              <Link
+                href={"akomodasi/hotel"}
+                className="px-4 py-1 lg:py-2 flex justify-evenly items-center text-center text-white bg-sky-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-purple-600  to-pink-600 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100 shadow-lg shadow-pink-300 hover:shadow-purple-500"
+              >
+                <span>Selengkapnya</span>
+
+                <IconArrowNarrowRight size={24} className="text-white" />
+              </Link>
+            </div>
+          </div>
+        </div>
+        <Link
+          className="lg:w-1/2 relative bg-black m-4 lg:m-0 rounded-lg  shadow-xl lg:rounded-none lg:rounded-tl-[50px] lg:rounded-br-[50px]"
+          href="/akomodasi/hotel?id=1"
+        >
+          <img
+            src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10007179-1500x1000-FIT_AND_TRIM-13d69d49e336ae12cf01615191bf6fed.jpeg"
+            alt="akomodasi"
+            className={`w-full h-56 lg:h-96 object-cover opatity-80  rounded-lg  shadow-xl lg:rounded-none lg:rounded-tl-[50px] lg:rounded-br-[50px] opacity-80 hover:opacity-50 duration-300 ease-in-out`}
+          />
+          <div className="absolute z-10 inset-x-0 flex items-center justify-center bottom-4">
+            <div className="rounded-full bg-white border border-white text-cyan-700 px-4 shadow-lg">
+              <h2 className="font-medium text-xs lg:text-base">Hotel Aston</h2>
+            </div>
+          </div>
+        </Link>
+
+        {/* <img
+          src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10007179-1500x1000-FIT_AND_TRIM-13d69d49e336ae12cf01615191bf6fed.jpeg"
+          alt="akomodasi"
+          className={`lg:w-1/2 h-56 m-4 lg:m-0 lg:h-96 object-cover opatity-80 rounded-lg  shadow-xl lg:rounded-none lg:rounded-tl-[50px] lg:rounded-br-[50px]`}
+        /> */}
+        {/* <img
+          src="https://bams.jambiprov.go.id/wp-content/uploads/2023/03/Sejarah-Jembatan-Gentala-Arasy.png"
+          alt="Wisata jambi"
+          className={`w-2/3 object-cover`}
+        /> */}
+      </div>
+      <div className="flex flex-col lg:flex-row justify-between duration-300 ease-in-out ">
+        <Link
+          className="lg:w-1/2 relative bg-black m-4 lg:m-0 rounded-lg  shadow-xl lg:rounded-none lg:rounded-tr-[50px] lg:rounded-bl-[50px]"
+          href="/akomodasi/hotel?id=1"
+        >
+          <img
+            src="/assets/dokumentasi.jpeg"
+            alt="dokumentasi"
+            className={`w-full h-56 lg:h-96 object-cover opatity-80  rounded-lg  shadow-xl lg:rounded-none lg:rounded-tr-[50px] lg:rounded-bl-[50px] opacity-80 hover:opacity-50 duration-300 ease-in-out`}
+          />
+          <div className="absolute z-10 inset-x-0 flex items-center justify-center bottom-4">
+            <div className="rounded-full bg-white border border-white text-cyan-700 px-4 shadow-lg">
+              <h2 className="font-medium text-xs lg:text-base">
+                Dokumentasi konreg pdrb sumatera 2023
+              </h2>
+            </div>
+          </div>
+        </Link>
+
+        {/* <img
+          src="/assets/dokumentasi.jpeg"
+          alt="Galeri"
+          className={`lg:w-1/2 h-56 m-4 lg:m-0 lg:h-96 object-cover opatity-80 rounded-lg  shadow-xl lg:rounded-none lg:rounded-tr-[50px] lg:rounded-bl-[50px]`}
+        /> */}
+        <div className="w-full lg:w-1/2 flex justify-between flex-row items-center">
+          <div className="p-8 text-center md:text-start sm:px-24 lg:px-36 xl:px-48 lg:py-12 space-y-4 lg:space-y-8">
+            <h3 className="text-lg lg:text-3xl font-bold text-teal-600">
+              GALERI
+            </h3>
+            <div>
+              <p className="text-base lg:text-xl  text-gray-600 leading-6 lg:leading-8">
+                Kumpulan dokumentasi selama kegiatan Konsultasi Regional PDRB
+                Wilayah Sumatera Tahun 2024 berlangsung.
+              </p>
+            </div>
+            <div className="w-full text-center items-center justify-center lg:items-start lg:justify-start flex">
+              <Link
+                href={"galeri"}
+                className="px-4 py-1 lg:py-2 flex justify-evenly items-center text-center text-white bg-sky-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-indigo-600 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100 shadow-lg shadow-teal-300 hover:shadow-cyan-500"
+              >
+                <span>Selengkapnya</span>
+
+                <IconArrowNarrowRight size={24} className="text-white" />
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* <img
+          src="https://bams.jambiprov.go.id/wp-content/uploads/2023/03/Sejarah-Jembatan-Gentala-Arasy.png"
+          alt="Wisata jambi"
+          className={`w-2/3 object-cover`}
+        /> */}
+      </div>
+      {/* <div
         id="konten"
         className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500 mt-12"
       >
-        {/* <TabsDemo /> */}
-        {/* <BentoGridDemo /> */}
         <h2 className="text-lg text-center lg:text-start lg:text-2xl font-bold text-sky-800">
           Konsultasi Regional PDRB Wilayah Sumatera
         </h2>
@@ -341,7 +546,7 @@ export default function Home() {
             </Link>
           </motion.div>
         </motion.div>
-      </div>
+      </div> */}
       {/* main content end */}
       {/* collaborator start */}
       {/* <div className="w-sreen bg-cyan-800 flex flex-col lg:flex-row justify-between pt-8 lg:pt-0 lg:px-36 xl:px-48 lg:h-fit shadow-xl mt-12 bg-mesh">
@@ -353,7 +558,7 @@ export default function Home() {
             ul.insertAdjacentHTML('afterend', ul.outerHTML);
             ul.nextSibling.setAttribute('aria-hidden', 'true');
         })"
-            className="h-full lg:h-96 w-full flex inline-flex flex-nowrap lg:inline-grid lg:grid-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_256px,_black_calc(100%-100px),transparent_100%)"
+            className="h-full lg:h-96 w-full flex inline-flex flex-nowrap lg:inline-grid lg:grid-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_256px,_black_calc(100%-50px),transparent_100%)"
           >
             <ul
               x-ref="collaborators"
@@ -464,17 +669,17 @@ export default function Home() {
       {/* collaborator end */}
 
       {/* instansi collaboration start */}
-      <div className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500 pt-12">
+      <div className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500 py-12">
         <h2 className="text-lg text-center lg:text-start lg:text-2xl font-bold text-sky-800">
-          Kolaborasi
+          KOLABORASI
         </h2>
-        <p className="text-sm lg:text-lg text-center lg:text-start">
+        {/* <p className="text-sm lg:text-lg text-center lg:text-start">
           Konsultasi Regional PDRB Wilayah Sumatera merupakan salah satu bentuk
           kolaborasi dan sinergi Badan Pusat Statistik (BPS), Badan Perencanaan
           Pembangunan Pembangunan Daerah (Bappeda), Dinas Komunikasi dan
           Informatika (Diskominfo), Bank Indonesia (BI), serta Kantor Wilayah
           Direktorat Jendral Perbendaharaan (DJPb).
-        </p>
+        </p> */}
         <ul className="flex flex-col lg:flex-none lg:grid lg:grid-cols-3 gap-2 lg:gap-8 w-full">
           <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
