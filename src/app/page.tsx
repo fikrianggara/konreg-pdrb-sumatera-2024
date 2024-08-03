@@ -218,7 +218,7 @@ export default function Home() {
       {/* main content */}
       <div
         id="konten"
-        className="flex flex-col flex-col-reverse lg:flex-row justify-between duration-300 ease-in-out"
+        className="flex flex-col flex-col-reverse lg:flex-row justify-between duration-300 ease-in-out bg-white"
       >
         <div className="w-full lg:w-1/2 flex-col justify-between">
           <div className="p-8 text-center md:text-start sm:px-24 lg:px-36 xl:px-48 lg:py-12 space-y-4 lg:space-y-8">
@@ -226,7 +226,7 @@ export default function Home() {
               KEGIATAN
             </h3>
             <div>
-              <p className="text-base lg:text-xl text-gray-600 leading-6 lg:leading-8">
+              <p className="text-base lg:text-xl text-gray-800 leading-6 lg:leading-8">
                 Informasi jadwal dan lokasi kegiatan serta materi dan notula
                 Konsultasi Regional PDRB Wilayah Sumatera Tahun 2024.
               </p>
@@ -267,7 +267,7 @@ export default function Home() {
           className={`w-2/3 object-cover`}
         /> */}
       </div>
-      <div className="flex flex-col lg:flex-row justify-between duration-300 ease-in-out ">
+      <div className="flex flex-col lg:flex-row justify-between duration-300 ease-in-out bg-white">
         {/* <img
           
           alt="Hiburan"
@@ -296,7 +296,7 @@ export default function Home() {
               HIBURAN
             </h3>
             <div>
-              <p className="text-base lg:text-xl  text-gray-600 leading-6 lg:leading-8">
+              <p className="text-base lg:text-xl  text-gray-800 leading-6 lg:leading-8">
                 Wisata, produk UMKM, dan Kuliner khas Provinsi Jambi
               </p>
             </div>
@@ -319,7 +319,7 @@ export default function Home() {
           className={`w-2/3 object-cover`}
         /> */}
       </div>
-      <div className="flex flex-col flex-col-reverse lg:flex-row justify-between duration-300 ease-in-out">
+      <div className="flex flex-col flex-col-reverse lg:flex-row justify-between duration-300 ease-in-out bg-white">
         <div className="w-full lg:w-1/2 flex justify-between flex-row items-center">
           <div className="p-8 text-center md:text-start sm:px-24 lg:px-36 xl:px-48 lg:py-12 space-y-4 lg:space-y-8">
             <h3 className="text-lg lg:text-3xl font-bold text-pink-700">
@@ -327,7 +327,7 @@ export default function Home() {
             </h3>
 
             <div>
-              <p className="text-base lg:text-xl text-gray-600 leading-6 lg:leading-8">
+              <p className="text-base lg:text-xl text-gray-800 leading-6 lg:leading-8">
                 Informasi Hotel, Transportasi, Rumah Makan dan Ibadah
               </p>
             </div>
@@ -370,7 +370,7 @@ export default function Home() {
           className={`w-2/3 object-cover`}
         /> */}
       </div>
-      <div className="flex flex-col lg:flex-row justify-between duration-300 ease-in-out ">
+      <div className="flex flex-col lg:flex-row justify-between duration-300 ease-in-out bg-white">
         <Link
           className="lg:w-1/2 relative bg-black m-4 lg:m-0 rounded-lg  shadow-xl lg:rounded-none lg:rounded-tr-[50px] lg:rounded-bl-[50px]"
           href="/akomodasi/hotel?id=1"
@@ -400,7 +400,7 @@ export default function Home() {
               GALERI
             </h3>
             <div>
-              <p className="text-base lg:text-xl  text-gray-600 leading-6 lg:leading-8">
+              <p className="text-base lg:text-xl  text-gray-800 leading-6 lg:leading-8">
                 Kumpulan dokumentasi selama kegiatan Konsultasi Regional PDRB
                 Wilayah Sumatera Tahun 2024 berlangsung.
               </p>
