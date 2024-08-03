@@ -291,7 +291,7 @@ export default function Home() {
           </div>
         </Link>
         <div className="w-full lg:w-1/2 flex justify-between flex-row items-center">
-          <div className="p-8 text-center md:text-start sm:px-24 lg:px-36 xl:px-48 lg:py-12 space-y-4 lg:space-y-8">
+          <div className="p-8 text-center md:text-end sm:px-24 lg:px-36 xl:px-48 lg:py-12 space-y-4 lg:space-y-8">
             <h3 className="text-lg lg:text-3xl font-bold text-amber-600">
               HIBURAN
             </h3>
@@ -300,7 +300,7 @@ export default function Home() {
                 Wisata, produk UMKM, dan Kuliner khas Provinsi Jambi
               </p>
             </div>
-            <div className="w-full text-center items-center justify-center lg:items-start lg:justify-start flex">
+            <div className="w-full text-center items-center justify-center lg:items-start lg:justify-end flex">
               <Link
                 href={"hiburan/wisata"}
                 className="px-4 py-1 lg:py-2 flex justify-evenly items-center text-center text-white bg-sky-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-400 bg-size-200 bg-pos-0 hover:bg-pos-100 shadow-lg shadow-amber-300 hover:shadow-pink-500"
@@ -395,17 +395,17 @@ export default function Home() {
           className={`lg:w-1/2 h-56 m-4 lg:m-0 lg:h-96 object-cover opatity-80 rounded-lg  shadow-xl lg:rounded-none lg:rounded-tr-[50px] lg:rounded-bl-[50px]`}
         /> */}
         <div className="w-full lg:w-1/2 flex justify-between flex-row items-center">
-          <div className="p-8 text-center md:text-start sm:px-24 lg:px-36 xl:px-48 lg:py-12 space-y-4 lg:space-y-8">
+          <div className="p-8 text-center md:text-end sm:px-24 lg:px-36 xl:px-48 lg:py-12 space-y-4 lg:space-y-8">
             <h3 className="text-lg lg:text-3xl font-bold text-teal-600">
               GALERI
             </h3>
             <div>
-              <p className="text-base lg:text-xl  text-gray-800 leading-6 lg:leading-8">
+              <p className="text-base lg:text-xl text-gray-800 leading-6 lg:leading-8">
                 Kumpulan dokumentasi selama kegiatan Konsultasi Regional PDRB
                 Wilayah Sumatera Tahun 2024 berlangsung.
               </p>
             </div>
-            <div className="w-full text-center items-center justify-center lg:items-start lg:justify-start flex">
+            <div className="w-full text-center items-center justify-center lg:items-start lg:justify-end flex">
               <Link
                 href={"galeri"}
                 className="px-4 py-1 lg:py-2 flex justify-evenly items-center text-center text-white bg-sky-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-indigo-600 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100 shadow-lg shadow-teal-300 hover:shadow-cyan-500"
