@@ -333,7 +333,7 @@ export default function Home() {
             </div>
             <div className="w-full text-center items-center justify-center lg:items-start lg:justify-start flex">
               <Link
-                href={"akomodasi/hotel"}
+                href={"/akomodasi/hotel?id=2"}
                 className="px-4 py-1 lg:py-2 flex justify-evenly items-center text-center text-white bg-sky-800 rounded-full mt-6 xl:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-purple-600  to-pink-600 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100 shadow-lg shadow-pink-300 hover:shadow-purple-500"
               >
                 <span>Selengkapnya</span>
@@ -345,16 +345,18 @@ export default function Home() {
         </div>
         <Link
           className="lg:w-1/2 relative bg-black m-4 lg:m-0 rounded-lg  shadow-xl lg:rounded-none lg:rounded-tl-[50px] lg:rounded-br-[50px]"
-          href="/akomodasi/hotel?id=1"
+          href="/akomodasi/hotel?id=2"
         >
           <img
-            src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10007179-1500x1000-FIT_AND_TRIM-13d69d49e336ae12cf01615191bf6fed.jpeg"
+            src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/20011977-9a87f7e9441a004ac20d28f3a42f42ce.jpeg"
             alt="akomodasi"
             className={`w-full h-56 lg:h-96 object-cover opatity-80  rounded-lg  shadow-xl lg:rounded-none lg:rounded-tl-[50px] lg:rounded-br-[50px] opacity-80 hover:opacity-50 duration-300 ease-in-out`}
           />
           <div className="absolute z-10 inset-x-0 flex items-center justify-center bottom-4">
             <div className="rounded-full bg-white border border-white text-cyan-700 px-4 shadow-lg">
-              <h2 className="font-medium text-xs lg:text-base">Hotel Aston</h2>
+              <h2 className="font-medium text-xs lg:text-base">
+                BW Luxury Hotel
+              </h2>
             </div>
           </div>
         </Link>
@@ -373,7 +375,7 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row justify-between duration-300 ease-in-out bg-white">
         <Link
           className="lg:w-1/2 relative bg-black m-4 lg:m-0 rounded-lg  shadow-xl lg:rounded-none lg:rounded-tr-[50px] lg:rounded-bl-[50px]"
-          href="/akomodasi/hotel?id=1"
+          href="/galeri"
         >
           <img
             src="/assets/dokumentasi.jpeg"
