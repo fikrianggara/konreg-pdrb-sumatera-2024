@@ -1,56 +1,548 @@
 "use client";
 import { useState } from "react";
 import { Stepper, Button, Group } from "@mantine/core";
+import Image from "next/image";
 import {
   IconCalendarEvent,
-  IconCheck,
+  IconClock,
   IconMapPinFilled,
+  IconUser,
 } from "@tabler/icons-react";
-// import { Span } from "next/dist/trace";
+import Link from "next/link";
 import { formatDate } from "@/lib/utils";
+
+const PEMDA = [
+  {
+    provinsi: "aceh",
+    src: "/assets/logo aceh.png",
+    alt: "provinsi aceh",
+  },
+  {
+    provinsi: "bangka belitung",
+    src: "/assets/logo babel.png",
+    alt: "provinsi babel",
+  },
+  {
+    provinsi: "bengkulu",
+    src: "/assets/logo bengkulu.png",
+    alt: "provinsi bengkulu",
+  },
+  {
+    provinsi: "jambi",
+    src: "/assets/logo jambi.png",
+    alt: "provinsi jambi",
+  },
+  {
+    provinsi: "kepri",
+    src: "/assets/logo kepri.png",
+    alt: "provinsi kepri",
+  },
+  {
+    provinsi: "lampung",
+    src: "/assets/logo lampung.png",
+    alt: "provinsi lampung",
+  },
+  {
+    provinsi: "riau",
+    src: "/assets/logo riau.png",
+    alt: "provinsi riau",
+  },
+  {
+    provinsi: "sumbar",
+    src: "/assets/logo sumbar.png",
+    alt: "provinsi sumbar",
+  },
+  {
+    provinsi: "sumsel",
+    src: "/assets/logo sumsel.png",
+    alt: "provinsi sumsel",
+  },
+  {
+    provinsi: "sumut",
+    src: "/assets/logo sumut.png",
+    alt: "provinsi sumut",
+  },
+];
+
 const KEGIATAN = [
   {
-    label: "Check-in hotel",
-    deskripsi: "deskripsi kegiatan 1",
-    deskripsi_panjang: <h1 className="text-green-500">fdsafdsaf</h1>,
-    jadwal: "6/5/2024",
-    lokasi: "Hotel X",
+    label: "Hari ke-1",
+    keterangan: (
+      <div className="space-y-1 md:space-y-2">
+        <h2 className="text-sm md:text-lg">Peserta :</h2>
+        <h3 className="text-base md:text-lg text-center font-medium">
+          Kepala dan Rombongan
+        </h3>
+        {/* Diskominfo, BPS, BI, DJPb, dan Peserta HLM dari BPS RI */}
+        <ul className="flex flex-col lg:flex-none md:grid md:lg-grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-8 w-full">
+          <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <Image
+              src={"/assets/logo bps.png"}
+              height={200}
+              width={200}
+              alt="logo bps"
+              className="self-center"
+            ></Image>
+          </li>
+          <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <Image
+              src={"/assets/logo bi.png"}
+              height={200}
+              width={200}
+              alt="logo bi"
+              className="self-center"
+            ></Image>
+          </li>
+          <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <Image
+              src={"/assets/logo djpb.png"}
+              height={200}
+              width={200}
+              alt="logo djpb"
+              className="self-center"
+            ></Image>
+          </li>
+          <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <Image
+              src={"/assets/diskominfo.jpg"}
+              height={100}
+              width={100}
+              alt="logo kominfo"
+              className="self-center"
+            ></Image>
+          </li>
+          <li className="col-span-2 lg:col-span-4 bg-white duration-200 ease-in-out rounded-xl w-full border p-4 text-center self-center backdrop-blur-sm grid grid-cols-5 lg:grid-cols-10 gap-4">
+            {PEMDA.map((p) => (
+              <div className="flex items-center m-auto" key={p.provinsi}>
+                <Image
+                  src={p.src}
+                  height={36}
+                  width={36}
+                  alt={p.alt}
+                  className="self-center"
+                ></Image>
+              </div>
+            ))}
+          </li>
+        </ul>
+      </div>
+    ),
+    tanggal: "8/26/2024",
+    rincian_kegiatan: [
+      {
+        jadwal: "08.00 - 16.00 WIB",
+        judul: "Kedatangan Peserta",
+        uraian: (
+          <p>Peserta Inti dan Pendamping, Peserta Tambahan, dan Narasumber</p>
+        ),
+        lokasi: [
+          {
+            nama: "Bandara Sultan Thaha Syaifuddin",
+            gmaps:
+              "https://www.google.com/maps/place/Sultan+Thaha+Airport/@-1.6325978,103.6406519,17z/data=!3m1!4b1!4m6!3m5!1s0x2e2585fad6e79e9b:0xf039d8194a03080!8m2!3d-1.6325978!4d103.6432268!16s%2Fm%2F02pk5mf?entry=ttu",
+          },
+          {
+            nama: "BW Luxury Hotel",
+            gmaps:
+              "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
+          },
+        ],
+      },
+      {
+        jadwal: "17.00 - 18.00 WIB",
+        judul: "High Level Meeting (HLM)",
+        uraian: (
+          <p>
+            Makan Malam Peserta Inti (Kepala Bappeda, Kadiskominfo, Kepala BPS,
+            Kepala BI, Kakanwil DJPb )
+          </p>
+        ),
+        lokasi: [
+          {
+            nama: "BW Luxury Hotel",
+            gmaps:
+              "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
+          },
+        ],
+      },
+      {
+        jadwal: "18.00 – 19.30 WIB",
+        judul: "ISHOMA",
+        uraian: (
+          <ul className="space-y-2">
+            <li>Sholat</li>
+            <li>Makan Malam Bersama Peserta HLM</li>
+          </ul>
+        ),
+        lokasi: [
+          {
+            nama: "BW Luxury Hotel",
+            gmaps:
+              "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
+          },
+        ],
+      },
+      {
+        jadwal: "19.00 – 21.00 WIB",
+        judul: "Lanjutan High Level Meeting (HLM)",
+        uraian: (
+          <ol className="space-y-2">
+            <li>
+              1. Evaluasi dan Tindak Lanjut Pelaksanaan Hasil Kesepakatan Konreg
+              PDRB-ISE se-Sumatera Tahun 2023 di Provinsi Kepulauan Bangka
+              Belitung
+            </li>
+            <li>
+              2. Penentuan Penyelenggaraan Konreg PDRB-ISE se-Sumatera Tahun
+              2025 dan 2026
+            </li>
+          </ol>
+        ),
+        lokasi: [
+          {
+            nama: "BW Luxury Hotel",
+            gmaps:
+              "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
+          },
+        ],
+      },
+    ],
   },
   {
-    label: "Peresmian Konreg PDRB regional sumatera 2024",
-    deskripsi: "deskripsi kegiatan 2",
-    deskripsi_panjang: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi labore
-    nostrum perspiciatis magni corporis voluptates aperiam incidunt
-    provident veritatis odio soluta minima sunt quasi esse dolor earum
-    officiis, asperiores cupiditate quos iure! Expedita corrupti officiis,
-    iste laboriosam obcaecati error minus.`,
-    jadwal: "6/10/2024",
-    lokasi: "Hotel X",
+    label: "Hari ke-2",
+    keterangan: (
+      <div className="space-y-4">
+        <h1 className="text-center text-lg font-medium">Keynote Speaker</h1>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+          <Link href="https://ppid.bps.go.id/app/konten/0000/Profil-BPS.html">
+            <div className="flex flex-col space-y-2 text-center">
+              <img
+                src="/assets/kepala_bps_ri.png"
+                alt="kepala BPS RI"
+                className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
+              />
+
+              <h1 className="text-xs md:text-sm font-medium">
+                Amalia Adininggar Widyasanti S.T., M.Si., M.Eng., Ph.D.
+              </h1>
+
+              <h2 className="text-xs text-gray-600">PLT Kepala BPS RI</h2>
+            </div>
+          </Link>
+          <Link href="https://ppid.bps.go.id/app/konten/0000/Profil-BPS.html">
+            <div className="flex flex-col space-y-2 text-center">
+              <img
+                src="/assets/deputi_neraca_bps_ri.png"
+                alt="deputi neraca BPS RI"
+                className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
+              />
+              <h1 className="text-xs md:text-sm font-medium">
+                Moh. Edy Mahmud, S.Si., M.P
+              </h1>
+              <h2 className="text-xs text-gray-600">
+                Deputi Neraca dan Analisis BPS RI
+              </h2>
+            </div>
+          </Link>
+          <Link href="https://id.wikipedia.org/wiki/Al_Haris">
+            <div className="flex flex-col space-y-2 justify-center text-center self-start">
+              <img
+                src="/assets/gubernur_jambi.png"
+                alt="gubernur jambi"
+                className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
+              />
+              <h1 className="text-xs md:text-sm font-medium">
+                Dr. H. Al Haris, S.Sos., M.H.
+              </h1>
+              <h2 className="text-xs text-gray-600">Gubernur Jambi</h2>
+            </div>
+          </Link>
+          <div className="flex flex-col space-y-2 justify-center text-center self-start">
+            <img
+              src="/assets/kepala_bappeda.png"
+              alt="kepala bappeda jambi"
+              className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
+            />
+            <h1 className="text-xs md:text-sm font-medium">Agus Sunaryo</h1>
+            <h2 className="text-xs text-gray-600">
+              Kepala Bappeda Prov. Jambi
+            </h2>
+          </div>
+        </div>
+      </div>
+    ),
+    rincian_kegiatan: [
+      {
+        jadwal: "07.30 - 08.30 WIB",
+        judul: "Registrasi Peserta",
+        uraian: (
+          <ol className="space-y-1 ml-4">
+            <li>1. Pembukaan Acara</li>
+            <li>2. Persembahan Tari Selamat Datang</li>
+            <li>3. Lagu Kebangsaan Indonesia Raya</li>
+            <li>4. Pembacaan Do'a</li>
+            <li>5. Laporan Ketua Penyelenggara</li>
+            <li>6. Opening Speech</li>
+            <li>
+              7. Sambutan sekaligus Membuka Acara Konreg PDRB-ISE se-Sumatera
+              Tahun 2024
+            </li>
+            <li>
+              8. Launching Website Konreg PDRB-ISE sebagai Tanda Konreg PDRB-ISE
+              se-Sumatera Tahun 2024 dimulai
+            </li>
+            <li>9. Foto Bersama</li>
+            <li>10. Penutupan oleh MC</li>
+          </ol>
+        ),
+        lokasi: [
+          {
+            nama: "Taman Raja Ballroom, BW Luxury Hotel",
+            gmaps:
+              "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
+          },
+        ],
+      },
+      {
+        jadwal: "09.15 - 09.30 WIB",
+        judul: "Coffee Break",
+        uraian: <p></p>,
+        lokasi: [
+          {
+            nama: "Taman Raja Ballroom, BW Luxury Hotel",
+            gmaps:
+              "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
+          },
+        ],
+      },
+      {
+        jadwal: "09.30 – 11.15 WIB",
+        judul: "Paparan Narasumber",
+        uraian: (
+          <div className="space-y-6">
+            <h2 className="font-medium text-center md:text-lg">
+              Keynote Speech
+            </h2>
+            <Link href="https://ppid.bps.go.id/app/konten/0000/Profil-BPS.html">
+              <div className="flex flex-col space-y-1 text-center items-start self-center text-center">
+                <img
+                  src="/assets/deputi_neraca_bps_ri.png"
+                  alt="deputi neraca BPS RI"
+                  className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
+                />
+                <h1 className="text-xs md:text-sm font-medium self-center">
+                  Moh. Edy Mahmud, S.Si., M.P
+                </h1>
+                <h2 className="text-xs text-gray-600 self-center">
+                  Deputi Neraca dan Analisis BPS RI
+                </h2>
+              </div>
+            </Link>
+
+            <h2 className="font-medium text-center w-full md:text-lg">
+              {" "}
+              Diskusi Panel
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+              <Link href="https://id.wikipedia.org/wiki/Elviana">
+                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
+                  <img
+                    src="/assets/presentasi_1.png"
+                    alt="presentasi 1"
+                    className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
+                  />
+                  <h1 className="text-xs md:text-sm font-medium self-center">
+                    Dra. Hj. Elviana, M.Si
+                  </h1>
+                  <h2 className="text-xs text-gray-600 self-center">
+                    Anggota DPD RI DaPil Jambi
+                  </h2>
+                  <h2 className="text-xs text-gray-600 self-center font-medium">
+                    Presentasi 1
+                  </h2>
+                </div>
+              </Link>
+              <Link href="https://ppid.bps.go.id/app/konten/0000/Profil-BPS.html">
+                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
+                  <img
+                    src="/assets/presentasi_2.png"
+                    alt="presentasi 2"
+                    className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
+                  />
+                  <h1 className="text-xs md:text-sm font-medium self-center">
+                    Pipit Helly Sorayan, SE., ME.
+                  </h1>
+                  <h2 className="text-xs text-gray-600 self-center">
+                    Deputi Neraca Pengeluaran BPS RI
+                  </h2>
+                  <h2 className="text-xs text-gray-600 self-center font-medium">
+                    Presentasi 2
+                  </h2>
+                </div>
+              </Link>
+
+              <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
+                <IconUser className="h-16 md:h-24 w-16 md:w-24 rounded-full bg-gray-400 text-white text-center self-center"></IconUser>
+                <h1 className="text-xs md:text-sm font-medium self-center">
+                  Perwakilan Kementrian PPN/Bappenas RI
+                </h1>
+                <h2 className="text-xs text-gray-600 self-center">
+                  Kementrian PPN/Bappenas RI
+                </h2>
+                <h2 className="text-xs text-gray-600 self-center font-medium">
+                  Presentasi 3
+                </h2>
+              </div>
+              <Link href="https://id.linkedin.com/in/igp-wira-kusuma-3b480039">
+                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
+                  <img
+                    src="/assets/presentasi_4.png"
+                    alt="presentasi 4"
+                    className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
+                  />
+                  <h1 className="text-xs md:text-sm font-medium self-center">
+                    IGP Wira Kusuma
+                  </h1>
+
+                  <h2 className="text-xs text-gray-600 self-center">
+                    Kepala Kantor Perwakilan Bank Indonesia Prov. Sumatera Utara
+                  </h2>
+                  <h2 className="text-xs text-gray-600 self-center font-medium">
+                    Presentasi 4
+                  </h2>
+                </div>
+              </Link>
+              <Link href="https://djpb.kemenkeu.go.id/portal/id/profil/profil-organisasi/profil-pejabat.html">
+                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
+                  <img
+                    src="/assets/presentasi_5.png"
+                    alt="presentasi 5"
+                    className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
+                  />
+                  <h1 className="text-xs md:text-sm font-medium self-center">
+                    Astera Primanto Bhakti
+                  </h1>
+
+                  <h2 className="text-xs text-gray-600 self-center">
+                    Direktur Jenderal Perbendaharaan Kementerian Keuangan RI
+                  </h2>
+                  <h2 className="text-xs text-gray-600 self-center font-medium">
+                    Presentasi 5
+                  </h2>
+                </div>
+              </Link>
+            </div>
+            <h2 className="font-medium text-center md:text-lg">
+              {" "}
+              Tanya Jawab dan Diskusi
+            </h2>
+          </div>
+        ),
+        lokasi: [
+          {
+            nama: "Taman Raja Ballroom, BW Luxury Hotel",
+            gmaps:
+              "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
+          },
+        ],
+      },
+      {
+        jadwal: "11.15 - 11.45 WIB",
+        judul: "Paparan Hasil dan Penandatanganan Kesepakatan",
+        uraian: (
+          <div>
+            <p>Paparan Hasil Kesepakatan</p>
+            <p>
+              Penandatanganan Kesepakatan Konreg PDRB-ISE se-Sumatera Tahun 2024
+            </p>
+          </div>
+        ),
+        lokasi: [
+          {
+            nama: "Taman Raja Ballroom, BW Luxury Hotel",
+            gmaps:
+              "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
+          },
+        ],
+      },
+      {
+        jadwal: "11.45 - 12.30 WIB",
+        judul: "Acara Penutupan",
+        uraian: (
+          <ul className="space-y-2">
+            <li>1. Pidato Penutupan</li>
+            <li>
+              2. Penyerahan Souvenir kepada Peserta Inti (Bappeda, BPS, BI.
+              Diskominfo, DJPb)
+            </li>
+            <li>3. Foto Bersama</li>
+          </ul>
+        ),
+        lokasi: [
+          {
+            nama: "Taman Raja Ballroom, BW Luxury Hotel",
+            gmaps:
+              "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
+          },
+        ],
+      },
+      {
+        jadwal: "12.30 – 13.30 WIB",
+        judul: "ISHOMA",
+        uraian: (
+          <ul className="space-y-2">
+            <li>Sholat</li>
+            <li>Makan Malam Bersama Peserta HLM</li>
+          </ul>
+        ),
+        lokasi: [
+          {
+            nama: "BW Luxury Hotel",
+            gmaps:
+              "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
+          },
+        ],
+      },
+      {
+        jadwal: "13.30 – 17.00 WIB",
+        judul: "City Tour",
+        uraian: <p>Rute dari Hotel BW Luxury Jambi menuju Candi Muaro Jambi</p>,
+        lokasi: [
+          {
+            nama: "Candi Muaro Jambi",
+            gmaps:
+              "https://www.google.com/maps/place/Muaro+Jambi+Temple+Complex/@-1.6009188,103.5784017,13z/data=!4m6!3m5!1s0x2e25f3532e01e437:0x9251412ef519ac6f!8m2!3d-1.4779213!4d103.6670838!16s%2Fm%2F03h3n81?entry=ttu",
+          },
+        ],
+      },
+    ],
+    tanggal: "8/27/2024",
   },
   {
-    label: "Diskusi hari ke-2",
-    deskripsi: "deskripsi kegiatan 3",
-    deskripsi_panjang: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
-    nostrum cupiditate, repudiandae aliquam debitis cumque, iure maxime
-    sapiente at aliquid quidem dolor nam maiores, facere quisquam! Quia,
-    inventore? Officia, aspernatur.`,
-    jadwal: "6/12/2024",
-    lokasi: "Hotel X",
-  },
-  {
-    label: "Outbound",
-    deskripsi: "deskripsi kegiatan 4",
-    deskripsi_panjang: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur,
-    officia omnis tenetur quasi fuga voluptatibus.`,
-    jadwal: "6/14/2024",
-    lokasi: "Lokasi Outbound",
-  },
-  {
-    label: "Check-out hotel",
-    deskripsi: "deskripsi kegiatan 5",
-    deskripsi_panjang: `Lorem ipsum dolor sit amet.`,
-    jadwal: "6/17/2024",
-    lokasi: "Hotel X",
+    label: "Hari ke-3",
+    keterangan: <h2></h2>,
+    tanggal: "8/28/2024",
+    rincian_kegiatan: [
+      {
+        jadwal: "-",
+        judul: "Check Out Peserta",
+        uraian: (
+          <p>Check Out dan Kepulangan Peserta Menuju Provinsi Masing-masing</p>
+        ),
+        lokasi: [
+          {
+            nama: "BW Luxury Hotel",
+            gmaps:
+              "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
+          },
+          {
+            nama: "Bandara Sultan Thaha Syaifuddin",
+            gmaps:
+              "https://www.google.com/maps/place/Sultan+Thaha+Airport/@-1.6325978,103.6406519,17z/data=!3m1!4b1!4m6!3m5!1s0x2e2585fad6e79e9b:0xf039d8194a03080!8m2!3d-1.6325978!4d103.6432268!16s%2Fm%2F02pk5mf?entry=ttu",
+          },
+        ],
+      },
+    ],
   },
 ];
 
@@ -146,7 +638,7 @@ function Page() {
           </Stepper.Completed>
         </Stepper>
       </div> */}
-      <div className="">Belum ada jadwal</div>
+      {/* <div className="">Belum ada jadwal</div> */}
       {/* <div className="space-y-2 md:basis-2/3">
         <div className="flex items-center space-x-2">
           <Button
@@ -167,12 +659,68 @@ function Page() {
         </div>
         <div className="md:basis-1/2 bg-gray-100 rounded-lg p-4 h-96 text-xs md:text-base">
           <div>
-            {KEGIATAN[activeDescription - 1].deskripsi_panjang
-              ? KEGIATAN[activeDescription - 1].deskripsi_panjang
+            {KEGIATAN[activeDescription - 1].rincian_kegiatan
+              ? KEGIATAN[activeDescription - 1].rincian_kegiatan
               : "tidak ada kegiatan"}
           </div>
         </div>
       </div> */}
+      <div className="space-y-6">
+        {KEGIATAN.map((k, i) => (
+          <div
+            className="space-y-4 border rounded-lg p-4 md:p-8 w-full bg-white"
+            key={i}
+          >
+            <div className="space-y-4 md:space-y-6">
+              <div className="flex items-center text-xs md:text-sm px-4 py-1 bg-teal-600 rounded-lg text-white w-full md:w-fit font-medium justify-center">
+                <IconCalendarEvent className=" mr-2" />
+                {formatDate(k.tanggal)}
+              </div>
+              <h1 className="text-lg md:text-2xl font-medium">{k.label}</h1>
+              <div className="text-sm">{k.keterangan}</div>
+              <h2 className="md:text-xl font-medium text-gray-800 text-center w-full">
+                Jadwal
+              </h2>
+              <hr />
+              <div className="space-y-2 text-sm">
+                {k.rincian_kegiatan.map((r, j) => (
+                  <div key={j} className="space-y-2 py-2 md:py-4">
+                    <div className="flex flex-col md:flex-row items-start space-y-2 md:space-y-0 md:space-x-4">
+                      <div className="flex space-x-4 items-center justify-start h-full bg-emerald-500 px-4 py-1 text-white w-full md:w-fit rounded-lg font-medium justify-center">
+                        <IconClock className="mr-2 md:mr-4" />
+                        {r.jadwal}
+                      </div>
+                      <div className="w-full md:w-2/3 space-y-2 md:space-y-3">
+                        <h2 className="text-lg md:text-xl font-medium text-gray-800">
+                          {r.judul}
+                        </h2>
+                        <div className="text-sm">{r.uraian}</div>
+                        <ul className="space-y-2 text-xs">
+                          {r.lokasi.map((l, m) => (
+                            <li key={m}>
+                              <Link
+                                className="flex items-center cursor-pointer hover:underline"
+                                href={l.gmaps}
+                              >
+                                <IconMapPinFilled
+                                  className="text-red-600 mr-2"
+                                  size={20}
+                                />
+                                {l.nama}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                    <hr />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
