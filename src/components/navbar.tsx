@@ -82,6 +82,10 @@ const NAVBAR_ITEMS: NAVBAR_ITEM_TYPE[] = [
     name: "Tentang",
     url: "/tentang",
   },
+  {
+    name: "Kontak",
+    url: "/kontak",
+  },
 ];
 
 const MOBILE_TRESHOLD = 900;
