@@ -340,7 +340,6 @@ const KEGIATAN = [
             </Link>
 
             <h2 className="font-medium text-center w-full md:text-lg">
-              {" "}
               Diskusi Panel
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
