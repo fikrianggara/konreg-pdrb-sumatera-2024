@@ -188,10 +188,10 @@ function Navbar() {
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
             <div>
               <h1 className="text-sky-800 text-base font-bold">
-                Konsultasi Regional PDRB
+                Konsultasi Regional PDRB-ISE
               </h1>
               <h2 className="text-amber-500 font-base text-sm">
-                Wilayah Sumatera
+                Wilayah Sumatera 2024
               </h2>
             </div>
           </Link>
@@ -203,10 +203,10 @@ function Navbar() {
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
             <div>
               <h1 className="text-sky-800 lg:text-md xl:text-xl font-bold">
-                Konsultasi Regional PDRB
+                Konsultasi Regional PDRB-ISE
               </h1>
               <h2 className="text-amber-500 text-regular lg:text-sm font-base">
-                Wilayah Sumatera
+                Wilayah Sumatera 2024
               </h2>
             </div>
           </Link>

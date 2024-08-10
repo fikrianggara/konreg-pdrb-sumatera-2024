@@ -161,7 +161,7 @@ export default function Home() {
 
             // transition={{ delay: 1.5, duration: 1 }}
           >
-            Konsultasi Regional PDRB
+            Konsultasi Regional PDRB-ISE
           </motion.h1>
           <motion.h2
             className="text-lg text-amber-500 lg:text-2xl"
@@ -170,7 +170,7 @@ export default function Home() {
             variants={textVariants}
             // transition={{ delay: 2.5, duration: 1 }}
           >
-            Wilayah Sumatera
+            Wilayah Sumatera 2024
           </motion.h2>
           <div className="mt-8 space-y-4 flex flex-col items-center lg:items-start">
             <motion.div
