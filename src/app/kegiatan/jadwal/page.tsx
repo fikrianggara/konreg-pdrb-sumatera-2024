@@ -280,7 +280,7 @@ const KEGIATAN = [
             <li>1. Pembukaan Acara</li>
             <li>2. Persembahan Tari Selamat Datang</li>
             <li>3. Lagu Kebangsaan Indonesia Raya</li>
-            <li>4. Pembacaan Do'a</li>
+            <li>4. Pembacaan Doa</li>
             <li>5. Laporan Ketua Penyelenggara</li>
             <li>6. Opening Speech</li>
             <li>
