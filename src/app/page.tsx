@@ -161,7 +161,7 @@ export default function Home() {
 
             // transition={{ delay: 1.5, duration: 1 }}
           >
-            Konsultasi Regional PDRB-ISE
+            Konsultasi Regional PDRB
           </motion.h1>
           <motion.h2
             className="text-lg text-amber-500 lg:text-2xl"
