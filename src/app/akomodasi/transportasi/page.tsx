@@ -63,7 +63,7 @@ function Page() {
         berlangsung.
       </p>
 
-      <h1 className="md:text-2xl font-bold mt-4">PIC Penjemputan di Bandara</h1>
+      {/* <h1 className="md:text-2xl font-bold mt-4">PIC Penjemputan di Bandara</h1>
       <hr />
       <Carousel withIndicators slideSize="33.333333%" slidesToScroll={3} loop>
         {pic.map((p, i) => (
@@ -95,7 +95,7 @@ function Page() {
             </div>
           </Carousel.Slide>
         ))}
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 }
