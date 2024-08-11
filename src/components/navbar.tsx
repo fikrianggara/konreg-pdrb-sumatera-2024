@@ -195,7 +195,7 @@ function Navbar() {
                 Konsultasi Regional PDRB
               </h1>
               <h2 className="text-amber-500 font-base text-sm">
-                Wilayah Sumatera
+                Wilayah Sumatera 2024
               </h2>
             </div>
           </Link>
@@ -210,7 +210,7 @@ function Navbar() {
                 Konsultasi Regional PDRB
               </h1>
               <h2 className="text-amber-500 text-regular lg:text-sm font-base">
-                Wilayah Sumatera
+                Wilayah Sumatera 2024
               </h2>
             </div>
           </Link>

@@ -170,7 +170,7 @@ export default function Home() {
             variants={textVariants}
             // transition={{ delay: 2.5, duration: 1 }}
           >
-            Wilayah Sumatera
+            Wilayah Sumatera 2024
           </motion.h2>
           <div className="mt-8 space-y-4 flex flex-col items-center lg:items-start">
             <motion.div
@@ -233,7 +233,7 @@ export default function Home() {
             </div>
             <div className="w-full text-center items-center justify-center lg:items-start lg:justify-start flex">
               <Link
-                href={"kegiatan/lokasi"}
+                href={"kegiatan/jadwal"}
                 className="px-4 py-1 lg:py-2 flex justify-evenly items-center text-center text-white bg-sky-800 rounded-full mt-6 lg:w-56 text-center text-sm lg:text-lg transition-all duration-300 bg-gradient-to-tl from-indigo-500 via-indigo-400 to-sky-500 to-teal-500 bg-size-200 bg-pos-0 hover:bg-pos-100 shadow-lg shadow-cyan-300 hover:shadow-purple-500"
               >
                 <span>Selengkapnya</span>

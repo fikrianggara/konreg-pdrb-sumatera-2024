@@ -126,9 +126,9 @@ export function MultiplePointMap({
   isAnimate,
 }: multiplePointMapPropsType) {
   const [viewPort, setViewPort] = useState({
-    longitude: 103.6021418,
-    latitude: -1.6075007,
-    zoom: 10,
+    latitude: -1.625318,
+    longitude: 103.6272072,
+    zoom: 13,
     bearing: 0,
     pitch: 50,
   });
