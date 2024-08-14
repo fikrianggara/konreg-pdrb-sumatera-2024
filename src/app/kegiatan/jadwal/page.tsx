@@ -689,7 +689,7 @@ function Page() {
                         <IconClock className="mr-2 md:mr-4" />
                         {r.jadwal}
                       </div>
-                      <div className="w-full md:w-2/3 space-y-2 md:space-y-3">
+                      <div className="w-full md:w-2/3 space-y-2 md:space-y-3 p-2 md:p-0">
                         <h2 className="text-lg md:text-xl font-medium text-gray-800">
                           {r.judul}
                         </h2>

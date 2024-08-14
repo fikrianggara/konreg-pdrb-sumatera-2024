@@ -2,7 +2,7 @@
 
 import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { IconArrowNarrowRight } from "@tabler/icons-react";
+import { IconArrowNarrowDown, IconArrowNarrowRight } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
@@ -190,10 +190,10 @@ export default function Home() {
                 className="px-4 py-1 md:py-2 text-white font-light flex justify-between rounded-full w-fit space-x-4 mt-8 shadow-xl transition-all duration-300 bg-gradient-to-br from-indigo-600 from-10% via-sky-600 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100"
               >
                 <span>Informasi kegiatan</span>
-                {<IconArrowNarrowRight />}
+                {<IconArrowNarrowDown />}
               </Link>
             </motion.div>
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 2, delay: 5, ease: "easeOut" }}
@@ -207,7 +207,7 @@ export default function Home() {
                   alt="logo whatsapp"
                 />
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
         <div className="basis-1/2 w-full absolute">
@@ -245,7 +245,7 @@ export default function Home() {
         </div>
         <Link
           className="lg:w-1/2 relative bg-black m-4 lg:m-0 rounded-lg lg:rounded-none lg:rounded-br-[50px] lg:rounded-tl-[50px]"
-          href="/kegiatan/lokasi"
+          href="/kegiatan/jadwal"
         >
           <img
             src="/assets/konreg-2023.webp"
