@@ -682,7 +682,19 @@ export default function Home() {
           Informatika (Diskominfo), Bank Indonesia (BI), serta Kantor Wilayah
           Direktorat Jendral Perbendaharaan (DJPb).
         </p> */}
-        <ul className="flex flex-col lg:flex-none lg:grid lg:grid-cols-3 gap-2 lg:gap-8 w-full">
+        <ul className="flex flex-col lg:flex-none lg:grid lg:grid-cols-4 gap-2 lg:gap-8 w-full">
+          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <div className="flex space-x-2 items-center">
+              <Image
+                src={"/assets/logo jambi.png"}
+                height={50}
+                width={50}
+                alt="logo jambi"
+                className="self-center"
+              ></Image>
+              <h2 className="font-medium">Provinsi Jambi</h2>
+            </div>
+          </li>
           <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
               src={"/assets/logo bps.png"}
@@ -719,7 +731,7 @@ export default function Home() {
               className="self-center"
             ></Image>
           </li>
-          <li className="col-span-2 lg:col-span-3 bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full border p-4 text-center self-center backdrop-blur-sm grid grid-cols-5 lg:grid-cols-10 gap-4">
+          <li className="col-span-2 lg:col-span-4 bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full border p-4 text-center self-center backdrop-blur-sm grid grid-cols-5 lg:grid-cols-10 gap-4">
             {PEMDA.map((p) => (
               <div className="flex items-center m-auto" key={p.provinsi}>
                 <Image
