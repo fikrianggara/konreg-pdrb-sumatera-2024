@@ -74,7 +74,7 @@ const KEGIATAN = [
           Kepala dan Rombongan
         </h3>
         {/* Diskominfo, BPS, BI, DJPb, dan Peserta HLM dari BPS RI */}
-        <ul className="flex flex-col lg:flex-none grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 xl:gap-4 w-full">
+        <ul className="flex flex-col lg:flex-none grid grid-cols-2 lg:grid-cols-4 gap-2 xl:gap-4 w-full">
           <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <div className="flex space-x-2 items-center">
               <Image
@@ -91,15 +91,6 @@ const KEGIATAN = [
           </li>
           <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
-              src={"/assets/logo bps.png"}
-              height={200}
-              width={200}
-              alt="logo bps"
-              className="self-center"
-            ></Image>
-          </li>
-          <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
-            <Image
               src={"/assets/logo bi.png"}
               height={200}
               width={200}
@@ -109,19 +100,20 @@ const KEGIATAN = [
           </li>
           <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
-              src={"/assets/logo djpb.png"}
+              src={"/assets/logo bps.png"}
               height={200}
               width={200}
-              alt="logo djpb"
+              alt="logo bps"
               className="self-center"
             ></Image>
           </li>
+
           <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
-              src={"/assets/diskominfo.jpg"}
-              height={100}
-              width={100}
-              alt="logo kominfo"
+              src={"/assets/logo kemenkeu.png"}
+              height={200}
+              width={200}
+              alt="logo kemenkeu"
               className="self-center"
             ></Image>
           </li>
@@ -167,8 +159,8 @@ const KEGIATAN = [
         judul: "High Level Meeting (HLM)",
         uraian: (
           <p>
-            Makan Malam Peserta Inti (Kepala Bappeda, Kadiskominfo, Kepala BPS,
-            Kepala BI, Kakanwil DJPb )
+            Makan Malam Peserta Inti (Kepala Bappeda, Kepala BPS, Kepala BI,
+            Kakanwil DJPb )
           </p>
         ),
         lokasi: [

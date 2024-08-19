@@ -697,15 +697,6 @@ export default function Home() {
           </li>
           <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
-              src={"/assets/logo bps.png"}
-              height={200}
-              width={200}
-              alt="logo bps"
-              className="self-center"
-            ></Image>
-          </li>
-          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
-            <Image
               src={"/assets/logo bi.png"}
               height={200}
               width={200}
@@ -713,6 +704,16 @@ export default function Home() {
               className="self-center"
             ></Image>
           </li>
+          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <Image
+              src={"/assets/logo bps.png"}
+              height={200}
+              width={200}
+              alt="logo bps"
+              className="self-center"
+            ></Image>
+          </li>
+
           {/* <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
             <Image
               src={"/assets/logo kominfo.png"}
@@ -724,10 +725,10 @@ export default function Home() {
           </li> */}
           <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
-              src={"/assets/logo djpb.png"}
+              src={"/assets/logo kemenkeu.png"}
               height={200}
               width={200}
-              alt="logo djpb"
+              alt="logo kemenkeu"
               className="self-center"
             ></Image>
           </li>
