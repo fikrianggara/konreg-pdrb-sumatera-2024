@@ -76,6 +76,15 @@ const KEGIATAN = [
         {/* Diskominfo, BPS, BI, DJPb, dan Peserta HLM dari BPS RI */}
         <ul className="flex flex-col lg:flex-none grid grid-cols-2 lg:grid-cols-4 gap-2 xl:gap-4 w-full">
           <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <Image
+              src={"/assets/logo jambi.png"}
+              height={50}
+              width={50}
+              alt="logo bappeda jambi"
+              className="self-center"
+            ></Image>
+          </li>
+          {/* <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <div className="flex space-x-2 items-center">
               <Image
                 src={"/assets/logo jambi.png"}
@@ -88,21 +97,21 @@ const KEGIATAN = [
                 BAPPEDA Provinsi Jambi
               </h2>
             </div>
-          </li>
+          </li> */}
           <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
-              src={"/assets/logo bi.png"}
-              height={200}
-              width={200}
+              src={"/assets/bi.png"}
+              height={50}
+              width={50}
               alt="logo bi"
-              className="self-center"
+              className="self-center rounded-full"
             ></Image>
           </li>
           <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
-              src={"/assets/logo bps.png"}
-              height={200}
-              width={200}
+              src={"/assets/bps.png"}
+              height={50}
+              width={50}
               alt="logo bps"
               className="self-center"
             ></Image>
@@ -110,15 +119,15 @@ const KEGIATAN = [
 
           <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
-              src={"/assets/logo kemenkeu.png"}
-              height={200}
-              width={200}
+              src={"/assets/kemenkeu.png"}
+              height={50}
+              width={50}
               alt="logo kemenkeu"
               className="self-center"
             ></Image>
           </li>
           <li className="col-span-2 md:col-span-3 lg:col-span-5 bg-white duration-200 ease-in-out rounded-xl w-full border p-4 text-center self-center backdrop-blur-sm grid grid-cols-5 lg:grid-cols-10 gap-4">
-            {PEMDA.map((p) => (
+            {PEMDA.filter((p) => p.provinsi !== "jambi").map((p) => (
               <div className="flex items-center m-auto" key={p.provinsi}>
                 <Image
                   src={p.src}
