@@ -357,7 +357,7 @@ const KEGIATAN = [
             <h2 className="font-medium text-center w-full md:text-lg">
               Diskusi Panel
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-2">
               <Link href="https://id.wikipedia.org/wiki/Elviana">
                 <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
                   <img
