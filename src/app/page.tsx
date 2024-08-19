@@ -146,7 +146,7 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row w-screen justify-between relative h-screen">
         <div className="z-20 absolute w-full lg:basis-1/2 lg:w-fit bg-gradient-to-b lg:bg-gradient-to-r from-white to-transparent space-y-2 border-r-1 border-white shadow-r-lg backdrop-blur-xs lg:mt-0 lg:space-y-4 sm:p-0 sm:px-24 lg:px-36 xl:px-48 flex flex-col justify-center h-screen items-center lg:items-start">
           <motion.h3
-            className="text-lg lg:text-2xl text-teal-800 font-light"
+            className="text-lg lg:text-2xl text-teal-800 font-light text-center md:text-left"
             initial="hidden"
             animate="visible"
             variants={textVariants}
@@ -154,14 +154,15 @@ export default function Home() {
             Selamat datang di Pusat Informasi
           </motion.h3>
           <motion.h1
-            className="text-2xl lg:text-4xl text-sky-800 font-bold"
+            className="text-2xl lg:text-4xl text-sky-800 font-bold flex flex-col space-y-1 flex-row text-center lg:text-start"
             initial="hidden"
             animate="visible"
             variants={textVariants}
 
             // transition={{ delay: 1.5, duration: 1 }}
           >
-            Konsultasi Regional PDRB
+            <span>Konsultasi Regional</span>
+            <span>PDRB - ISE</span>
           </motion.h1>
           <motion.h2
             className="text-lg text-amber-500 lg:text-2xl"
