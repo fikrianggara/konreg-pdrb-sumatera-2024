@@ -671,17 +671,10 @@ export default function Home() {
       {/* collaborator end */}
 
       {/* instansi collaboration start */}
-      <div className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500 py-12">
+      {/* <div className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500 py-12">
         <h2 className="text-lg text-center lg:text-start lg:text-2xl font-bold text-sky-800">
           KOLABORASI
         </h2>
-        {/* <p className="text-sm lg:text-lg text-center lg:text-start">
-          Konsultasi Regional PDRB Wilayah Sumatera merupakan salah satu bentuk
-          kolaborasi dan sinergi Badan Pusat Statistik (BPS), Badan Perencanaan
-          Pembangunan Pembangunan Daerah (Bappeda), Dinas Komunikasi dan
-          Informatika (Diskominfo), Bank Indonesia (BI), serta Kantor Wilayah
-          Direktorat Jendral Perbendaharaan (DJPb).
-        </p> */}
         <ul className="flex flex-col lg:flex-none lg:grid lg:grid-cols-4 gap-2 lg:gap-8 w-full">
           <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <div className="flex space-x-2 items-center">
@@ -713,16 +706,6 @@ export default function Home() {
               className="self-center"
             ></Image>
           </li>
-
-          {/* <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
-            <Image
-              src={"/assets/logo kominfo.png"}
-              height={200}
-              width={200}
-              alt="logo kominfo"
-              className="self-center"
-            ></Image>
-          </li> */}
           <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
               src={"/assets/logo kemenkeu.png"}
@@ -746,7 +729,7 @@ export default function Home() {
             ))}
           </li>
         </ul>
-      </div>
+      </div> */}
       {/* instansi collaboration end */}
     </div>
   );
