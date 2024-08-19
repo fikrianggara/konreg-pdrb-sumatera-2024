@@ -74,7 +74,7 @@ const KEGIATAN = [
           Kepala dan Rombongan
         </h3>
         {/* Diskominfo, BPS, BI, DJPb, dan Peserta HLM dari BPS RI */}
-        <ul className="flex flex-col lg:flex-none grid grid-cols-2 lg:grid-cols-4 gap-2 xl:gap-4 w-full">
+        <ul className="flex flex-col lg:flex-none grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 xl:gap-4 w-full">
           <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
               src={"/assets/logo jambi.png"}
@@ -116,8 +116,17 @@ const KEGIATAN = [
               className="self-center"
             ></Image>
           </li>
-
           <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <Image
+              src={"/assets/diskominfo.png"}
+              height={50}
+              width={50}
+              alt="logo diskominfo"
+              className="self-center"
+            ></Image>
+          </li>
+
+          <li className="col-span-2 md:col-span-1 bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
               src={"/assets/kemenkeu.png"}
               height={50}
@@ -168,8 +177,8 @@ const KEGIATAN = [
         judul: "High Level Meeting (HLM)",
         uraian: (
           <p>
-            Makan Malam Peserta Inti (Kepala Bappeda, Kepala BPS, Kepala BI,
-            Kakanwil DJPb )
+            Makan Malam Peserta Inti (Kepala Bappeda, Kadiskominfo, Kepala BPS,
+            Kepala BI, Kakanwil DJPb )
           </p>
         ),
         lokasi: [
@@ -227,9 +236,9 @@ const KEGIATAN = [
     label: "Hari ke-2",
     keterangan: (
       <div className="space-y-4">
-        <h1 className="text-center text-lg font-medium">Keynote Speaker</h1>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-          <div className="flex flex-col space-y-2 justify-center text-center self-start">
+        <h1 className="text-center text-lg font-medium">Opening Speech</h1>
+        <div className="grid grid-cols-2 gap-2">
+          {/* <div className="flex flex-col space-y-2 justify-center text-center self-start">
             <img
               src="/assets/kepala_bappeda.png"
               alt="kepala bappeda jambi"
@@ -239,7 +248,7 @@ const KEGIATAN = [
             <h2 className="text-xs text-gray-600">
               Kepala Bappeda Prov. Jambi
             </h2>
-          </div>
+          </div> */}
           <Link href="https://ppid.bps.go.id/app/konten/0000/Profil-BPS.html">
             <div className="flex flex-col space-y-2 text-center">
               <img
