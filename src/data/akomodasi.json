@@ -544,12 +544,9 @@
       "nama": "Grab",
       "link_android": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger&hl=id",
       "link_apple": "https://apps.apple.com/id/app/grab-taxi-food-delivery/id647268330",
-      "link_foto": "https://play-lh.googleusercontent.com/4ldfAPblIiYx_2Evd0GiXIdUHz0ODDXiM0nns0Bp8GoLmyLTxjmgrmJyaqDi3WjEJmUJ",
+      "link_foto": "/assets/grab.png",
       "deskripsi": "Grab",
-      "kab_kota": "Kota Jambi",
-      "telepon": "(0741) 33777",
-      "jarak": "5,4",
-      "rate": "4,8"
+      "kab_kota": "Kota Jambi"
     },
     {
       "id": 2,
@@ -557,12 +554,9 @@
       "nama": "Gojek",
       "link_android": "https://play.google.com/store/apps/details?id=com.gojek.app&hl=id&gl=US",
       "link_apple": "https://apps.apple.com/id/app/gojek/id944875099",
-      "link_foto": "https://play-lh.googleusercontent.com/7geaWzM1Oz6fPZ4LvgNptt7Ds2mwm7hbeItlPGYGrhdUQfIe06BK0O4jS9ZDgoTAvIU",
+      "link_foto": "/assets/gojek.png",
       "deskripsi": "Gojek",
-      "kab_kota": "Kota Jambi",
-      "telepon": "(0741) 33777",
-      "jarak": "5,4",
-      "rate": "4,8"
+      "kab_kota": "Kota Jambi"
     },
     {
       "id": 3,
@@ -570,12 +564,30 @@
       "nama": "Maxim",
       "link_android": "https://play.google.com/store/apps/details?id=com.taxsee.taxsee&hl=id&gl=US",
       "link_apple": "https://apps.apple.com/id/app/maxim-transportasi-delivery/id579985456?l=id",
-      "link_foto": "https://play-lh.googleusercontent.com/bRDRVxur-TaSGjNFs_UNbtE4lsmmXFNTPFHwYCifSkit-TDcpMK24iMUixN3zJ_Phdbl",
+      "link_foto": "/assets/maxim.png",
       "deskripsi": "Maxim",
-      "kab_kota": "Kota Jambi",
-      "telepon": "(0741) 33777",
-      "jarak": "5,4",
-      "rate": "4,8"
+      "kab_kota": "Kota Jambi"
+    },
+    {
+      "id": 4,
+      "jenis": "rental",
+      "nama": "RANSEL BOLANG WISATA (Sewa Bus)",
+      "alamat": "Jln Sunan Gunung Jati No 15 , Mayang (Dekat Hotel Cahaya Prima)",
+      "telepon": "(0741) 3619 574"
+    },
+    {
+      "id": 5,
+      "jenis": "rental",
+      "nama": "CAHAYA PRIMA RENTAL JAMBI",
+      "alamat": "Jln.Radja Yamin No.08, RT.27/08, Kel.Selamat, Kec.Telanaipura Kota Jambi Kode Pos : 36129. Jambi – Indonesia",
+      "telepon": "+628127481884/(0741) 5912450"
+    },
+    {
+      "id": 6,
+      "jenis": "rental",
+      "nama": "CV. Fajar Usaha Group",
+      "alamat": "Jalan lingkar selatan 1, Palmerah, Jambi Selatan, Jambi",
+      "telepon": "+6285266822244"
     }
   ],
   "rumah_ibadah": [
