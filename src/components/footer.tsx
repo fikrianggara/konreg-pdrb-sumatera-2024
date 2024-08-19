@@ -1,5 +1,6 @@
 import React from "react";
 import { IconCircleLetterC } from "@tabler/icons-react";
+import Image from "next/image";
 
 const PROVINSI = [
   "Prov. Aceh",
@@ -81,31 +82,136 @@ const BI = [
 
 const COLLABORATORS = [
   {
+    instansi: "BPS",
+    instansiDaerah: PROVINSI,
+  },
+  {
     instansi: "BAPPEDA",
     instansiDaerah: PROVINSI,
   },
+
   {
-    instansi: "BADAN PUSAT STATISTIK",
-    instansiDaerah: PROVINSI,
-  },
-  // {
-  //   instansi: "DISKOMINFO",
-  //   instansiDaerah: PROVINSI,
-  // },
-  {
-    instansi: "DIREKTORAT JENDRAL PERBENDAHARAAN",
+    instansi: "BI",
     instansiDaerah: PROVINSI,
   },
   {
-    instansi: "BANK INDONESIA",
+    instansi: "DISKOMINFO",
+    instansiDaerah: PROVINSI,
+  },
+  {
+    instansi: "DJPb",
     instansiDaerah: PROVINSI,
   },
 ];
-
+const PEMDA = [
+  {
+    provinsi: "aceh",
+    src: "/assets/logo aceh.png",
+    alt: "provinsi aceh",
+  },
+  {
+    provinsi: "bangka belitung",
+    src: "/assets/logo babel.png",
+    alt: "provinsi babel",
+  },
+  {
+    provinsi: "bengkulu",
+    src: "/assets/logo bengkulu.png",
+    alt: "provinsi bengkulu",
+  },
+  {
+    provinsi: "jambi",
+    src: "/assets/logo jambi.png",
+    alt: "provinsi jambi",
+  },
+  {
+    provinsi: "kepri",
+    src: "/assets/logo kepri.png",
+    alt: "provinsi kepri",
+  },
+  {
+    provinsi: "lampung",
+    src: "/assets/logo lampung.png",
+    alt: "provinsi lampung",
+  },
+  {
+    provinsi: "riau",
+    src: "/assets/logo riau.png",
+    alt: "provinsi riau",
+  },
+  {
+    provinsi: "sumbar",
+    src: "/assets/logo sumbar.png",
+    alt: "provinsi sumbar",
+  },
+  {
+    provinsi: "sumsel",
+    src: "/assets/logo sumsel.png",
+    alt: "provinsi sumsel",
+  },
+  {
+    provinsi: "sumut",
+    src: "/assets/logo sumut.png",
+    alt: "provinsi sumut",
+  },
+];
 const footer = () => {
   return (
-    <footer className="w-full bg-sky-800 text-white z-100">
-      <ul className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-8 gap-4 text-xs lg:text-base">
+    <footer className="w-full bg-sky-800 text-white z-100 divide-gray-400 divide-dotted mt-4 md:mt-8">
+      <div className="space-y-6 py-8">
+        <div
+          className="flex items-center space-x-4 md:space-x-6 lg:space-x-12 m-auto w-full justify-center px-8
+      "
+        >
+          <Image
+            src={"/assets/logo jambi.png"}
+            height={60}
+            width={60}
+            alt="logo jambi"
+            className="self-center"
+          ></Image>
+
+          <Image
+            src={"/assets/bi.jpg"}
+            height={60}
+            width={60}
+            alt="logo bi"
+            className="self-center rounded-full"
+          ></Image>
+          <Image
+            src={"/assets/bps.png"}
+            height={60}
+            width={60}
+            alt="logo bps"
+            className="self-center"
+          ></Image>
+          <Image
+            src={"/assets/kemenkeu.png"}
+            height={60}
+            width={60}
+            alt="logo kemenkeu"
+            className="self-center"
+          ></Image>
+        </div>
+        <ul className="flex flex-col lg:flex-none lg:grid lg:grid-cols-4 gap-2 lg:gap-8 px-8 ">
+          <li className="col-span-2 lg:col-span-4  duration-200 ease-in-out rounded-xl w-full p-4 text-center self-center backdrop-blur-sm grid grid-cols-5 lg:grid-cols-10 gap-4">
+            {PEMDA.map((p) => (
+              <div className="flex items-center m-auto" key={p.provinsi}>
+                <Image
+                  src={p.src}
+                  height={50}
+                  width={50}
+                  alt={p.alt}
+                  className="self-center"
+                ></Image>
+              </div>
+            ))}
+          </li>
+        </ul>
+      </div>
+
+      <hr className="dotted" />
+      <ul className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 p-8 gap-4 text-xs lg:text-base">
         {COLLABORATORS.map((col) => (
           <div className="flex m-auto" key={col.instansi}>
             <li className="space-y-4">
@@ -125,7 +231,7 @@ const footer = () => {
                         </li>
                       );
                       break;
-                    case "BADAN PUSAT STATISTIK":
+                    case "BPS":
                       return (
                         <li key={inda} className="font-light hover:underline">
                           <a href={BPS[i]}>{inda}</a>
@@ -139,14 +245,14 @@ const footer = () => {
                         </li>
                       );
                       break;
-                    case "DIREKTORAT JENDRAL PERBENDAHARAAN":
+                    case "DJPb":
                       return (
                         <li key={inda} className="font-light hover:underline">
                           <a href={DJPB[i]}>{inda}</a>
                         </li>
                       );
                       break;
-                    case "BANK INDONESIA":
+                    case "BI":
                       return (
                         <li key={inda} className="font-light hover:underline">
                           <a href={BI[i]}>{inda}</a>

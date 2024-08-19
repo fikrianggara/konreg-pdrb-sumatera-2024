@@ -74,45 +74,69 @@ const KEGIATAN = [
           Kepala dan Rombongan
         </h3>
         {/* Diskominfo, BPS, BI, DJPb, dan Peserta HLM dari BPS RI */}
-        <ul className="flex flex-col lg:flex-none md:grid md:lg-grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-8 w-full">
+        <ul className="flex flex-col lg:flex-none grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 xl:gap-4 w-full">
           <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
-              src={"/assets/logo bps.png"}
-              height={200}
-              width={200}
+              src={"/assets/logo jambi.png"}
+              height={50}
+              width={50}
+              alt="logo bappeda jambi"
+              className="self-center"
+            ></Image>
+          </li>
+          {/* <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <div className="flex space-x-2 items-center">
+              <Image
+                src={"/assets/logo jambi.png"}
+                height={50}
+                width={50}
+                alt="logo jambi"
+                className="self-center"
+              ></Image>
+              <h2 className="font-medium text-xs md:text-sm">
+                BAPPEDA Provinsi Jambi
+              </h2>
+            </div>
+          </li> */}
+          <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <Image
+              src={"/assets/bi.png"}
+              height={50}
+              width={50}
+              alt="logo bi"
+              className="self-center rounded-full"
+            ></Image>
+          </li>
+          <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <Image
+              src={"/assets/bps.png"}
+              height={50}
+              width={50}
               alt="logo bps"
               className="self-center"
             ></Image>
           </li>
           <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
-              src={"/assets/logo bi.png"}
-              height={200}
-              width={200}
-              alt="logo bi"
+              src={"/assets/diskominfo.png"}
+              height={50}
+              width={50}
+              alt="logo diskominfo"
               className="self-center"
             ></Image>
           </li>
-          <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+
+          <li className="col-span-2 md:col-span-1 bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
-              src={"/assets/logo djpb.png"}
-              height={200}
-              width={200}
-              alt="logo djpb"
+              src={"/assets/kemenkeu.png"}
+              height={50}
+              width={50}
+              alt="logo kemenkeu"
               className="self-center"
             ></Image>
           </li>
-          <li className="bg-white duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
-            <Image
-              src={"/assets/diskominfo.jpg"}
-              height={100}
-              width={100}
-              alt="logo kominfo"
-              className="self-center"
-            ></Image>
-          </li>
-          <li className="col-span-2 lg:col-span-4 bg-white duration-200 ease-in-out rounded-xl w-full border p-4 text-center self-center backdrop-blur-sm grid grid-cols-5 lg:grid-cols-10 gap-4">
-            {PEMDA.map((p) => (
+          <li className="col-span-2 md:col-span-3 lg:col-span-5 bg-white duration-200 ease-in-out rounded-xl w-full border p-4 text-center self-center backdrop-blur-sm grid grid-cols-5 lg:grid-cols-10 gap-4">
+            {PEMDA.filter((p) => p.provinsi !== "jambi").map((p) => (
               <div className="flex items-center m-auto" key={p.provinsi}>
                 <Image
                   src={p.src}
@@ -212,8 +236,19 @@ const KEGIATAN = [
     label: "Hari ke-2",
     keterangan: (
       <div className="space-y-4">
-        <h1 className="text-center text-lg font-medium">Keynote Speaker</h1>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+        <h1 className="text-center text-lg font-medium">Opening Speech</h1>
+        <div className="grid grid-cols-2 gap-2">
+          {/* <div className="flex flex-col space-y-2 justify-center text-center self-start">
+            <img
+              src="/assets/kepala_bappeda.png"
+              alt="kepala bappeda jambi"
+              className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
+            />
+            <h1 className="text-xs md:text-sm font-medium">Agus Sunaryo</h1>
+            <h2 className="text-xs text-gray-600">
+              Kepala Bappeda Prov. Jambi
+            </h2>
+          </div> */}
           <Link href="https://ppid.bps.go.id/app/konten/0000/Profil-BPS.html">
             <div className="flex flex-col space-y-2 text-center">
               <img
@@ -229,7 +264,7 @@ const KEGIATAN = [
               <h2 className="text-xs text-gray-600">PLT Kepala BPS RI</h2>
             </div>
           </Link>
-          <Link href="https://ppid.bps.go.id/app/konten/0000/Profil-BPS.html">
+          {/* <Link href="https://ppid.bps.go.id/app/konten/0000/Profil-BPS.html">
             <div className="flex flex-col space-y-2 text-center">
               <img
                 src="/assets/deputi_neraca_bps_ri.png"
@@ -243,7 +278,7 @@ const KEGIATAN = [
                 Deputi Neraca dan Analisis BPS RI
               </h2>
             </div>
-          </Link>
+          </Link> */}
           <Link href="https://id.wikipedia.org/wiki/Al_Haris">
             <div className="flex flex-col space-y-2 justify-center text-center self-start">
               <img
@@ -257,17 +292,6 @@ const KEGIATAN = [
               <h2 className="text-xs text-gray-600">Gubernur Jambi</h2>
             </div>
           </Link>
-          <div className="flex flex-col space-y-2 justify-center text-center self-start">
-            <img
-              src="/assets/kepala_bappeda.png"
-              alt="kepala bappeda jambi"
-              className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
-            />
-            <h1 className="text-xs md:text-sm font-medium">Agus Sunaryo</h1>
-            <h2 className="text-xs text-gray-600">
-              Kepala Bappeda Prov. Jambi
-            </h2>
-          </div>
         </div>
       </div>
     ),
@@ -342,7 +366,7 @@ const KEGIATAN = [
             <h2 className="font-medium text-center w-full md:text-lg">
               Diskusi Panel
             </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-2">
               <Link href="https://id.wikipedia.org/wiki/Elviana">
                 <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
                   <img
@@ -689,7 +713,7 @@ function Page() {
                         <IconClock className="mr-2 md:mr-4" />
                         {r.jadwal}
                       </div>
-                      <div className="w-full md:w-2/3 space-y-2 md:space-y-3">
+                      <div className="w-full md:w-2/3 space-y-2 md:space-y-3 p-2 md:p-0">
                         <h2 className="text-lg md:text-xl font-medium text-gray-800">
                           {r.judul}
                         </h2>

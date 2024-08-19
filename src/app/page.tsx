@@ -2,7 +2,7 @@
 
 import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { IconArrowNarrowRight } from "@tabler/icons-react";
+import { IconArrowNarrowDown, IconArrowNarrowRight } from "@tabler/icons-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
@@ -146,7 +146,7 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row w-screen justify-between relative h-screen">
         <div className="z-20 absolute w-full lg:basis-1/2 lg:w-fit bg-gradient-to-b lg:bg-gradient-to-r from-white to-transparent space-y-2 border-r-1 border-white shadow-r-lg backdrop-blur-xs lg:mt-0 lg:space-y-4 sm:p-0 sm:px-24 lg:px-36 xl:px-48 flex flex-col justify-center h-screen items-center lg:items-start">
           <motion.h3
-            className="text-lg lg:text-2xl text-teal-800 font-light"
+            className="text-lg lg:text-2xl text-teal-800 font-light text-center md:text-left"
             initial="hidden"
             animate="visible"
             variants={textVariants}
@@ -154,14 +154,15 @@ export default function Home() {
             Selamat datang di Pusat Informasi
           </motion.h3>
           <motion.h1
-            className="text-2xl lg:text-4xl text-sky-800 font-bold"
+            className="text-2xl lg:text-4xl text-sky-800 font-bold flex flex-col space-y-1 flex-row text-center lg:text-start"
             initial="hidden"
             animate="visible"
             variants={textVariants}
 
             // transition={{ delay: 1.5, duration: 1 }}
           >
-            Konsultasi Regional PDRB
+            <span>Konsultasi Regional</span>
+            <span>PDRB - ISE</span>
           </motion.h1>
           <motion.h2
             className="text-lg text-amber-500 lg:text-2xl"
@@ -190,10 +191,10 @@ export default function Home() {
                 className="px-4 py-1 md:py-2 text-white font-light flex justify-between rounded-full w-fit space-x-4 mt-8 shadow-xl transition-all duration-300 bg-gradient-to-br from-indigo-600 from-10% via-sky-600 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100"
               >
                 <span>Informasi kegiatan</span>
-                {<IconArrowNarrowRight />}
+                {<IconArrowNarrowDown />}
               </Link>
             </motion.div>
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 2, delay: 5, ease: "easeOut" }}
@@ -207,7 +208,7 @@ export default function Home() {
                   alt="logo whatsapp"
                 />
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
         <div className="basis-1/2 w-full absolute">
@@ -245,7 +246,7 @@ export default function Home() {
         </div>
         <Link
           className="lg:w-1/2 relative bg-black m-4 lg:m-0 rounded-lg lg:rounded-none lg:rounded-br-[50px] lg:rounded-tl-[50px]"
-          href="/kegiatan/lokasi"
+          href="/kegiatan/jadwal"
         >
           <img
             src="/assets/konreg-2023.webp"
@@ -671,18 +672,32 @@ export default function Home() {
       {/* collaborator end */}
 
       {/* instansi collaboration start */}
-      <div className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500 py-12">
+      {/* <div className="w-screen p-4 sm:px-24 lg:px-36 xl:px-48 space-y-8 text-gray-500 py-12">
         <h2 className="text-lg text-center lg:text-start lg:text-2xl font-bold text-sky-800">
           KOLABORASI
         </h2>
-        {/* <p className="text-sm lg:text-lg text-center lg:text-start">
-          Konsultasi Regional PDRB Wilayah Sumatera merupakan salah satu bentuk
-          kolaborasi dan sinergi Badan Pusat Statistik (BPS), Badan Perencanaan
-          Pembangunan Pembangunan Daerah (Bappeda), Dinas Komunikasi dan
-          Informatika (Diskominfo), Bank Indonesia (BI), serta Kantor Wilayah
-          Direktorat Jendral Perbendaharaan (DJPb).
-        </p> */}
-        <ul className="flex flex-col lg:flex-none lg:grid lg:grid-cols-3 gap-2 lg:gap-8 w-full">
+        <ul className="flex flex-col lg:flex-none lg:grid lg:grid-cols-4 gap-2 lg:gap-8 w-full">
+          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <div className="flex space-x-2 items-center">
+              <Image
+                src={"/assets/logo jambi.png"}
+                height={50}
+                width={50}
+                alt="logo jambi"
+                className="self-center"
+              ></Image>
+              <h2 className="font-medium">Provinsi Jambi</h2>
+            </div>
+          </li>
+          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
+            <Image
+              src={"/assets/logo bi.png"}
+              height={200}
+              width={200}
+              alt="logo bi"
+              className="self-center"
+            ></Image>
+          </li>
           <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
               src={"/assets/logo bps.png"}
@@ -694,32 +709,14 @@ export default function Home() {
           </li>
           <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
             <Image
-              src={"/assets/logo bi.png"}
+              src={"/assets/logo kemenkeu.png"}
               height={200}
               width={200}
-              alt="logo bi"
+              alt="logo kemenkeu"
               className="self-center"
             ></Image>
           </li>
-          {/* <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex">
-            <Image
-              src={"/assets/logo kominfo.png"}
-              height={200}
-              width={200}
-              alt="logo kominfo"
-              className="self-center"
-            ></Image>
-          </li> */}
-          <li className="bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full h-24 p-4 border text-center self-center backdrop-blur-sm m-auto text-center items-center flex justify-center">
-            <Image
-              src={"/assets/logo djpb.png"}
-              height={200}
-              width={200}
-              alt="logo djpb"
-              className="self-center"
-            ></Image>
-          </li>
-          <li className="col-span-2 lg:col-span-3 bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full border p-4 text-center self-center backdrop-blur-sm grid grid-cols-5 lg:grid-cols-10 gap-4">
+          <li className="col-span-2 lg:col-span-4 bg-white hover:shadow-lg duration-200 ease-in-out rounded-xl w-full border p-4 text-center self-center backdrop-blur-sm grid grid-cols-5 lg:grid-cols-10 gap-4">
             {PEMDA.map((p) => (
               <div className="flex items-center m-auto" key={p.provinsi}>
                 <Image
@@ -733,7 +730,7 @@ export default function Home() {
             ))}
           </li>
         </ul>
-      </div>
+      </div> */}
       {/* instansi collaboration end */}
     </div>
   );
