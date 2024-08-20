@@ -8,6 +8,7 @@ function Page() {
     (t) => t.jenis == "online"
   );
   const rental = akomodasi.transportasi.filter((t) => t.jenis == "rental");
+  const travel = akomodasi.transportasi.filter((t) => t.jenis == "travel");
   const pic = akomodasi.pic;
 
   return (
@@ -59,7 +60,7 @@ function Page() {
         </div>
       </div>
 
-      <div>
+      <div className="my-4">
         <h1 className="md:text-2xl font-bold">Jasa Rental Mobil & Bus</h1>
         <hr />
         <table className="w-full text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-4">
@@ -73,9 +74,41 @@ function Page() {
 
           {rental.map((p, i) => (
             <tr key={i}>
-              <td className="font-bold py-4">{p.nama}</td>
-              <td>{p.alamat}</td>
-              <td>{p.telepon}</td>
+              <td className="font-bold pr-2">{p.nama}</td>
+              <td className="py-4">{p.alamat}</td>
+              <td>
+                <ul>
+                  <li>{p.telepon1}</li>
+                  <li>{p.telepon2}</li>
+                </ul>
+              </td>
+            </tr>
+          ))}
+        </table>
+      </div>
+
+      <div className="my-4">
+        <h1 className="md:text-2xl font-bold">Jasa Travel & Bus Antar Kota</h1>
+        <hr />
+        <table className="w-full text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-4">
+          <thead className="text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              <th>Perusahaan Travel</th>
+              <th>Alamat</th>
+              <th>Kontak</th>
+            </tr>
+          </thead>
+
+          {travel.map((p, i) => (
+            <tr key={i}>
+              <td className="font-bold pr-2">{p.nama}</td>
+              <td className="py-4">{p.alamat}</td>
+              <td>
+                <ul>
+                  <li>{p.telepon1}</li>
+                  <li>{p.telepon2}</li>
+                </ul>
+              </td>
             </tr>
           ))}
         </table>

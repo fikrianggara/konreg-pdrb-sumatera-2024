@@ -573,21 +573,64 @@
       "jenis": "rental",
       "nama": "RANSEL BOLANG WISATA (Sewa Bus)",
       "alamat": "Jln Sunan Gunung Jati No 15 , Mayang (Dekat Hotel Cahaya Prima)",
-      "telepon": "(0741) 3619 574"
+      "telepon1": "(0741) 3619 574",
+      "telepon2": ""
     },
     {
       "id": 5,
       "jenis": "rental",
       "nama": "CAHAYA PRIMA RENTAL JAMBI",
       "alamat": "Jln.Radja Yamin No.08, RT.27/08, Kel.Selamat, Kec.Telanaipura Kota Jambi Kode Pos : 36129. Jambi – Indonesia",
-      "telepon": "+628127481884/(0741) 5912450"
+      "telepon1": "(0741) 5912450",
+      "telepon2": "+628127481884"
     },
     {
       "id": 6,
       "jenis": "rental",
       "nama": "CV. Fajar Usaha Group",
       "alamat": "Jalan lingkar selatan 1, Palmerah, Jambi Selatan, Jambi",
-      "telepon": "+6285266822244"
+      "telepon1": "+6285266822244",
+      "telepon2": ""
+    },
+    {
+      "id": 7,
+      "jenis": "travel",
+      "nama": "PO. Ratu Intan Permata",
+      "alamat": "Jl. Profesor DR. Moh. Yamin No.26, Lb. Bandung, Kec. Jelutung, Kota Jambi, Jambi 36142",
+      "telepon2": "085269553322",
+      "telepon1": "(0741) 20784"
+    },
+    {
+      "id": 8,
+      "jenis": "travel",
+      "nama": "Family Raya Ceria",
+      "alamat": "Jl. Kol. Abunjani, Simpang III Sipin, Sipin, Jambi, Simpang III Sipin, Kec. Kota Baru, Kota Jambi, Jambi 36361",
+      "telepon1": "(0741)669255",
+      "telepon2": "082371322100"
+    },
+    {
+      "id": 9,
+      "jenis": "travel",
+      "nama": "Pesona Agata Tour & Travel Jambi",
+      "alamat": "Jl. HOS. Cokroaminoto No.46, Payo Lebar, Jelutung, Jambi City, Jambi 36124",
+      "telepon1": "085368980473",
+      "telepon2": ""
+    },
+    {
+      "id": 10,
+      "jenis": "travel",
+      "nama": "Po. Restu Ibu Trans",
+      "alamat": "Jl. HOS. Cokroaminoto Simpang III Sipin, Kec. Kota Baru, Kota Jambi, Jambi 36124",
+      "telepon1": "082374601755",
+      "telepon2": "085296937383"
+    },
+    {
+      "id": 11,
+      "jenis": "travel",
+      "nama": "PO. Safa Marwa",
+      "alamat": "JL. Kapten Pattimura No.7 RT.46/RW.7 Rawasari, Simpang IV Sipin, Kec. Kota Baru, Kota Jambi, Jambi 36125",
+      "telepon1": "(0741) 65756",
+      "telepon2": ""
     }
   ],
   "rumah_ibadah": [
