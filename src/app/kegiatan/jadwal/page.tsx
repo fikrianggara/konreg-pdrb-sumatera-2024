@@ -512,12 +512,12 @@ const KEGIATAN = [
       {
         jadwal: "12.30 – 13.30 WIB",
         judul: "ISHOMA",
-        uraian: (
-          <ul className="space-y-2">
-            <li>Sholat</li>
-            <li>Makan Malam Bersama Peserta HLM</li>
-          </ul>
-        ),
+        // uraian: (
+        //   <ul className="space-y-2">
+        //     <li>Sholat</li>
+        //     <li>Makan Malam Bersama Peserta HLM</li>
+        //   </ul>
+        // ),
         lokasi: [
           {
             nama: "BW Luxury Hotel",
