@@ -583,6 +583,26 @@
       "deskripsi": "Rumah Batik Azmiah (RBA) merupakan industri kecil menengah batik yang telah terkenal dengan penggunaan warna klasik dan corak yang unik. Hal yang membedakan batik Azmiah dengan lainnya adalah proses membatik yang melalui lebih dari enam kali pewarnaan sehingga menghasilkan warna yang menarik. Jenis produk batik yang di tawarkan Batik Azmiah yaitu batik tulis, kombinasi cap tulis, batik cap, dan batik tulis tenun (gedog). RBA kerap mengikuti kegiatan Karya Kreatif Indonesia (KKI), pameran nasional dan pameran internasional. RBA memiliki galeri dimana pengunjung dapat menikmati keindahan Batik Jambi, belanja sembari menyantap makanan kecil khas Jambi misalkan gambus, kue semprong, muso dan lainnya.",
       "produk": "Batik (Kain dan RTW)",
       "link_toko": "https://www.instagram.com/rumahbatikazmiah/?hl=en"
+    },
+    {
+      "id": 17,
+      "jenis": "Toko Oleh-Oleh",
+      "nama": "Lapis Angso Duo",
+      "maps": "https://maps.app.goo.gl/wrMcFDzNqmbSSmwv5",
+      "link_foto": "/assets/lapis-angso.jpeg",
+      "deskripsi": "Lapis Angso Duo menyediakan lapis, brownies, kue, dan lainnya. Belum ke Jambi kalau belum beli Lapis Angso Duo. Makanan yang dijual di Lapis Angso Duo telah bersertifikasi Halal MUI & P-IRT",
+      "produk": "Lapis, Kue, Brownies",
+      "link_toko": "https://www.instagram.com/lapisangsoduo/"
+    },
+    {
+      "id": 18,
+      "jenis": "Toko Oleh-Oleh",
+      "nama": "Pempek Selamat",
+      "maps": "https://maps.app.goo.gl/sCDFavHVWtRXsJ1h6",
+      "link_foto": "/assets/pempek selamat.jpg",
+      "deskripsi": "Pempek Selamat menyajikan Cita Rasa Nusantara sejak Tahun 2000. Berbagai macam rasa pempek ada disini. Sudah disertifikasi halal oleh MUI",
+      "produk": "Pempek, Kopi, Oleh Oleh Khas Jambi",
+      "link_toko": "https://www.instagram.com/pempek.selamat/"
     }
   ]
 }
