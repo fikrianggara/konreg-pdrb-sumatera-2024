@@ -16,14 +16,14 @@ function Page() {
       <div>
         <h1 className="md:text-2xl font-bold">Transportasi Online</h1>
         <hr />
-        <p className="my-4">
+        <p className="my-4 text-xs md:text-sm lg:text-base">
           Kami merekomendasikan Anda untuk menggunakan aplikasi berikut:
         </p>
 
-        <div className="p-4 w-full flex justify-center	items-center">
-          <div className="p-4 w-3/4 flex flex-col md:flex-row justify-center items-center">
+        <div className="p-2 w-full flex justify-center items-center">
+          <div className="p-2 md:w-3/4 flex flex-row justify-center items-center">
             {transportasi.map((t, i) => (
-              <div className="rounded-lg bg-white h-fit shadow-lg m-4" key={i}>
+              <div className="rounded-lg bg-white h-fit shadow-lg m-2" key={i}>
                 <img
                   src={t.link_foto}
                   alt={t.nama}
@@ -63,7 +63,7 @@ function Page() {
       <div className="my-4">
         <h1 className="md:text-2xl font-bold">Jasa Rental Mobil & Bus</h1>
         <hr />
-        <table className="w-full text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-4">
+        <table className="w-full text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-4 text-xs md:text-sm lg:text-base">
           <thead className="text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
               <th>Perusahaan Rental</th>
@@ -90,7 +90,7 @@ function Page() {
       <div className="my-4">
         <h1 className="md:text-2xl font-bold">Jasa Travel & Bus Antar Kota</h1>
         <hr />
-        <table className="w-full text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-4">
+        <table className="w-full text-left rtl:text-right text-gray-500 dark:text-gray-400 mt-4 text-xs md:text-sm lg:text-base">
           <thead className="text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
               <th>Perusahaan Travel</th>
