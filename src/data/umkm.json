@@ -283,6 +283,13 @@
   ],
   "kuliner": [
     {
+      "id": 1,
+      "jenis": "Kuliner",
+      "nama": "Tempoyak",
+      "link_foto": "https://jurnalutara.com/wp-content/uploads/2024/02/Gulai-tempoyak-Ikan-Patin.jpg",
+      "deskripsi": "Tempoyak adalah jenis makanan khas etnis Melayu di pulau Sumatra dan Kalimantan. Makanan ini terbuat dari durian yang sudah melalui proses fermentasi. Makanan ini biasanya dikonsumsi sebagai lauk yang dicampur dengan sambal saat menyantap nasi. Cita rasa tempoyak adalah asam karena terjadinya proses fermentasi daging buah durian. Selain itu, tempoyak dijadikan bumbu masakan.Tempoyak dikenal di Indonesia, terutama di pulau Sumatra dan Kalimantan. Jambi, terkenal dengan tempoyak campuran ikan patin dan ikan baung dibuat gulai tempoyak, sambal tempoyak dan brengkes tempoyak. "
+    },
+    {
       "id": 15,
       "jenis": "Kuliner",
       "nama": "Dendeng Batokok",
@@ -295,13 +302,6 @@
       "nama": "Gulai kepala Kakap",
       "link_foto": "/assets/gulai kepala kakap.jpg",
       "deskripsi": "Gulai kepala kakap adalah hidangan khas Indonesia yang berupa gulai yang menggunakan kepala ikan kakap sebagai bahan utamanya. Gulai adalah sejenis masakan berkuah santan yang kaya rempah-rempah, biasanya berwarna kuning atau oranye karena penggunaan kunyit. Rasa yang kaya dan tekstur lembut dari daging kepala ikan kakap membuat hidangan ini menjadi favorit bagi banyak orang yang menyukai makanan laut dan masakan berbumbu santan."
-    },
-    {
-      "id": 1,
-      "jenis": "Kuliner",
-      "nama": "Tempoyak",
-      "link_foto": "https://jurnalutara.com/wp-content/uploads/2024/02/Gulai-tempoyak-Ikan-Patin.jpg",
-      "deskripsi": "Tempoyak adalah jenis makanan khas etnis Melayu di pulau Sumatra dan Kalimantan. Makanan ini terbuat dari durian yang sudah melalui proses fermentasi. Makanan ini biasanya dikonsumsi sebagai lauk yang dicampur dengan sambal saat menyantap nasi. Cita rasa tempoyak adalah asam karena terjadinya proses fermentasi daging buah durian. Selain itu, tempoyak dijadikan bumbu masakan.Tempoyak dikenal di Indonesia, terutama di pulau Sumatra dan Kalimantan. Jambi, terkenal dengan tempoyak campuran ikan patin dan ikan baung dibuat gulai tempoyak, sambal tempoyak dan brengkes tempoyak. "
     },
     {
       "id": 2,
