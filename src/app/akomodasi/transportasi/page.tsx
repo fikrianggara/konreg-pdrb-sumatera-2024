@@ -9,7 +9,6 @@ function Page() {
   );
   const rental = akomodasi.transportasi.filter((t) => t.jenis == "rental");
   const travel = akomodasi.transportasi.filter((t) => t.jenis == "travel");
-  const pic = akomodasi.pic;
 
   return (
     <div>

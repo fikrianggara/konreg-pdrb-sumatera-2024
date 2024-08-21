@@ -39,7 +39,7 @@ const PENJEMPUTAN = [
       },
       { prov: "Lampung", nama: "Ir. Edy Akson", hp: "082180413300" },
       {
-        prov: "Bangka Belitung",
+        prov: "Kepulauan Bangka Belitung",
         nama: "Muji Lestari, SE, MA",
         hp: "081317485886",
       },
@@ -89,7 +89,7 @@ const PENJEMPUTAN = [
         hp: "082176656843",
       },
       {
-        prov: "Bangka Belitung",
+        prov: "Kepulauan Bangka Belitung",
         nama: "Ade Irawansyah, MH",
         hp: "08117491986",
       },
