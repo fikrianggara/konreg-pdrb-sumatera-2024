@@ -18,10 +18,11 @@ import { useCallback, useEffect, useState } from "react";
 
 function Page() {
   const [rumah_makan, _] = useState(
-    akomodasi.rumah_makan.sort(function (a, b) {
-      if (a.jarak && b.jarak) return a.jarak - b.jarak;
-      return 0;
-    })
+    // akomodasi.rumah_makan.sort(function (a, b) {
+    //   if (a.jarak && b.jarak) return a.jarak - b.jarak;
+    //   return 0;
+    // })
+    akomodasi.rumah_makan
   );
   const [selecteRumahMakan, setSelecteRumahMakan] = useState(
     akomodasi.rumah_makan[0]

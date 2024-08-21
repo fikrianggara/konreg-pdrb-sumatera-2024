@@ -147,6 +147,45 @@
   ],
   "rumah_makan": [
     {
+      "id": 32,
+      "nama": "Rumah Makan Pusako 1",
+      "maps": "https://maps.app.goo.gl/haMgMo9tzVdvu7bS8",
+      "link_foto": "https://fastly.4sqi.net/img/general/600x600/11923212_AvS8j8UxNKqZ0n3yhdeq0nmwW6X-4fwFXsqMPx-cF6g.jpg",
+      "deskripsi": "Rumah Makan Pusako Satu, adalah rumah makan dendeng batokok pertama di Kota Jambi. Dendeng batokok merupakan sajian khusus dari rumah makan ini, dan dapat dipesan untuk dijadikan oleh-oleh. ",
+      "harga": "mulai dari Rp15000",
+      "rating_google": 4.6,
+      "jarak": 8.0,
+      "waktu_tempuh": "11 -13 menit",
+      "jam_buka": "09.00 - 18.00",
+      "operasional": "Setiap Hari"
+    },
+    {
+      "id": 12,
+      "nama": "RM Cahaya Minang",
+      "maps": "https://maps.app.goo.gl/n8UdMiTJyU56EMRL9",
+      "link_foto": "https://lh3.googleusercontent.com/p/AF1QipNvKT4COQMVRhhsojCiTKpVYS150BFI33jdr_jF=s1360-w1360-h1020",
+      "deskripsi": "Menyajikan nasi padang dan aneka lauk khas minang.",
+      "harga": "mulai dari Rp20000",
+      "rating_google": 4.5,
+      "jarak": 1.2,
+      "waktu_tempuh": "3 - 5 menit",
+      "jam_buka": "08.00 - 21.00",
+      "operasional": "Setiap Hari"
+    },
+    {
+      "id": 33,
+      "nama": "Rumah makan Putri Kembar",
+      "maps": "https://maps.app.goo.gl/ePTzfLgkmeNP9DfN8",
+      "link_foto": "https://img.restaurantguru.com/r514-design-Rumah-Makan-Putri-Kembar-2021-09-1.jpg",
+      "deskripsi": "Restoran minang di Kota Jambi ini sdh ada sejak th 1987. Menu yang terkenal di rumah makan ini adalah gulai ikan baung yang rasanya enak, tidak amis,lembut dan lunak daging ikannya.",
+      "harga": "mulai dari Rp15000",
+      "rating_google": 4.5,
+      "jarak": 1.3,
+      "waktu_tempuh": "5 menit",
+      "jam_buka": "09.30 - 20.00",
+      "operasional": "Setiap Hari"
+    },
+    {
       "id": 1,
       "nama": "Restoran Sederhana Jelutung",
       "maps": "https://maps.app.goo.gl/2zoFc8LCJ1RcH2UEA",
@@ -287,19 +326,6 @@
       "jarak": 3.4,
       "waktu_tempuh": "8 - 10 menit",
       "jam_buka": "08.00 - 20.00",
-      "operasional": "Setiap Hari"
-    },
-    {
-      "id": 12,
-      "nama": "RM Cahaya Minang",
-      "maps": "https://maps.app.goo.gl/n8UdMiTJyU56EMRL9",
-      "link_foto": "https://lh3.googleusercontent.com/p/AF1QipNvKT4COQMVRhhsojCiTKpVYS150BFI33jdr_jF=s1360-w1360-h1020",
-      "deskripsi": "Menyajikan nasi padang dan aneka lauk khas minang.",
-      "harga": "mulai dari Rp20000",
-      "rating_google": 4.5,
-      "jarak": 1.2,
-      "waktu_tempuh": "3 - 5 menit",
-      "jam_buka": "08.00 - 21.00",
       "operasional": "Setiap Hari"
     },
     {
