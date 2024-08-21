@@ -283,6 +283,20 @@
   ],
   "kuliner": [
     {
+      "id": 15,
+      "jenis": "Kuliner",
+      "nama": "Dendeng Batokok",
+      "link_foto": "/assets/dendeng batokok.jpg",
+      "deskripsi": "Dendeng batokok adalah hidangan khas Minangkabau, Sumatra Barat, yang terbuat dari daging sapi yang diiris tipis, kemudian dipukul-pukul atau 'ditokok' (bahasa Minang untuk 'dipukul') hingga agak pipih. Setelah itu, daging dibumbui dengan campuran rempah-rempah, biasanya terdiri dari cabai, bawang merah, bawang putih, serta bahan lainnya, sebelum digoreng atau dipanggang."
+    },
+    {
+      "id": 16,
+      "jenis": "Kuliner",
+      "nama": "Gulai kepala Kakap",
+      "link_foto": "/assets/gulai kepala kakap.jpg",
+      "deskripsi": "Gulai kepala kakap adalah hidangan khas Indonesia yang berupa gulai yang menggunakan kepala ikan kakap sebagai bahan utamanya. Gulai adalah sejenis masakan berkuah santan yang kaya rempah-rempah, biasanya berwarna kuning atau oranye karena penggunaan kunyit. Rasa yang kaya dan tekstur lembut dari daging kepala ikan kakap membuat hidangan ini menjadi favorit bagi banyak orang yang menyukai makanan laut dan masakan berbumbu santan."
+    },
+    {
       "id": 1,
       "jenis": "Kuliner",
       "nama": "Tempoyak",
