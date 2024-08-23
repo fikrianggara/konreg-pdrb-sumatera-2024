@@ -191,10 +191,10 @@ function Navbar() {
           <Link href="/" className="flex items-center space-x-2 ">
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
             <div>
-              <h1 className="text-sky-800 text-base font-bold">
-                Konsultasi Regional PDRB
+              <h1 className="text-sky-800 text-sm font-bold">
+                Konsultasi Regional PDRB - ISE
               </h1>
-              <h2 className="text-amber-500 font-base text-sm">
+              <h2 className="text-amber-500 font-base text-xs">
                 Wilayah Sumatera 2024
               </h2>
             </div>
@@ -207,7 +207,7 @@ function Navbar() {
             <Image src="/assets/logo.png" width={56} height={56} alt="logo" />
             <div>
               <h1 className="text-sky-800 lg:text-md xl:text-xl font-bold">
-                Konsultasi Regional PDRB
+                Konsultasi Regional PDRB - ISE
               </h1>
               <h2 className="text-amber-500 text-regular lg:text-sm font-base">
                 Wilayah Sumatera 2024
