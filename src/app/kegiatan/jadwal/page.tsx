@@ -358,7 +358,7 @@ const KEGIATAN = [
                   Moh. Edy Mahmud, S.Si., M.P
                 </h1>
                 <h2 className="text-xs text-gray-600 self-center">
-                  Deputi Neraca dan Analisis BPS RI
+                  Direktur Neraca dan Analisis BPS RI
                 </h2>
               </div>
             </Link>
@@ -396,7 +396,7 @@ const KEGIATAN = [
                     Pipit Helly Sorayan, SE., ME.
                   </h1>
                   <h2 className="text-xs text-gray-600 self-center">
-                    Deputi Neraca Pengeluaran BPS RI
+                    Direktur Neraca Pengeluaran BPS RI
                   </h2>
                   <h2 className="text-xs text-gray-600 self-center font-medium">
                     Presentasi 2
