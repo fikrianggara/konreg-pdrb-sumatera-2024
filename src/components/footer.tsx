@@ -11,7 +11,7 @@ const PROVINSI = [
   "Prov. Sumatera Selatan",
   "Prov. Bengkulu",
   "Prov. Lampung",
-  "Prov. Bangka Belitung",
+  "Prov. Kepulauan Bangka Belitung",
   "Prov. Kepulauan Riau",
 ];
 
