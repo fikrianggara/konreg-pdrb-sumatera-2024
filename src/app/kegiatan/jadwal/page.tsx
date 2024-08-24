@@ -358,7 +358,7 @@ const KEGIATAN = [
                   Moh. Edy Mahmud, S.Si., M.P
                 </h1>
                 <h2 className="text-xs text-gray-600 self-center">
-                  Direktur Neraca dan Analisis BPS RI
+                  Deputi Neraca dan Analisis BPS RI
                 </h2>
               </div>
             </Link>
@@ -407,10 +407,10 @@ const KEGIATAN = [
               <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
                 <IconUser className="h-16 md:h-24 w-16 md:w-24 rounded-full bg-gray-400 text-white text-center self-center"></IconUser>
                 <h1 className="text-xs md:text-sm font-medium self-center">
-                  Perwakilan Kementrian PPN/Bappenas RI
+                  Dra. Ratna Sri Mawarti Mustikaningsih, MA
                 </h1>
                 <h2 className="text-xs text-gray-600 self-center">
-                  Kementrian PPN/Bappenas RI
+                  Kementrian Bappenas
                 </h2>
                 <h2 className="text-xs text-gray-600 self-center font-medium">
                   Presentasi 3
@@ -443,11 +443,12 @@ const KEGIATAN = [
                     className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
                   />
                   <h1 className="text-xs md:text-sm font-medium self-center">
-                    Astera Primanto Bhakti
+                    Taukhid, S.E., M.Sc.I.B., M.B.A
                   </h1>
 
                   <h2 className="text-xs text-gray-600 self-center">
-                    Direktur Jenderal Perbendaharaan Kementerian Keuangan RI
+                    Tenaga Pengkaji Bidang Perbendaharaan Direktorat Jenderal
+                    Perbendaharaan
                   </h2>
                   <h2 className="text-xs text-gray-600 self-center font-medium">
                     Presentasi 5
