@@ -28,6 +28,10 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config) => {
+    config.resolve.alias.canvas = false;
+    return config;
+  },
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 };
 
