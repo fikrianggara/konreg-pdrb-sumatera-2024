@@ -378,7 +378,7 @@ const KEGIATAN = [
                     Dra. Hj. Elviana, M.Si.
                   </h1>
                   <h2 className="text-xs text-gray-600 self-center">
-                    Ketua Komite 4 DPD-RI
+                    Ketua Komite IV DPD-RI
                   </h2>
                   <h2 className="text-xs text-gray-600 self-center font-medium">
                     Presentasi 1
