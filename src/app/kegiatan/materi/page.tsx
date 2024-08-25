@@ -1,8 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
 import React, { useState } from "react";
-import { UnstyledButton, Menu, Image, Group } from "@mantine/core";
-import { IconChevronDown } from "@tabler/icons-react";
 import Link from "next/link";
 
 const PDFViewer = dynamic(() => import("@/components/pdfViewer"), {
@@ -28,7 +26,7 @@ const MATERIS: any[] = [
     url: "/assets/materi/presentasi-3.pdf",
   },
 ];
-export default function pages() {
+export default function Page() {
   const [selectedMateri, setSelectedMateri] = useState("Presentasi 3");
   const [fileUrl, setFileUrl] = useState("/assets/materi/presentasi-3.pdf");
   const [title, setTitle] = useState("Diskusi Panel - Presentasi 3");
