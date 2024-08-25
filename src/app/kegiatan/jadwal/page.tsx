@@ -403,7 +403,7 @@ const KEGIATAN = [
                   </h2>
                 </div>
               </Link>
-              <Link href="/CV Ratna_ 2024.pdf">
+              <Link href="https://www.bappenas.go.id/">
                 <div className="flex flex-col space-y-1 text-center items-start w-fit self-start">
                   <IconUser className="h-16 md:h-24 w-16 md:w-24 rounded-full bg-gray-400 text-white text-center self-center"></IconUser>
                   <h1 className="text-xs md:text-sm font-medium self-center">
@@ -417,7 +417,7 @@ const KEGIATAN = [
                   </h2>
                 </div>
               </Link>
-              <Link href="/Iman Gunadi CV.pdf">
+              <Link href="#">
                 <div className="flex flex-col space-y-1 text-center items-start w-fit self-start">
                   <img
                     src="/assets/Foto P'Iman (3).JPG"
