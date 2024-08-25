@@ -358,7 +358,7 @@ const KEGIATAN = [
                   Moh. Edy Mahmud, S.Si., M.P
                 </h1>
                 <h2 className="text-xs text-gray-600 self-center">
-                  Deputi Neraca dan Analisis BPS RI
+                  Deputi Neraca dan Analisis Statistik BPS-RI
                 </h2>
               </div>
             </Link>
@@ -368,17 +368,17 @@ const KEGIATAN = [
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-2">
               <Link href="https://id.wikipedia.org/wiki/Elviana">
-                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
+                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start">
                   <img
                     src="/assets/presentasi_1.png"
                     alt="presentasi 1"
                     className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
                   />
                   <h1 className="text-xs md:text-sm font-medium self-center">
-                    Dra. Hj. Elviana, M.Si
+                    Dra. Hj. Elviana, M.Si.
                   </h1>
                   <h2 className="text-xs text-gray-600 self-center">
-                    Anggota DPD RI DaPil Jambi
+                    Ketua Komite 4 DPD-RI
                   </h2>
                   <h2 className="text-xs text-gray-600 self-center font-medium">
                     Presentasi 1
@@ -386,7 +386,7 @@ const KEGIATAN = [
                 </div>
               </Link>
               <Link href="https://ppid.bps.go.id/app/konten/0000/Profil-BPS.html">
-                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
+                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start">
                   <img
                     src="/assets/presentasi_2.png"
                     alt="presentasi 2"
@@ -403,32 +403,34 @@ const KEGIATAN = [
                   </h2>
                 </div>
               </Link>
-
-              <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
-                <IconUser className="h-16 md:h-24 w-16 md:w-24 rounded-full bg-gray-400 text-white text-center self-center"></IconUser>
-                <h1 className="text-xs md:text-sm font-medium self-center">
-                  Dra. Ratna Sri Mawarti Mustikaningsih, MA
-                </h1>
-                <h2 className="text-xs text-gray-600 self-center">
-                  Kementrian Bappenas
-                </h2>
-                <h2 className="text-xs text-gray-600 self-center font-medium">
-                  Presentasi 3
-                </h2>
-              </div>
-              <Link href="https://id.linkedin.com/in/igp-wira-kusuma-3b480039">
-                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
+              <Link href="/CV Ratna_ 2024.pdf">
+                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start">
+                  <IconUser className="h-16 md:h-24 w-16 md:w-24 rounded-full bg-gray-400 text-white text-center self-center"></IconUser>
+                  <h1 className="text-xs md:text-sm font-medium self-center">
+                    Dra. Ratna Sri Mawarti Mustikaningsih, MA.
+                  </h1>
+                  <h2 className="text-xs text-gray-600 self-center">
+                    Kementrian PPN/Bappenas
+                  </h2>
+                  <h2 className="text-xs text-gray-600 self-center font-medium">
+                    Presentasi 3
+                  </h2>
+                </div>
+              </Link>
+              <Link href="/Iman Gunadi CV.pdf">
+                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start">
                   <img
-                    src="/assets/presentasi_4.png"
+                    src="/assets/Foto P'Iman (3).JPG"
                     alt="presentasi 4"
                     className="h-16 md:h-24 aspect-square rounded-full border object-cover items-center self-center bg-gray-500"
                   />
                   <h1 className="text-xs md:text-sm font-medium self-center">
-                    IGP Wira Kusuma
+                    Iman Gunadi, S.Si., M.Sc., PhD
                   </h1>
 
                   <h2 className="text-xs text-gray-600 self-center">
-                    Kepala Kantor Perwakilan Bank Indonesia Prov. Sumatera Utara
+                    Advisor, Kantor Perwakilan Bank Indonesia Provinsi Sumatra
+                    Utara
                   </h2>
                   <h2 className="text-xs text-gray-600 self-center font-medium">
                     Presentasi 4
@@ -436,7 +438,7 @@ const KEGIATAN = [
                 </div>
               </Link>
               <Link href="https://djpb.kemenkeu.go.id/portal/id/profil/profil-organisasi/profil-pejabat.html">
-                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start text-center">
+                <div className="flex flex-col space-y-1 text-center items-start w-fit self-start">
                   <img
                     src="/assets/presentasi_5.png"
                     alt="presentasi 5"
