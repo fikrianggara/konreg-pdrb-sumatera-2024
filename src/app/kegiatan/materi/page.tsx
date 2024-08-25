@@ -12,23 +12,27 @@ const MATERIS: any[] = [
   {
     id: 1,
     label: "Presentasi 1",
+    title: "Diskusi Panel - Presentasi 1",
     url: "/assets/materi/presentasi-3.pdf",
   },
   {
     id: 2,
     label: "Presentasi 2",
+    title: "Diskusi Panel - Presentasi 2",
     url: "/assets/materi/presentasi-3.pdf",
   },
   {
     id: 3,
     label: "Presentasi 3",
+    title: "Diskusi Panel - Presentasi 3",
     url: "/assets/materi/presentasi-3.pdf",
   },
 ];
 export default function pages() {
   const [selectedMateri, setSelectedMateri] = useState("Presentasi 3");
   const [fileUrl, setFileUrl] = useState("/assets/materi/presentasi-3.pdf");
-  const [opened, setOpened] = useState(false);
+  const [title, setTitle] = useState("Diskusi Panel - Presentasi 3");
+
   const items = MATERIS.map((item) => (
     <option value={item.label} key={item.id}>
       {item.label}
@@ -43,7 +47,15 @@ export default function pages() {
             id="materi"
             className="p-2 px-4 rounded-lg w-fit h-fit border text-sm"
             value={selectedMateri}
-            onChange={(e) => setSelectedMateri(e.target.value)}
+            onChange={(e) => {
+              setSelectedMateri(e.target.value);
+              setFileUrl(
+                MATERIS.filter((m) => m.label === e.target.value)[0].url
+              );
+              setTitle(
+                MATERIS.filter((m) => m.label === e.target.value)[0].title
+              );
+            }}
           >
             {items}
           </select>
@@ -56,7 +68,7 @@ export default function pages() {
         </div>
       </div>
       <div className="bg-gray-200 h-fit rounded-lg">
-        <PDFViewer fileUrl={fileUrl} />
+        <PDFViewer fileUrl={fileUrl} title={title} />
       </div>
     </div>
   ) : (

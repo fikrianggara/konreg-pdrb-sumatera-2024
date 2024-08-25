@@ -5,12 +5,13 @@ import React, { useState } from "react";
 import { Document, Page } from "react-pdf";
 import { pdfjs } from "react-pdf";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.mjs",
-  import.meta.url
-).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+//   "pdfjs-dist/build/pdf.worker.min.mjs",
+//   import.meta.url
+// ).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
-const PdfViewer = ({ fileUrl }: { fileUrl: string }) => {
+const PdfViewer = ({ fileUrl, title }: { fileUrl: string; title: string }) => {
   const [numPages, setNumPages] = useState<number>(0);
   const [pageNumber, setPageNumber] = useState<number>(1); // start on first page
   const [loading, setLoading] = useState(true);
@@ -46,7 +47,7 @@ const PdfViewer = ({ fileUrl }: { fileUrl: string }) => {
 
   return (
     <div className="h-fit w-full self-start">
-      <Nav pageNumber={pageNumber} numPages={numPages} />
+      <Nav pageNumber={pageNumber} numPages={numPages} title={title} />
       <div hidden={loading} className="flex items-center h-full relative">
         <div
           className={`flex items-center justify-between w-full absolute z-10 px-2`}
@@ -101,16 +102,20 @@ const PdfViewer = ({ fileUrl }: { fileUrl: string }) => {
 function Nav({
   pageNumber,
   numPages,
+  title,
 }: {
   pageNumber: number;
   numPages: number;
+  title: string;
 }) {
   return (
     <nav className="bg-cyan-800 rounded-t-lg">
       <div className="mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-12 md:h-16 items-center justify-between">
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex flex-shrink-0 items-center"></div>
+            <div className="flex flex-shrink-0 items-center text-white">
+              {title}
+            </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 ">
             <div className="bg-gray-600 text-white rounded-md px-3 py-2 text-sm font-medium">
