@@ -692,6 +692,40 @@ function Page() {
         </div>
       </div> */}
       <div className="space-y-6">
+        <div className="bg-white p-4 rounded-lg border space-y-4">
+          <h2 className="font-medium text-gray-600 md:text-xl md:text-base">
+            Denah Tempat Duduk
+          </h2>
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 ">
+            <Image
+              src="/assets/tempat-duduk.png"
+              alt="alokasi tempat duduk"
+              height={200}
+              width={550}
+              className="aspect-auto"
+            />
+            <ul className="flex flex-col space-y-2 h-64 overflow-scroll md:w-96 text-xs">
+              <li>Meja 1 : Provinsi Aceh</li>
+              <li>Meja 2 : Provinsi Sumatera Utara</li>
+              <li>Meja 3 : Provinsi Sumatera Barat</li>
+              <li>Meja 4 : VIP (3 Direktur dan Narasumber lain)</li>
+              <li>
+                Meja 5 : VIP (Bapak Gubernur, Ibu Kepala BPS RI, Ibu Elviana,
+                Bapak Deputi dan Kepala Bappeda Prov Jambi)
+              </li>
+              <li>Meja 6 : Provinsi Riau</li>
+              <li>Meja 7 : Provinsi Sumatera Selatan</li>
+              <li>Meja 8 : Provinsi Lampung</li>
+              <li>Meja 11 : Provinsi Kepulauan Riau</li>
+              <li>Meja 12 : Provinsi Jambi</li>
+              <li>Meja 13 : Provinsi Bangka Belitung</li>
+              <li>Meja 14 : Provinsi Bengkulu</li>
+              <li>Meja 9,10,15,16 : tamu lain/panitia</li>
+              <li>Peserta lain di kursi theater</li>
+            </ul>
+          </div>
+        </div>
+
         {KEGIATAN.map((k, i) => (
           <div
             className="space-y-4 border rounded-lg p-4 md:p-8 w-full bg-white"
