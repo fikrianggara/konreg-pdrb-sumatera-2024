@@ -9,16 +9,16 @@ const PDFViewer = dynamic(() => import("@/components/pdfViewer"), {
 const MATERIS: any[] = [
   {
     id: 1,
-    label: "Presentasi 1",
-    title: "Diskusi Panel - Presentasi 1",
-    url: "/assets/materi/presentasi-3.pdf",
+    label: "High Level Meeting",
+    title: "High Level Meeting",
+    url: "/assets/materi/hlm.pdf",
   },
-  {
-    id: 2,
-    label: "Presentasi 2",
-    title: "Diskusi Panel - Presentasi 2",
-    url: "/assets/materi/presentasi-3.pdf",
-  },
+  // {
+  //   id: 2,
+  //   label: "Presentasi 2",
+  //   title: "Diskusi Panel - Presentasi 2",
+  //   url: "/assets/materi/presentasi-3.pdf",
+  // },
   {
     id: 3,
     label: "Presentasi 3",
@@ -27,9 +27,9 @@ const MATERIS: any[] = [
   },
 ];
 export default function Page() {
-  const [selectedMateri, setSelectedMateri] = useState("Presentasi 3");
-  const [fileUrl, setFileUrl] = useState("/assets/materi/presentasi-3.pdf");
-  const [title, setTitle] = useState("Diskusi Panel - Presentasi 3");
+  const [selectedMateri, setSelectedMateri] = useState("High Level Meeting");
+  const [fileUrl, setFileUrl] = useState("/assets/materi/hlm.pdf");
+  const [title, setTitle] = useState("High Level Meeting");
 
   const items = MATERIS.map((item) => (
     <option value={item.label} key={item.id}>
