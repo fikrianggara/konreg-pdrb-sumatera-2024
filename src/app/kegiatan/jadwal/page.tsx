@@ -704,7 +704,7 @@ function Page() {
               width={550}
               className="aspect-auto"
             />
-            <ul className="flex flex-col space-y-2 h-64 overflow-scroll md:w-96 text-xs">
+            <ul className="flex flex-col space-y-2 h-64 md:h-96 overflow-scroll md:w-96 text-xs">
               <li>Meja 1 : Provinsi Aceh</li>
               <li>Meja 2 : Provinsi Sumatera Utara</li>
               <li>Meja 3 : Provinsi Sumatera Barat</li>
