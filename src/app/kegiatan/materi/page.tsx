@@ -32,16 +32,22 @@ const MATERIS: any[] = [
     url: "/assets/materi/presentasi-2.pdf",
   },
   {
-    id: 5,
+    id: 4,
     label: "Presentasi 3",
     title: "Diskusi Panel - Presentasi 3",
     url: "/assets/materi/presentasi-3.pdf",
   },
   {
-    id: 6,
+    id: 5,
     label: "Presentasi 4",
     title: "Diskusi Panel - Presentasi 4",
     url: "/assets/materi/presentasi-4.pdf",
+  },
+  {
+    id: 6,
+    label: "Presentasi 5",
+    title: "Diskusi Panel - Presentasi 5",
+    url: "/assets/materi/presentasi-5.pdf",
   },
 ];
 export default function Page() {
