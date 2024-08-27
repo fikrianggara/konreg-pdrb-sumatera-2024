@@ -299,6 +299,18 @@ const KEGIATAN = [
       {
         jadwal: "07.30 - 08.30 WIB",
         judul: "Registrasi Peserta",
+        uraian: <p></p>,
+        lokasi: [
+          {
+            nama: "Lobby Hotel BW Luxury",
+            gmaps:
+              "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
+          },
+        ],
+      },
+      {
+        jadwal: "08.30 - 09.15 WIB",
+        judul: "Pembukaan",
         uraian: (
           <ol className="space-y-1 ml-4">
             <li>1. Pembukaan Acara</li>
