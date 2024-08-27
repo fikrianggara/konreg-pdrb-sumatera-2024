@@ -249,7 +249,7 @@ export default function Home() {
           href="/kegiatan/jadwal"
         >
           <img
-            src="/assets/konreg-2023.webp"
+            src="/assets/foto-bersama.JPG"
             alt="konreg 2023"
             className={`w-full h-56 lg:h-96 object-cover opatity-80  shadow-lg rounded-lg lg:rounded-none lg:rounded-br-[50px] lg:rounded-tl-[50px] opacity-80 hover:opacity-50 duration-300 ease-in-out`}
           />
