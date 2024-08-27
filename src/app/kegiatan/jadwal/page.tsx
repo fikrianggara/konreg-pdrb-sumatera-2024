@@ -333,7 +333,7 @@ const KEGIATAN = [
         ),
         lokasi: [
           {
-            nama: "Taman Raja Ballroom, BW Luxury Hotel",
+            nama: "Taman Raja Ballroom (Lantai 5), BW Luxury Hotel",
             gmaps:
               "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
           },
@@ -345,7 +345,7 @@ const KEGIATAN = [
         uraian: <p></p>,
         lokasi: [
           {
-            nama: "Taman Raja Ballroom, BW Luxury Hotel",
+            nama: "Taman Raja Ballroom (Lantai 5), BW Luxury Hotel",
             gmaps:
               "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
           },
@@ -478,7 +478,7 @@ const KEGIATAN = [
         ),
         lokasi: [
           {
-            nama: "Taman Raja Ballroom, BW Luxury Hotel",
+            nama: "Taman Raja Ballroom (Lantai 5), BW Luxury Hotel",
             gmaps:
               "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
           },
@@ -497,7 +497,7 @@ const KEGIATAN = [
         ),
         lokasi: [
           {
-            nama: "Taman Raja Ballroom, BW Luxury Hotel",
+            nama: "Taman Raja Ballroom (Lantai 5), BW Luxury Hotel",
             gmaps:
               "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
           },
@@ -518,7 +518,7 @@ const KEGIATAN = [
         ),
         lokasi: [
           {
-            nama: "Taman Raja Ballroom, BW Luxury Hotel",
+            nama: "Taman Raja Ballroom (Lantai 5), BW Luxury Hotel",
             gmaps:
               "https://www.google.com/maps/place/BW+Luxury+Jambi/@-1.619318,103.6272072,17z/data=!3m1!4b1!4m9!3m8!1s0x2e2589ddd9aaf037:0x2d53969da3e156f1!5m2!4m1!1i2!8m2!3d-1.619318!4d103.6297821!16s%2Fg%2F11gv02gq2x?entry=ttu",
           },
