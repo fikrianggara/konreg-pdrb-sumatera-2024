@@ -39,7 +39,7 @@ const page = () => {
             <Link
               href={d.url}
               key={i}
-              className="p-4 h-24 w-full lg:h-64 md:aspect-square bg-cyan-50 flex items-center justify-center rounded-lg border rounded-lg md:rounded-xl transition-all duration-300 bg-gradient-to-tl from-indigo-600 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-size-200 bg-pos-0 hover:bg-pos-100 shadow shadow-xl bg-sky-800"
+              className="p-4 h-24 w-full lg:h-64 md:aspect-square bg-cyan-50 flex items-center justify-center rounded-lg border rounded-lg md:rounded-xl transition-all duration-300 bg-gradient-to-tl from-indigo-500 via-indigo-400 to-sky-500 to-teal-500 bg-size-200 bg-pos-0 hover:bg-pos-100 shadow shadow-xl"
             >
               <h2 className="md:text-xl text-white font-medium">{d.title}</h2>
             </Link>
