@@ -67,7 +67,7 @@ export default function Page() {
           <select
             name="materi"
             id="materi"
-            className="p-2 px-4 rounded-lg w-fit h-fit border text-sm"
+            className="p-1 md:p-2 px-4 rounded-lg w-fit h-fit border text-xs md:text-sm"
             value={selectedMateri}
             onChange={(e) => {
               setSelectedMateri(e.target.value);
@@ -83,7 +83,7 @@ export default function Page() {
           </select>
           <Link
             href={fileUrl}
-            className="bg-cyan-800 px-4 text-sm py-2 rounded-lg text-white w-full text-center"
+            className="bg-cyan-800 p-1 px-4 text-xs md:text-sm md:py-2 rounded-lg text-white w-full text-center"
           >
             Download file
           </Link>
