@@ -37,6 +37,12 @@ const MATERIS: any[] = [
     title: "Diskusi Panel - Presentasi 3",
     url: "/assets/materi/presentasi-3.pdf",
   },
+  {
+    id: 6,
+    label: "Presentasi 4",
+    title: "Diskusi Panel - Presentasi 4",
+    url: "/assets/materi/presentasi-4.pdf",
+  },
 ];
 export default function Page() {
   const [selectedMateri, setSelectedMateri] = useState("Keynote Speech");
