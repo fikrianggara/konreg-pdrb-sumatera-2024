@@ -379,7 +379,7 @@ export default function Home() {
           href="/galeri"
         >
           <img
-            src="/assets/dokumentasi.jpeg"
+            src="/assets/konreg-2024.jpeg"
             alt="dokumentasi"
             className={`w-full h-56 lg:h-96 object-cover opatity-80  rounded-lg  shadow-xl lg:rounded-none lg:rounded-tr-[50px] lg:rounded-bl-[50px] opacity-80 hover:opacity-50 duration-300 ease-in-out`}
           />
