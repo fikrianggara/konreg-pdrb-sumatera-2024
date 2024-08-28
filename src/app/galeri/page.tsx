@@ -23,9 +23,8 @@ const datas: any[] = [
   {
     id: 4,
     title: "City Tour",
-    url: "https://home.s.id/#",
-    thumbnail:
-      "https://indonesiaimpressiontour.com/wp-content/uploads/2022/11/IMG_20191101_004648.webp",
+    url: "https://license365bps-my.sharepoint.com/:f:/g/personal/aguswid_license365bps_onmicrosoft_com/EmiUASPtwupMhKC6Axx4UG8BJrrNsg_IYvC-wwnZ8-fwgg?e=2hBNuF",
+    thumbnail: "/assets/city-tour.png",
   },
 ];
 const page = () => {

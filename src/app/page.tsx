@@ -256,7 +256,7 @@ export default function Home() {
           <div className="absolute z-10 inset-x-0 flex items-center justify-center bottom-4">
             <div className="rounded-full bg-white border border-white text-cyan-700 px-4 shadow-lg">
               <h2 className="font-medium text-xs lg:text-base">
-                Konreg PDRB Sumatera 2023
+                Konreg PDRB Sumatera 2024
               </h2>
             </div>
           </div>
