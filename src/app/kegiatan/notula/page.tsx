@@ -1,57 +1,63 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+import React, { useState } from "react";
+import Link from "next/link";
 
-import { MDXRemote } from "next-mdx-remote/rsc";
-import mdx from "@/components/test.mdx";
-
-const ROOT_URL = "/notula";
-const NOTULAS: any[] = [
+const PDFViewer = dynamic(() => import("@/components/pdfViewer"), {
+  ssr: false,
+});
+const MATERIS: any[] = [
   {
     id: 1,
-    url: ROOT_URL + "/hari-1",
-    title: "Hari ke-1",
-  },
-  {
-    id: 2,
-    url: ROOT_URL + "/hari-2",
-    title: "Hari ke-2",
-  },
-  {
-    id: 3,
-    url: ROOT_URL + "/hari-3",
-    title: "Hari ke-3",
+    label: "Notula",
+    title: "Notula",
+    url: "/assets/notula/notula.pdf",
   },
 ];
-
 export default function Page() {
-  // const [markdownSource, setMarkdownSource] = useState("");
+  const [selectedMateri, setSelectedMateri] = useState("Notula");
+  const [fileUrl, setFileUrl] = useState("/assets/notula/notula.pdf");
+  const [title, setTitle] = useState("Notula");
 
-  // return NOTULAS.length > 0 ? (
-  //   <div>
-  //     {NOTULAS.map((n) => (
-  //       <div>{n.toString()}</div>
-  //     ))}
-  //   </div>
-  // ) : (
-  //   <div>belum ada notulensi</div>
-  // );
-
-  return (
-    <div className="p-4 w-full flex">
-      <div>Belum ada notula</div>
-      {/* <div>
-        <MDXRemote
-          source={`# Welcome to my MDX page!
-        This is some **bold** and _italics_ text.
-        This is a list in markdown:
-        - Onef
-        - Two
-        - Three
-        <img src="/assets/ACEH.jpg" className='h-48 md:h-96 safw-full rounded-lg'/>
-        Checkout my React component:
-        `}
-        />
-      </div> */}
+  const items = MATERIS.map((item) => (
+    <option value={item.label} key={item.id}>
+      {item.label}
+    </option>
+  ));
+  return MATERIS.length > 0 ? (
+    <div className="w-full flex flex-col lg:flex-row space-y-4 md:space-y-0 md:space-x-4 relative">
+      <div className="text-xs md:text-lg flex flex-col space-y-4 md:spcae-y-0 md:flex-row md:space-x-2 overflow-x-scroll items-start">
+        <div className="flex flex-row md:flex-col space-x-2 md:space-x-0 md:space-y-2 items-center">
+          <select
+            name="materi"
+            id="materi"
+            className="w-full p-1 md:p-2 px-4 rounded-lg w-fit h-fit border text-xs md:text-sm"
+            value={selectedMateri}
+            onChange={(e) => {
+              setSelectedMateri(e.target.value);
+              setFileUrl(
+                MATERIS.filter((m) => m.label === e.target.value)[0].url
+              );
+              setTitle(
+                MATERIS.filter((m) => m.label === e.target.value)[0].title
+              );
+            }}
+          >
+            {items}
+          </select>
+          <Link
+            href={fileUrl}
+            className="w-64 bg-cyan-800 p-1 px-4 text-xs md:text-sm md:py-2 rounded-lg text-white text-center"
+          >
+            Download file
+          </Link>
+        </div>
+      </div>
+      <div className="bg-gray-200 h-fit rounded-lg">
+        <PDFViewer fileUrl={fileUrl} title={title} />
+      </div>
     </div>
+  ) : (
+    <div>belum ada materi</div>
   );
 }
